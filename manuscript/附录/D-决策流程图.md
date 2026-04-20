@@ -5,7 +5,7 @@
 ## 图 1：权限决策流程（遇到弹窗怎么选）
 
 ```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["Claude 弹出权限窗口<br/>它要干什么?"] --> B{"操作类型"}
   B -->|"读文件"| C["通常 Yes<br/>除非是 .env、密钥文件"]
@@ -26,7 +26,7 @@ flowchart TD
 ## 图 2：模型选择流程（任务来了用哪个）
 
 ```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["新任务来了"] --> B{"需要深度推理吗?"}
   B -->|"否：简单查询 / 翻译 / 重命名"| C["Haiku"]
@@ -42,7 +42,7 @@ flowchart TD
 ## 图 3：Ctx% 使用率应对流程
 
 ```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["瞥一眼状态栏<br/>看 Ctx 百分比"] --> B{"落在哪个区间?"}
   B -->|"0 - 50%"| C["继续写，无需操心"]
@@ -56,7 +56,7 @@ flowchart TD
 ## 图 4：卡住了怎么办（5 分钟原则）
 
 ```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["第 1 次尝试失败"] --> B["调整 prompt 再试一次"]
   B --> C{"第 2 次还是不行?"}
@@ -72,7 +72,7 @@ flowchart TD
 ## 图 5：信息分层决策（该放在哪一层）
 
 ```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["这条信息…"] --> B{"是什么性质?"}
   B -->|"一次性用的"| C["会话里说就行<br/>不用存"]
@@ -87,7 +87,7 @@ flowchart TD
 ## 图 6：扩展机制选型
 
 ```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral"}}%%
+%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["我想让 Claude…"] --> B{"目的是什么?"}
   B -->|"知道项目背景（每次都要）"| C["CLAUDE.md"]
