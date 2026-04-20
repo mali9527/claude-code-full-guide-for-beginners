@@ -97,3 +97,10 @@ mindmap
 - **`!!`** → 重复上一条命令（装完 `sudo` 忘了加，敲 `sudo !!` 直接补）
 - **`cd`** 单独一个 → 等同 `cd ~`
 - **`open 文件.pdf`** → 用默认程序打开这个文件
+
+
+---
+
+<!-- chapter-nav -->
+
+📖  [← 第 27 章 · 下一步路线](../part6-融入日常/27-下一步路线.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 B · Windows PowerShell 速查 →](B-Windows-PowerShell速查.md)

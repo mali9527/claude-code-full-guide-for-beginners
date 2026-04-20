@@ -111,3 +111,10 @@ mindmap
 - 具体命令名和行为**可能因 Claude Code 版本而异**
 - 出现新命令 / 某命令消失 → 跑 `/help` 看当前版本全表
 - 自定义命令会和内置一起在 `/help` 输出里出现
+
+
+---
+
+<!-- chapter-nav -->
+
+📖  [← 附录 B · Windows PowerShell 速查](B-Windows-PowerShell速查.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 D · 决策流程图 →](D-决策流程图.md)

@@ -159,3 +159,10 @@ mindmap
 ```
 
 **口诀**：**CLAUDE.md 讲背景，Skill 讲流程，Command 给快捷键，Subagent 派替身，Hook 搞自动，MCP 接外网**。
+
+
+---
+
+<!-- chapter-nav -->
+
+📖  [← 附录 C · Slash 命令全表](C-Slash命令全表.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 E · FAQ 10 问 →](E-FAQ.md)

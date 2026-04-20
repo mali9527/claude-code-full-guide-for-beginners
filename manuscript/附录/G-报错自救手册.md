@@ -239,3 +239,10 @@ mindmap
 - 官方 GitHub 开 issue（附**完整错误信息** + **你的版本 + OS**）
 - Reddit r/ClaudeAI 发帖
 - 发 `/version` 看你的版本——升级到最新版可能就好了
+
+
+---
+
+<!-- chapter-nav -->
+
+📖  [← 附录 F · 术语表](F-术语表.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 H · 桌面应用导览 →](H-桌面应用导览.md)

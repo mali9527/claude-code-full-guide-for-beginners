@@ -115,3 +115,10 @@ mindmap
 - **以管理员身份运行**：右键 PowerShell 图标 → "以管理员身份运行"——某些系统命令需要
 - **`dir`** 也能用（老 CMD 风格，PowerShell 兼容）
 - **`clip`** 命令 → `echo "hello" | clip` 把输出复制到剪贴板
+
+
+---
+
+<!-- chapter-nav -->
+
+📖  [← 附录 A · Mac 终端速查](A-Mac终端速查.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 C · Slash 命令全表 →](C-Slash命令全表.md)

@@ -483,3 +483,10 @@ mkdir -p ~/.claude && echo '{}' > ~/.claude/settings.json && open ~/.claude/sett
 ---
 
 **下一章**：第 24 章"MCP 入门"——**扩展能力的最后一章**。MCP 让 Claude 能连到外部工具（Google Drive、Notion、文件系统等），是让 Claude 成为真正生产力工具的关键。
+
+
+---
+
+<!-- chapter-nav -->
+
+📖  [← 第 22 章 · Subagents 入门](22-Subagents入门.md)  ·  [📑 返回目录](../../README.md)  ·  [第 24 章 · MCP 入门 →](24-MCP入门.md)

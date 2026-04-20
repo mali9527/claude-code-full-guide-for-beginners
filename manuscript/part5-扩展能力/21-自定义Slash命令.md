@@ -457,3 +457,10 @@ description: 把上次 tag 到现在的改动生成 release notes
 ---
 
 **下一章**：第 22 章"Subagents 入门"——让 Claude 派出"专业实习生"去干活。Skill 是手册、Command 是快捷键、Subagent 是**有特定岗位的 Claude**。下一章讲它和前面两者的本质区别。
+
+
+---
+
+<!-- chapter-nav -->
+
+📖  [← 第 20 章 · Skills 入门](20-Skills入门.md)  ·  [📑 返回目录](../../README.md)  ·  [第 22 章 · Subagents 入门 →](22-Subagents入门.md)
