@@ -14,6 +14,40 @@
 - **不读这章会踩什么坑**：把这些"偶尔用但要讲一大通"的流程塞进 CLAUDE.md，导致 CLAUDE.md 膨胀。
 - **读完你会多会什么事**：会写第一个 Skill（把常用流程打包），Claude **只在需要时**才加载——省 Ctx、清爽。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-27 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 20 章 · Skills 入门))
+    Skill 是什么
+      按需加载的任务手册
+      一份 markdown 文件
+    和 CLAUDE.md 的分工
+      CLAUDE.md 每次加载
+      Skill 需要时才加载
+    存放位置
+      全局 ~/.claude/skills
+      项目 .claude/skills
+    装现成的 Skill
+      建目录建 SKILL.md
+      粘贴内容试用
+    自己写 Skill
+      frontmatter 加 name/description
+      什么时候用·输入·输出·原则·坑
+    选择心法
+      频率高且短 → CLAUDE.md
+      频率低且结构化 → Skill
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

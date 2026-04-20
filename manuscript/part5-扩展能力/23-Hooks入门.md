@@ -14,6 +14,49 @@
 - **不读这章会踩什么坑**：这些"机械重复"本可以自动触发，你还在手点，浪费时间。
 - **读完你会多会什么事**：配一个"Claude 每次 Write 之后自动跑 `prettier`"——从此再不用手动 format。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-30 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 23 章 · Hooks 入门))
+    Hook 是什么
+      事件触发自动化
+      当 X 发生自动做 Y
+    和其他扩展的差别
+      不靠人或 Claude 判断
+      事件一发生就触发
+    可钩的事件
+      PreToolUse 工具前
+      PostToolUse 工具后
+      SessionStart 会话开始
+      UserPromptSubmit 提交时
+    怎么配
+      写在 settings.json
+      matcher 过滤工具
+      command 执行命令
+    什么时候值得
+      机械重复保障
+      强制安全检查
+      环境准备清理
+    三大坑
+      失败阻塞用 || true
+      循环触发
+      性能拖累
+    三个经典模板
+      写完自动 format
+      启动注入日期项目
+      Bash 调用留日志
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

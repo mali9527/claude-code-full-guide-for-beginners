@@ -2,6 +2,51 @@
 
 > 按关键词搜。每条格式：**看到什么 → 最可能原因 → 怎么办**。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-41 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((附录 G · 报错自救手册))
+    安装阶段
+      command not found
+      EACCES 权限
+      node 没装
+    登录认证
+      401 失败
+      连不上 api
+    使用阶段
+      Ctx 溢出
+      Rate limit
+      突然变笨
+      循环卡死
+    权限改文件
+      Permission denied
+      多改了
+      审得不细
+    扩展故障
+      Hook 没触发
+      Skill 不识别
+      MCP 工具缺失
+    Git 相关
+      not a repo
+      ahead by N
+      merge conflict
+    通用排查
+      重启先试
+      /status /help
+      问 Claude 自己
+
+```
+
 ## 安装阶段
 
 ### `command not found: claude`

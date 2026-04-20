@@ -2,6 +2,50 @@
 
 > **说明**：本书主讲终端版 Claude Code。如果你嫌终端麻烦——**桌面应用**（2026-04 大改版）是同一引擎的图形版本，核心能力完全通用。这份导览让你快速对号入座。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-42 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((附录 H · 桌面应用导览))
+    何时选桌面
+      多会话并行
+      大型 diff
+      git worktree
+      拖拽图片
+    何时留终端
+      极简最快
+      ssh 远程
+      脚本 CI
+    五大界面元素
+      多会话侧栏
+      可视化 diff
+      内嵌终端
+      文件拖拽
+      worktree 隔离
+    概念对照
+      @ 变拖拽
+      /clear 变按钮
+      /model 下拉
+    概念通用性
+      记忆三层
+      权限机制
+      扩展五件套
+    下载与节奏
+      claude.com 下载
+      双版并用
+      不用强选一个
+
+```
+
 ---
 
 ## 什么时候切桌面应用值

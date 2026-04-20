@@ -14,6 +14,48 @@
 - **不读这章会踩什么坑**：Claude 永远被困在本地——**手动导出 / 导入**成为瓶颈。
 - **读完你会多会什么事**：给 Claude **接上外部工具的"插座"**——它可以直接读你的云盘、Notion、GitHub、数据库——办公效率真正起飞。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-31 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 24 章 · MCP 入门))
+    MCP 是什么
+      给 Claude 接外部的扩展坞
+      USB 式统一协议
+    工作原理
+      Claude 对接协议层
+      协议层对接外部系统
+      装 server 就是加插头
+    装 filesystem MCP
+      写 mcp_servers.json
+      指定目录列表
+      重启后 Claude 直接读
+    新手三大值得装
+      filesystem 指定目录
+      Google Drive 云盘
+      GitHub 代码仓
+    装 MCP 通用流程
+      粘配置 · 填凭证
+      重启 · 试用 · 查错
+    安全三红线
+      最小权限原则
+      凭证绝不进 git
+      写删操作人工确认
+    和其他扩展的关系
+      MCP 连外部
+      其他扩展组织行为
+      组合威力最大
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

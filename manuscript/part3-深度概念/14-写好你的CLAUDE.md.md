@@ -14,6 +14,49 @@
 - **不读这章会踩什么坑**：要么**根本不写 CLAUDE.md**（长期遭受重复回答折磨）；要么**乱写 CLAUDE.md**（写成 500 行巨型文档、实际效果反而下降）。
 - **读完你会多会什么事**：能判断"哪条信息值得进 CLAUDE.md、哪条不值"；能写出 < 60 行就让 Claude 懂项目的说明书；能维护它不让它膨胀。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-21 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 14 章 · 写好你的 CLAUDE.md))
+    反直觉警告
+      不要用 init 命令
+      自动生成是反模式
+      手写从空白开始
+    三个核心作用
+      理解项目本质
+      传达硬规则
+      指路而非复制
+    容量铁律
+      推荐 60 行内
+      绝对上限 300 行
+      指令预算 200 条
+    五大反模式
+      风格指南大全
+      数据库 schema 全文
+      代码片段供参考
+      命令堆砌
+      模糊废话
+    正面模板
+      WHAT 项目是什么
+      WHY 关键决策背景
+      HOW 硬规则
+      指向扩展文档
+    渐进披露
+      第 1 天最小版
+      发现错再补
+      每月定期整理
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

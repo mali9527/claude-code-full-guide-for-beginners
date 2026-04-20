@@ -14,6 +14,42 @@
 - **不读这章会踩什么坑**：**硬往一个会话里塞东西**，越用越糟；或**乱 `/clear`**，把还需要的上下文也清掉了。
 - **读完你会多会什么事**：看一眼状态栏就知道该不该整理记忆；知道什么时候用 `/compact`、什么时候 `/clear`、什么时候直接退出开新会话。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-19 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 12 章 · Claude 为什么会变糊涂))
+    比喻
+      熬夜的实习生
+      脑容量有限
+    上下文窗口
+      装什么东西
+      默认 200K token
+      1M 超大版本
+    看懂 Ctx 百分比
+      50 开始警惕
+      75 必须整理
+      90 断崖危险
+    三档清理策略
+      compact 浓缩保留
+      clear 清空重来
+      退出重启最彻底
+    预防习惯
+      精准 @ 引用
+      限制命令输出
+      任务完就清理
+      瞥一眼状态栏
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

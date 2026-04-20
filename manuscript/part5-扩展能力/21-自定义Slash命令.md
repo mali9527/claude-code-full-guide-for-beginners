@@ -14,6 +14,45 @@
 - **不读这章会踩什么坑**：明明可以一键触发的动作，还是每次手工复制粘贴 prompt。
 - **读完你会多会什么事**：把反复用的 prompt 变成 `/xxx` 一个命令——敲命令名 = 自动展开完整 prompt。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-28 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 21 章 · 自定义 Slash 命令))
+    命令是什么
+      你主动敲的快捷键
+      展开成完整 prompt
+    和 Skill 的区别
+      Skill 靠 Claude 判断
+      命令靠你主动触发
+    建第一个命令
+      mkdir commands 目录
+      写 daily.md
+      敲 /daily 测试
+    命令里能写什么
+      提示词文字
+      嵌 ! shell 命令
+      嵌 @ 引用
+      参数占位符
+    什么时候值得做
+      敲过 5 次以上
+      多步骤组合
+      团队标准化
+    三者统一
+      CLAUDE.md 项目规则
+      Skill 任务手册
+      命令 你的快捷键
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

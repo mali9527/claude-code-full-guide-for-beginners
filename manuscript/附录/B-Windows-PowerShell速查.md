@@ -2,6 +2,42 @@
 
 > 用法：按 `Win + X` 选 "终端"（Windows 11）或 "PowerShell"。**本书不推荐 WSL / CMD——统一用 PowerShell**。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-36 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((附录 B · Windows PowerShell 速查))
+    常用命令
+      导航 pwd ls cd
+      文件 New-Item cp mv rm
+      辅助 explorer cls
+    快捷键
+      Tab 补全
+      Ctrl+C 中断
+      Ctrl+T 新标签
+    提示符与路径
+      PS 开头
+      反斜杠
+      盘符 C 冒号
+    错误翻译
+      not recognized
+      Access denied
+      scripts disabled
+    Unix 别名
+      ls cp mv rm
+      与 Mac 对齐
+
+```
+
 ## 最常用 15 个命令
 
 | 命令 | 干什么 | 例 |

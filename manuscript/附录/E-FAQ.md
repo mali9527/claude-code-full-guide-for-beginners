@@ -1,5 +1,49 @@
 # 附录 E：FAQ（常见问题 10 问）
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-39 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((附录 E · FAQ 10 问))
+    隐私与合规
+      文件会不会上传
+      公司数据政策
+    成本
+      月费大概多少
+      轻中重三档
+    安全回退
+      改坏怎么办
+      /rewind Esc git
+    模型选择
+      三款主力
+      默认 Sonnet
+    记忆机制
+      会话内
+      跨会话
+      MEMORY 与 CLAUDE
+    CLAUDE.md
+      一句话怎么写
+      不要用 /init
+    扩展五件套
+      Skill Command
+      Subagent Hook MCP
+    团队协作
+      共享进 git
+      私有不进 git
+    读完下一步
+      30 天挑战
+
+```
+
 ## 1. Claude 会偷看我的文件吗？
 
 不会"偷"，但**你 @ 引用或让它 `!cat` 的文件内容**会上传到 Anthropic 服务器（HTTPS 加密传输），最多暂存 30 天后删除，**不用于训练**。

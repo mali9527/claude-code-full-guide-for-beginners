@@ -2,6 +2,47 @@
 
 > 用法：Claude Code 输入框里输 `/`，选命令。这里按用途分组。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-37 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((附录 C · Slash 命令全表))
+    上下文管理
+      /clear
+      /compact
+      /status
+    安全网
+      /plan
+      /rewind
+    模型与配置
+      /model
+      /config
+      /permissions
+    记忆与项目
+      /memory
+      /init
+    会话管理
+      /help
+      /exit
+      /resume
+    特殊前缀
+      感叹号跑 shell
+      @ 引用文件
+    自定义命令
+      全局 ~/.claude
+      项目 .claude
+
+```
+
 ## 上下文管理
 
 | 命令 | 作用 | 本书哪讲 |

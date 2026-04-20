@@ -14,6 +14,48 @@
 - **不读这章会踩什么坑**：什么都丢给主 Claude，Ctx 爆得快、任务质量下降。
 - **读完你会多会什么事**：学会把**专门任务委派给专门"实习生"**——主 Claude 只拿结果，自己上下文保持清爽。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-29 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 22 章 · Subagents 入门))
+    Subagent 是什么
+      独立上下文的小 Claude
+      专项职责只返回结论
+    和 Skill·Command 本质区别
+      上下文是否独立
+      只返回报告不占主 Ctx
+    建代码审查员
+      建 agents 目录
+      写 code-reviewer.md
+      派它审 @文件
+    什么时候值得派
+      重型探索任务
+      有专业视角
+      可并行
+    什么时候不值
+      简单快速事
+      要多轮对话
+      跨职责任务
+    权限控制
+      tools 字段限定
+      最小权限原则
+      禁用 tools 全通配
+    三者联合工作流
+      Command 触发入口
+      Subagent 独立审
+      CLAUDE.md 提供规则
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

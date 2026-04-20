@@ -14,6 +14,42 @@
 - **不读这章会踩什么坑**：直接按网上教程敲命令，遇到报错不知道什么原因；装了一半放弃。
 - **读完你会多会什么事**：能独立走完安装和登录的完整流程，遇到失败能判断是哪一步出问题。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-09 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((第 2 章 · 安装 Claude Code))
+    先备两样东西
+      Anthropic 账号
+      Node.js 引擎
+    Mac 安装
+      npm install -g
+      权限不够用 sudo
+    Windows 安装
+      同样一行命令
+      用管理员 PowerShell
+    首次启动与登录
+      claude 启动
+      浏览器登录回调
+      对话界面验证
+    退出方式
+      Ctrl+C 两次
+      输入 /exit
+    三个常见失败
+      node 没装好
+      网络问题
+      登录回调失败
+```
+
 ---
 
 > 🎯 **【主线】—— 本章必读核心**

@@ -2,6 +2,56 @@
 
 > 读完本书后，值得进一步看的资料。**按优先级排列**——先看前面的。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-43 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((附录 I · 延伸阅读))
+    一级 官方权威
+      Anthropic 文档
+      GitHub 仓库
+      官方博客
+    二级 深度长文
+      HumanLayer CLAUDE.md
+      Ultimate Guide
+      Prompt 指南
+      Cookbook
+    三级 社区内容
+      Reddit
+      Hacker News
+      YouTube 与 B 站
+    四级 进阶话题
+      Agent SDK
+      MCP 生态
+      Tool Use
+    五级 基础补课
+      终端入门
+      Git 基础
+      Markdown 语法
+    六级 AI 视野
+      AI 2027
+      超越人类
+      Constitutional AI
+    避雷
+      3 分钟速成
+      半年没更新
+      极端论调
+    90 天节奏
+      前 30 扎实
+      中 30 深化
+      后 30 扩展
+
+```
+
 ## 一级：官方权威（最该看）
 
 ### 1. Anthropic 官方文档

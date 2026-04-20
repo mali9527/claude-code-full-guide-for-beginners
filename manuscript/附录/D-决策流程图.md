@@ -2,6 +2,52 @@
 
 > 本附录把书里反复出现的几个"该怎么选"汇总成流程图。图全部用 Mermaid 手绘风格绘制，GitHub 上直接渲染，可以直接右键保存图片或截图打印。
 
+### 本章地图（一眼看全貌）
+
+<!-- diagram: MM-38 -->
+```mermaid
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((附录 D · 决策流程图))
+    图 1 权限决策
+      读文件一般 Yes
+      改文件先看 diff
+      跑命令高危必退
+    图 2 模型选择
+      简单用 Haiku
+      日常用 Sonnet
+      难题切 Opus
+      超长切 Opus 1M
+    图 3 Ctx 应对
+      50% 以下放心
+      75% 就动手
+      90% 断崖
+    图 4 卡住怎么办
+      5 分钟原则
+      不试第三次
+      换方向或手动
+    图 5 信息分层
+      一次性会话说
+      跨项目 MEMORY
+      项目共享 CLAUDE
+      流程化 Skill
+    图 6 扩展选型
+      背景 CLAUDE.md
+      流程 Skill
+      快捷 Command
+      重活 Subagent
+      自动 Hook
+      外网 MCP
+
+```
+
 ## 图 1：权限决策流程（遇到弹窗怎么选）
 
 ```mermaid
