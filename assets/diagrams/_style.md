@@ -39,9 +39,10 @@ config:
 | 参数 | 标准 | MM-08 特例 | 原因 |
 |---|---|---|---|
 | `fontSize` | `17px` | `18px` | 作为"整本书一图看全"的门面图，节点数多但仍需易读 |
-| `mindmap.padding` | 默认 | `24` | 让密集的叶子之间留更多间隙，避免遮挡 |
-| `mindmap.maxNodeWidth` | 默认 | `240` | 固定节点最大宽度，防止长标题挤压布局 |
-| `mindmap.useMaxWidth` | 默认 `true` | `false` | 允许 SVG 按自然尺寸渲染——这张图就是要大，移动端可横向滚动 |
+| `mindmap.padding` | 默认 | `28` | 让密集的叶子之间留更多间隙，避免遮挡 |
+| `useMaxWidth` | 默认 `true` | `false`（顶层 + mindmap 双设） | 允许 SVG 按自然尺寸渲染——这张图就是要大，移动端可横向滚动 |
+
+> ⚠️ 实验教训：曾尝试 `mindmap.maxNodeWidth: 240` 想固定节点宽度，结果 CJK 文字被硬截无法换行。**不要在 mindmap 里用 `maxNodeWidth`**（至少当前 Mermaid 版本不友好），改由短文案 + 足够 padding 控制布局。
 
 **其他任何 mindmap 都不走这个例外**。如果未来另有"超大结构图"需求，先在这里记录。
 
