@@ -86,16 +86,30 @@ flowchart TD
 
 ## 图 6：扩展机制选型
 
+<!-- diagram: MM-01 -->
 ```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["我想让 Claude…"] --> B{"目的是什么?"}
-  B -->|"知道项目背景（每次都要）"| C["CLAUDE.md"]
-  B -->|"会做某类任务（偶尔用）"| D["Skill"]
-  B -->|"敲 /xxx 一键触发"| E["Custom Command"]
-  B -->|"派独立专员干重活"| F["Subagent"]
-  B -->|"某事件发生时自动触发"| G["Hook"]
-  B -->|"连接外部系统"| H["MCP"]
+---
+config:
+  theme: forest
+  themeVariables:
+    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
+    fontSize: "17px"
+    lineColor: "#D9D9D9"
+---
+mindmap
+  root((我想让 Claude...))
+    知道项目背景
+      CLAUDE.md
+    会做某类任务
+      Skill
+    敲 /xxx 一键触发
+      Custom Command
+    派独立专员干重活
+      Subagent
+    某事件自动触发
+      Hook
+    连接外部系统
+      MCP
 ```
 
 **口诀**：**CLAUDE.md 讲背景，Skill 讲流程，Command 给快捷键，Subagent 派替身，Hook 搞自动，MCP 接外网**。

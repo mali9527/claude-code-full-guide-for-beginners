@@ -30,6 +30,21 @@
 - **不要自己新增术语翻译**，先查 `术语翻译表.md`，需要新增就补进去再用
 - **截图分 Mac/Windows 分别放** `assets/images/mac` `assets/images/windows`
 
+### 插图规则（2026-04-20 确立）
+
+- **唯一启用的新插图类型：Mermaid mindmap**；其他类型（flowchart / Excalidraw / AI 插画 / 截图）暂缓。现有 ASCII 图和附录 D 的 handDrawn flowchart 作为存量保留，不新增同类。
+- 新增 mindmap 的三步流程：复制 `assets/diagrams/_template-mindmap.md` → 粘贴并分配 `MM-XX` ID → 在 `assets/diagrams/README.md` 清单里登记
+- **风格唯一真源**：`assets/diagrams/_style.md`（当前版本 `forest-v1`：forest 主题 + 苹果字体栈 + 17px + `#D9D9D9` 细线）。不要在单张图里覆盖这些参数
+- 所有 mindmap 必须带定位注释 `<!-- diagram: MM-XX -->`，便于全书 grep 追踪
+
+### 根 README.md 的定位
+
+根 `README.md` 是**读者入口**，不是开发者/写作者入口。维护原则：
+- 顶部：适合谁读 + 怎么读
+- 中部：全书目录（每章可点击直达 `.md` 文件）
+- 底部：项目状态、许可、反馈入口
+- 写作协作相关（需求文档 / 规范 / 术语表等）放在页底 `<details>` 折叠区，不抢读者视线
+
 ### 示例风格的硬约束
 
 - 对话用粗体标"**你**"、常规标"Claude"
