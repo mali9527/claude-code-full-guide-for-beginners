@@ -7,6 +7,10 @@
 **一本写给完全零基础读者的 Claude Code 系统入门书**
 不会编程、没用过终端、没碰过 AI 编程工具，也能从零读到上手用。
 
+📖 从**终端 / 命令行**入门讲起，覆盖 **安装配置 · 读文件 / 改文件 / 跑命令 · 权限机制 · 交互循环七步法 · 计划模式与撤销 · 信任校准 · 数据隐私 · 三层记忆 · CLAUDE.md · 模型与成本 · Prompt 输入技巧 · Skills / 自定义 Slash 命令 / Subagents / Hooks / MCP 五大扩展 · 团队协作**，全程 **Mac / Windows 双平台**手把手，配 **43 张 Mermaid 思维导图**。
+
+<sub>🏷️ **关键词**：Claude Code 中文教程 · Claude Code 入门 · Anthropic · AI 编程 · AI 编程助手 · AI Coding · 智能编程 · 零基础 · 新手入门 · 命令行入门 · 终端教程 · Prompt 工程 · 提示词技巧 · Agentic AI · Subagents · MCP · Hooks · Skills · Mac 教程 · Windows 教程 · Claude Code tutorial · Claude Code Chinese guide · beginner-friendly · zero-to-hero · learn AI coding</sub>
+
 [![Stars](https://img.shields.io/github/stars/mali9527/claude-code-full-guide-for-beginners?style=flat-square&color=5C9F5C&label=⭐%20Stars)](../../stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/mali9527/claude-code-full-guide-for-beginners?style=flat-square&color=5C9F5C&label=最近更新)](./修订日志.md)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-D5A021?style=flat-square)](./LICENSE)
