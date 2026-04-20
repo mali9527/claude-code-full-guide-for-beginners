@@ -1,0 +1,52 @@
+name: ❓ 使用问题 / 读后提问
+description: 按书操作时卡住了、或读完后还有疑问
+title: "[问题] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        如果开了 Discussions，**使用问题建议优先发到 Discussions**——那里更适合讨论。
+        这里是 Issue，主要用于"书本身"的问题。
+
+        提问前建议先翻 [附录 E · FAQ](../../blob/main/manuscript/附录/E-FAQ.md) 和 [附录 G · 报错自救手册](../../blob/main/manuscript/附录/G-报错自救手册.md)。
+
+  - type: input
+    id: context
+    attributes:
+      label: 你在哪一章 / 做什么操作时遇到的？
+      placeholder: 例如 · 第 2 章 §2.3 Windows PowerShell 安装步骤
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 你的操作系统
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你预期发生什么
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际发生了什么（贴出报错信息 / 截图）
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 你已经尝试过什么（可选）
+      description: 翻过哪些附录？查过哪些搜索结果？

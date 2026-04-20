@@ -1,0 +1,42 @@
+name: 💡 建议 / 改进
+description: 建议增加内容、重写某段、加新案例、改善某个讲法等
+title: "[建议] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎建议。请尽量具体——"这里不清楚" 比 "整本书可以写得更好" 更容易被采纳 🙏
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: 建议类型
+      options:
+        - 某段讲得不清楚，希望重写
+        - 希望增加新案例 / 新章节 / 新附录
+        - 希望补充某个场景的讲解
+        - 建议改动插图 / 流程图
+        - 其他（请在下方说明）
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: 相关章节（如果适用）
+      placeholder: 例如 · 第 13 章 · 三层记忆
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 具体建议
+      description: 尽量写清"问题"和"你希望怎么改"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景（可选）
+      description: 你的使用场景、你的读者画像、触发这个建议的具体情境

@@ -9,6 +9,7 @@
 
 [![Stars](https://img.shields.io/github/stars/mali9527/claude-code-full-guide-for-beginners?style=flat-square&color=5C9F5C&label=⭐%20Stars)](../../stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/mali9527/claude-code-full-guide-for-beginners?style=flat-square&color=5C9F5C&label=最近更新)](./修订日志.md)
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-D5A021?style=flat-square)](./LICENSE)
 ![Language](https://img.shields.io/badge/语言-简体中文-D5A021?style=flat-square)
 ![Status](https://img.shields.io/badge/状态-持续更新中-brightgreen?style=flat-square)
 ![Word Count](https://img.shields.io/badge/字数-17万+-5C9F5C?style=flat-square)
@@ -212,9 +213,10 @@
 ## 📝 关于这本书
 
 - **作者与协作方式**：由人类作者 + Claude（Anthropic 的 AI 助手）协作完成。写作方法论本身也是本书的话题之一。
-- **开源许可**：*待定*（规划中 · 倾向 CC BY-NC-SA 或 MIT）
-- **多语言版本**：当前为中文简体；设计上已考虑英文版 / 繁体版的本地化——欢迎译者联系。
+- **开源许可**：[CC BY-NC-SA 4.0](./LICENSE)——允许自由传播 / 修改 / 翻译，**禁止商用**，修改后必须保持同样协议开源。
+- **多语言版本**：当前为中文简体；欢迎翻译成英文版 / 繁体版（详见 [LICENSE](./LICENSE) 里的翻译说明）。
 - **引用本书**：欢迎引用 / 转载 / 用于公开课素材，请保留原始仓库链接即可。
+- **想参与写作 / 改稿**：读 [CONTRIBUTING.md](./CONTRIBUTING.md)，从改一个错字到贡献整章都欢迎。
 
 ---
 

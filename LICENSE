@@ -1,0 +1,74 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+Copyright (c) 2026 mali9527 (li.ma.aria@gmail.com)
+
+This work — including all Markdown manuscript, illustrations (Mermaid
+source + PNG renders), and ancillary documentation in this repository —
+is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License
+("CC BY-NC-SA 4.0").
+
+=======================================================================
+SUMMARY (for humans — the binding terms are in the full legal code)
+=======================================================================
+
+You are free to:
+
+  * SHARE — copy and redistribute the material in any medium or format
+  * ADAPT — remix, transform, and build upon the material
+
+Under the following terms:
+
+  * ATTRIBUTION — You must give appropriate credit to the original
+    author, provide a link to this repository and to the license, and
+    indicate if changes were made. You may do so in any reasonable
+    manner, but not in any way that suggests the licensor endorses you
+    or your use.
+
+  * NONCOMMERCIAL — You may not use the material for commercial
+    purposes. This includes (but is not limited to) selling the book,
+    bundling it as paid training material, or packaging it into a paid
+    course without explicit written permission from the author.
+
+  * SHAREALIKE — If you remix, transform, or build upon the material,
+    you must distribute your contributions under the same license
+    (CC BY-NC-SA 4.0) as the original.
+
+  * NO ADDITIONAL RESTRICTIONS — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+=======================================================================
+NOTES SPECIFIC TO THIS PROJECT
+=======================================================================
+
+* Ancillary Python scripts in this repository (e.g. build scripts) are
+  a minor non-substantive part of the work and also fall under
+  CC BY-NC-SA 4.0 for simplicity. If you need them under a
+  permissive code license for reuse, open an Issue to request.
+
+* Translation into other languages is explicitly welcomed and falls
+  under "Adapt" above. The translated work must remain under
+  CC BY-NC-SA 4.0 and credit this repository.
+
+* Quoting short excerpts (a paragraph or two) for reviews, blog posts,
+  or educational discussion is always permitted under fair use / fair
+  dealing and requires only normal attribution.
+
+* Commercial licensing is available. If you want to use this material
+  in a paid product, contact the author at li.ma.aria@gmail.com.
+
+=======================================================================
+FULL LEGAL CODE
+=======================================================================
+
+The full legal text of CC BY-NC-SA 4.0 is authoritative and lives at:
+
+  https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+A human-readable summary (informative, not binding) lives at:
+
+  https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+If any conflict arises between this summary and the full legal code at
+the URL above, the full legal code governs.

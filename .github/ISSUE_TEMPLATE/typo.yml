@@ -1,0 +1,40 @@
+name: 📝 内容错误 / 错字
+description: 书里发现错字、错误命令、失效链接、图片不显示等
+title: "[错字] "
+labels: ["typo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你抓错！写清楚 **哪里错了** 和 **该改成什么** 就行，不用长篇。
+
+  - type: input
+    id: location
+    attributes:
+      label: 错误位置
+      description: 哪一章 / 哪一段 / 哪一行？（贴 URL 也行）
+      placeholder: 例如 · 第 7 章 §7.2 第三段 第 2 行
+    validations:
+      required: true
+
+  - type: textarea
+    id: wrong
+    attributes:
+      label: 书里原文（错误的）
+      description: 直接粘贴原文片段
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: 应该改成什么
+      description: 你觉得正确的版本
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么你觉得原文错了（可选）
+      description: 如果是错字可以跳过。如果是事实/命令错误，附上你查到的依据

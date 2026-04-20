@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions（使用问题 / 读后感 / 交流）
+    url: https://github.com/mali9527/claude-code-full-guide-for-beginners/discussions
+    about: 使用过程遇到的问题、读后感、学习交流——建议发到 Discussions 而非 Issue。
+  - name: 📚 先翻 FAQ（高频问题 10 问）
+    url: https://github.com/mali9527/claude-code-full-guide-for-beginners/blob/main/manuscript/附录/E-FAQ.md
+    about: 提问前先看看这里——你的问题可能已经有答案。
+  - name: 🛟 报错自救手册
+    url: https://github.com/mali9527/claude-code-full-guide-for-beginners/blob/main/manuscript/附录/G-报错自救手册.md
+    about: 按书操作时报错？先按这份速查走一遍自救流程。
