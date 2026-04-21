@@ -4,12 +4,12 @@
 
 # Claude Code 零基础入门指南
 
-**一本写给完全零基础读者的 Claude Code 系统入门书**
+**一本写给完全零基础读者的 Claude Code 系统入门书** · **针对 Claude Opus 4.7 全面更新**
 不会编程、没用过终端、没碰过 AI 编程工具，也能从零读到上手用。
 
-📖 从**终端 / 命令行**入门讲起，覆盖 **安装配置 · 读文件 / 改文件 / 跑命令 · 权限机制 · 交互循环七步法 · 计划模式与撤销 · 信任校准 · 数据隐私 · 三层记忆 · CLAUDE.md · 模型与成本 · Prompt 输入技巧 · Skills / 自定义 Slash 命令 / Subagents / Hooks / MCP 五大扩展 · 团队协作**，全程 **Mac / Windows 双平台**手把手，配 **43 张 Mermaid 思维导图**。
+📖 从**终端 / 命令行**入门讲起，覆盖 **安装配置 · 读文件 / 改文件 / 跑命令 · 权限机制 · 交互循环七步法 · 计划模式与撤销 · 信任校准 · 数据隐私 · 三层记忆 · CLAUDE.md · 模型与成本（Opus 4.7 / Sonnet / Haiku 选型） · Prompt 输入技巧 · Skills / 自定义 Slash 命令 / Subagents / Hooks / MCP 五大扩展 · 团队协作**，全程 **Mac / Windows 双平台**手把手，配 **44 张 Mermaid 思维导图**。专设 **附录 J** 集中讲 Opus 4.7 的新概念、effort 档位、分词器变化与新手坑。
 
-<sub>🏷️ **关键词**：Claude Code 中文教程 · Claude Code 入门 · Anthropic · AI 编程 · AI 编程助手 · AI Coding · 智能编程 · 零基础 · 新手入门 · 命令行入门 · 终端教程 · Prompt 工程 · 提示词技巧 · Agentic AI · Subagents · MCP · Hooks · Skills · Mac 教程 · Windows 教程 · Claude Code tutorial · Claude Code Chinese guide · beginner-friendly · zero-to-hero · learn AI coding</sub>
+<sub>🏷️ **关键词**：Claude Code 中文教程 · Claude Code 入门 · Claude Opus 4.7 · Opus 4.7 新手指南 · Opus 4.7 使用教程 · Claude Opus 4.7 中文 · effort xhigh · Anthropic · AI 编程 · AI 编程助手 · AI Coding · 智能编程 · 零基础 · 新手入门 · 命令行入门 · 终端教程 · Prompt 工程 · 提示词技巧 · Agentic AI · Subagents · MCP · Hooks · Skills · Mac 教程 · Windows 教程 · Claude Code tutorial · Claude Opus 4.7 guide · Claude Code Chinese guide · beginner-friendly · zero-to-hero · learn AI coding</sub>
 
 [![Stars](https://img.shields.io/github/stars/mali9527/claude-code-full-guide-for-beginners?style=flat-square&color=5C9F5C&label=⭐%20Stars)](../../stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/mali9527/claude-code-full-guide-for-beginners?style=flat-square&color=5C9F5C&label=最近更新)](./修订日志.md)
@@ -17,7 +17,8 @@
 ![Language](https://img.shields.io/badge/语言-简体中文-D5A021?style=flat-square)
 ![Status](https://img.shields.io/badge/状态-持续更新中-brightgreen?style=flat-square)
 ![Word Count](https://img.shields.io/badge/字数-17万+-5C9F5C?style=flat-square)
-![Chapters](https://img.shields.io/badge/章节-27章+9附录-5C9F5C?style=flat-square)
+![Chapters](https://img.shields.io/badge/章节-27章+10附录-5C9F5C?style=flat-square)
+![Opus 4.7](https://img.shields.io/badge/针对-Claude%20Opus%204.7-D5A021?style=flat-square)
 
 ### [📖 一口气读完全书](./全书.md) &nbsp;·&nbsp; [📚 按章节读](#-完整目录) &nbsp;·&nbsp; ⭐ **[点个 Star](../../stargazers) 支持本书持续更新**
 
@@ -35,7 +36,7 @@
 
 **这本书就是写给这样的你的。**
 
-我们假设你**完全零基础**——不会编程、没用过终端、没装过 AI 编程工具——然后**手把手**带你走完 27 章 + 9 份附录，从"把电脑准备好"开始，到最后能把 Claude Code **稳定用在自己的日常工作里**。
+我们假设你**完全零基础**——不会编程、没用过终端、没装过 AI 编程工具——然后**手把手**带你走完 27 章 + 10 份附录，从"把电脑准备好"开始，到最后能把 Claude Code **稳定用在自己的日常工作里**。
 
 ---
 
@@ -189,6 +190,7 @@
 - [G 报错自救手册](./manuscript/附录/G-报错自救手册.md) · 分阶段速查
 - [H 桌面应用导览](./manuscript/附录/H-桌面应用导览.md) · 终端 ↔ 桌面概念对照
 - [I 延伸阅读](./manuscript/附录/I-延伸阅读.md) · 六级资源 + 90 天学习节奏
+- [J Claude Opus 4.7 新手指南](./manuscript/附录/J-Opus-4.7新手指南.md) · **2026-04 新增** · 新特性 + effort 档位 + 分词器变化 + 5 大新手坑
 
 ---
 
@@ -210,6 +212,7 @@
 - **2026-04-19** · 正文全书首版成稿（27 章 + 9 附录 ≈ 17 万字）
 - **2026-04-20** · 引入 Mermaid mindmap 插图机制，全书加入 43 张思维导图
 - **2026-04-20** · 新增全书单页合订版 + 每章上下篇导航
+- **2026-04-21** · **新增附录 J：Claude Opus 4.7 新手指南**（配套 Anthropic 2026-04-16 发布的 Opus 4.7）
 - 详细版本记录见 [修订日志.md](./修订日志.md)
 
 ---
