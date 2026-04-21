@@ -26,6 +26,8 @@
 
 ---
 
+> 🌐 **语言 / Language**： **简体中文（本页）** · [繁體中文](./zh-TW/README.md) · English（coming soon）
+
 ## 你是不是也遇到过这些
 
 - 听说 **Claude Code 很强**，打开教程一看全是"打开终端"、"pip install"、"cd 目录"——**直接劝退**
@@ -221,7 +223,7 @@
 
 - **作者**：马力（[@mali9527](https://github.com/mali9527) · li.ma.aria@gmail.com）
 - **开源许可**：[CC BY-NC-SA 4.0](./LICENSE)——允许自由传播 / 修改 / 翻译，**禁止商用**，修改后必须保持同样协议开源。
-- **多语言版本**：当前为中文简体；欢迎翻译成英文版 / 繁体版（详见 [LICENSE](./LICENSE) 里的翻译说明）。
+- **多语言版本**：[繁體中文版](./zh-TW/README.md) 已上线；英文版筹备中（详见 [LICENSE](./LICENSE) 里的翻译说明）。
 - **引用本书**：欢迎引用 / 转载 / 用于公开课素材，请保留原始仓库链接即可。
 - **想参与写作 / 改稿**：读 [CONTRIBUTING.md](./CONTRIBUTING.md)，从改一个错字到贡献整章都欢迎。
 
