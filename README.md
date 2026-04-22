@@ -20,7 +20,7 @@
 ![Chapters](https://img.shields.io/badge/章节-27章+10附录-5C9F5C?style=flat-square)
 ![Opus 4.7](https://img.shields.io/badge/针对-Claude%20Opus%204.7-D5A021?style=flat-square)
 
-### [📖 一口气读完全书](./全书.md) &nbsp;·&nbsp; [📚 按章节读](#-完整目录) &nbsp;·&nbsp; ⭐ **[点个 Star](../../stargazers) 支持本书持续更新**
+### [📖 一口气读完全书](./全书.md) &nbsp;·&nbsp; [📚 按章节读](#-完整目录) &nbsp;·&nbsp; [📕 下载 PDF（A5 · 15 MB）](./pdf-build/output/Claude-Code-零基础入门指南.pdf) &nbsp;·&nbsp; ⭐ **[点个 Star](../../stargazers) 支持本书持续更新**
 
 </div>
 
@@ -215,6 +215,8 @@
 - **2026-04-20** · 引入 Mermaid mindmap 插图机制，全书加入 43 张思维导图
 - **2026-04-20** · 新增全书单页合订版 + 每章上下篇导航
 - **2026-04-21** · **新增附录 J：Claude Opus 4.7 新手指南**（配套 Anthropic 2026-04-16 发布的 Opus 4.7）
+- **2026-04-22** · 新增 [繁體中文版](./zh-TW/README.md)（OpenCC s2twp 全书转繁）
+- **2026-04-22** · 新增 **A5 书籍级 PDF**（Typst + Pandoc + Mermaid-CLI，376 页 / 15 MB）→ [下载](./pdf-build/output/Claude-Code-零基础入门指南.pdf)
 - 详细版本记录见 [修订日志.md](./修订日志.md)
 
 ---

@@ -1,0 +1,12 @@
+# Generated intermediates
+chapters-md/
+chapters-typ/
+book.typ
+preview/
+
+# npm
+node_modules/
+
+# Regenerated from diagrams/*.mmd via mmdc — commit the .mmd (source of truth)
+# and the .png (built artifacts, saves contributors from needing puppeteer).
+diagrams/*.svg
