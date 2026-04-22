@@ -17,7 +17,7 @@
 ![Language](https://img.shields.io/badge/語言-繁體中文-D5A021?style=flat-square)
 ![Status](https://img.shields.io/badge/狀態-持續更新中-brightgreen?style=flat-square)
 ![Word Count](https://img.shields.io/badge/字數-17萬+-5C9F5C?style=flat-square)
-![Chapters](https://img.shields.io/badge/章節-27章+10附錄-5C9F5C?style=flat-square)
+![Chapters](https://img.shields.io/badge/章節-27章+11附錄-5C9F5C?style=flat-square)
 ![Opus 4.7](https://img.shields.io/badge/針對-Claude%20Opus%204.7-D5A021?style=flat-square)
 
 ### [📖 一口氣讀完全書](./全書.md) &nbsp;·&nbsp; [📚 按章節讀](#-完整目錄) &nbsp;·&nbsp; ⭐ **[點個 Star](../../stargazers) 支援本書持續更新**
@@ -193,6 +193,7 @@
 - [H 桌面應用導覽](./manuscript/附錄/H-桌面應用導覽.md) · 終端 ↔ 桌面概念對照
 - [I 延伸閱讀](./manuscript/附錄/I-延伸閱讀.md) · 六級資源 + 90 天學習節奏
 - [J Claude Opus 4.7 新手指南](./manuscript/附錄/J-Opus-4.7新手指南.md) · **2026-04 新增** · 新特性 + effort 檔位 + 分詞器變化 + 5 大新手坑
+- [K 接入第三方模型](./manuscript/附錄/K-第三方模型接入.md) · **2026-04 新增** · GLM / 通義 / Kimi / MiniMax · 接入步驟 + 切換方案 + 坑點
 
 ---
 

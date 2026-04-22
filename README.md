@@ -17,7 +17,7 @@
 ![Language](https://img.shields.io/badge/语言-简体中文-D5A021?style=flat-square)
 ![Status](https://img.shields.io/badge/状态-持续更新中-brightgreen?style=flat-square)
 ![Word Count](https://img.shields.io/badge/字数-17万+-5C9F5C?style=flat-square)
-![Chapters](https://img.shields.io/badge/章节-27章+10附录-5C9F5C?style=flat-square)
+![Chapters](https://img.shields.io/badge/章节-27章+11附录-5C9F5C?style=flat-square)
 ![Opus 4.7](https://img.shields.io/badge/针对-Claude%20Opus%204.7-D5A021?style=flat-square)
 
 ### [📖 一口气读完全书](./全书.md) &nbsp;·&nbsp; [📚 按章节读](#-完整目录) &nbsp;·&nbsp; [📕 下载 PDF（A5 · 15 MB）](./pdf-build/output/Claude-Code-零基础入门指南.pdf) &nbsp;·&nbsp; ⭐ **[点个 Star](../../stargazers) 支持本书持续更新**
@@ -193,6 +193,7 @@
 - [H 桌面应用导览](./manuscript/附录/H-桌面应用导览.md) · 终端 ↔ 桌面概念对照
 - [I 延伸阅读](./manuscript/附录/I-延伸阅读.md) · 六级资源 + 90 天学习节奏
 - [J Claude Opus 4.7 新手指南](./manuscript/附录/J-Opus-4.7新手指南.md) · **2026-04 新增** · 新特性 + effort 档位 + 分词器变化 + 5 大新手坑
+- [K 接入第三方模型](./manuscript/附录/K-第三方模型接入.md) · **2026-04 新增** · GLM / 通义 / Kimi / MiniMax · 接入步骤 + 切换方案 + 坑点
 
 ---
 
@@ -217,6 +218,7 @@
 - **2026-04-21** · **新增附录 J：Claude Opus 4.7 新手指南**（配套 Anthropic 2026-04-16 发布的 Opus 4.7）
 - **2026-04-22** · 新增 [繁體中文版](./zh-TW/README.md)（OpenCC s2twp 全书转繁）
 - **2026-04-22** · 新增 **A5 书籍级 PDF**（Typst + Pandoc + Mermaid-CLI，376 页 / 15 MB）→ [下载](./pdf-build/output/Claude-Code-零基础入门指南.pdf)
+- **2026-04-22** · **新增附录 K：接入第三方模型**（GLM / 通义 / Kimi / MiniMax 官方兼容 Anthropic 协议，日常任务可省 80%+ 成本）
 - 详细版本记录见 [修订日志.md](./修订日志.md)
 
 ---
