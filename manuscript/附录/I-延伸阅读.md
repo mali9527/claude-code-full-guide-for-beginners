@@ -224,7 +224,7 @@ mindmap
 
 **祝阅读愉快，用得顺手**。
 
-> 本书作者：**马力** · [@mali9527](https://github.com/mali9527) · li.ma.aria@gmail.com
+> 本书作者：**马力** · [@mali9527](https://github.com/mali9527)
 > 版权所有 © 2026 马力（Ma Li），以 [CC BY-NC-SA 4.0](../../LICENSE) 协议开源。转载 / 翻译 / 引用请保留本署名。
 
 
