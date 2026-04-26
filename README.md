@@ -16,8 +16,8 @@
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-D5A021?style=flat-square)](./LICENSE)
 ![Language](https://img.shields.io/badge/语言-简体中文-D5A021?style=flat-square)
 ![Status](https://img.shields.io/badge/状态-持续更新中-brightgreen?style=flat-square)
-![Word Count](https://img.shields.io/badge/字数-17万+-5C9F5C?style=flat-square)
-![Chapters](https://img.shields.io/badge/章节-27章+11附录-5C9F5C?style=flat-square)
+![Word Count](https://img.shields.io/badge/字数-约8万-5C9F5C?style=flat-square)
+![Chapters](https://img.shields.io/badge/章节-28章+11附录-5C9F5C?style=flat-square)
 ![Opus 4.7](https://img.shields.io/badge/针对-Claude%20Opus%204.7-D5A021?style=flat-square)
 
 ### [📖 一口气读完全书](./全书.md) &nbsp;·&nbsp; [📚 按章节读](#-完整目录) &nbsp;·&nbsp; [📕 下载 PDF（A5 · 15 MB）](./pdf-build/output/Claude-Code-零基础入门指南.pdf) &nbsp;·&nbsp; ⭐ **[点个 Star](../../stargazers) 支持本书持续更新**
@@ -118,8 +118,9 @@
 
 ## 🔥 不知道从哪开始？试试这 3 章
 
-如果你想先"试读"感受一下本书风格，我们建议从这三章开始：
+如果你想先"试读"感受一下本书风格，我们建议从这几章开始：
 
+- 🆓 **[第 0 章 · 先告诉你怎么免费用上 Claude Code](./manuscript/00-前言/01-免费用上Claude-Code.md)** — **2026-04 新增** · 没信用卡 / 没海外手机号也能跑通，国内零成本免费方案 + cc-switch 切换工具
 - 🌱 **[第 3 章 · 你的第一次对话](./manuscript/part1-从零起步/03-你的第一次对话.md)** — 手把手带你和 Claude Code 说第一句话，**每一步都有预期结果 + 失败兜底**
 - 🧠 **[第 13 章 · 三层记忆](./manuscript/part3-深度概念/13-三层记忆.md)** — 理解 Claude "记性"的真相，**配 mindmap 一眼看穿**
 - ⚠️ **[第 16 章 · 新手 10 大错误](./manuscript/part4-避坑与判断力/16-新手10大错误.md)** — 把别人踩过的坑一次看完，**省你半年学习成本**
@@ -129,7 +130,8 @@
 ## 📖 完整目录
 
 ### 前言
-- [00 本书怎么读](./manuscript/00-前言/00-本书怎么读.md)
+- [前言 · 本书怎么读](./manuscript/00-前言/00-本书怎么读.md)
+- [第 0 章 · 先告诉你怎么免费用上 Claude Code](./manuscript/00-前言/01-免费用上Claude-Code.md) · **2026-04 新增** · 国内零成本跑通 · 智谱 / 百炼 / 魔搭 / 硅基 / Kimi / MiniMax / NIM / cc-switch
 
 ### 第一部分 · 从零起步
 > 前 5 章是全书颗粒度最细的地方，每一步都有 Mac / Windows 分开的完整流程和失败兜底。
@@ -212,13 +214,14 @@
 
 ## 📊 项目状态
 
-- **2026-04-19** · 正文全书首版成稿（27 章 + 9 附录 ≈ 17 万字）
+- **2026-04-19** · 正文全书首版成稿（27 章 + 9 附录 ≈ 8 万字）
 - **2026-04-20** · 引入 Mermaid mindmap 插图机制，全书加入 43 张思维导图
 - **2026-04-20** · 新增全书单页合订版 + 每章上下篇导航
 - **2026-04-21** · **新增附录 J：Claude Opus 4.7 新手指南**（配套 Anthropic 2026-04-16 发布的 Opus 4.7）
 - **2026-04-22** · 新增 [繁體中文版](./zh-TW/README.md)（OpenCC s2twp 全书转繁）
 - **2026-04-22** · 新增 **A5 书籍级 PDF**（Typst + Pandoc + Mermaid-CLI，376 页 / 15 MB）→ [下载](./pdf-build/output/Claude-Code-零基础入门指南.pdf)
 - **2026-04-22** · **新增附录 K：接入第三方模型**（GLM / 通义 / Kimi / MiniMax 官方兼容 Anthropic 协议，日常任务可省 80%+ 成本）
+- **2026-04-27** · **新增第 0 章：先告诉你怎么免费用上 Claude Code**（前言之后、第 1 章之前；零基础国内零成本跑通指南，智谱 GLM 主推 + 6 条备选 + cc-switch 切换工具）
 - 详细版本记录见 [修订日志.md](./修订日志.md)
 
 ---

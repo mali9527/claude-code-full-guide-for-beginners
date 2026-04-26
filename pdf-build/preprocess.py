@@ -20,6 +20,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 # Chapter order (matches the build_book.py order we use for the web build)
 CHAPTERS = [
     ("00", "manuscript/00-前言/00-本书怎么读.md"),
+    ("00b", "manuscript/00-前言/01-免费用上Claude-Code.md"),
     ("01", "manuscript/part1-从零起步/01-先把电脑准备好.md"),
     ("02", "manuscript/part1-从零起步/02-安装-Claude-Code.md"),
     ("03", "manuscript/part1-从零起步/03-你的第一次对话.md"),
@@ -57,6 +58,7 @@ CHAPTERS = [
     ("H", "manuscript/附录/H-桌面应用导览.md"),
     ("I", "manuscript/附录/I-延伸阅读.md"),
     ("J", "manuscript/附录/J-Opus-4.7新手指南.md"),
+    ("K", "manuscript/附录/K-第三方模型接入.md"),
 ]
 
 # Match ``### 本章地图（...）\n\n<!-- diagram: MM-XX -->\n```mermaid\n...\n``` ``

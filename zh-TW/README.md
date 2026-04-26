@@ -16,8 +16,8 @@
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-D5A021?style=flat-square)](../LICENSE)
 ![Language](https://img.shields.io/badge/語言-繁體中文-D5A021?style=flat-square)
 ![Status](https://img.shields.io/badge/狀態-持續更新中-brightgreen?style=flat-square)
-![Word Count](https://img.shields.io/badge/字數-17萬+-5C9F5C?style=flat-square)
-![Chapters](https://img.shields.io/badge/章節-27章+11附錄-5C9F5C?style=flat-square)
+![Word Count](https://img.shields.io/badge/字數-約8萬-5C9F5C?style=flat-square)
+![Chapters](https://img.shields.io/badge/章節-28章+11附錄-5C9F5C?style=flat-square)
 ![Opus 4.7](https://img.shields.io/badge/針對-Claude%20Opus%204.7-D5A021?style=flat-square)
 
 ### [📖 一口氣讀完全書](./全書.md) &nbsp;·&nbsp; [📚 按章節讀](#-完整目錄) &nbsp;·&nbsp; ⭐ **[點個 Star](../../stargazers) 支援本書持續更新**
@@ -118,8 +118,9 @@
 
 ## 🔥 不知道從哪開始？試試這 3 章
 
-如果你想先"試讀"感受一下本書風格，我們建議從這三章開始：
+如果你想先"試讀"感受一下本書風格，我們建議從這幾章開始：
 
+- 🆓 **[第 0 章 · 先告訴你怎麼免費用上 Claude Code](./manuscript/00-前言/01-免費用上Claude-Code.md)** — **2026-04 新增** · 沒信用卡 / 沒海外手機號也能跑通，國內零成本免費方案 + cc-switch 切換工具
 - 🌱 **[第 3 章 · 你的第一次對話](./manuscript/part1-從零起步/03-你的第一次對話.md)** — 手把手帶你和 Claude Code 說第一句話，**每一步都有預期結果 + 失敗兜底**
 - 🧠 **[第 13 章 · 三層記憶](./manuscript/part3-深度概念/13-三層記憶.md)** — 理解 Claude "記性"的真相，**配 mindmap 一眼看穿**
 - ⚠️ **[第 16 章 · 新手 10 大錯誤](./manuscript/part4-避坑與判斷力/16-新手10大錯誤.md)** — 把別人踩過的坑一次看完，**省你半年學習成本**
@@ -129,7 +130,8 @@
 ## 📖 完整目錄
 
 ### 前言
-- [00 本書怎麼讀](./manuscript/00-前言/00-本書怎麼讀.md)
+- [前言 · 本書怎麼讀](./manuscript/00-前言/00-本書怎麼讀.md)
+- [第 0 章 · 先告訴你怎麼免費用上 Claude Code](./manuscript/00-前言/01-免費用上Claude-Code.md) · **2026-04 新增** · 國內零成本跑通 · 智譜 / 百煉 / 魔搭 / 矽基 / Kimi / MiniMax / NIM / cc-switch
 
 ### 第一部分 · 從零起步
 > 前 5 章是全書顆粒度最細的地方，每一步都有 Mac / Windows 分開的完整流程和失敗兜底。
@@ -212,10 +214,12 @@
 
 ## 📊 專案狀態
 
-- **2026-04-19** · 正文全書首版成稿（27 章 + 9 附錄 ≈ 17 萬字）
+- **2026-04-19** · 正文全書首版成稿（27 章 + 9 附錄 ≈ 8 萬字）
 - **2026-04-20** · 引入 Mermaid mindmap 插圖機制，全書加入 43 張思維導圖
 - **2026-04-20** · 新增全書單頁合訂版 + 每章上下篇導航
 - **2026-04-21** · **新增附錄 J：Claude Opus 4.7 新手指南**（配套 Anthropic 2026-04-16 釋出的 Opus 4.7）
+- **2026-04-22** · **新增附錄 K：接入第三方模型**（GLM / 通義 / Kimi / MiniMax 官方相容 Anthropic 協議，日常任務可省 80%+ 成本）
+- **2026-04-27** · **新增第 0 章：先告訴你怎麼免費用上 Claude Code**（前言之後、第 1 章之前；零基礎國內零成本跑通指南，智譜 GLM 主推 + 6 條備選 + cc-switch 切換工具）
 - 詳細版本記錄見 [修訂日誌.md](../修订日志.md)
 
 ---
