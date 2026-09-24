@@ -1,0 +1,18 @@
+schema_version: 1
+title: 五个动手前的提醒
+reader_question: 如何理解“五个动手前的提醒”？
+takeaway: 开工前先缩小任务、补齐背景、确认范围与材料。
+source_sections:
+- 16.1 错误 1：把 /init 的草稿直接当成项目规则
+placement: 16.1 错误 1：把 /init 的草稿直接当成项目规则
+composition: 五个小手绘场景对应草稿审核、敏感材料、修改核对、任务混杂、读取范围。
+content_guard: 每格只一句提醒；具体十条仍在正文。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 开工前先缩小任务、补齐背景、确认范围与材料。
+source_ids:
+- MM-23
+- MM-05
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

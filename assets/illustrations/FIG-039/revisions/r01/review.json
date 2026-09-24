@@ -1,0 +1,16 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-09-24",
+  "image_sha256": "4c11b4fbfa4d6830ec2c1471389c357b0d0cb275ba7b45ce2390ae845d4d95c9",
+  "input_fingerprint": "43f5e00e47b9b865cd58fc30a3e8297148942c75a091853f833bcddcc410752c",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "scope": "Actual generated image viewed. Exact labels, arrow relations, opaque grid paper and black gel-pen appearance checked; no repeated interface-version footer.",
+  "color_check": "neutral-gray-v1",
+  "paper": "same supplied fixed fine-grid master",
+  "limitations": "Illustration draft; reader trial and final PDF proof pending. Cross-engine review is optional and was not performed.",
+  "placement": "pending"
+}

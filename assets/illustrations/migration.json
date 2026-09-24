@@ -1,0 +1,867 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-24",
+  "source_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "scope": "49 registered diagrams; supplemental ASCII/UI work is separately listed in the human-readable plan",
+  "style_direction": "approved: fine grid black gel-pen notebook",
+  "proposals": [
+    {
+      "proposal_id": "P-01",
+      "unit": "preface",
+      "source_ids": [
+        "MM-08"
+      ],
+      "heading": "0.4 章节地图",
+      "title": "六站阅读路线",
+      "composition": "一条笔记本上的旅行路线，六个站点只写阶段目标；附录画成旁边的小工具袋。",
+      "content_guard": "不把四十个章节塞回一张图；精确目录仍由正文提供。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/00-前言/00-本书怎么读.md",
+      "source_sha256": "8e0f4caa4d3d4708dfbd3b6f5e1a68e39d611e9829089b28488e7239ab089f3b"
+    },
+    {
+      "proposal_id": "P-02",
+      "unit": "ch-00",
+      "source_ids": [
+        "MM-46"
+      ],
+      "heading": "0.1 三件东西，不要混成一件",
+      "title": "程序、模型、账户是三件事",
+      "composition": "电脑上的程序、提供能力的模型服务、代表使用资格的账户卡并排，各一条短说明。",
+      "content_guard": "不暗示一张账户卡包含所有模型或免费额度。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/00-前言/01-免费用上Claude-Code.md",
+      "source_sha256": "fcc8ca2786c89c4b3aad3f9be9feab930fc48c8bf0db879d4aab9d76335382a0"
+    },
+    {
+      "proposal_id": "P-03",
+      "unit": "ch-01",
+      "source_ids": [
+        "MM-07"
+      ],
+      "heading": "1.3 第一次使用：看懂提示符，输入 `pwd`",
+      "title": "先认位置，再输命令",
+      "composition": "手绘 Mac/Windows 提示符局部，用圈注标出输入位置；小文件夹表示当前目录。",
+      "content_guard": "两平台分开标注；去掉旧图“只能住终端”的绝对表述。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part1-从零起步/01-先把电脑准备好.md",
+      "source_sha256": "e35e2251960fa891f11f382aabe122bf9a1b0421367f8e9370e59a3a208601e2"
+    },
+    {
+      "proposal_id": "P-04",
+      "unit": "ch-02",
+      "source_ids": [
+        "MM-09"
+      ],
+      "heading": "2.1 安装前，先确认你准备好了什么",
+      "title": "安装到第一次成功的四站",
+      "composition": "准备条件→对应平台安装→检查结果→进入练习目录，手绘路标配小图标。",
+      "content_guard": "不把安装成功等同于登录成功；完整命令留在代码块。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part1-从零起步/02-安装-Claude-Code.md",
+      "source_sha256": "31a05460d23fd825f98302c0aa0a064e4255c910968b6a5a58c5f479d0d5b568"
+    },
+    {
+      "proposal_id": "P-05",
+      "unit": "ch-03",
+      "source_ids": [
+        "MM-10"
+      ],
+      "heading": "3.3 认识 Claude Code 的界面",
+      "title": "认识对话界面",
+      "composition": "一张手绘终端窗口，两根箭头分别指消息区和输入区；与本轮样图同一方向。",
+      "content_guard": "示意必须明示；不把欢迎横幅、状态栏或弹窗画成永远必有。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part1-从零起步/03-你的第一次对话.md",
+      "source_sha256": "e8dd9d639f94fec256fe4eb1fb6cd3e8075ccc5e00ef6db60b78528b26c4a32f"
+    },
+    {
+      "proposal_id": "P-06",
+      "unit": "ch-04",
+      "source_ids": [
+        "MM-11"
+      ],
+      "heading": "4.1 把它理解成能够动手的助手",
+      "title": "你定方向，助手动手",
+      "composition": "任务卡交到助手工位，助手交回结果，人用清单核对；形成可继续的三步场景。",
+      "content_guard": "不套用“聊天产品只能聊天”或“交代一句就不用管”的过时二分。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part1-从零起步/04-Claude-Code到底是什么.md",
+      "source_sha256": "81ca3b1ab30c69f1080fae801d848b18cf690a7774315f9e8d7d65339eea2d2a"
+    },
+    {
+      "proposal_id": "P-07",
+      "unit": "ch-05",
+      "source_ids": [
+        "MM-12"
+      ],
+      "heading": "5.2 `@` 引用的具体用法",
+      "title": "把正确的材料交给它",
+      "composition": "手从文件夹中挑出一张笔记交到工作台，标出 @ 的指向，再以一个短提问示意。",
+      "content_guard": "不画“整个硬盘自动可见”；选择文件与自动读取能力须分清。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part2-日常使用/05-让它读文件.md",
+      "source_sha256": "2190c49a164a1297a5c422f8f0d84405720566aa07cf8cb6260d2d34041784c7"
+    },
+    {
+      "proposal_id": "P-08",
+      "unit": "ch-06",
+      "source_ids": [
+        "MM-13"
+      ],
+      "heading": "6.1 什么是 diff（修改对比图）",
+      "title": "一眼认出修改前后",
+      "composition": "黑白手绘 diff 局部，旧行以减号和轻划线表示，新行以加号和圈注表示。",
+      "content_guard": "不用红绿颜色；真实完整 diff 仍是可复制文本。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part2-日常使用/06-让它改文件.md",
+      "source_sha256": "b8549ccb01900e852ad20276f71634d1c13e563ff49a5cdb2daa09d074606270"
+    },
+    {
+      "proposal_id": "P-09",
+      "unit": "ch-07",
+      "source_ids": [
+        "MM-14",
+        "MM-03"
+      ],
+      "heading": "7.2 权限机制：先学三种，再认识自动模式",
+      "title": "先看动作，再看授权",
+      "composition": "同一操作请求通过三张审核卡：做什么、作用哪里、当前规则；旁边小注解释模式改变处理方式。",
+      "content_guard": "不把模式画成固定安全等级阶梯，不承诺每个动作都弹窗。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part2-日常使用/07-让它跑命令加权限机制.md",
+      "source_sha256": "1ee7180bf9fb615a2d7d30288f3f735400f696f0cd4126b8b281b986425f1ed5"
+    },
+    {
+      "proposal_id": "P-10",
+      "unit": "ch-08",
+      "source_ids": [
+        "MM-15"
+      ],
+      "heading": "8.2 七步走一遍完整流程",
+      "title": "人和助手的一次协作循环",
+      "composition": "两条手绘泳道分“你”和“助手”，七个短节点按正文教学流程串联，返回箭头清楚。",
+      "content_guard": "七步为教学拆解；不能暗示产品强制等待七次批准。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part2-日常使用/08-交互循环七步法.md",
+      "source_sha256": "8dfe29c56a3464d0ada6b4c54c08b4d0813f54157df0df7a06ac6cf6b4b450b7"
+    },
+    {
+      "proposal_id": "P-11",
+      "unit": "ch-09",
+      "source_ids": [
+        "MM-16"
+      ],
+      "heading": "9.1 先认清：规划、回退、备份",
+      "title": "计划、回退、备份各管一段",
+      "composition": "开始前的草图、过程中的检查点、长期保存的档案盒排成时间轴。",
+      "content_guard": "外发、安装等影响不能画进一键倒带的范围。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part2-日常使用/09-计划模式与撤销.md",
+      "source_sha256": "e7c9d54ea648f80c8d011becfa34593454898a1016ea9c7e9ac72ea4a736e40c"
+    },
+    {
+      "proposal_id": "P-12",
+      "unit": "ch-10",
+      "source_ids": [
+        "MM-17"
+      ],
+      "heading": "10.2 验证频谱——按改动风险选检查深度",
+      "title": "影响越大，检查越仔细",
+      "composition": "四级阶梯放置格式文件、普通稿件、业务结果、敏感操作，各配核对动作。",
+      "content_guard": "这是本书的审核建议，不是软件自动划分的权限等级。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part2-日常使用/10-信任校准.md",
+      "source_sha256": "ece6a171b525d87c7f94f08a78793ea7d3021ec9d3d93ac39305d68f62b0b902"
+    },
+    {
+      "proposal_id": "P-13",
+      "unit": "ch-11",
+      "source_ids": [
+        "MM-18"
+      ],
+      "heading": "11.1 先看一张图：一次对话的数据去了哪",
+      "title": "一次请求的数据去哪",
+      "composition": "本地文件→本次请求材料→所连接服务商→返回结果，纸面上清楚区分本地与远端。",
+      "content_guard": "不画整盘必上传；保存、训练和传输三个概念分开。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part3-深度概念/11-你的数据去哪了.md",
+      "source_sha256": "87b2c93301138e87f97a5086c2a2baf350f2b03fdc0da8010cefb69bfaadf989"
+    },
+    {
+      "proposal_id": "P-14",
+      "unit": "ch-12",
+      "source_ids": [
+        "MM-19"
+      ],
+      "heading": "12.1 比喻先行：一个熬夜的人",
+      "title": "上下文像当前工作桌",
+      "composition": "同一工作桌左右对比：左边堆杂乱纸张，右边摆当前任务材料，保留任务卡。",
+      "content_guard": "不暗示清理会话删除磁盘文件；不用固定容量或占用百分比。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part3-深度概念/12-Claude为什么会变糊涂.md",
+      "source_sha256": "ae789f40ff49f576dc5a54eacb613295e677298bc692ac1aa02f6f07a6e4899c"
+    },
+    {
+      "proposal_id": "P-15",
+      "unit": "ch-13",
+      "source_ids": [
+        "MM-20",
+        "MM-02"
+      ],
+      "heading": "13.1 三层记忆是什么——先看比喻",
+      "title": "资料各有自己的位置",
+      "composition": "一张场景图：当前桌面、工作笔记本、岗位说明卡和手册柜，四个短标签。",
+      "content_guard": "不再叫“四层大脑”，不以金字塔表达固定加载优先级。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part3-深度概念/13-三层记忆.md",
+      "source_sha256": "1c9139eddd2d381feb91a225e85bf468c035e4995fce7000f53de4a82037c11f"
+    },
+    {
+      "proposal_id": "P-16",
+      "unit": "ch-14",
+      "source_ids": [
+        "MM-21"
+      ],
+      "heading": "14.2 CLAUDE.md 的三个核心作用",
+      "title": "项目说明是一张路标",
+      "composition": "短说明卡上三个区：项目、约定、资料入口；手绘箭头指向旁边扩展文档。",
+      "content_guard": "指向真实存在的资料；不把所有材料抄进这张卡。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part3-深度概念/14-写好你的CLAUDE.md.md",
+      "source_sha256": "e78794f801803efc855aab3e2d39f4b19612439ea4247a11ae00e83c03703f98"
+    },
+    {
+      "proposal_id": "P-17",
+      "unit": "ch-15",
+      "source_ids": [
+        "MM-22",
+        "MM-04"
+      ],
+      "heading": "15.3 学会选模型，别把三个开关混成一个",
+      "title": "模型、投入和费用分开看",
+      "composition": "笔记本上三只简单旋钮/卡片：“选模型”“思考投入”“费用路径”，下方放结果核对单。",
+      "content_guard": "不画成真实设置页；不固化价格、默认值或模型排名。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part3-深度概念/15-模型与成本.md",
+      "source_sha256": "415860bc8d16db0a3a44d1e13f62efb5aa97af34d1891b8e1a77db496cd966a8"
+    },
+    {
+      "proposal_id": "P-18",
+      "unit": "ch-16",
+      "source_ids": [
+        "MM-23",
+        "MM-05"
+      ],
+      "heading": "16.1 错误 1：把 /init 的草稿直接当成项目规则",
+      "title": "五个动手前的提醒",
+      "composition": "五个小手绘场景对应草稿审核、敏感材料、修改核对、任务混杂、读取范围。",
+      "content_guard": "每格只一句提醒；具体十条仍在正文。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part4-避坑与判断力/16-新手10大错误.md",
+      "source_sha256": "39783bc4dfc860c5cc5124b2f3349e92c85c365059d31ab3b85f1afb0cba1a11"
+    },
+    {
+      "proposal_id": "P-19",
+      "unit": "ch-16",
+      "source_ids": [
+        "MM-23",
+        "MM-05"
+      ],
+      "heading": "16.6 错误 6：让 Claude 干完全不懂的活然后全盘信",
+      "title": "五个合作时的提醒",
+      "composition": "五个小手绘场景对应陌生领域、模糊任务、配置费用、情绪反复、规则措辞。",
+      "content_guard": "与上一张分开，保持手机单格可读；不要堆十条小字。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part4-避坑与判断力/16-新手10大错误.md",
+      "source_sha256": "39783bc4dfc860c5cc5124b2f3349e92c85c365059d31ab3b85f1afb0cba1a11"
+    },
+    {
+      "proposal_id": "P-20",
+      "unit": "ch-17",
+      "source_ids": [
+        "MM-24"
+      ],
+      "heading": "17.1 核心原则：5 分钟原则",
+      "title": "卡住时换一条路",
+      "composition": "两条失败脚印停在岔路前，路标指向拆小、换方法、自己完成。",
+      "content_guard": "具体分钟数作为本书经验建议，不能当成功率承诺。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part4-避坑与判断力/17-什么时候该停下来.md",
+      "source_sha256": "b7905db290c35aea7c57b19595d7f3968de5897f5834c4b8ed67ce14b358d1ee"
+    },
+    {
+      "proposal_id": "P-21",
+      "unit": "ch-18",
+      "source_ids": [
+        "MM-25",
+        "MM-06"
+      ],
+      "heading": "18.2 先查清：我在哪、用了多少、什么占着空间",
+      "title": "按问题找命令入口",
+      "composition": "四张手绘索引卡：看状态、看消耗、检查改动、继续会话，每张最多两个短命令。",
+      "content_guard": "其他命令保留正文速查表；不混普通终端与会话内命令。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part4-避坑与判断力/18-常用快捷命令全览.md",
+      "source_sha256": "9ee78d5822d299ea9c36d6b500ac90df7c77d83f25fe8a282ecaf8b260179ffe"
+    },
+    {
+      "proposal_id": "P-22",
+      "unit": "ch-19",
+      "source_ids": [
+        "MM-26"
+      ],
+      "heading": "19.6 粘贴大段文字的正确姿势",
+      "title": "长材料先整理，再输入",
+      "composition": "短文字直接输入、长材料放文件再引用的双路径；画两处发送前核对圈注。",
+      "content_guard": "快捷键因终端不同而异，图不宣称跨平台统一。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part4-避坑与判断力/19-输入技巧.md",
+      "source_sha256": "81da1333c9245389c220e925f0ae2561d9cc5bf18f6af53e9cc218c30caefcfc"
+    },
+    {
+      "proposal_id": "P-23",
+      "unit": "ch-20",
+      "source_ids": [
+        "MM-27"
+      ],
+      "heading": "20.1 技能负责一类任务，项目规则负责共同约定",
+      "title": "需要时取出任务手册",
+      "composition": "柜门上只有简短目录，选中的手册打开到桌面，展示描述与完整流程的分工。",
+      "content_guard": "不暗示描述不占空间或任务结束后内容立即消失。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part5-扩展能力/20-Skills入门.md",
+      "source_sha256": "dcd18ea02c104308db2f7e87731725275164e7abdc97ac48da003b16c43f6663"
+    },
+    {
+      "proposal_id": "P-24",
+      "unit": "ch-21",
+      "source_ids": [
+        "MM-28"
+      ],
+      "heading": "21.1 斜杠是入口，不是另一种智能",
+      "title": "斜杠是打开手册的入口",
+      "composition": "手绘输入区里一个 /my-daily，箭头连到同名任务手册和带材料的任务卡。",
+      "content_guard": "不把 Slash 当成另一套独立智能或自动获权。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part5-扩展能力/21-自定义Slash命令.md",
+      "source_sha256": "7601f74c24eb7a8cad05a9da702ced253cc638acba248ddd1ab802c9d7346541"
+    },
+    {
+      "proposal_id": "P-25",
+      "unit": "ch-22",
+      "source_ids": [
+        "MM-29"
+      ],
+      "heading": "22.1 独立的是工作记忆，不是整台电脑",
+      "title": "独立工作台，共享文件柜",
+      "composition": "主助手与专项助手分别坐在两张桌边，各有自己的材料，背后共用文件柜。",
+      "content_guard": "清楚显示独立上下文不等于文件隔离；不画无条件并行写入。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part5-扩展能力/22-Subagents入门.md",
+      "source_sha256": "b224e1ade3848c9b3672817740ae8fe8066db276e7a0e1a567cdc297885f3e36"
+    },
+    {
+      "proposal_id": "P-26",
+      "unit": "ch-23",
+      "source_ids": [
+        "MM-30"
+      ],
+      "heading": "23.1 先决定在哪个时刻做什么",
+      "title": "事件触发一次小检查",
+      "composition": "事件铃→检查小脚本→结果便签，事前和事后位置用两条短时间线区分。",
+      "content_guard": "检查报告不等于撤销已发生的动作。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part5-扩展能力/23-Hooks入门.md",
+      "source_sha256": "63c0a7ffe8bda12ef8614bab2435ca30e79297f2eb505259ae47748eaa0d4e58"
+    },
+    {
+      "proposal_id": "P-27",
+      "unit": "ch-24",
+      "source_ids": [
+        "MM-31"
+      ],
+      "heading": "24.2 先把三层权限分开",
+      "title": "连接、账号、动作分三道检查",
+      "composition": "扩展坞连接外部资料柜，沿途三个检查卡：地址、账户、动作许可。",
+      "content_guard": "连通不等于资源全可见，也不等于可修改。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part5-扩展能力/24-MCP入门.md",
+      "source_sha256": "bfabe63f1c6bf1fb3148504d38d6da3bfcf2ec3b31d41708c50dbafcf6942182"
+    },
+    {
+      "proposal_id": "P-28",
+      "unit": "ch-25",
+      "source_ids": [
+        "MM-32"
+      ],
+      "heading": "25.1 共享什么、不共享什么——一张表",
+      "title": "共享桌与个人抽屉",
+      "composition": "公共桌上放项目说明和示例，个人抽屉放个人设置；凭据用封口小袋表示。",
+      "content_guard": "不展示秘密值，不把加入忽略规则画成抹掉历史。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part6-融入日常/25-团队协作基础.md",
+      "source_sha256": "31c05bf8c9f8a323091e59aba5f4560713f26acf2ee9d25982bfba0ec72f98ce"
+    },
+    {
+      "proposal_id": "P-29",
+      "unit": "ch-26",
+      "source_ids": [
+        "MM-33"
+      ],
+      "heading": "26.2 想换个界面，还是想换台机器执行",
+      "title": "界面在哪，任务在哪运行",
+      "composition": "电脑、远端机器和控制窗口分别画成三张情境小卡，用执行标记说明位置。",
+      "content_guard": "具体产品支持范围回到已核验正文，不仅看界面推断运行地点。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part6-融入日常/26-进阶能力速览.md",
+      "source_sha256": "bf90ee1c2dc252e5896481174a8d56d1d28295ad164321173959477039525da0"
+    },
+    {
+      "proposal_id": "P-30",
+      "unit": "ch-27",
+      "source_ids": [
+        "MM-34"
+      ],
+      "heading": "27.2 30 天挑战清单",
+      "title": "四周练习路线",
+      "composition": "四周里程牌从日常练习走向资料管理、扩展和真实工作，小脚印连起来。",
+      "content_guard": "这是练习建议，不保证四周成为专家。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part6-融入日常/27-下一步路线.md",
+      "source_sha256": "bcbcaf4b12ef51789ba58c8f2b11cd3d9951f49572826849e9e5e8dd13b95332"
+    },
+    {
+      "proposal_id": "P-31",
+      "unit": "appendix-a",
+      "source_ids": [
+        "MM-35"
+      ],
+      "heading": "提示符符号速读",
+      "title": "Mac 终端的输入位置",
+      "composition": "手绘终端局部：提示符、命令、输出三处短注；旁边放一个文件夹。",
+      "content_guard": "完整命令表留文本；不把示意用户名当真实环境。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/A-Mac终端速查.md",
+      "source_sha256": "573c8981f6aa962702a8fd92cf8d34192c330ea6d12638672d36da5c423613a3"
+    },
+    {
+      "proposal_id": "P-32",
+      "unit": "appendix-b",
+      "source_ids": [
+        "MM-36"
+      ],
+      "heading": "提示符符号速读",
+      "title": "PowerShell 的输入位置",
+      "composition": "手绘 PowerShell 局部和路径卡，用圈注解释盘符、当前位置与输入处。",
+      "content_guard": "Windows 例子独立，不机械复制 Mac 的路径。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/B-Windows-PowerShell速查.md",
+      "source_sha256": "b519dd1579361f068853f4619c83be6cef4876230ef6bf527f00c8eab504cf0f"
+    },
+    {
+      "proposal_id": "P-33",
+      "unit": "appendix-c",
+      "source_ids": [
+        "MM-37"
+      ],
+      "heading": "C.1 查状态、保留进度与管理上下文",
+      "title": "两个地方输入的命令",
+      "composition": "上下两张手绘窗口：系统终端运行 claude 与会话内输入 / 命令，各一个例子。",
+      "content_guard": "明确入口不同；完整命令全集保留表格。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/C-Slash命令全表.md",
+      "source_sha256": "cc0f6a8891d974fccc04ab65f2e9b3bafdfef35a0c3c0ac942648977b88da6eb"
+    },
+    {
+      "proposal_id": "P-34",
+      "unit": "appendix-d",
+      "source_ids": [
+        "FC-legacy-01"
+      ],
+      "heading": "图 1：权限决策流程（遇到弹窗怎么选）",
+      "title": "遇到操作请求先核对什么",
+      "composition": "笔记本手绘决策树，按读、改、命令三类展开到范围与影响的核对。",
+      "content_guard": "逐边核对；复杂分支不能靠美术即兴增删。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/D-决策流程图.md",
+      "source_sha256": "6b8e7d950f417f25090300dcb7b140ac380b8b7c2f11a09b921d86e87dab24c6"
+    },
+    {
+      "proposal_id": "P-35",
+      "unit": "appendix-d",
+      "source_ids": [
+        "FC-legacy-02"
+      ],
+      "heading": "图 4：卡住了怎么办（5 分钟原则）",
+      "title": "失败以后怎样选择下一步",
+      "composition": "手绘岔路图从失败走到评估手动成本，再到继续、拆分或换方法。",
+      "content_guard": "图中的时间阈值标为经验建议；纠正上下文与回退的混同。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/D-决策流程图.md",
+      "source_sha256": "6b8e7d950f417f25090300dcb7b140ac380b8b7c2f11a09b921d86e87dab24c6"
+    },
+    {
+      "proposal_id": "P-36",
+      "unit": "appendix-d",
+      "source_ids": [
+        "FC-legacy-03"
+      ],
+      "heading": "图 5：信息分层决策（该放在哪一层）",
+      "title": "这条信息放在哪里",
+      "composition": "信息卡经过几个短问题，分到会话、个人说明、项目说明和技能手册。",
+      "content_guard": "不要把一次性信息画成永远不需要保存；流程与调用频率分开。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/D-决策流程图.md",
+      "source_sha256": "6b8e7d950f417f25090300dcb7b140ac380b8b7c2f11a09b921d86e87dab24c6"
+    },
+    {
+      "proposal_id": "P-37",
+      "unit": "appendix-d",
+      "source_ids": [
+        "MM-01"
+      ],
+      "heading": "图 6：扩展机制选型",
+      "title": "扩展能力工具架",
+      "composition": "一排分两行的六件手绘工具：背景说明、任务手册、调用入口、专员、触发器、连接器。",
+      "content_guard": "Slash 是调用入口，图上保留与 Skill 的关系。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/D-决策流程图.md",
+      "source_sha256": "6b8e7d950f417f25090300dcb7b140ac380b8b7c2f11a09b921d86e87dab24c6"
+    },
+    {
+      "proposal_id": "P-38",
+      "unit": "appendix-g",
+      "source_ids": [
+        "MM-41"
+      ],
+      "heading": "通用排查顺序",
+      "title": "报错时先收集这四样",
+      "composition": "错误纸条、发生动作、环境卡、最近变化四件物件，旁边一条按顺序排查的短路。",
+      "content_guard": "不把“重启”画成所有问题的默认答案；保存错误原文。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/G-报错自救手册.md",
+      "source_sha256": "3c0ad008778ecc5c3ab560ab2fe82012454b1e8f739c52483aaad21f8c89b67d"
+    },
+    {
+      "proposal_id": "P-39",
+      "unit": "appendix-h",
+      "source_ids": [
+        "MM-42"
+      ],
+      "heading": "H.2 第一次只做“读、改、查”三个动作",
+      "title": "桌面里的一次读、改、查",
+      "composition": "手绘桌面示意只画项目、对话和结果三个任务区域，配三个短动作。",
+      "content_guard": "具体位置需真实来源；来源不足时保持概念示意，不猜按钮。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/H-桌面应用导览.md",
+      "source_sha256": "91987b887fa72eaf34561a7a875979d1d7dbc22d90e60eebbb7eddf1d73a4070"
+    },
+    {
+      "proposal_id": "P-40",
+      "unit": "appendix-j",
+      "source_ids": [
+        "MM-44"
+      ],
+      "heading": "J.2 升级软件以后，再确认完整模型名",
+      "title": "升级后怎样确认自己在用什么",
+      "composition": "软件版本、实际模型名、账户条件三张检查卡，依次核对。",
+      "content_guard": "不把发布日期和默认参数烙进图；跟随正文确认。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/J-Opus-4.7新手指南.md",
+      "source_sha256": "4bc7b3382ab8ea871a56bcdd0ccde59a763fe9aba44016655d40ccd404d8f0d5"
+    },
+    {
+      "proposal_id": "P-41",
+      "unit": "appendix-k",
+      "source_ids": [
+        "MM-45"
+      ],
+      "heading": "K.1 “第三方”至少有三种意思",
+      "title": "第三方接入的三条路线",
+      "composition": "三条手绘连接路线分别到云平台、转发网关、兼容接口；节点名称短且明确。",
+      "content_guard": "兼容接口不自动意味着相同模型、价格和数据处理。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/附录/K-第三方模型接入.md",
+      "source_sha256": "566547fe69ce0767d7142605a43d1d56feb7a3123e7c3d43ff90502e2eba5086"
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "MM-38",
+      "unit": "appendix-d",
+      "reason": "导航重复，改为六项可点击文字目录；具体决策分别画。"
+    },
+    {
+      "id": "MM-39",
+      "unit": "appendix-e",
+      "reason": "FAQ 已有十问，删除重复总览图，保留正文与问答导航。"
+    },
+    {
+      "id": "MM-40",
+      "unit": "appendix-f",
+      "reason": "术语速查使用可搜索文本表，不将词典再画成一张大图。"
+    },
+    {
+      "id": "MM-43",
+      "unit": "appendix-i",
+      "reason": "来源链接使用可点击文本，不用图片重复资源清单。"
+    }
+  ],
+  "source_mapping": {
+    "FC-legacy-01": [
+      "P-34"
+    ],
+    "FC-legacy-02": [
+      "P-35"
+    ],
+    "FC-legacy-03": [
+      "P-36"
+    ],
+    "MM-01": [
+      "P-37"
+    ],
+    "MM-02": [
+      "P-15"
+    ],
+    "MM-03": [
+      "P-09"
+    ],
+    "MM-04": [
+      "P-17"
+    ],
+    "MM-05": [
+      "P-18",
+      "P-19"
+    ],
+    "MM-06": [
+      "P-21"
+    ],
+    "MM-07": [
+      "P-03"
+    ],
+    "MM-08": [
+      "P-01"
+    ],
+    "MM-09": [
+      "P-04"
+    ],
+    "MM-10": [
+      "P-05"
+    ],
+    "MM-11": [
+      "P-06"
+    ],
+    "MM-12": [
+      "P-07"
+    ],
+    "MM-13": [
+      "P-08"
+    ],
+    "MM-14": [
+      "P-09"
+    ],
+    "MM-15": [
+      "P-10"
+    ],
+    "MM-16": [
+      "P-11"
+    ],
+    "MM-17": [
+      "P-12"
+    ],
+    "MM-18": [
+      "P-13"
+    ],
+    "MM-19": [
+      "P-14"
+    ],
+    "MM-20": [
+      "P-15"
+    ],
+    "MM-21": [
+      "P-16"
+    ],
+    "MM-22": [
+      "P-17"
+    ],
+    "MM-23": [
+      "P-18",
+      "P-19"
+    ],
+    "MM-24": [
+      "P-20"
+    ],
+    "MM-25": [
+      "P-21"
+    ],
+    "MM-26": [
+      "P-22"
+    ],
+    "MM-27": [
+      "P-23"
+    ],
+    "MM-28": [
+      "P-24"
+    ],
+    "MM-29": [
+      "P-25"
+    ],
+    "MM-30": [
+      "P-26"
+    ],
+    "MM-31": [
+      "P-27"
+    ],
+    "MM-32": [
+      "P-28"
+    ],
+    "MM-33": [
+      "P-29"
+    ],
+    "MM-34": [
+      "P-30"
+    ],
+    "MM-35": [
+      "P-31"
+    ],
+    "MM-36": [
+      "P-32"
+    ],
+    "MM-37": [
+      "P-33"
+    ],
+    "MM-38": [
+      "withdraw"
+    ],
+    "MM-39": [
+      "withdraw"
+    ],
+    "MM-40": [
+      "withdraw"
+    ],
+    "MM-41": [
+      "P-38"
+    ],
+    "MM-42": [
+      "P-39"
+    ],
+    "MM-43": [
+      "withdraw"
+    ],
+    "MM-44": [
+      "P-40"
+    ],
+    "MM-45": [
+      "P-41"
+    ],
+    "MM-46": [
+      "P-02"
+    ]
+  },
+  "supplemental_proposals": [
+    {
+      "proposal_id": "P-42",
+      "unit": "ch-04",
+      "source_ids": [],
+      "heading": "🌿 支线 4.A：Claude Code 底层是怎么运作的（通俗版）",
+      "title": "本地工具与远端模型怎样配合",
+      "composition": "电脑上的本地工具与远端服务两端循环：请求材料送出，动作建议返回，本地按授权执行，再回传结果。",
+      "content_guard": "不要把模型画成本地运行；不得暗示整个硬盘必上传或每个动作必弹窗。",
+      "style": "notebook-pen-v1",
+      "state": "planned",
+      "source_path": "manuscript/part1-从零起步/04-Claude-Code到底是什么.md",
+      "source_sha256": "81ca3b1ab30c69f1080fae801d848b18cf690a7774315f9e8d7d65339eea2d2a",
+      "source_kind": "unregistered_ascii_flow"
+    }
+  ],
+  "target_count": 42,
+  "registered_source_count": 49,
+  "registered_sources_with_replacements": 45,
+  "withdrawn_source_count": 4,
+  "target_ids": {
+    "P-01": "FIG-001",
+    "P-02": "FIG-002",
+    "P-03": "FIG-003",
+    "P-04": "FIG-004",
+    "P-05": "FIG-005",
+    "P-06": "FIG-006",
+    "P-07": "FIG-007",
+    "P-08": "FIG-008",
+    "P-09": "FIG-009",
+    "P-10": "FIG-010",
+    "P-11": "FIG-011",
+    "P-12": "FIG-012",
+    "P-13": "FIG-013",
+    "P-14": "FIG-014",
+    "P-15": "FIG-015",
+    "P-16": "FIG-016",
+    "P-17": "FIG-017",
+    "P-18": "FIG-018",
+    "P-19": "FIG-019",
+    "P-20": "FIG-020",
+    "P-21": "FIG-021",
+    "P-22": "FIG-022",
+    "P-23": "FIG-023",
+    "P-24": "FIG-024",
+    "P-25": "FIG-025",
+    "P-26": "FIG-026",
+    "P-27": "FIG-027",
+    "P-28": "FIG-028",
+    "P-29": "FIG-029",
+    "P-30": "FIG-030",
+    "P-31": "FIG-031",
+    "P-32": "FIG-032",
+    "P-33": "FIG-033",
+    "P-34": "FIG-034",
+    "P-35": "FIG-035",
+    "P-36": "FIG-036",
+    "P-37": "FIG-037",
+    "P-38": "FIG-038",
+    "P-39": "FIG-039",
+    "P-40": "FIG-040",
+    "P-41": "FIG-041",
+    "P-42": "FIG-042"
+  }
+}

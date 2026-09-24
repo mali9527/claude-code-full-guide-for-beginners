@@ -460,6 +460,12 @@ def export_pdf(root, source_ref, version, export_id):
                 diagram_pages.append((did, out.name, unit["id"], unit["title"]))
                 return "![{}]({}){{width=100%}}\n\n[查看独立大图页](#pdf-diagram-{})".format(did, out.name, did)
             body = re.sub(pattern, diagram, body)
+            from .illustrations import pdf_assets
+            body, raster_entries = pdf_assets(source, unit, body, book)
+            diagram_count += len(raster_entries)
+            diagram_pages.extend(raster_entries)
+            for did, filename, _, _ in raster_entries:
+                body = body.replace("](" + filename + "){width=100%}", "](" + filename + "){width=100%}\n\n[查看独立大图页](#pdf-diagram-" + did + ")")
             if re.search(TICK+r"{3}mermaid", body): raise StudioError(unit["path"] + ": 存在无登记标记的 Mermaid 图")
             if re.search(r"!\[[^\]]*\]\(https?://", body): raise StudioError("PDF 必须使用已保存的本地图片，不能构建时下载")
             if book.get("type") == "book":

@@ -1,0 +1,17 @@
+schema_version: 1
+title: 需要时取出任务手册
+reader_question: 如何理解“需要时取出任务手册”？
+takeaway: 先看技能简介，相关时再读取完整说明。
+source_sections:
+- 20.1 技能负责一类任务，项目规则负责共同约定
+placement: 20.1 技能负责一类任务，项目规则负责共同约定
+composition: 柜门上只有简短目录，选中的手册打开到桌面，展示描述与完整流程的分工。
+content_guard: 不暗示描述不占空间或任务结束后内容立即消失。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 先看技能简介，相关时再读取完整说明。
+source_ids:
+- MM-27
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

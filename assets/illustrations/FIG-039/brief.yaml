@@ -1,0 +1,18 @@
+schema_version: 1
+title: 桌面里的一次读、改、查
+reader_question: 如何理解“桌面里的一次读、改、查”？
+takeaway: 用任务、变化与结果三个区域理解桌面工作
+source_sections:
+- H.2 第一次只做“读、改、查”三个动作
+placement: H.2 第一次只做“读、改、查”三个动作
+composition: 手绘桌面示意只画项目、对话和结果三个任务区域，配三个短动作。
+content_guard: "具体位置需真实来源；来源不足时保持概念示意，不猜按钮。\n Simplify the interface to the described\
+  \ regions only. No invented commands or outputs."
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 用任务、变化与结果三个区域理解桌面工作
+source_ids:
+- MM-42
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

@@ -1,0 +1,18 @@
+schema_version: 1
+title: 一眼认出修改前后
+reader_question: 如何理解“一眼认出修改前后”？
+takeaway: 减号与加号区分旧内容和新内容，逐行核对
+source_sections:
+- 6.1 什么是 diff（修改对比图）
+placement: 6.1 什么是 diff（修改对比图）
+composition: 只画两个并排的小纸框，左框标题“修改前”，内部只有一行“- 旧内容”；右框标题“修改后”，内部只有一行“+ 新内容”。左行用单横线轻划，右行用手绘椭圆圈起。两框下方只写“逐行核对”。不要任何其他行、行号、示例文章或命令。
+content_guard: Only five supplied labels and the title. No extra words, lines of example
+  prose, line numbers, code, footnote or disclaimer.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 减号与加号区分旧内容和新内容，逐行核对
+source_ids:
+- MM-13
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

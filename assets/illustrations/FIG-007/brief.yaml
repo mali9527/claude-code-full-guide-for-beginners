@@ -1,0 +1,17 @@
+schema_version: 1
+title: 把正确的材料交给它
+reader_question: 如何理解“把正确的材料交给它”？
+takeaway: 先选择相关材料，再交代要解决的具体问题。
+source_sections:
+- 5.2 `@` 引用的具体用法
+placement: 5.2 `@` 引用的具体用法
+composition: 手从文件夹中挑出一张笔记交到工作台，标出 @ 的指向，再以一个短提问示意。
+content_guard: 不画“整个硬盘自动可见”；选择文件与自动读取能力须分清。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 先选择相关材料，再交代要解决的具体问题。
+source_ids:
+- MM-12
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

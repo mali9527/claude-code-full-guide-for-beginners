@@ -1,0 +1,17 @@
+schema_version: 1
+title: 连接、账号、动作分三道检查
+reader_question: 如何理解“连接、账号、动作分三道检查”？
+takeaway: 服务连接、账户资格与具体操作权限是三件需要分别核对的事。
+source_sections:
+- 24.2 先把三层权限分开
+placement: 24.2 先把三层权限分开
+composition: 扩展坞连接外部资料柜，沿途三个检查卡：地址、账户、动作许可。
+content_guard: 连通不等于资源全可见，也不等于可修改。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 服务连接、账户资格与具体操作权限是三件需要分别核对的事。
+source_ids:
+- MM-31
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

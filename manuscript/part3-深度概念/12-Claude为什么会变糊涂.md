@@ -18,39 +18,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-19 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 12 章 · Claude 为什么会变糊涂))
-    比喻
-      熬夜的实习生
-      脑容量有限
-    上下文窗口
-      装什么东西
-      按模型和接入确认
-      1M 不等于全供资料用
-    看懂 Ctx 百分比
-      查看内容占用
-      观察任务是否跑偏
-      转折点整理
-    三档清理策略
-      compact 浓缩保留
-      clear 清空重来
-      新会话与恢复旧会话
-    预防习惯
-      精准 @ 引用
-      限制命令输出
-      任务完就清理
-      瞥一眼状态栏
-```
+本章图解：[上下文像当前工作桌](#121-比喻先行一个熬夜的人)。
 
 ---
 
@@ -61,6 +29,12 @@ mindmap
 ## 12.1 比喻先行：一个熬夜的人
 
 想象你身边有一个很聪明的实习生，叫 Claude。他**脑容量有限**（就像人的短期记忆），能同时记住的事情大概相当于**一本小册子的内容**。
+
+<!-- diagram: FIG-014 -->
+![上下文像当前工作桌](../../assets/illustrations/FIG-014/revisions/r01/zh-CN.png)
+
+*图：当前任务只摊开相关材料；整理会话不等于删除磁盘文件。*
+<!-- /diagram: FIG-014 -->
 
 一天开始时（对话刚开启），他头脑清晰，读什么都记得。
 

@@ -91,7 +91,9 @@ def status(root, workspace, target):
                     reviews[key] = reviews.get(key, 0) + 1
         try: head = git_commit(path)
         except StudioError: head = None
-        items.append({"id": w["id"], "state": w.get("state"), "path": str(path), "source_commit": head,
+        from studio_lib.illustrations import audit
+        illustration_state = audit(path)
+        items.append({"illustrations": illustration_state, "id": w["id"], "state": w.get("state"), "path": str(path), "source_commit": head,
                       "units": len(book.get("units", [])), "tasks": tasks, "fact_expired": expired,
                       "fact_unknown": sorted(set(uncertain)), "recorded_checks": reviews,
                       "quality": "未重新核对；运行 check 获取当前基线结果",
@@ -133,6 +135,10 @@ def check(path, publication=False, scope=None, languages=None, freshness=True, s
             if item["status"] != "current":
                 report["issues"].append({"level": "error" if publication else "warning", "code": "translation_"+item["status"],
                                          "path": "translations.yaml", "message": "{}: {}".format(item["unit"], item["status"])})
+        pending_images = [d["id"] for d in book.get("diagrams", []) if d.get("type") == "illustration" and (not scope or d.get("unit") in scope)]
+        if pending_images:
+            report["issues"].append({"level": "error" if publication else "warning", "code": "illustration_localization_pending",
+                                     "path": "book.yaml:diagrams", "message": "繁体正文转换不包含图内文字；待单独本地化：" + ", ".join(pending_images)})
         report["ok"] = not any(i["level"] == "error" for i in report["issues"])
         report["summary"]["errors"] = sum(i["level"]=="error" for i in report["issues"])
         report["summary"]["warnings"] = sum(i["level"]=="warning" for i in report["issues"])
@@ -424,6 +430,12 @@ def parser():
             q.add_argument("--check", action="store_true"); q.add_argument("--zh-tw", action="store_true")
             q.add_argument("--pdf", action="store_true"); q.add_argument("--source")
             q.add_argument("--version", dest="content_version"); q.add_argument("--export-id")
+    i = subs.add_parser("illustrations")
+    i.add_argument("action", choices=["status", "pack", "import", "select"])
+    i.add_argument("work", nargs="?")
+    for option in ("figure", "output", "image", "pack", "revision", "tool", "review"):
+        i.add_argument("--" + option)
+    i.add_argument("--reference-used", action="store_true")
     n = subs.add_parser("new-book"); n.add_argument("id"); n.add_argument("--title"); n.add_argument("--path")
     n.add_argument("--type", choices=["book", "tutorial"], default="book"); n.add_argument("--repo")
     n.add_argument("--test", action="store_true"); n.add_argument("--priority", type=int, default=3)
@@ -455,6 +467,11 @@ def human_result(command, result):
             for task in work["tasks"]: lines.append("  - {}：{}".format(task["id"], task["state"]))
             lines.append("  质量：登记概览，请运行 check 核对当前基线。")
         lines.append("耗时：{} 秒。".format(result.get("elapsed_seconds")))
+    if "figures" in result:
+        lines.append("手绘 {} 张；旧图剩余 {} 张。".format(len(result["figures"]), result["legacy_remaining"]))
+        for row in result["figures"]:
+            lines.append("{} · {} · {}".format(row["id"], row["stage"], row["source"]))
+        for issue in result["issues"]: lines.append(issue["message"])
     reports = result.get("results") or [result]
     for report in reports:
         if "check" in report:
@@ -495,6 +512,11 @@ def main(argv=None):
             result = status(root, workspace, args.work)
             if args.write_roadmap:
                 result["roadmap"] = update_roadmap(root, workspace)
+        elif args.command == "illustrations":
+            selected = works(root, workspace, args.work)
+            if len(selected) != 1: raise StudioError("插图操作必须指定一本书")
+            from studio_lib.illustrations import command
+            result = command(work_path(root, selected[0]), args)
         elif args.command == "new-book": result = new_book(root, workspace, args)
         elif args.command == "commons": result = commons_diff(root, workspace)
         elif args.command == "release": result = release_command(root, workspace, args)

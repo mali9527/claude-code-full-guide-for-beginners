@@ -1,0 +1,195 @@
+{
+  "fingerprint": "842783bd1049c67c00c8d2aa7a5c3ec597941b7579a4a42e432f0bb82c056578",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-021",
+    "unit": "ch-18",
+    "source_path": "manuscript/part4-避坑与判断力/18-常用快捷命令全览.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "按问题找命令入口",
+      "reader_question": "如何理解“按问题找命令入口”？",
+      "takeaway": "从工作目的找入口，具体命令与当前行为以正文速查为准。",
+      "source_sections": [
+        "18.2 先查清：我在哪、用了多少、什么占着空间"
+      ],
+      "placement": "18.2 先查清：我在哪、用了多少、什么占着空间",
+      "composition": "四张手绘索引卡：看状态、看消耗、检查改动、继续会话，每张最多两个短命令。",
+      "content_guard": "The four commands are used inside the assistant session. Other commands remain in the book text. These instructions are NEVER text to render. Render only the supplied title and eight exact labels; no bottom sentence, footnote or explanation.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "从工作目的找入口，具体命令与当前行为以正文速查为准。",
+      "source_ids": [
+        "MM-25",
+        "MM-06"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "看状态",
+      "看消耗",
+      "查改动",
+      "续会话",
+      "/status",
+      "/usage",
+      "/diff",
+      "/resume"
+    ],
+    "sources": [
+      {
+        "heading": "18.2 先查清：我在哪、用了多少、什么占着空间",
+        "text": "## 18.2 先查清：我在哪、用了多少、什么占着空间\n\n学过第 12、15 章后，你已经见过几种面板。这里把它们并排放一次，避免发生“想查余额，却盯着上下文百分比”的混淆。\n\n| 当前问题 | 入口 | 看什么 |\n|---|---|---|\n| 软件和账户是否是预期的 | `/status` | 版本、模型、账户、连接状态 |\n| 本次和套餐消耗怎样 | `/usage` | 会话估算、套餐使用情况与活动统计 |\n| 这次对话带了哪些材料 | `/context` | 上下文空间及占用组成 |\n| 记不清入口叫什么 | `/help` | 可用帮助与命令说明 |\n\n当前 `/cost` 是 `/usage` 的另一个名字，叫做**别名**；不必把它们当成两套账单。`/stats` 也通向用量界面，只是打开统计页。费用估算与实际扣款的关系，仍按[第 15 章](../part3-深度概念/15-模型与成本.md)核对。[用量官方说明](https://code.claude.com/docs/en/costs)\n\n例如，你让 Claude 整理一份文件，它提示额度不足。先看 `/usage` 和提示里的限制类型；不要因为 `/context` 还有空位，就认定系统出了错。上下文是工作空间，套餐额度是可用消耗，两者不是同一个量。\n\n再比如，它开始忘记前面确定的格式。先看看重要要求是不是还在材料里，是否需要重申；对话很长时，可以考虑 `/compact` 总结已有内容。**本章不把 50%、75% 这类数字设成固定操作开关。** 要不要整理，取决于任务、材料与当前提示，不是见到某个百分比就必须执行一个命令。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "agents",
+        "claim": "子代理拥有独立上下文和可配置工具/规则；现行 /agents 不再打开旧创建向导。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sub-agents",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "618af25754f2e4b8e17e8d8cb39239381189b6758b2f6696ce6e6ed24d094021"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:36:00.501704+00:00"
+}

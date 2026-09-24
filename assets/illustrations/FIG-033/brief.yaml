@@ -1,0 +1,20 @@
+schema_version: 1
+title: 两个地方输入的命令
+reader_question: 如何理解“两个地方输入的命令”？
+takeaway: 系统终端中的启动命令与对话中的斜杠命令属于不同入口。
+source_sections:
+- C.1 查状态、保留进度与管理上下文
+placement: C.1 查状态、保留进度与管理上下文
+composition: 上下两个手绘纸面窗口。上方窗口标“系统终端”，窗口内只有一行 $ claude，不能有第二行提示符、输出或其他命令。下方窗口标“会话内部”，输入框内只有
+  /help，不能有其他文字。底部只写“先分清输入位置”。不要额外人物、图标或命令表。
+content_guard: 'Only one command per panel. Upper: $ claude. Lower: /help. No second
+  shell prompt after claude, no outputs. Only title and supplied labels. No footer
+  except the required label 先分清输入位置.'
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 系统终端中的启动命令与对话中的斜杠命令属于不同入口。
+source_ids:
+- MM-37
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

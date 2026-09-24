@@ -4,39 +4,17 @@
 
 ### 本章地图
 
-<!-- diagram: MM-45 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 K · 第三方接入))
-    分清路线
-      云平台提供 Claude
-      网关转发 Claude
-      兼容接口提供其他模型
-    核对条件
-      提供方支持
-      真实模型
-      费用与数据
-    配置前
-      保留原设置
-      确认作用范围
-      不公开凭据
-    验证
-      控制台查请求
-      小文件测工具
-      检查账单
-```
+本章图解：[第三方接入的三条路线](#k1-第三方至少有三种意思)。
 
 ## K.1 “第三方”至少有三种意思
 
 **第一种是云平台提供 Claude。** Amazon Bedrock、Google Cloud 的 Agent Platform、Microsoft Foundry 等有各自的接入与模型开放条件。模型仍可能是 Claude，但账户、结算、地区和功能支持要按对应部署说明核对，不能直接照搬个人 Pro 订阅的待遇。
+
+<!-- diagram: FIG-041 -->
+![第三方接入的三条路线](../../assets/illustrations/FIG-041/revisions/r01/zh-CN.png)
+
+*图：第三方接入先分清直连、网关和本地服务，再核对各自条件。*
+<!-- /diagram: FIG-041 -->
 
 **第二种是网关转发 Claude 请求。** 网关是夹在客户端与模型服务之间的一层服务，组织可能用它管理认证、用量和预算。地址虽然换了，实际提供的也可能仍是 Claude。你需要知道凭据属于谁、账单记到哪里，以及网关是否转发所需功能。
 

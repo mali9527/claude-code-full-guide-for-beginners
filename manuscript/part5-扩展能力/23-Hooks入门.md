@@ -18,31 +18,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-30 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 23 章 · Hooks 入门))
-    事件和动作
-      事前与事后不同
-      自动触发脚本
-    本章练习
-      只读检查 Markdown
-      从输入读取文件路径
-    两层验证
-      手工输入测试脚本
-      真实会话测试事件
-    正确理解失败
-      不隐藏错误
-      不把反馈当撤销
-```
+本章图解：[事件触发一次小检查](#231-先决定在哪个时刻做什么)。
 
 ---
 
@@ -51,6 +27,12 @@ mindmap
 ## 23.1 先决定在哪个时刻做什么
 
 **Hook（钩子）**可以理解为“事件发生时，自动执行预先配置的动作”。例如 Claude 用编辑工具成功改完文件，这个事件发生后，执行一个检查标题是否存在的小程序。触发时机是固定的，不需要你每次再输入“请检查”。
+
+<!-- diagram: FIG-026 -->
+![事件触发一次小检查](../../assets/illustrations/FIG-026/revisions/r01/zh-CN.png)
+
+*图：Hook 围绕特定事件运行检查，结果如何使用取决于配置。*
+<!-- /diagram: FIG-026 -->
 
 本章只讨论运行本地脚本的 command Hook。脚本是电脑按既定规则执行的小程序；它不像技能那样主要依靠模型理解一段说明。Hook 本身也不是万能保护罩：动作是否正确，取决于脚本检查了什么、是否匹配了本次事件。
 

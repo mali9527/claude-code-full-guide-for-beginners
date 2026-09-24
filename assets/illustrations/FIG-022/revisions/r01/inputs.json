@@ -1,0 +1,140 @@
+{
+  "fingerprint": "d8bfd5414b166daaa589cdb8121d4a10c1bc106e6faf11e9bb1ba08cdf2028a6",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-022",
+    "unit": "ch-19",
+    "source_path": "manuscript/part4-避坑与判断力/19-输入技巧.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "长材料先整理，再输入",
+      "reader_question": "如何理解“长材料先整理，再输入”？",
+      "takeaway": "短任务直接表达，长材料放文件并引用；目录树和命令保持可复制。",
+      "source_sections": [
+        "19.6 粘贴大段文字的正确姿势"
+      ],
+      "placement": "19.6 粘贴大段文字的正确姿势",
+      "composition": "短文字直接输入、长材料放文件再引用的双路径；画两处发送前核对圈注。",
+      "content_guard": "快捷键因终端不同而异，图不宣称跨平台统一。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "短任务直接表达，长材料放文件并引用；目录树和命令保持可复制。",
+      "source_ids": [
+        "MM-26"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "短文字直接输入",
+      "长材料先存文件",
+      "再引用相关材料",
+      "发送前核对"
+    ],
+    "sources": [
+      {
+        "heading": "19.6 粘贴大段文字的正确姿势",
+        "text": "## 19.6 粘贴大段文字的正确姿势\n\n### 问题\n\n你从网页 / 文档里复制一段话，粘进 Claude Code。结果：\n- 格式乱了（换行错位 / 特殊字符）\n- 材料太多，占掉任务需要的上下文\n- 粘贴过程卡顿\n\n### 解决方案\n\n**方案 A：小段（< 10 行）直接粘**\n- 正常 Cmd+V / Ctrl+V\n- 发送前检查一下排版\n\n**方案 B：中段（例如 10—100 行）先写引子，再检查粘贴内容**\n\n- 先写“以下是我要讨论的段落”，用已验证可用的换行键换行。\n- 粘贴正文；较长内容可能折叠成粘贴标记，这是界面收起了文本，不代表省下了 token。\n- 确认内容与问题都完整，再按 Enter。\n\n**方案 C：很长或需要复用的材料，保存为文件**\n\n把资料保存为练习目录里的 `待处理.md`，再决定是引用全文，还是按 19.2 只提供相关片段。保存成文件方便管理版本和复用，**本身不会降低全文被加入会话后的上下文用量**。上面的行数只是整理习惯，不能替代查看实际材料大小。\n\n### 发送前最后看两处\n\n第一，看粘贴的正文是否完整。有些终端会将大段文字折叠显示；不确定时先在本地文本编辑器核对，不要连续重贴、重复发送。第二，看复制内容里是否带入不相关的网页导航、账户信息或密钥。保存为 Markdown 不会自动删除这些内容，需要你自己检查。\n\n---"
+      }
+    ],
+    "facts": [
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "input-behavior",
+        "claim": "! 命令通常在沙箱外执行（严格沙箱例外），默认可触发模型回应；@引用可注入全文，不以追加行数说明保证只读局部。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "CLI；按终端、模式和版本说明"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/interactive-mode",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "9c334aeda52ef5cecc1f51eaa6858cc166cf2e55bac9ae30c4951f0a5ddd2a9a"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:24:27.799071+00:00"
+}

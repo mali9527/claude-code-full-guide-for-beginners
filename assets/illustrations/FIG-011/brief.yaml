@@ -1,0 +1,19 @@
+schema_version: 1
+title: 计划、回退、备份各管一段
+reader_question: 如何理解“计划、回退、备份各管一段”？
+takeaway: 先规划，再执行；检查点和独立备份的恢复范围不同。
+source_sections:
+- 9.1 先认清：规划、回退、备份
+placement: 9.1 先认清：规划、回退、备份
+composition: 横向三栏。第一栏画人看计划纸，标“事前：计划”；第二栏画三个检查点与一个小回退箭头，标“过程中：检查点”；第三栏画装文件的档案盒，标“长期：备份”。底部中央只写“各自有范围”。只画这三个区域和四个标签，不画外发、安装、软件界面或任何其他文字。
+content_guard: Draw exactly the three objects and four supplied labels. No additional
+  text anywhere. Do not illustrate external actions being undone. This sentence is
+  an illustrator constraint, NEVER text to print.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 先规划，再执行；检查点和独立备份的恢复范围不同。
+source_ids:
+- MM-16
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

@@ -1,0 +1,19 @@
+schema_version: 1
+title: 卡住时换一条路
+reader_question: 如何理解“卡住时换一条路”？
+takeaway: 连续受阻时先停下来整理证据，再选择下一条路径。
+source_sections:
+- 17.1 核心原则：5 分钟原则
+placement: 17.1 核心原则：5 分钟原则
+composition: 两条失败脚印停在岔路前，路标指向拆小、换方法、自己完成。
+content_guard: No numeric time limit, no minute count, no clock numerals, no footnote.
+  Draw only the four supplied labels and title. The picture teaches reassessment,
+  not an automatic time threshold.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 连续受阻时先停下来整理证据，再选择下一条路径。
+source_ids:
+- MM-24
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

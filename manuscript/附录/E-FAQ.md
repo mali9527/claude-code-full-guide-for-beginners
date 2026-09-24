@@ -4,47 +4,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-39 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 E · FAQ 10 问))
-    隐私与合规
-      文件会不会上传
-      公司数据政策
-    成本
-      月费大概多少
-      订阅与 API 分开
-    安全回退
-      改坏怎么办
-      /rewind Esc git
-    模型选择
-      Opus 5.5 日常
-      Fable 5.1 难任务
-    记忆机制
-      会话内
-      跨会话
-      MEMORY 与 CLAUDE
-    CLAUDE.md
-      一句话怎么写
-      init 草稿要核对
-    扩展五件套
-      Skill Command
-      Subagent Hook MCP
-    团队协作
-      共享进 git
-      私有不进 git
-    读完下一步
-      30 天挑战
-
-```
+本附录按下方问题和条目查阅；相关章节入口保留在各条目中。
 
 
 ## 1. Claude 会偷看我的文件吗？

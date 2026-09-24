@@ -1,0 +1,17 @@
+schema_version: 1
+title: 第三方接入的三条路线
+reader_question: 如何理解“第三方接入的三条路线”？
+takeaway: 第三方接入先分清直连、网关和本地服务，再核对各自条件。
+source_sections:
+- K.1 “第三方”至少有三种意思
+placement: K.1 “第三方”至少有三种意思
+composition: 三条手绘连接路线分别到云平台、转发网关、兼容接口；节点名称短且明确。
+content_guard: 兼容接口不自动意味着相同模型、价格和数据处理。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 第三方接入先分清直连、网关和本地服务，再核对各自条件。
+source_ids:
+- MM-45
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

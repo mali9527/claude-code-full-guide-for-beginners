@@ -1,0 +1,17 @@
+Use case: scientific-educational
+Asset type: one preview illustration for a Chinese beginner's book about Claude Code. This is a style proof for an entire book.
+Primary request: A genuinely hand-drawn, black gel-pen sketch on a real sheet of white ruled notebook paper, teaching a beginner the two main areas of a conversation interface. Everything, INCLUDING the computer interface and ALL lettering, is drawn in black gel pen directly on notebook paper. It must look like an approachable teacher's carefully made notebook sketch, photographed straight-on, not a polished vector infographic or digital UI screenshot.
+Composition: landscape 4:3, high resolution. Faint, evenly spaced horizontal GRAY notebook ruling visible across the whole sheet, with subtle natural white paper texture. Nearly overhead, flat, straight page with minimal edge shadow. No beige/yellow tint. Large readable Chinese handwriting. Comfortable breathing room, but drawing fills most of the usable page.
+At the top a bold but natural handwritten title exactly: “认识对话界面”, with one simple hand-drawn underline.
+Main picture: one large hand-drawn terminal window, occupying about two-thirds of the page width, slightly left of center. Draw a gently imperfect rectangular outline, a thin title strip labeled exactly “Claude Code”, three tiny unfilled circles in the upper left. White paper remains visible inside the window, no colored fill or black terminal background. This is deliberately a simplified teaching illustration, not a claim of exact current software layout.
+Inside the window the UPPER, larger area contains just two large handwritten example dialogue lines separated generously:
+“你：请概括这份笔记。”
+“Claude：这是一份待办清单。”
+Leave space around these lines. Below, a single light hand-drawn horizontal divider, then a roomy input area with the exact text:
+“> 接着输入你的问题”
+A tiny black vertical ink cursor at the end is allowed.
+To the right, two clearly separated large handwritten annotations, drawn on the notebook paper OUTSIDE the terminal. Upper annotation exactly “① 消息区” with a simple curved black ink arrow pointing precisely to the two example dialogue lines. Lower annotation exactly “② 输入区” with a curved black ink arrow pointing precisely to the input line. Only TWO annotation arrows, do not cross them.
+Beneath the terminal, one short handwritten takeaway exactly: “看回复，再说下一步” with a small casual oval around “下一步”.
+At the very bottom a modest but readable handwritten caption exactly: “界面示意，布局随版本变化”.
+Medium: BLACK gel pen (neutral pen), confident human hand, fine contour lines plus a few heavier pressure strokes, tiny controlled irregularities, sparse crosshatching on a window edge only. No pencil grain, no charcoal, no watercolor, no marker fills. Text must resemble neat legible Chinese handwritten print, not cursive and not typeset sans-serif pasted over the picture. All labels exactly as listed, no extra text, no invented numbers, buttons, status indicators or version claims.
+Palette: strict neutral BLACK, WHITE and subtle GRAY paper ruling/shading. No green, no blue, no red, no warm cream. No radial mindmap, no colored cards, no glossy computer rendering, no 3D device frame, no robot mascots, no photographic desk props or hands, no logos/watermarks. Strong technical clarity without losing the real notebook/gel-pen character.

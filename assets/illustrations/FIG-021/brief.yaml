@@ -1,0 +1,20 @@
+schema_version: 1
+title: 按问题找命令入口
+reader_question: 如何理解“按问题找命令入口”？
+takeaway: 从工作目的找入口，具体命令与当前行为以正文速查为准。
+source_sections:
+- 18.2 先查清：我在哪、用了多少、什么占着空间
+placement: 18.2 先查清：我在哪、用了多少、什么占着空间
+composition: 四张手绘索引卡：看状态、看消耗、检查改动、继续会话，每张最多两个短命令。
+content_guard: The four commands are used inside the assistant session. Other commands
+  remain in the book text. These instructions are NEVER text to render. Render only
+  the supplied title and eight exact labels; no bottom sentence, footnote or explanation.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 从工作目的找入口，具体命令与当前行为以正文速查为准。
+source_ids:
+- MM-25
+- MM-06
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

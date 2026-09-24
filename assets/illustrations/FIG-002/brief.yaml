@@ -1,0 +1,17 @@
+schema_version: 1
+title: 程序、模型、账户是三件事
+reader_question: 如何理解“程序、模型、账户是三件事”？
+takeaway: 程序是操作入口，模型处理任务，账户决定可用资格。
+source_sections:
+- 0.1 三件东西，不要混成一件
+placement: 0.1 三件东西，不要混成一件
+composition: 电脑上的程序、提供能力的模型服务、代表使用资格的账户卡并排，各一条短说明。
+content_guard: 不暗示一张账户卡包含所有模型或免费额度。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 程序是操作入口，模型处理任务，账户决定可用资格。
+source_ids:
+- MM-46
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

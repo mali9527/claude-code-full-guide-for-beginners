@@ -1,0 +1,78 @@
+{
+  "fingerprint": "cccec5464f13c5a39d269aeeee38718046c1cd05ba5b96fd0cbe4abae76d6b13",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-026",
+    "unit": "ch-23",
+    "source_path": "manuscript/part5-扩展能力/23-Hooks入门.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "事件触发一次小检查",
+      "reader_question": "如何理解“事件触发一次小检查”？",
+      "takeaway": "Hook 围绕特定事件运行检查，结果如何使用取决于配置。",
+      "source_sections": [
+        "23.1 先决定在哪个时刻做什么"
+      ],
+      "placement": "23.1 先决定在哪个时刻做什么",
+      "composition": "只画三个对象，从左到右：空心铃铛、带齿轮的小检查清单、结果便签。黑色箭头连接铃铛→检查清单→结果便签。各对象下方依次写“事件发生”“触发小检查”“返回结果”。只要这三个对象和三处标签，空余处保留方格纸。不要时间线、事前事后分区、底注或其他文字。",
+      "content_guard": "This figure only shows event, check, result. Do not imply that a report reverses an action. Do not print this constraint or any other sentence; only the three supplied labels and title are visible.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "Hook 围绕特定事件运行检查，结果如何使用取决于配置。",
+      "source_ids": [
+        "MM-30"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "事件发生",
+      "触发小检查",
+      "返回结果"
+    ],
+    "sources": [
+      {
+        "heading": "23.1 先决定在哪个时刻做什么",
+        "text": "## 23.1 先决定在哪个时刻做什么\n\n**Hook（钩子）**可以理解为“事件发生时，自动执行预先配置的动作”。例如 Claude 用编辑工具成功改完文件，这个事件发生后，执行一个检查标题是否存在的小程序。触发时机是固定的，不需要你每次再输入“请检查”。\n\n本章只讨论运行本地脚本的 command Hook。脚本是电脑按既定规则执行的小程序；它不像技能那样主要依靠模型理解一段说明。Hook 本身也不是万能保护罩：动作是否正确，取决于脚本检查了什么、是否匹配了本次事件。\n\n| 事件 | 你可以怎样理解 | 本章要记住的边界 |\n|---|---|---|\n| `PreToolUse` | 使用工具之前 | 可在符合规则时阻止尚未执行的调用 |\n| `PostToolUse` | 工具成功完成之后 | 适合检查结果；动作已经发生 |\n| `SessionStart` | 会话开始或相应恢复时 | 可提供环境提示 |\n| `UserPromptSubmit` | 你提交消息时 | 可检查或补充本次输入 |\n\n第一次练习选事后、只读的小检查，容易看出因果：文件出现了，检查读它，反馈说明哪里不合要求。等这个过程跑通，再考虑自动格式化或复杂阻塞。[Hook 入门](https://code.claude.com/docs/en/hooks-guide)"
+      }
+    ],
+    "facts": [
+      {
+        "id": "hooks",
+        "claim": "Hook 接收事件的结构化标准输入，匹配与退出码按事件解释；配置不是提示词，程序可能产生真实副作用。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/hooks",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/hooks-guide",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "4d5f5c2a91be6f5c31a4eb0824d19e32c530cd680d7af361ccb2ac5e10054a3f"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:41:01.333315+00:00"
+}

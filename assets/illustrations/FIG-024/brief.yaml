@@ -1,0 +1,17 @@
+schema_version: 1
+title: 斜杠是打开手册的入口
+reader_question: 如何理解“斜杠是打开手册的入口”？
+takeaway: 自定义命令提供入口，技能说明承载具体工作方法。
+source_sections:
+- 21.1 斜杠是入口，不是另一种智能
+placement: 21.1 斜杠是入口，不是另一种智能
+composition: 手绘输入区里一个 /my-daily，箭头连到同名任务手册和带材料的任务卡。
+content_guard: 不把 Slash 当成另一套独立智能或自动获权。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 自定义命令提供入口，技能说明承载具体工作方法。
+source_ids:
+- MM-28
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

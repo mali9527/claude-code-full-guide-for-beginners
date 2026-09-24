@@ -1,0 +1,17 @@
+schema_version: 1
+title: 你定方向，助手动手
+reader_question: 如何理解“你定方向，助手动手”？
+takeaway: 你给出目标和边界，助手执行，结果仍由你核对。
+source_sections:
+- 4.1 把它理解成能够动手的助手
+placement: 4.1 把它理解成能够动手的助手
+composition: 任务卡交到助手工位，助手交回结果，人用清单核对；形成可继续的三步场景。
+content_guard: 不套用“聊天产品只能聊天”或“交代一句就不用管”的过时二分。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 你给出目标和边界，助手执行，结果仍由你核对。
+source_ids:
+- MM-11
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

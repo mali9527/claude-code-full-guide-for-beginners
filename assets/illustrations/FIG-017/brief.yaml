@@ -1,0 +1,21 @@
+schema_version: 1
+title: 模型、投入和费用分开看
+reader_question: 如何理解“模型、投入和费用分开看”？
+takeaway: 模型选择、思考投入和用量路径分别判断，不把名称当作固定价格或能力排名。
+source_sections:
+- 15.3 学会选模型，别把三个开关混成一个
+placement: 15.3 学会选模型，别把三个开关混成一个
+composition: 笔记本上三只简单旋钮/卡片：“选模型”“思考投入”“费用路径”，下方放结果核对单。
+content_guard: '不画成真实设置页；不固化价格、默认值或模型排名。
+
+  These are conceptual knobs/cards drawn on paper, NOT a software settings screen.
+  No default value or numeric price.'
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 模型选择、思考投入和用量路径分别判断，不把名称当作固定价格或能力排名。
+source_ids:
+- MM-22
+- MM-04
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

@@ -1,0 +1,34 @@
+{
+  "sample_id": "STYLE-UI-01",
+  "date": "2026-09-24",
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "unknown",
+  "cost": "unknown",
+  "state": "style-approved",
+  "paper": "fine-grid",
+  "source_unit": "ch-03",
+  "source_section": "3.3 认识 Claude Code 的界面",
+  "evidence_kind": "conceptual_ui",
+  "caption": "historical sample footer superseded by latest author direction",
+  "source_book_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "image": "reference.png",
+  "image_sha256": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "bytes": 1853382,
+  "initial_prompt": "initial-prompt.txt",
+  "edit_prompt": "grid-edit-prompt.txt",
+  "parent_image_sha256": "bb145ec8000b64f887f515d8658c861fc5041c7b7072bba1a2e6f5fc2148aa6a",
+  "edit_input": "most recent conversation image; local referenced-image path was not readable by the image tool",
+  "review": {
+    "reviewer": "codex",
+    "scope": "style preview and visible text; not a real interface validation",
+    "text": "visible labels checked against prompt",
+    "style": "fine square grid visible, black gel-pen drawing and handwriting preserved",
+    "author_approval": "approved: 可以，就按照这个风格",
+    "publication_approval": "not_requested"
+  },
+  "latest_author_direction": "全图黑白中性笔、相同不透明细方格纸；删除重复的界面版本说明。"
+}

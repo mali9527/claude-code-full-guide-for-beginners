@@ -1,0 +1,119 @@
+{
+  "fingerprint": "ca7aa42d202e1d12af6133a3b7f0b878c2ad9cb8e91d255eb140f9e0449f00c2",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-015",
+    "unit": "ch-13",
+    "source_path": "manuscript/part3-深度概念/13-三层记忆.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "资料各有自己的位置",
+      "reader_question": "如何理解“资料各有自己的位置”？",
+      "takeaway": "桌面、笔记本、岗位卡和手册柜表示不同用途，不是产品固定的四层大脑。",
+      "source_sections": [
+        "13.1 三层记忆是什么——先看比喻"
+      ],
+      "placement": "13.1 三层记忆是什么——先看比喻",
+      "composition": "一张场景图：当前桌面、工作笔记本、岗位说明卡和手册柜，四个短标签。",
+      "content_guard": "不再叫“四层大脑”，不以金字塔表达固定加载优先级。\nArrange one actual physical workspace scene, with tabletop, small notebook, instruction card and cabinet. Do not draw concentric layers or pyramid. Labels map exactly to four distinct familiar objects.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "桌面、笔记本、岗位卡和手册柜表示不同用途，不是产品固定的四层大脑。",
+      "source_ids": [
+        "MM-20",
+        "MM-02"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "当前会话",
+      "工作笔记",
+      "项目说明",
+      "任务手册",
+      "各有用途"
+    ],
+    "sources": [
+      {
+        "heading": "13.1 三层记忆是什么——先看比喻",
+        "text": "## 13.1 三层记忆是什么——先看比喻\n\n想象你有一个助理实习生：\n\n- **短期工作记忆**：今天上班期间你交代的事、他看过的文档。**换一张工作桌就不会自动带上全部材料，但保存的工作记录可以再打开**（会话与恢复记录）\n- **他的工作笔记本**：他自己决定记下来的要点，明天还能翻（**自动记忆 / MEMORY.md**）\n- **你贴在他桌面的岗位说明书**：每天上班第一眼就看，关于这份工作的铁规矩（**CLAUDE.md**）\n\n再加一个**按需取用的专业手册柜**：工位旁边柜子里放了一排手册，平时不占桌面，有特定任务时他才取出来翻（**Skills 技能包**）。\n\n这个比喻帮助你分工，不代表产品内部真的有四层“大脑”。具体区别看表：\n\n| 层 | Claude Code 里叫什么 | 保存时长 | 每次启动自动加载？ |\n|---|------------------|--------|----------------|\n| 1 | **会话上下文** | 当前工作所需的信息；会话可另存并恢复 | 新会话不自动加载另一段完整历史 |\n| 2 | **自动记忆（MEMORY.md）** | 在本机的项目记忆目录持续保存 | 加载简短索引，详情按需读取 |\n| 3 | **项目说明（CLAUDE.md）** | 文件保留多久，说明就存在多久 | 按文件位置和当前配置加载 |\n| 4 | **Skills（技能包）** | 保存在技能文件中 | 描述可能先加载，完整流程按需加载 |"
+      }
+    ],
+    "facts": [
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "memory",
+        "claim": "自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "instructions",
+        "claim": "现行版本支持按条件加载 AGENTS.md；CLAUDE.md 优先规则与版本有关；@AGENTS.md 可作兼容导入。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "b30ba53f04350ec92c86a5832c7a0065999faebb737f8b812065b40c531aca68"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:24:27.015397+00:00"
+}

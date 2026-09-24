@@ -1,0 +1,17 @@
+schema_version: 1
+title: 长材料先整理，再输入
+reader_question: 如何理解“长材料先整理，再输入”？
+takeaway: 短任务直接表达，长材料放文件并引用；目录树和命令保持可复制。
+source_sections:
+- 19.6 粘贴大段文字的正确姿势
+placement: 19.6 粘贴大段文字的正确姿势
+composition: 短文字直接输入、长材料放文件再引用的双路径；画两处发送前核对圈注。
+content_guard: 快捷键因终端不同而异，图不宣称跨平台统一。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 短任务直接表达，长材料放文件并引用；目录树和命令保持可复制。
+source_ids:
+- MM-26
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

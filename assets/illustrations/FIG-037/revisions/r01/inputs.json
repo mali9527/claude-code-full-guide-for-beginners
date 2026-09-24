@@ -1,0 +1,165 @@
+{
+  "fingerprint": "45647cac9a6cab96ba16f08502368eaa789d03a4bbf476292e05bd7eac7d3644",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-037",
+    "unit": "appendix-d",
+    "source_path": "manuscript/附录/D-决策流程图.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "扩展能力工具架",
+      "reader_question": "如何理解“扩展能力工具架”？",
+      "takeaway": "扩展机制各有作用；斜杠入口可以调用技能，两者不是互斥体系。",
+      "source_sections": [
+        "图 6：扩展机制选型"
+      ],
+      "placement": "图 6：扩展机制选型",
+      "composition": "两行三列六个简单黑笔物件。上行依次：说明纸（项目说明）、小手册（任务手册）、画着斜杠 / 的输入框（调用入口）。下行依次：戴耳机的人物（专项助手）、小铃铛（事件触发）、两个相接的插头（外部连接）。唯一一条短箭头从上行右侧调用入口指向上行中间任务手册。图中文字只要六个中文标签及标题；不要任何英文单词、Skill 徽标或额外注释。",
+      "content_guard": "Only the six supplied Chinese labels and title. No English label anywhere. One arrow goes from 调用入口 to 任务手册, no other relationship arrows. The slash / inside the input icon is the only permitted additional symbol.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "扩展机制各有作用；斜杠入口可以调用技能，两者不是互斥体系。",
+      "source_ids": [
+        "MM-01"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "项目说明",
+      "任务手册",
+      "调用入口",
+      "专项助手",
+      "事件触发",
+      "外部连接"
+    ],
+    "sources": [
+      {
+        "heading": "图 6：扩展机制选型",
+        "text": "## 图 6：扩展机制选型\n\n**口诀**：**CLAUDE.md 讲背景，Skill 讲流程，Slash 调用 Skill，Subagent 派替身，Hook 搞自动，MCP 连接外部工具和数据源**。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "memory",
+        "claim": "自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "f4d0a3aa1db18fe978aca677e432cb40fc3d1033515e36a494a7d217910d5c27"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:45:36.176795+00:00"
+}

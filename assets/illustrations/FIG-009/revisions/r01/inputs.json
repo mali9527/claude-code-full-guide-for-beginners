@@ -1,0 +1,118 @@
+{
+  "fingerprint": "385b342d2f77b0492bff4493b12012b7cc1657db6d9592316af915ec0ed34e83",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-009",
+    "unit": "ch-07",
+    "source_path": "manuscript/part2-日常使用/07-让它跑命令加权限机制.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "先看动作，再看授权",
+      "reader_question": "如何理解“先看动作，再看授权”？",
+      "takeaway": "判断一次操作，要一起看动作、作用范围与当前权限规则。",
+      "source_sections": [
+        "7.2 权限机制：先学三种，再认识自动模式"
+      ],
+      "placement": "7.2 权限机制：先学三种，再认识自动模式",
+      "composition": "同一操作请求通过三张审核卡：做什么、作用哪里、当前规则；旁边小注解释模式改变处理方式。",
+      "content_guard": "不把模式画成固定安全等级阶梯，不承诺每个动作都弹窗。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "判断一次操作，要一起看动作、作用范围与当前权限规则。",
+      "source_ids": [
+        "MM-14",
+        "MM-03"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "做什么",
+      "作用哪里",
+      "当前规则",
+      "核对后再决定"
+    ],
+    "sources": [
+      {
+        "heading": "7.2 权限机制：先学三种，再认识自动模式",
+        "text": "## 7.2 权限机制：先学三种，再认识自动模式\n\n先把“你想交给它多少自主权”想清楚，再选模式。初学时，本书建议你**主动选择 Manual（手动确认）**。配置名仍是 `default`，这个单词不保证它就是你账号的启动默认值：当前 Pro、Max、Team 的部分终端/编辑器会话会从 Auto 开始，组织设置、模型和版本也会影响结果。\n\n| 模式 | 配置名 | 它怎样工作 | 本书建议 |\n|---|---|---|---|\n| **手动确认 Manual** | `default` | 读取与部分只读命令可直接运行，需要授权的操作停下来问 | 用来熟悉权限和审核流程 |\n| **自动接受编辑** | `acceptEdits` | 自动通过工作范围内的文件编辑及部分文件系统命令 | 任务范围清楚、已有备份时再用 |\n| **计划 Plan** | `plan` | 探查、执行探索命令、写方案，通常不改源文件 | 先把方案想清楚 |\n| **自动 Auto** | `auto` | 用后台判断机制审查操作，减少逐次确认 | 能审核最终结果之后再尝试 |\n\n注意，**Plan 不等于电脑完全只读**：它需要读取资料，也可能执行获准的命令。没有启用绕过权限时，源文件编辑会被限制到批准计划之后。Auto 也不保证每个动作都正确。把模式看成协作方式，别把它看成备份的替代品。[官方模式说明](https://code.claude.com/docs/en/permission-modes)\n\n### 两个容易看错的名字\n\n`dontAsk` 的含义是“遇到原本需要问你的操作就拒绝”，已经允许的动作和无需审批的读取仍能继续。它通常用于自动化，不是“全部答应”，也不是一个名叫 allowList 的模式。**allow、ask、deny 是权限规则**，与模式分开管理。\n\n`bypassPermissions` 会跳过大部分权限检查。本书练习不启用它；尤其不要把“启用绕过权限”当成 Plan 的配套步骤。某些交互式会话只要允许进入绕过模式，计划期间的编辑限制也会改变。[权限规则与模式](https://code.claude.com/docs/en/permissions)\n\n### 怎么切换\n\n**启动时明确选择**，比猜账号默认值可靠：\n\n```\nclaude --permission-mode default\n```\n\n这条命令让本次练习从 Manual 开始。要先做计划，改用：\n\n```\nclaude --permission-mode plan\n```\n\n**会话中按 Shift+Tab**，观察输入区附近的模式文字，切到你需要的一项再停。不要背“按两次一定是什么模式”：可用模式会随配置变化。`/permissions` 用来查看和修改权限规则，不能替代核对当前模式。\n\n还有一种看起来像切模式的动作：权限框中的“以后不再询问”。它可能保存某条命令或网站的规则，也可能只允许本会话的文件编辑。**看完整选项，确认它影响多久、允许多大范围**，不能一概理解成“只在这次对话有效”。\n\n### 新手的三原则\n\n1. 在专用练习目录里，从 Manual 开始认识它会做什么。\n2. 范围不清楚的任务先规划，想清楚改哪些文件、怎样验收。\n3. 少点几次确认的前提，是你已经能判断后果并保存好原件。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-auto",
+        "claim": "当前 Pro/Max/Team 的适用会话可从 auto 模式启动；需看版本、设置、接入与组织条件。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "plan-mode",
+        "claim": "Plan 用于先研究方案，可有读取、探索命令和计划文件；不是操作系统隔离保证。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "10a14b2a89597f0a43c81b2faa9c2bb4927d5ad847064cc6b8822de84f7d7571"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:24:26.352388+00:00"
+}

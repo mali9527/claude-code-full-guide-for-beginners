@@ -14,40 +14,19 @@
 
 ### 本章地图
 
-<!-- diagram: MM-09 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 2 章 · 安装 Claude Code))
-    先确认条件
-      电脑与网络
-      账号与费用
-    原生安装
-      Mac 终端
-      Windows PowerShell
-    检查结果
-      version 看版本
-      doctor 查安装
-    登录与练习
-      进入练习目录
-      看懂账号路径
-    日后维护
-      原生自动更新
-      包管理器各自更新
-```
+本章图解：[安装到第一次成功的四站](#21-安装前先确认你准备好了什么)。
 
 > 🎯 **【主线】—— 本章必读核心**
 
 ## 2.1 安装前，先确认你准备好了什么
 
 本书采用官方现在推荐的**原生安装**：直接把 Claude Code 程序装到电脑上。这里的“原生”只是安装方式的名字。你不必先学习编程，也不必先装 Node.js——旧版教程把它列为必需品的步骤，已经不适用于这条路线。
+
+<!-- diagram: FIG-004 -->
+![安装到第一次成功的四站](../../assets/illustrations/FIG-004/revisions/r02/zh-CN.png)
+
+*图：先核对准备条件，再按平台安装、检查结果并进入练习目录。*
+<!-- /diagram: FIG-004 -->
 
 先做三件事。第一，检查系统版本：Mac 在左上角苹果菜单里打开“关于本机”；Windows 在“设置 → 系统 → 关于”看 Windows 规格。官方当前要求 macOS 13 或更新版本，Windows 10 1809 或更新版本，并至少有 4 GB 内存。系统太旧时先处理系统兼容性，反复执行安装命令解决不了这个问题。
 

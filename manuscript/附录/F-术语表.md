@@ -4,52 +4,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-40 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 F · 术语表))
-    模型与上下文
-      model
-      context 与窗口
-      token
-    文件与记忆
-      CLAUDE.md
-      MEMORY.md
-      path 路径
-    权限与安全
-      permission
-      diff
-      rewind
-    扩展机制
-      Skill
-      slash command
-      subagent
-      hook
-      MCP
-    协作与产品
-      agent
-      Cowork
-      IDE
-    本书概念
-      双轨阅读
-      验证频谱
-      5 分钟原则
-    按键与符号
-      ~ / ./ ../
-      Ctrl+C Esc Esc
-    缩写速查
-      AI LLM CLI
-      GUI API SDK
-
-```
+本附录按下方问题和条目查阅；相关章节入口保留在各条目中。
 
 ## A-Z 英文术语
 

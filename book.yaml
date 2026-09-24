@@ -586,153 +586,174 @@ outputs:
       enabled: true
       directory: zh-TW
 diagrams:
-- id: MM-08
+- id: FIG-001
   unit: preface
-  type: mindmap
-- id: MM-46
+  type: illustration
+  spec: assets/illustrations/FIG-001/brief.yaml
+- id: FIG-002
   unit: ch-00
-  type: mindmap
-- id: MM-07
+  type: illustration
+  spec: assets/illustrations/FIG-002/brief.yaml
+- id: FIG-003
   unit: ch-01
-  type: mindmap
-- id: MM-09
+  type: illustration
+  spec: assets/illustrations/FIG-003/brief.yaml
+- id: FIG-004
   unit: ch-02
-  type: mindmap
-- id: MM-10
+  type: illustration
+  spec: assets/illustrations/FIG-004/brief.yaml
+- id: FIG-005
   unit: ch-03
-  type: mindmap
-- id: MM-11
+  type: illustration
+  spec: assets/illustrations/FIG-005/brief.yaml
+- id: FIG-006
   unit: ch-04
-  type: mindmap
-- id: MM-12
+  type: illustration
+  spec: assets/illustrations/FIG-006/brief.yaml
+- id: FIG-007
   unit: ch-05
-  type: mindmap
-- id: MM-13
+  type: illustration
+  spec: assets/illustrations/FIG-007/brief.yaml
+- id: FIG-008
   unit: ch-06
-  type: mindmap
-- id: MM-14
+  type: illustration
+  spec: assets/illustrations/FIG-008/brief.yaml
+- id: FIG-009
   unit: ch-07
-  type: mindmap
-- id: MM-03
-  unit: ch-07
-  type: mindmap
-- id: MM-15
+  type: illustration
+  spec: assets/illustrations/FIG-009/brief.yaml
+- id: FIG-010
   unit: ch-08
-  type: mindmap
-- id: MM-16
+  type: illustration
+  spec: assets/illustrations/FIG-010/brief.yaml
+- id: FIG-011
   unit: ch-09
-  type: mindmap
-- id: MM-17
+  type: illustration
+  spec: assets/illustrations/FIG-011/brief.yaml
+- id: FIG-012
   unit: ch-10
-  type: mindmap
-- id: MM-18
+  type: illustration
+  spec: assets/illustrations/FIG-012/brief.yaml
+- id: FIG-013
   unit: ch-11
-  type: mindmap
-- id: MM-19
+  type: illustration
+  spec: assets/illustrations/FIG-013/brief.yaml
+- id: FIG-014
   unit: ch-12
-  type: mindmap
-- id: MM-20
+  type: illustration
+  spec: assets/illustrations/FIG-014/brief.yaml
+- id: FIG-015
   unit: ch-13
-  type: mindmap
-- id: MM-02
-  unit: ch-13
-  type: mindmap
-- id: MM-21
+  type: illustration
+  spec: assets/illustrations/FIG-015/brief.yaml
+- id: FIG-016
   unit: ch-14
-  type: mindmap
-- id: MM-22
+  type: illustration
+  spec: assets/illustrations/FIG-016/brief.yaml
+- id: FIG-017
   unit: ch-15
-  type: mindmap
-- id: MM-04
-  unit: ch-15
-  type: mindmap
-- id: MM-23
+  type: illustration
+  spec: assets/illustrations/FIG-017/brief.yaml
+- id: FIG-018
   unit: ch-16
-  type: mindmap
-- id: MM-05
+  type: illustration
+  spec: assets/illustrations/FIG-018/brief.yaml
+- id: FIG-019
   unit: ch-16
-  type: mindmap
-- id: MM-24
+  type: illustration
+  spec: assets/illustrations/FIG-019/brief.yaml
+- id: FIG-020
   unit: ch-17
-  type: mindmap
-- id: MM-25
+  type: illustration
+  spec: assets/illustrations/FIG-020/brief.yaml
+- id: FIG-021
   unit: ch-18
-  type: mindmap
-- id: MM-06
-  unit: ch-18
-  type: mindmap
-- id: MM-26
+  type: illustration
+  spec: assets/illustrations/FIG-021/brief.yaml
+- id: FIG-022
   unit: ch-19
-  type: mindmap
-- id: MM-27
+  type: illustration
+  spec: assets/illustrations/FIG-022/brief.yaml
+- id: FIG-023
   unit: ch-20
-  type: mindmap
-- id: MM-28
+  type: illustration
+  spec: assets/illustrations/FIG-023/brief.yaml
+- id: FIG-024
   unit: ch-21
-  type: mindmap
-- id: MM-29
+  type: illustration
+  spec: assets/illustrations/FIG-024/brief.yaml
+- id: FIG-025
   unit: ch-22
-  type: mindmap
-- id: MM-30
+  type: illustration
+  spec: assets/illustrations/FIG-025/brief.yaml
+- id: FIG-026
   unit: ch-23
-  type: mindmap
-- id: MM-31
+  type: illustration
+  spec: assets/illustrations/FIG-026/brief.yaml
+- id: FIG-027
   unit: ch-24
-  type: mindmap
-- id: MM-32
+  type: illustration
+  spec: assets/illustrations/FIG-027/brief.yaml
+- id: FIG-028
   unit: ch-25
-  type: mindmap
-- id: MM-33
+  type: illustration
+  spec: assets/illustrations/FIG-028/brief.yaml
+- id: FIG-029
   unit: ch-26
-  type: mindmap
-- id: MM-34
+  type: illustration
+  spec: assets/illustrations/FIG-029/brief.yaml
+- id: FIG-030
   unit: ch-27
-  type: mindmap
-- id: MM-35
+  type: illustration
+  spec: assets/illustrations/FIG-030/brief.yaml
+- id: FIG-031
   unit: appendix-a
-  type: mindmap
-- id: MM-36
+  type: illustration
+  spec: assets/illustrations/FIG-031/brief.yaml
+- id: FIG-032
   unit: appendix-b
-  type: mindmap
-- id: MM-37
+  type: illustration
+  spec: assets/illustrations/FIG-032/brief.yaml
+- id: FIG-033
   unit: appendix-c
-  type: mindmap
-- id: MM-38
+  type: illustration
+  spec: assets/illustrations/FIG-033/brief.yaml
+- id: FIG-034
   unit: appendix-d
-  type: mindmap
-- id: FC-legacy-01
+  type: illustration
+  spec: assets/illustrations/FIG-034/brief.yaml
+- id: FIG-035
   unit: appendix-d
-  type: flowchart
-- id: FC-legacy-02
+  type: illustration
+  spec: assets/illustrations/FIG-035/brief.yaml
+- id: FIG-036
   unit: appendix-d
-  type: flowchart
-- id: FC-legacy-03
+  type: illustration
+  spec: assets/illustrations/FIG-036/brief.yaml
+- id: FIG-037
   unit: appendix-d
-  type: flowchart
-- id: MM-01
-  unit: appendix-d
-  type: mindmap
-- id: MM-39
-  unit: appendix-e
-  type: mindmap
-- id: MM-40
-  unit: appendix-f
-  type: mindmap
-- id: MM-41
+  type: illustration
+  spec: assets/illustrations/FIG-037/brief.yaml
+- id: FIG-038
   unit: appendix-g
-  type: mindmap
-- id: MM-42
+  type: illustration
+  spec: assets/illustrations/FIG-038/brief.yaml
+- id: FIG-039
   unit: appendix-h
-  type: mindmap
-- id: MM-43
-  unit: appendix-i
-  type: mindmap
-- id: MM-44
+  type: illustration
+  spec: assets/illustrations/FIG-039/brief.yaml
+- id: FIG-040
   unit: appendix-j
-  type: mindmap
-- id: MM-45
+  type: illustration
+  spec: assets/illustrations/FIG-040/brief.yaml
+- id: FIG-041
   unit: appendix-k
-  type: mindmap
+  type: illustration
+  spec: assets/illustrations/FIG-041/brief.yaml
+- id: FIG-042
+  unit: ch-04
+  type: illustration
+  spec: assets/illustrations/FIG-042/brief.yaml
 protected_terms:
 - Claude Code
 - Claude

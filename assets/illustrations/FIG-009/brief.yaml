@@ -1,0 +1,18 @@
+schema_version: 1
+title: 先看动作，再看授权
+reader_question: 如何理解“先看动作，再看授权”？
+takeaway: 判断一次操作，要一起看动作、作用范围与当前权限规则。
+source_sections:
+- 7.2 权限机制：先学三种，再认识自动模式
+placement: 7.2 权限机制：先学三种，再认识自动模式
+composition: 同一操作请求通过三张审核卡：做什么、作用哪里、当前规则；旁边小注解释模式改变处理方式。
+content_guard: 不把模式画成固定安全等级阶梯，不承诺每个动作都弹窗。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 判断一次操作，要一起看动作、作用范围与当前权限规则。
+source_ids:
+- MM-14
+- MM-03
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

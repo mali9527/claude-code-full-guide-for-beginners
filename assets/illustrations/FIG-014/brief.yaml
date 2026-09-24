@@ -1,0 +1,17 @@
+schema_version: 1
+title: 上下文像当前工作桌
+reader_question: 如何理解“上下文像当前工作桌”？
+takeaway: 当前任务只摊开相关材料；整理会话不等于删除磁盘文件。
+source_sections:
+- 12.1 比喻先行：一个熬夜的人
+placement: 12.1 比喻先行：一个熬夜的人
+composition: 同一张工作桌的左右对照：左半桌堆满材料，标“材料堆满”；右半桌只摊当前任务，标“聚焦当前任务”。桌子之外的画面最右另放一个独立资料柜，标“磁盘资料仍在”。“工作桌”标签只以细引线指向桌面本身，绝不在桌子和资料柜下方画共同括号或统括线。图上不画任何括号。
+content_guard: 不暗示清理会话删除磁盘文件；不用固定容量或占用百分比。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 当前任务只摊开相关材料；整理会话不等于删除磁盘文件。
+source_ids:
+- MM-19
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

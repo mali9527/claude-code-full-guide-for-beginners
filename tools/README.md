@@ -68,3 +68,28 @@ entries 只在本地更新 book.yaml 与 README，要求可核对的公开回执
 采用版本见 tools/TOOLKIT_VERSION，tools/toolkit-manifest.json 记录入库时各工具文件。先比较已采用版本、本地定制和新源；本地有定制时展示差异并建立升级任务，不能直接覆盖。总控的 tools/toolkit_diff.py 只做比较，没有升级写入动作。
 
 升级后运行 check/build 与对应测试，确认本书规范差异，再更新采用版本。工具升级不自动更新产品事实或正文。
+
+
+## 统一手绘插图（notebook-pen-v1）
+
+每张图登记于 `book.yaml.diagrams`，`type: illustration`，`spec` 指向 `assets/illustrations/FIG-001/brief.yaml`。纸底和已确认样张随书保存。最终 PNG 必须不透明；透明和半透明像素在导入与构建检查中阻断。
+
+```sh
+python tools/studio.py illustrations status
+python tools/studio.py illustrations pack --figure FIG-001 --output .studio/illustrations/pack-001
+# 在可用图像工具中使用 pack-001/prompt.txt，以风格包 paper.png 为底稿。
+python tools/studio.py illustrations import --figure FIG-001 --pack .studio/illustrations/pack-001 --image /path/to/candidate.png --revision r01 --tool image_gen.imagegen --reference-used
+python tools/studio.py illustrations select --figure FIG-001 --revision r01 --review /path/to/review.json
+python tools/studio.py check
+python tools/studio.py build
+```
+
+总控运行时，在动作后指定作品 ID，例如 `illustrations status claude-code`。`--image` 和 `--review` 是本机输入；生产包输出路径须在书仓内。版本已存在时拒绝覆盖；下一次使用 `r02` 和新生产包。工具不调用生成服务，不假设模型、成本或种子；实际未知值保留 unknown。
+
+审校 JSON 至少包含 `reviewer`、`checked_on`、`image_sha256`、`input_fingerprint`，以及 `content/text/visual/background: pass`。应先对照正文、逐字标签、箭头与统一纸底进行真实看图检查，再填写结果。`placement` 的阅读复核另记；`select` 只完成工作稿采用，不能代替跨引擎审校或公开门禁。
+
+`status` 从现场推导 planned / selected / placed 与 current / stale。正文相关小节、所引事实、brief、标签、纸底或风格变化会使采用记录过期。标题必须唯一命中；不会模糊猜测位置。正文中的图、图注由成对 diagram 注释界定，自动导航不影响来源摘要。
+
+合订稿和固定提交 PDF 复用仓库中选定的图片字节，不重新生成。繁体 Markdown 的转换不会改动图内文字，`check --language zh-TW` 会单独报告图中文字本地化待验，正式公开时阻断。当前实现只自动采用 zh-CN 图片，繁体图片的独立选择与生成适配器仍待扩展。
+
+插图风格执行检查：公共前缀缺失（包括误写为 undefined）时不能制作生产包；所有采用图在 import/select/check/PDF 读取时解码检查透明度及颜色。彩色像素或明显色偏被拒绝；中性纸纹仅容许每通道 24/255 内的噪声，超过 12/255 的像素不得多于 0.5%。这不是把彩色图去色的转换。仍须人工检查笔触、纸底与文字。图内不得添加重复的界面版本注释。审校记录新增 monochrome: pass，不能只凭旧的 visual: pass 采用。

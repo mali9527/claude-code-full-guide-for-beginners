@@ -1,0 +1,19 @@
+schema_version: 1
+title: 四周练习路线
+reader_question: 如何理解“四周练习路线”？
+takeaway: 把练习从小任务逐步带入真实工作，每阶段都检查结果。
+source_sections:
+- 27.2 30 天挑战清单
+placement: 27.2 30 天挑战清单
+composition: 四周里程牌从日常练习走向资料管理、扩展和真实工作，小脚印连起来。
+content_guard: The four weeks are practice milestones only. Print exactly the four
+  supplied labels and title. No footer, guarantee, disclaimer or other sentence. The
+  remainder of the canvas is empty graph paper.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 把练习从小任务逐步带入真实工作，每阶段都检查结果。
+source_ids:
+- MM-34
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

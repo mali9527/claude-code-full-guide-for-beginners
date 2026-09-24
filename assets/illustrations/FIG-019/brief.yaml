@@ -1,0 +1,18 @@
+schema_version: 1
+title: 五个合作时的提醒
+reader_question: 如何理解“五个合作时的提醒”？
+takeaway: 执行后仍要验证、保存和回看，别跳过结果检查。
+source_sections:
+- 16.6 错误 6：让 Claude 干完全不懂的活然后全盘信
+placement: 16.6 错误 6：让 Claude 干完全不懂的活然后全盘信
+composition: 五个小手绘场景对应陌生领域、模糊任务、配置费用、情绪反复、规则措辞。
+content_guard: 与上一张分开，保持手机单格可读；不要堆十条小字。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 执行后仍要验证、保存和回看，别跳过结果检查。
+source_ids:
+- MM-23
+- MM-05
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

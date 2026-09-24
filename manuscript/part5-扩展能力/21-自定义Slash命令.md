@@ -18,31 +18,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-28 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 21 章 · 自定义 Slash 命令))
-    先认清关系
-      技能也能用斜杠调用
-      旧 commands 格式仍兼容
-    建 my-daily
-      手动触发
-      输入今天的事项
-    检验输出
-      不臆测你的日程
-      不自动写外部系统
-    维护旧命令
-      一次迁移一个
-      避免名称冲突
-```
+本章图解：[斜杠是打开手册的入口](#211-斜杠是入口不是另一种智能)。
 
 ---
 
@@ -51,6 +27,12 @@ mindmap
 ## 21.1 斜杠是入口，不是另一种智能
 
 **Slash 就是斜杠 `/`**。第 18 章的 `/clear` 是内置命令；上一章的 `/meeting-notes` 是你安装的技能入口。二者看起来都以斜杠开始，但前者由产品提供，后者承载你自己的任务要求。
+
+<!-- diagram: FIG-024 -->
+![斜杠是打开手册的入口](../../assets/illustrations/FIG-024/revisions/r01/zh-CN.png)
+
+*图：自定义命令提供入口，技能说明承载具体工作方法。*
+<!-- /diagram: FIG-024 -->
 
 新版 Claude Code 已把自定义命令和技能放到同一套机制里。旧的 `.claude/commands/daily.md` 仍可使用；新建流程优先采用 `.claude/skills/my-daily/SKILL.md`，方便把模板和示例放在一起。**不能再用“技能只能自动触发、命令只能手动触发”来区分它们。**[官方说明](https://code.claude.com/docs/en/skills#where-skills-live)
 

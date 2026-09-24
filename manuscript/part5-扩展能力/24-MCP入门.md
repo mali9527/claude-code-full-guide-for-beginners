@@ -18,34 +18,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-31 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 24 章 · MCP 入门))
-    MCP 做什么
-      连接外部工具
-      不等于授予所有权限
-    官方连接示例
-      添加 Notion 服务
-      浏览器授权
-      读取一页测试资料
-    三种配置范围
-      local 当前项目个人
-      project 项目共享
-      user 多项目个人
-    验证与移除
-      看真实工具调用
-      检查来源与账户
-      撤销不再需要的连接
-```
+本章图解：[连接、账号、动作分三道检查](#242-先把三层权限分开)。
 
 ---
 
@@ -64,6 +37,12 @@ Claude Code 本来就有本地文件与命令能力，也能通过其它方式�
 ## 24.2 先把三层权限分开
 
 接入外部服务时，至少有三件不同的事：
+
+<!-- diagram: FIG-027 -->
+![连接、账号、动作分三道检查](../../assets/illustrations/FIG-027/revisions/r01/zh-CN.png)
+
+*图：服务连接、账户资格与具体操作权限是三件需要分别核对的事。*
+<!-- /diagram: FIG-027 -->
 
 | 层次 | 解决的问题 | 你应该检查什么 |
 |---|---|---|

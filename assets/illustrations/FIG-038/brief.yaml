@@ -1,0 +1,20 @@
+schema_version: 1
+title: 报错时先收集这四样
+reader_question: 如何理解“报错时先收集这四样”？
+takeaway: 保留操作、完整报错、环境和已尝试步骤，才更容易定位问题。
+source_sections:
+- 通用排查顺序
+placement: 通用排查顺序
+composition: 横排四件黑笔线稿物件：一张带感叹号的纸、一位操作电脑的人、一张带齿轮的卡、一张带回转箭头的记录纸。四件物件上方依次写“错误原文”“正在做什么”“当前环境”“最近改了什么”。纸和卡片内部只画无字横线。四条短引线汇到下方“带着线索排查”。
+content_guard: Exactly the five supplied labels and title. Paper interiors contain
+  abstract black lines ONLY, no legible small writing. Do not invent error messages,
+  code, Python, package names, software versions, operating-system versions, credentials
+  or environment values. No other text or footnote.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 保留操作、完整报错、环境和已尝试步骤，才更容易定位问题。
+source_ids:
+- MM-41
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

@@ -1,0 +1,20 @@
+schema_version: 1
+title: 先认位置，再输命令
+reader_question: 如何理解“先认位置，再输命令”？
+takeaway: 先认清当前目录和输入位置，再输入命令；平台提示符可能不同。
+source_sections:
+- 1.3 第一次使用：看懂提示符，输入 `pwd`
+placement: 1.3 第一次使用：看懂提示符，输入 `pwd`
+composition: 左右并排两幅手绘终端局部。左标题 Mac，一行提示符精确写 ~/练习 %，其右画输入光标；右标题 Windows，一行提示符精确写 PS
+  C:\练习>，其右画输入光标。两边“在这里输入”的箭头只指光标，“当前位置”的箭头只指各自提示符中的目录部分 ~/练习 或 C:\练习，绝不能指用户名或电脑名。底部单独一个
+  pwd 卡片，旁写“查看当前位置”。不要写其他命令，不加用户名前缀。
+content_guard: "两平台分开标注；去掉旧图“只能住终端”的绝对表述。\n Simplify the interface to the described\
+  \ regions only. No invented commands or outputs."
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 先认清当前目录和输入位置，再输入命令；平台提示符可能不同。
+source_ids:
+- MM-07
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

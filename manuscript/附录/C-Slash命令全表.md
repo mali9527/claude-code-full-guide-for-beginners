@@ -8,41 +8,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-37 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 C · 常用命令速查))
-    查信息
-      help
-      status
-      usage
-      context
-    做任务
-      plan
-      diff
-      rewind
-    配置与记忆
-      model 与 effort
-      permissions
-      init 与 memory
-    衔接会话
-      rename
-      resume
-      clear
-      tasks
-    别混淆
-      doctor 和 claude doctor
-      agents 和 claude agents
-      技能可能真的开工
-```
+本章图解：[两个地方输入的命令](#c1-查状态保留进度与管理上下文)。
 
 ---
 
@@ -50,6 +16,13 @@ mindmap
 > 不必把表中每一项执行一遍。查看面板、修改设置和启动工作，是不同的操作。
 
 ## C.1 查状态、保留进度与管理上下文
+
+
+<!-- diagram: FIG-033 -->
+![两个地方输入的命令](../../assets/illustrations/FIG-033/revisions/r01/zh-CN.png)
+
+*图：系统终端中的启动命令与对话中的斜杠命令属于不同入口。*
+<!-- /diagram: FIG-033 -->
 
 | 我想做什么 | 命令 | 读结果时记住 |
 |---|---|---|

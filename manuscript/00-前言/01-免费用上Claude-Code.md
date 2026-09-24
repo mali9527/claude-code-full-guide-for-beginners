@@ -14,41 +14,19 @@
 
 ### 本章地图
 
-<!-- diagram: MM-46 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 0 章 · 账号与费用))
-    先分清
-      程序
-      模型
-      账户
-    选择路径
-      个人订阅
-      团队账号
-      API 计费
-    检查资格
-      所在地区
-      套餐与额度
-      组织要求
-    再开始
-      安装
-      确认模型
-      做小练习
-```
+本章图解：[程序、模型、账户是三件事](#01-三件东西不要混成一件)。
 
 > 🎯 **【主线】—— 本章必读核心**
 
 ## 0.1 三件东西，不要混成一件
 
 你接下来会用到三个不同的东西。**Claude Code 是帮你读文件、改文件和运行命令的工具**；**Claude 模型负责理解任务和生成回答**，例如 Opus 5.5、Fable 5.1；**账户决定你能访问哪些服务，以及费用由谁承担**。同一台电脑装好了工具，换一个账户，能选的模型和可用额度也可能不同。
+
+<!-- diagram: FIG-002 -->
+![程序、模型、账户是三件事](../../assets/illustrations/FIG-002/revisions/r01/zh-CN.png)
+
+*图：程序是操作入口，模型处理任务，账户决定可用资格。*
+<!-- /diagram: FIG-002 -->
 
 把它想成装好了一个视频播放软件：软件存在，不等于你已经订阅每一个付费频道。Claude Code 的安装程序可以取得，也不等于请求模型永久免费。官方目前明确说明，Claude 免费聊天计划不包含 Claude Code 使用资格。[官方安装与账号说明](https://code.claude.com/docs/en/setup)
 

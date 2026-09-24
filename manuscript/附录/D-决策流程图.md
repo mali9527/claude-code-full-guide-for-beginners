@@ -4,67 +4,18 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-38 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 D · 决策流程图))
-    图 1 权限决策
-      读取先确认材料范围
-      改文件先看 diff
-      命令先看作用与范围
-    图 2 模型选择
-      简单用 Haiku
-      日常先用 Opus 5.5
-      难题再评估 Fable
-      查实际上下文
-    图 3 Ctx 应对
-      先看任务是否清楚
-      长任务及时整理
-      换任务开新会话
-    图 4 卡住怎么办
-      5 分钟原则
-      不试第三次
-      换方向或手动
-    图 5 信息分层
-      一次性会话说
-      个人规则用用户说明
-      项目共享 CLAUDE
-      流程化 Skill
-    图 6 扩展选型
-      背景 CLAUDE.md
-      流程 Skill
-      快捷 Command
-      重活 Subagent
-      自动 Hook
-      外部工具与数据 MCP
-
-```
+本附录按下方问题和条目查阅；相关章节入口保留在各条目中。
 
 ## 图 1：权限决策流程（遇到弹窗怎么选）
 
-<!-- diagram: FC-legacy-01 -->
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["Claude 弹出权限窗口<br/>它要干什么?"] --> B{"操作类型"}
-  B -->|"读文件"| C["核对任务授权与内容敏感性<br/>未知先暂停"]
-  B -->|"改文件"| D{"先看 diff<br/>改的都是我想改的地方?"}
-  B -->|"跑命令"| E{"已理解路径和影响吗?<br/>删除 / 外发 / 发布等"}
-  D -->|"是"| F["Yes 接受"]
-  D -->|"否"| G["No 退回让它改"]
-  E -->|"否"| H["先让它解释，不批准"]
-  E -->|"是"| I["核对任务范围后再决定"]
-```
 
 **口诀**：
+
+<!-- diagram: FIG-034 -->
+![遇到操作请求先核对什么](../../assets/illustrations/FIG-034/revisions/r01/zh-CN.png)
+
+*图：授权之前先判断动作和作用范围，不清楚时先问明白。*
+<!-- /diagram: FIG-034 -->
 
 - 读文件 → 确认属于本次任务材料，且内容适合交给所连接的服务
 - 改文件 → **永远看 diff**，多改了就 No
@@ -96,66 +47,36 @@ flowchart TD
 
 ## 图 4：卡住了怎么办（5 分钟原则）
 
-<!-- diagram: FC-legacy-02 -->
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["第 1 次尝试失败"] --> B["调整 prompt 再试一次"]
-  B --> C{"第 2 次还是不行?"}
-  C -->|"是"| D["触发 5 分钟原则<br/>先估算手动要多久"]
-  D --> E{"手动完成大概需要?"}
-  E -->|"5 分钟以内"| F["关掉 Claude<br/>自己动手做完"]
-  E -->|"20 分钟以上"| G["继续用 AI，换方向:<br/>/rewind 重开<br/>/compact 清包袱<br/>换模型 / 拆小任务"]
-  E -->|"5 - 20 分钟"| H["任选：自己做 或 换方向"]
-```
 
 这里的两次尝试与五分钟是作者的时间管理建议，不是产品限制。若失败涉及外部副作用，先核对现状再决定恢复方式。
 
+<!-- diagram: FIG-035 -->
+![失败以后怎样选择下一步](../../assets/illustrations/FIG-035/revisions/r01/zh-CN.png)
+
+*图：失败后先看证据和变化，再决定重试、调整或求助。*
+<!-- /diagram: FIG-035 -->
+
 ## 图 5：信息分层决策（该放在哪一层）
 
-<!-- diagram: FC-legacy-03 -->
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["这条信息…"] --> B{"是什么性质?"}
-  B -->|"一次性用的"| C["会话里说就行<br/>不用存"]
-  B -->|"跨项目个人规则"| D["用户 CLAUDE.md"]
-  B -->|"项目规则 + 团队共享"| E["CLAUDE.md"]
-  B -->|"结构化任务流程（偶尔用）"| F["Skill"]
-  B -->|"外部已有长文档"| G["在 CLAUDE.md 写 Pointer<br/>（查看项目中实际存在的说明文件）"]
-```
 
 项目自动记忆默认按项目保存，不是天然的跨项目偏好库。个人规则与团队共享规则分开维护，任务流程放进 Skill。
 
+<!-- diagram: FIG-036 -->
+![这条信息放在哪里](../../assets/illustrations/FIG-036/revisions/r01/zh-CN.png)
+
+*图：临时材料、项目约定与长期操作说明按用途保存。*
+<!-- /diagram: FIG-036 -->
+
 ## 图 6：扩展机制选型
 
-<!-- diagram: MM-01 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((我想让 Claude...))
-    知道项目背景
-      CLAUDE.md
-    会做某类任务
-      Skill
-    敲 /xxx 一键触发
-      手动调用 Skill
-    派独立专员干重活
-      Subagent
-    某事件自动触发
-      Hook
-    连接外部系统
-      MCP
-```
 
 **口诀**：**CLAUDE.md 讲背景，Skill 讲流程，Slash 调用 Skill，Subagent 派替身，Hook 搞自动，MCP 连接外部工具和数据源**。
+
+<!-- diagram: FIG-037 -->
+![扩展能力工具架](../../assets/illustrations/FIG-037/revisions/r01/zh-CN.png)
+
+*图：扩展机制各有作用；斜杠入口可以调用技能，两者不是互斥体系。*
+<!-- /diagram: FIG-037 -->
 
 <!-- studio:nav -->
 ← [附录 C：常用 Slash 命令速查](C-Slash%E5%91%BD%E4%BB%A4%E5%85%A8%E8%A1%A8.md) · [目录](../../README.md) · [附录 E：FAQ（常见问题 10 问）](E-FAQ.md) →

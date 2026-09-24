@@ -83,3 +83,24 @@ Build API (root-owned): build_book(book_dir, check_only=False, translate=False, 
 Release API is agent-owned; notify root once names are fixed; CLI wired by root.
 Every agent writes only assigned files. Tests use unittest and temporary Git repos.
 \ntranslations.yaml entries: unit, language, path, source_commit, source_sha256, converter, output_sha256, policy_sha256 (conversion terms and local patches), review (pending|pass).\ntranslation-overrides.yaml list: unit, language: zh-TW, anchor (optional unique context), expected (exactly once after anchor), replacement.\n
+
+## 手绘插图字段（增量契约）
+
+`diagrams` 增加可选字段 `spec`；`type: illustration` 时必须指向书仓内的 brief。原 `{id, unit, type}` 记录仍可用于历史图示。
+
+```yaml
+- id: FIG-001
+  unit: intro
+  type: illustration
+  spec: assets/illustrations/FIG-001/brief.yaml
+```
+
+brief 的必需字段：`schema_version: 1`、`title`、`reader_question`、`takeaway`、`source_sections`（精确标题列表）、`placement`（精确标题）、`composition`、`content_guard`、`style`、`labels`（相对 brief 的 YAML 标签列表）。可选 `caption`、`source_ids`、`language_variants` 只作设计数据，不得据其手填值宣称已完成。
+
+风格包路径为 `assets/illustrations/styles/<style>/`，保存 `style.md`、`prefix.txt`、`reference.png`、`paper.png`、`approval.json`。paper 是全书统一、不透明的细方格底稿；reference 是作者确认的完整效果图，两者不能混淆。
+
+每次候选保存于 `revisions/rNN/`：`zh-CN.png`、`inputs.json`、`prompt.txt`、`provenance.json`、通过后的 `review.json`。来源快照的 fingerprint 包含 brief、标签、正文小节、单元所引事实、风格文件摘要和提示词摘要；自动导航及本系统的成对插图块不参加正文摘要。`selection.yaml` 只选择具体版本并记录相同的图片和输入摘要。
+
+PNG 文件按真实格式、CRC、解压数据、不透明性与宽度（至少 1400 px）检查。机械尺寸通过不等于印刷或手机可读性通过；后者必须单独看实际版面。审校对象更换或输入过期均不得沿用旧的通过记录。
+
+插图风格执行检查：公共前缀缺失（包括误写为 undefined）时不能制作生产包；所有采用图在 import/select/check/PDF 读取时解码检查透明度及颜色。彩色像素或明显色偏被拒绝；中性纸纹仅容许每通道 24/255 内的噪声，超过 12/255 的像素不得多于 0.5%。这不是把彩色图去色的转换。仍须人工检查笔触、纸底与文字。图内不得添加重复的界面版本注释。审校记录新增 monochrome: pass，不能只凭旧的 visual: pass 采用。

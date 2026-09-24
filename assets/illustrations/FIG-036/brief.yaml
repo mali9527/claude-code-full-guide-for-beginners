@@ -1,0 +1,21 @@
+schema_version: 1
+title: 这条信息放在哪里
+reader_question: 如何理解“这条信息放在哪里”？
+takeaway: 临时材料、项目约定与长期操作说明按用途保存。
+source_sections:
+- 图 5：信息分层决策（该放在哪一层）
+placement: 图 5：信息分层决策（该放在哪一层）
+composition: 信息卡经过几个短问题，分到会话、个人说明、项目说明和技能手册。
+content_guard: '不要把一次性信息画成永远不需要保存；流程与调用频率分开。
+
+  This is a hand-drawn sorting scene: incoming information card sorted into four physical
+  trays, each with a paired category/destination label. It is not a radial mindmap.
+  Show exactly four category pairs, no hierarchy claim.'
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 临时材料、项目约定与长期操作说明按用途保存。
+source_ids:
+- FC-legacy-03
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

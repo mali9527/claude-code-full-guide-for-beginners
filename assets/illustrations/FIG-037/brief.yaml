@@ -1,0 +1,20 @@
+schema_version: 1
+title: 扩展能力工具架
+reader_question: 如何理解“扩展能力工具架”？
+takeaway: 扩展机制各有作用；斜杠入口可以调用技能，两者不是互斥体系。
+source_sections:
+- 图 6：扩展机制选型
+placement: 图 6：扩展机制选型
+composition: 两行三列六个简单黑笔物件。上行依次：说明纸（项目说明）、小手册（任务手册）、画着斜杠 / 的输入框（调用入口）。下行依次：戴耳机的人物（专项助手）、小铃铛（事件触发）、两个相接的插头（外部连接）。唯一一条短箭头从上行右侧调用入口指向上行中间任务手册。图中文字只要六个中文标签及标题；不要任何英文单词、Skill
+  徽标或额外注释。
+content_guard: Only the six supplied Chinese labels and title. No English label anywhere.
+  One arrow goes from 调用入口 to 任务手册, no other relationship arrows. The slash / inside
+  the input icon is the only permitted additional symbol.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 扩展机制各有作用；斜杠入口可以调用技能，两者不是互斥体系。
+source_ids:
+- MM-01
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

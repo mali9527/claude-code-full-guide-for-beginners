@@ -1,0 +1,77 @@
+{
+  "fingerprint": "2bd08d05d196ef35c987f547216fa9d90b3d46e23ba94f94ee9d07a70c15f710",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-031",
+    "unit": "appendix-a",
+    "source_path": "manuscript/附录/A-Mac终端速查.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "Mac 终端的输入位置",
+      "reader_question": "如何理解“Mac 终端的输入位置”？",
+      "takeaway": "在 Mac 终端先看当前目录，再输入命令",
+      "source_sections": [
+        "提示符符号速读"
+      ],
+      "placement": "提示符符号速读",
+      "composition": "手绘 Mac 终端局部。第一行精确写 ~/练习 % pwd，第二行精确写 /Users/示例/练习。当前位置的箭头只指第一行 ~/练习；输入命令的箭头只指第一行 pwd；查看输出的箭头只指第二行路径。旁边一个空心文件夹。只画这两行，不画表格。",
+      "content_guard": "这里的练习路径是教学例子，不是用户真实环境。只画 brief 给出的文字；不加入其他命令、菜单、说明、免责声明或版本注释。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "在 Mac 终端先看当前目录，再输入命令",
+      "source_ids": [
+        "MM-35"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "Mac 终端",
+      "当前位置",
+      "输入命令",
+      "查看输出",
+      "~/练习 % pwd",
+      "/Users/示例/练习"
+    ],
+    "sources": [
+      {
+        "heading": "提示符符号速读",
+        "text": "## 提示符符号速读\n\n- `%`（zsh，新版 Mac 默认）：等着你打字\n- `$`（bash，老 Mac）：一样意思\n- 看到 `~` = 你在自己的用户文件夹"
+      }
+    ],
+    "facts": [
+      {
+        "id": "native-install",
+        "claim": "官方推荐原生安装；该路线不要求 Node.js；npm 包现要求 Node.js 22+；官方不建议 sudo npm install。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "install",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "2277b418a424b70556f6a111e20fadf60a9156e7e9e92df8e71458d1dd62c9e2"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:29:04.869203+00:00"
+}

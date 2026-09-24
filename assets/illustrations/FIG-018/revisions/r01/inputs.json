@@ -1,0 +1,146 @@
+{
+  "fingerprint": "b52974368e3e2dcb56c8c68e02d1475899d3bda98b98f4c45d0354571df95bf7",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-018",
+    "unit": "ch-16",
+    "source_path": "manuscript/part4-避坑与判断力/16-新手10大错误.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "五个动手前的提醒",
+      "reader_question": "如何理解“五个动手前的提醒”？",
+      "takeaway": "开工前先缩小任务、补齐背景、确认范围与材料。",
+      "source_sections": [
+        "16.1 错误 1：把 /init 的草稿直接当成项目规则"
+      ],
+      "placement": "16.1 错误 1：把 /init 的草稿直接当成项目规则",
+      "composition": "五个小手绘场景对应草稿审核、敏感材料、修改核对、任务混杂、读取范围。",
+      "content_guard": "每格只一句提醒；具体十条仍在正文。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "开工前先缩小任务、补齐背景、确认范围与材料。",
+      "source_ids": [
+        "MM-23",
+        "MM-05"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "审核草稿",
+      "保护敏感材料",
+      "看清修改",
+      "任务分开",
+      "缩小材料范围"
+    ],
+    "sources": [
+      {
+        "heading": "16.1 错误 1：把 /init 的草稿直接当成项目规则",
+        "text": "## 16.1 错误 1：把 /init 的草稿直接当成项目规则\n\n**场景**：第一次打开 Claude Code，用 `/init` 生成说明后，自己没有通读，就让它成为以后每次工作的依据。\n\n**问题不在运行命令本身。** 它可以帮助起草，但生成内容也可能漏掉你没写在文件里的约定。例如，原始素材必须保留、旧文件名暂时不能改、哪些信息需要人工确认，这些未必能从目录里猜出来。\n\n**正确做法**（详见 Ch 14）：\n\n- 可以手写，也可以自动起草；保存前逐条核对事实。\n- 补上项目为什么这样组织，以及真正需要反复提醒的要求。\n- 删除重复和过期内容，长流程另存；不要只为了达到某个行数机械删减。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "data-usage",
+        "claim": "消费者改进模型设置与商业/API默认政策不同；留存、反馈、云同步及第三方路径不能统一承诺30天删除或不训练。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/data-usage",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/claude-directory#application-data",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "memory",
+        "claim": "自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "67b857bc640ff8c0fcbf6702aba6c209cf8da613433979242a0c4c7fb564c9cb"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:24:27.347774+00:00"
+}

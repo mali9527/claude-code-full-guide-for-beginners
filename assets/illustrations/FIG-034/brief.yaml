@@ -1,0 +1,21 @@
+schema_version: 1
+title: 遇到操作请求先核对什么
+reader_question: 如何理解“遇到操作请求先核对什么”？
+takeaway: 授权之前先判断动作和作用范围，不清楚时先问明白。
+source_sections:
+- 图 1：权限决策流程（遇到弹窗怎么选）
+placement: 图 1：权限决策流程（遇到弹窗怎么选）
+composition: 笔记本手绘决策树，按读、改、命令三类展开到范围与影响的核对。
+content_guard: '逐边核对；复杂分支不能靠美术即兴增删。
+
+  A simple hand-drawn decision layout: top question -> three distinct operation branches.
+  Each branch leads to its own check. All branches share a final reminder 不清楚就先问.
+  No yes/no logical claims or automatic permission guarantee.'
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 授权之前先判断动作和作用范围，不清楚时先问明白。
+source_ids:
+- FC-legacy-01
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

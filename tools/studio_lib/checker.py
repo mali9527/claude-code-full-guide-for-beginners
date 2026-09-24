@@ -407,7 +407,7 @@ class _Checker:
             return
         declared, actual = {}, {}
         for diagram in registry:
-            if not self.fields(diagram, {"id", "unit", "type"}, "book.yaml:diagrams", ("id", "unit", "type")):
+            if not self.fields(diagram, {"id", "unit", "type", "spec"}, "book.yaml:diagrams", ("id", "unit", "type")):
                 continue
             did = diagram.get("id")
             if not isinstance(did, str) or not did:
@@ -436,6 +436,12 @@ class _Checker:
                     self.issue("unregistered_mindmap", relative, "mindmap 前缺少 diagram ID 注释")
         for did in declared.keys() - actual.keys():
             self.issue("missing_diagram", "book.yaml", "登记图示未在正文找到：" + did)
+
+        from .illustrations import audit
+        if any(isinstance(d, dict) and d.get("type") == "illustration" for d in registry):
+            result = audit(self.root, publication=self.publication, scope=self.scope)
+            for issue in result["issues"]:
+                self.issue(issue["code"], issue["path"], issue["message"], issue["level"])
 
     def fact_records(self):
         if not (self.root / "facts.yaml").exists():
@@ -565,6 +571,19 @@ class _Checker:
             return sorted([d for d in values if isinstance(d, dict) and d.get("unit") == uid], key=lambda d: str(d.get("id", "")))
         if related_diagrams(old) != related_diagrams(self.book):
             return False, "本单元的图示声明已变化"
+        # Illustration reviews include the brief, labels and adopted style.
+        for diagram in related_diagrams(self.book) or []:
+            if diagram.get("type") != "illustration": continue
+            try:
+                from .illustrations import resolve
+                _, _, brief, folder, _ = resolve(self.root, diagram["id"])
+                dependencies = [folder / "brief.yaml", folder / brief["labels"], folder / "selection.yaml"]
+                style = self.root / "assets/illustrations/styles" / brief["style"]
+                dependencies += [style / name for name in ("style.md", "prefix.txt", "reference.png", "paper.png", "approval.json")]
+                if any(not self.same_file(commit, p.relative_to(self.root).as_posix()) for p in dependencies):
+                    return False, "插图设计、采用记录或风格依据已变化"
+            except (StudioError, OSError, ValueError, KeyError):
+                return False, "插图生产记录不完整"
         refs = self.units[uid].get("facts", [])
         if refs:
             old_facts = self.old_yaml(commit, "facts.yaml")

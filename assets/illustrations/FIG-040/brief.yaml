@@ -1,0 +1,17 @@
+schema_version: 1
+title: 升级后怎样确认自己在用什么
+reader_question: 如何理解“升级后怎样确认自己在用什么”？
+takeaway: 先核对当前版本、可用模型与账户资格，再决定使用方式。
+source_sections:
+- J.2 升级软件以后，再确认完整模型名
+placement: J.2 升级软件以后，再确认完整模型名
+composition: 软件版本、实际模型名、账户条件三张检查卡，依次核对。
+content_guard: 不把发布日期和默认参数烙进图；跟随正文确认。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 先核对当前版本、可用模型与账户资格，再决定使用方式。
+source_ids:
+- MM-44
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

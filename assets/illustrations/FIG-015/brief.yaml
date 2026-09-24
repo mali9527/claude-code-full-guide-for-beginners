@@ -1,0 +1,22 @@
+schema_version: 1
+title: 资料各有自己的位置
+reader_question: 如何理解“资料各有自己的位置”？
+takeaway: 桌面、笔记本、岗位卡和手册柜表示不同用途，不是产品固定的四层大脑。
+source_sections:
+- 13.1 三层记忆是什么——先看比喻
+placement: 13.1 三层记忆是什么——先看比喻
+composition: 一张场景图：当前桌面、工作笔记本、岗位说明卡和手册柜，四个短标签。
+content_guard: '不再叫“四层大脑”，不以金字塔表达固定加载优先级。
+
+  Arrange one actual physical workspace scene, with tabletop, small notebook, instruction
+  card and cabinet. Do not draw concentric layers or pyramid. Labels map exactly to
+  four distinct familiar objects.'
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 桌面、笔记本、岗位卡和手册柜表示不同用途，不是产品固定的四层大脑。
+source_ids:
+- MM-20
+- MM-02
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

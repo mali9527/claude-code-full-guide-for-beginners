@@ -1,0 +1,20 @@
+schema_version: 1
+title: 安装到第一次成功的四站
+reader_question: 如何理解“安装到第一次成功的四站”？
+takeaway: 先核对准备条件，再按平台安装、检查结果并进入练习目录。
+source_sections:
+- 2.1 安装前，先确认你准备好了什么
+placement: 2.1 安装前，先确认你准备好了什么
+composition: 只画四个路标与四个小图标，按从左到右的细箭头连接：准备条件（空心电脑图标）、对应平台安装（空心下载箭头）、检查结果（黑色打勾）、进入练习目录（空心文件夹）。四个步骤的名称就是图中全部正文。不要画终端窗口、代码、命令、Python、安装包名、平台徽标、清单、欢迎人物或其他小字。
+content_guard: ONLY the title and exactly these four labels may appear anywhere. No
+  terminal, code, commands, package names, pip, conda, Python, operating-system logo,
+  extra checklist or additional text. The image is the Claude Code preparation route,
+  never a programming-library tutorial.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 先核对准备条件，再按平台安装、检查结果并进入练习目录。
+source_ids:
+- MM-09
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

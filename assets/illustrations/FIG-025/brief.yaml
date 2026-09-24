@@ -1,0 +1,17 @@
+schema_version: 1
+title: 独立工作台，共享文件柜
+reader_question: 如何理解“独立工作台，共享文件柜”？
+takeaway: 分开任务与上下文，仍需协调共享文件的写入。
+source_sections:
+- 22.1 独立的是工作记忆，不是整台电脑
+placement: 22.1 独立的是工作记忆，不是整台电脑
+composition: 主助手与专项助手分别坐在两张桌边，各有自己的材料，背后共用文件柜。
+content_guard: 清楚显示独立上下文不等于文件隔离；不画无条件并行写入。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 分开任务与上下文，仍需协调共享文件的写入。
+source_ids:
+- MM-29
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

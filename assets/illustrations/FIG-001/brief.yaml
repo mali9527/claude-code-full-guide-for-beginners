@@ -1,0 +1,17 @@
+schema_version: 1
+title: 六站阅读路线
+reader_question: 如何理解“六站阅读路线”？
+takeaway: 按六个阶段逐步深入；具体章节和附录仍可按需查阅。
+source_sections:
+- 0.4 章节地图
+placement: 0.4 章节地图
+composition: 一条笔记本上的旅行路线，六个站点只写阶段目标；附录画成旁边的小工具袋。
+content_guard: 不把四十个章节塞回一张图；精确目录仍由正文提供。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 按六个阶段逐步深入；具体章节和附录仍可按需查阅。
+source_ids:
+- MM-08
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

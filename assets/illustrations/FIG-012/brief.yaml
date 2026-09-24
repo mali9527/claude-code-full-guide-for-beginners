@@ -1,0 +1,19 @@
+schema_version: 1
+title: 影响越大，检查越仔细
+reader_question: 如何理解“影响越大，检查越仔细”？
+takeaway: 核对强度随任务影响提高，不能只看助手的自信程度。
+source_sections:
+- 10.2 验证频谱——按改动风险选检查深度
+placement: 10.2 验证频谱——按改动风险选检查深度
+composition: 四级阶梯分别放格式文件、普通稿件、业务结果、敏感操作图标，各配一个人用放大镜核对的动作；阶梯由左至右升高。只写 labels 中的五个标签，不写任何底注。
+content_guard: This is the book author’s checking advice, not a software permission
+  classification. This constraint is for the illustrator and MUST NOT be printed as
+  a footnote or caption. Only the title and supplied labels may be written.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 核对强度随任务影响提高，不能只看助手的自信程度。
+source_ids:
+- MM-17
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

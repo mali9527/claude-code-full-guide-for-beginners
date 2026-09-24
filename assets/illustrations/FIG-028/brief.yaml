@@ -1,0 +1,17 @@
+schema_version: 1
+title: 共享桌与个人抽屉
+reader_question: 如何理解“共享桌与个人抽屉”？
+takeaway: 团队共享工作约定，个人偏好与私密材料另行管理。
+source_sections:
+- 25.1 共享什么、不共享什么——一张表
+placement: 25.1 共享什么、不共享什么——一张表
+composition: 公共桌上放项目说明和示例，个人抽屉放个人设置；凭据用封口小袋表示。
+content_guard: 不展示秘密值，不把加入忽略规则画成抹掉历史。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 团队共享工作约定，个人偏好与私密材料另行管理。
+source_ids:
+- MM-32
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

@@ -1,0 +1,17 @@
+schema_version: 1
+title: 认识对话界面
+reader_question: 如何理解“认识对话界面”？
+takeaway: 先看消息，再从输入区说出下一步。
+source_sections:
+- 3.3 认识 Claude Code 的界面
+placement: 3.3 认识 Claude Code 的界面
+composition: 一张手绘终端窗口，两根箭头分别指消息区和输入区；与本轮样图同一方向。
+content_guard: 不把欢迎横幅、状态栏或弹窗画成永远必有。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 先看消息，再从输入区说出下一步。
+source_ids:
+- MM-10
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

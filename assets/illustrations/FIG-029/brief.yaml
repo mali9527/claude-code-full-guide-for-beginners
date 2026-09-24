@@ -1,0 +1,22 @@
+schema_version: 1
+title: 界面在哪，任务在哪运行
+reader_question: 如何理解“界面在哪，任务在哪运行”？
+takeaway: 区分代码所在位置、任务执行位置与远程控制入口。
+source_sections:
+- 26.2 想换个界面，还是想换台机器执行
+placement: 26.2 想换个界面，还是想换台机器执行
+composition: 电脑、远端机器和控制窗口分别画成三张情境小卡，用执行标记说明位置。
+content_guard: '具体产品支持范围回到已核验正文，不仅看界面推断运行地点。
+
+  Draw three independent mini-scenes. In 本地操作 a small action mark appears on the local
+  machine. In 远端执行 the action mark appears on a distant server. In 远程控制 the remote
+  viewing device points to a local machine where the action mark appears. Do not equate
+  remote control with cloud execution.'
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 区分代码所在位置、任务执行位置与远程控制入口。
+source_ids:
+- MM-33
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

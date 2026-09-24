@@ -18,38 +18,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-44 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 J · 新模型上手))
-    认识两个新版本
-      Fable 5.1 九月一日
-      Opus 5.5 九月二十二日
-    确认真的用上
-      升级命令行
-      看完整模型名
-      查账户与组织
-    调整投入
-      Opus 默认 medium
-      Fable 默认 high
-      不机械沿用 max
-    交代长任务
-      目标和材料
-      边界和交付物
-      进度和核验
-    读懂变化
-      Fast 另行收费
-      1M 不等于免费额度
-      回退看实际模型
-```
+本章图解：[升级后怎样确认自己在用什么](#j2-升级软件以后再确认完整模型名)。
 
 ---
 
@@ -69,6 +38,12 @@ Fable 并不意味着“小任务也必须交给它”。它的标准 API 输入
 ## J.2 升级软件以后，再确认完整模型名
 
 先退出正在输入的 Claude Code 对话，回到普通终端。Mac 的终端和 Windows 的 PowerShell 都可以输入：
+
+<!-- diagram: FIG-040 -->
+![升级后怎样确认自己在用什么](../../assets/illustrations/FIG-040/revisions/r01/zh-CN.png)
+
+*图：先核对当前版本、可用模型与账户资格，再决定使用方式。*
+<!-- /diagram: FIG-040 -->
 
 ```sh
 claude --version

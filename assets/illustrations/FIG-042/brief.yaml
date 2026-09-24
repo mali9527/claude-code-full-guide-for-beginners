@@ -1,0 +1,21 @@
+schema_version: 1
+title: 本地工具与远端模型怎样配合
+reader_question: 如何理解“本地工具与远端模型怎样配合”？
+takeaway: 模型服务决定下一步，本地工具按权限执行，把结果回传供继续判断。
+source_sections:
+- 🌿 支线 4.A：Claude Code 底层是怎么运作的（通俗版）
+placement: 🌿 支线 4.A：Claude Code 底层是怎么运作的（通俗版）
+composition: 电脑上的本地工具与远端服务两端循环：请求材料送出，动作建议返回，本地按授权执行，再回传结果。
+content_guard: '不要把模型画成本地运行；不得暗示整个硬盘必上传或每个动作必弹窗。
+
+  Show two large sides, local computer and remote service. Four directed arrows form
+  an unambiguous loop: selected 请求材料 from local to remote; 动作建议 from remote to local;
+  local 按授权执行; 执行结果 from local back to remote. Never show the remote model directly
+  moving local files.'
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 模型服务决定下一步，本地工具按权限执行，把结果回传供继续判断。
+source_ids: []
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

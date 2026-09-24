@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "figure": "FIG-020",
+  "input_fingerprint": "1ea66184d3b1731ce7fac99395af87429c59508708adb361c0ff0caf451bedc3",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 20,
+    "chroma_noise_fraction": 0.00388737,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 1823933,
+    "sha256": "0d522af0bcfbf81a9682f8447169046c8433c334b7c0a43266d13a0b0ce044cb"
+  },
+  "tool": "image_gen.imagegen (built-in)",
+  "model": "unknown",
+  "cost": "unknown",
+  "reference_image_actually_passed": true,
+  "created_at": "2026-09-24T14:00:31.545272+00:00"
+}

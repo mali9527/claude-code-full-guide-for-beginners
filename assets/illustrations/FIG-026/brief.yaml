@@ -1,0 +1,19 @@
+schema_version: 1
+title: 事件触发一次小检查
+reader_question: 如何理解“事件触发一次小检查”？
+takeaway: Hook 围绕特定事件运行检查，结果如何使用取决于配置。
+source_sections:
+- 23.1 先决定在哪个时刻做什么
+placement: 23.1 先决定在哪个时刻做什么
+composition: 只画三个对象，从左到右：空心铃铛、带齿轮的小检查清单、结果便签。黑色箭头连接铃铛→检查清单→结果便签。各对象下方依次写“事件发生”“触发小检查”“返回结果”。只要这三个对象和三处标签，空余处保留方格纸。不要时间线、事前事后分区、底注或其他文字。
+content_guard: This figure only shows event, check, result. Do not imply that a report
+  reverses an action. Do not print this constraint or any other sentence; only the
+  three supplied labels and title are visible.
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: Hook 围绕特定事件运行检查，结果如何使用取决于配置。
+source_ids:
+- MM-30
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization

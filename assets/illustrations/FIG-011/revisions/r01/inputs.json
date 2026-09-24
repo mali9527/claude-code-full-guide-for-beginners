@@ -1,0 +1,117 @@
+{
+  "fingerprint": "de3d4d1e5e5aa4a4855ab8c9115e3dc424bd23126272ae796d6922d030033243",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-011",
+    "unit": "ch-09",
+    "source_path": "manuscript/part2-日常使用/09-计划模式与撤销.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "计划、回退、备份各管一段",
+      "reader_question": "如何理解“计划、回退、备份各管一段”？",
+      "takeaway": "先规划，再执行；检查点和独立备份的恢复范围不同。",
+      "source_sections": [
+        "9.1 先认清：规划、回退、备份"
+      ],
+      "placement": "9.1 先认清：规划、回退、备份",
+      "composition": "横向三栏。第一栏画人看计划纸，标“事前：计划”；第二栏画三个检查点与一个小回退箭头，标“过程中：检查点”；第三栏画装文件的档案盒，标“长期：备份”。底部中央只写“各自有范围”。只画这三个区域和四个标签，不画外发、安装、软件界面或任何其他文字。",
+      "content_guard": "Draw exactly the three objects and four supplied labels. No additional text anywhere. Do not illustrate external actions being undone. This sentence is an illustrator constraint, NEVER text to print.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "先规划，再执行；检查点和独立备份的恢复范围不同。",
+      "source_ids": [
+        "MM-16"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "事前：计划",
+      "过程中：检查点",
+      "长期：备份",
+      "各自有范围"
+    ],
+    "sources": [
+      {
+        "heading": "9.1 先认清：规划、回退、备份",
+        "text": "## 9.1 先认清：规划、回退、备份\n\n遇到改错，不要急着再补十个命令。先判断你现在需要的是哪一种帮助：\n\n| 工具 | 什么时候用 | 你还要决定什么 |\n|---|---|---|\n| `/plan` | 范围或做法还没想清楚 | 批准哪一部分方案 |\n| Esc Esc 或 `/rewind` | 想退回一次对话里的某个节点 | 选哪个点，恢复文件、对话还是两者 |\n| Git 或文件备份 | 需要长期保存与恢复文件 | 哪些改动值得保存，恢复到哪版 |\n\n**Esc Esc 和 `/rewind` 是同一个菜单的两个入口**，不是一套“快速撤销”和另一套“高级撤销”。这件事要先记住：打开菜单之后，文件还没有自动恢复。\n\n这些工具帮你多留一个选择，但无法让所有错误消失。例如，已经发出去的邮件、已经扣掉的费用，都不会因为恢复对话而退回。操作前想清楚范围，仍然是最省事的一步。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "plan-mode",
+        "claim": "Plan 用于先研究方案，可有读取、探索命令和计划文件；不是操作系统隔离保证。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "9df508c2720ab62748d9f89139c0a766748787c0f2d2f92da759bbabd227f6b9"
+  },
+  "base_commit": "f3798cbeb30e27b6ca0fd43d3d1d87f5585d2d6d",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T13:36:00.331665+00:00"
+}

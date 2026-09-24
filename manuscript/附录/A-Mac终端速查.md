@@ -4,39 +4,7 @@
 
 ### 本章地图（一眼看全貌）
 
-<!-- diagram: MM-35 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 A · Mac 终端速查))
-    常用命令
-      导航 pwd ls cd
-      文件 mkdir cp mv rm
-      辅助 open clear
-    快捷键
-      Tab 补全
-      Ctrl+C 中断
-      Cmd+K 清屏
-    提示符
-      % zsh 新版
-      $ bash 老版
-    错误翻译
-      command not found
-      No such file
-      Permission denied
-    早知道
-      拖文件填路径
-      !! 重复上条
-      ls 接管道
-
-```
+本章图解：[Mac 终端的输入位置](#提示符符号速读)。
 
 ## 最常用 15 个命令
 
@@ -79,6 +47,12 @@ mindmap
 - `%`（zsh，新版 Mac 默认）：等着你打字
 - `$`（bash，老 Mac）：一样意思
 - 看到 `~` = 你在自己的用户文件夹
+
+<!-- diagram: FIG-031 -->
+![Mac 终端的输入位置](../../assets/illustrations/FIG-031/revisions/r01/zh-CN.png)
+
+*图：在 Mac 终端先看当前目录，再输入命令*
+<!-- /diagram: FIG-031 -->
 
 ## 常见错误翻译
 

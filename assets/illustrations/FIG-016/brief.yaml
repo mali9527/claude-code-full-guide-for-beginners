@@ -1,0 +1,17 @@
+schema_version: 1
+title: 项目说明是一张路标
+reader_question: 如何理解“项目说明是一张路标”？
+takeaway: 项目说明写清目标、约定与验证入口，长资料按需引用。
+source_sections:
+- 14.2 CLAUDE.md 的三个核心作用
+placement: 14.2 CLAUDE.md 的三个核心作用
+composition: 短说明卡上三个区：项目、约定、资料入口；手绘箭头指向旁边扩展文档。
+content_guard: 指向真实存在的资料；不把所有材料抄进这张卡。
+style: notebook-pen-v1
+labels: labels.zh-CN.yaml
+caption: 项目说明写清目标、约定与验证入口，长资料按需引用。
+source_ids:
+- MM-21
+language_variants:
+  zh-CN: planned
+  zh-TW: pending_localization
