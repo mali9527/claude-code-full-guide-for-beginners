@@ -10,6 +10,9 @@ permissions:
 jobs:
   publication:
     runs-on: ubuntu-latest
+    env:
+      # Review dates use the authoring timezone, including around UTC midnight.
+      TZ: Asia/Tokyo
     steps:
       - uses: actions/checkout@v7
         with:
