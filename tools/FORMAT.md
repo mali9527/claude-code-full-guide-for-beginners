@@ -63,7 +63,7 @@ checks/*.yaml: a single record or list:
 Public records never contain private report paths or names of trial participants.
 book.required_checks default [editorial, facts, operations] per publish unit;
 book.platforms default [mac]; tutorial may set appropriate required_checks.
-Engine cross-review applies editorial; human override must include reason.
+Editorial review may use the authoring engine, another engine, or a human; engine and author_engine must truthfully name claude, codex, or human. Cross-engine review is optional and runs only when explicitly requested by the author. Its absence is not a publication gate and needs no override reason. Do not create an unknown/fail editorial record merely because cross-review was not requested. Existing evidence, freshness, operations, and human-trial checks still apply.
 
 translations.yaml: mapping with entries list; builder owns exact details.
 workspace.yaml:
@@ -104,3 +104,11 @@ brief 的必需字段：`schema_version: 1`、`title`、`reader_question`、`tak
 PNG 文件按真实格式、CRC、解压数据、不透明性与宽度（至少 1400 px）检查。机械尺寸通过不等于印刷或手机可读性通过；后者必须单独看实际版面。审校对象更换或输入过期均不得沿用旧的通过记录。
 
 插图风格执行检查：公共前缀缺失（包括误写为 undefined）时不能制作生产包；所有采用图在 import/select/check/PDF 读取时解码检查透明度及颜色。彩色像素或明显色偏被拒绝；中性纸纹仅容许每通道 24/255 内的噪声，超过 12/255 的像素不得多于 0.5%。这不是把彩色图去色的转换。仍须人工检查笔触、纸底与文字。图内不得添加重复的界面版本注释。审校记录新增 monochrome: pass，不能只凭旧的 visual: pass 采用。
+
+## 系列插图策略
+
+每个真实作品必须有 assets/illustrations/policy.json，即使 diagrams 为空。schema_version 固定为 1，style 固定为 notebook-pen-v1，files 是 prefix.txt、paper.png、reference.png 三个文件名到 SHA-256 的映射；路径固定在 assets/illustrations/styles/notebook-pen-v1/。style.md 与 approval.json 也必须存在。策略描述已采用视觉基准，不写入已冻结候选的输入摘要，添加同基准策略不会让现有采用稿失效。风格文档属于各书已冻结的制作依据，规则正文更新仍遵循原有来源失效机制。
+
+new-book 从总控 assets/illustrations/ 复制，不能仅依赖模板里可能漂移的纸底。illustrations status 在总控不指定作品时检查全部登记作品及 book/tutorial 模板，并比较其策略与总控基准；独立书仓只读取本书快照。
+
+check 与 build 的结构检查不以“已有 illustration 登记”为前提：无图新书也查策略，正文未登记图片和原生 Mermaid、活动旧图登记均报错。仅无策略且 is_test: true 的历史虚构测试夹具保留旧机制兼容，不能作为真实作品的风格例外。

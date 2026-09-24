@@ -1,0 +1,103 @@
+{
+  "fingerprint": "ad213d3c3317ca1f99eee7e6dfef62d2014640ccaca0610b685b75b80f605a18",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-012",
+    "unit": "ch-10",
+    "source_path": "manuscript/part2-日常使用/10-信任校准.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "影响越大，检查越仔细",
+      "reader_question": "如何理解“影响越大，检查越仔细”？",
+      "takeaway": "核对强度随任务影响提高，不能只看助手的自信程度。",
+      "source_sections": [
+        "10.2 验证频谱——按改动风险选检查深度"
+      ],
+      "placement": "10.2 验证频谱——按改动风险选检查深度",
+      "composition": "四级阶梯分别放格式文件、普通稿件、业务结果、敏感操作图标，各配一个人用放大镜核对的动作；阶梯由左至右升高。只写 labels 中的五个标签，不写任何底注。",
+      "content_guard": "This is the book author’s checking advice, not a software permission classification. This constraint is for the illustrator and MUST NOT be printed as a footnote or caption. Only the title and supplied labels may be written.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "核对强度随任务影响提高，不能只看助手的自信程度。",
+      "source_ids": [
+        "MM-17"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "格式调整",
+      "普通文字",
+      "业务结果",
+      "敏感操作",
+      "检查逐步加深"
+    ],
+    "sources": [
+      {
+        "heading": "10.2 验证频谱——按改动风险选检查深度",
+        "text": "## 10.2 验证频谱——按改动风险选检查深度\n\n不是所有改动都要同样深度审核。用下面这个\"频谱\"决定：\n\n| 改动类型 | 典型例子 | 建议深度 | 时间预算 |\n|---------|---------|---------|---------|\n| **L1 纯展示格式** | 普通文档空行、无语义影响的排版 | 扫一眼 | 10-30 秒 |\n| **L2 文字类 / 工具函数** | 改文案、重命名变量、小的帮手函数 | 读一遍 + 跑一下看效果 | 1-2 分钟 |\n| **L3 业务逻辑** | 改功能、加判断条件、调接口参数、合并数据 | 细读 diff + 跑测试 + 想 3 个边缘情况 | 5-15 分钟 |\n| **L4 安全 / 支付 / 权限相关** | 认证、加密、支付、用户权限、敏感数据处理 | **最严** + 静态检查工具（如有）+ 让第二个人 review | 15-30 分钟 |\n\n### 怎么对号入座\n\n面对一个 diff 或命令，先问自己两个问题：\n\n1. **改的是什么类型**？参考上面的 L1-L4\n2. **改坏了能不能快速恢复**？能（有经过验证的备份、不影响别人）→ 可减少恢复成本，但不能因此省掉高风险审核；不能（影响生产、发给了客户、改了用户数据）→ 升一档\n\n表中时间只是练习安排，不是验收时限。配置、重命名、代码缩进也可能影响行为；有备份并不会降低安全、隐私或外部影响本身的风险。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "34b60fe831435e9b0074491e68e31ebe59e80794b1901c27390bb2ce7ae0a7eb"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:41.778065+00:00"
+}

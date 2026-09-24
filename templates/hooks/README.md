@@ -65,8 +65,16 @@ Windows PowerShell：
 
 ```powershell
 $env:CLAUDE_PROJECT_DIR = (Get-Location).Path
-Get-Content -Raw -Encoding UTF8 hook-event.json | py -3 templates/hooks/check_markdown.py
+$savedOutputEncoding = $OutputEncoding
+try {
+    $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+    Get-Content -Raw -Encoding UTF8 hook-event.json | py -3 templates/hooks/check_markdown.py
+} finally {
+    $OutputEncoding = $savedOutputEncoding
+}
 ```
+
+Windows PowerShell 5.1 将文本经管道送给外部程序时，默认编码可能丢失中文路径。上面的设置只在这次调用中采用 UTF-8，然后恢复原值；只写 `Get-Content -Encoding UTF8` 不能控制后半段管道编码。此处是手动测试输入的处理，Claude Code 真实 Hook 事件不经过这段 PowerShell 管道。[PowerShell 编码说明](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_character_encoding?view=powershell-5.1)
 
 输出是包含 `hookSpecificOutput.additionalContext` 的 JSON。中文可能显示为 `\u` 转义，这是正常的 JSON 表达，Claude Code 解析后会得到中文。去掉练习文件的一级标题再运行，反馈应改变；脚本不会替你修复文件。输入结构错误、文件不存在或超过 1 MiB 时会返回错误，且不会把原始事件中的文件内容打印出来。
 
@@ -84,4 +92,4 @@ Get-Content -Raw -Encoding UTF8 hook-event.json | py -3 templates/hooks/check_ma
 
 开发验证可运行 `python3 -m unittest discover -s templates/hooks -p 'test_*.py' -v`。自动测试覆盖有效输入、缺少标题/换行、Edit 事件、跳过无关事件、路径边界、符号链接、特殊文件名、错误 JSON、缺失文件和过大文件等。
 
-核验依据：[Hook 输入、PostToolUse 与直接执行形式](https://code.claude.com/docs/en/hooks)、[Hook 入门与退出码](https://code.claude.com/docs/en/hooks-guide)。核验日期：2026-09-24。样例脚本已在 macOS Python 3 本地测试；Windows 命令与真实 Claude 事件需要在对应环境验收。
+核验依据：[Hook 输入、PostToolUse 与直接执行形式](https://code.claude.com/docs/en/hooks)、[Hook 入门与退出码](https://code.claude.com/docs/en/hooks-guide)。核验日期：2026-09-25。样例脚本已在 macOS Python 3 本地测试；Windows 命令与真实 Claude 事件需要在对应环境验收。

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "figure": "FIG-012",
+  "input_fingerprint": "ad213d3c3317ca1f99eee7e6dfef62d2014640ccaca0610b685b75b80f605a18",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 16,
+    "chroma_noise_fraction": 1.081e-05,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 1838091,
+    "sha256": "101c304013f5f18b5c5471370bffe738f262976782d8bd12260d48a0a735669e"
+  },
+  "tool": "byte-identical reuse of existing illustration; original generation provenance retained in assets/illustrations/FIG-012/revisions/r01/provenance.json",
+  "model": "unknown",
+  "cost": "unknown",
+  "reference_image_actually_passed": false,
+  "created_at": "2026-09-24T16:03:43.399010+00:00",
+  "reuse": {
+    "from": "assets/illustrations/FIG-012/revisions/r01",
+    "original_image_sha256": "101c304013f5f18b5c5471370bffe738f262976782d8bd12260d48a0a735669e",
+    "generation_performed": false,
+    "reason": "Source wording corrected; existing image labels, relations and instructional meaning remain consistent after visual and text review."
+  }
+}

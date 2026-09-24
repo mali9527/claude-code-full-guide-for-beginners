@@ -104,7 +104,7 @@
 
 ### diff 看着对，但改完发现错了
 
-**原因**：你 vibe review 不够细。
+**可能原因**：差异检查没覆盖实际行为、输入有误，或运行环境与预期不同。
 **怎么办**：
 - 打开 `/rewind` 并确认该改动可恢复，再选恢复文件
 - 重新走，这次**细审**或 `/plan` 先
@@ -141,7 +141,7 @@
 ### Skill / Command 没被识别
 
 **原因 A**：文件路径错
-**办法**：确认在 `~/.claude/skills/<名>/SKILL.md` 或 `.claude/commands/<名>.md`
+**办法**：核对个人 `~/.claude/skills/<名>/SKILL.md`、项目 `.claude/skills/<名>/SKILL.md`，或兼容旧格式 `.claude/commands/<名>.md`
 
 **原因 B**：frontmatter 格式错
 **办法**：若使用 frontmatter，检查 `---` 开闭和 YAML 格式；旧命令也可以只有 Markdown，路径与发现规则见第 20、21 章

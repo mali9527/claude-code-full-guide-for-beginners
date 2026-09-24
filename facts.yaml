@@ -436,14 +436,16 @@
   status: confirmed
   critical: true
 - id: input-behavior
-  claim: '! 命令通常在沙箱外执行（严格沙箱例外），默认可触发模型回应；@引用可注入全文，不以追加行数说明保证只读局部。'
+  claim: '! 命令通常在沙箱外执行（严格沙箱例外），默认可触发模型回应；@文件引用可注入全文，@目录提供目录列表，不等于读入全部文件；追加行数说明不能保证只读局部。'
   scope:
     product: claude-code
     plan: CLI；按终端、模式和版本说明
   sources:
   - url: https://code.claude.com/docs/en/interactive-mode
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-09-25'
+  - url: https://code.claude.com/docs/en/common-workflows
+    checked_on: '2026-09-25'
+  checked_on: '2026-09-25'
   category: permission
   ttl_days: 90
   status: confirmed

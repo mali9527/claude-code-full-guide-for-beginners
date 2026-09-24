@@ -17,11 +17,11 @@
 | `cd ..` | 上一层 | `cd ..` |
 | `cd ~` | 回用户文件夹 | `cd ~` |
 | `mkdir 名字` | 建文件夹 | `mkdir notes` |
-| `New-Item 名字` | 建空文件 | `New-Item todo.md` |
+| `New-Item -ItemType File 名字` | 建空文件；已存在时先检查 | `New-Item -ItemType File todo.md` |
 | `cp 源 目标` | 复制 | `cp a.txt b.txt` |
 | `mv 源 目标` | 移动 / 重命名 | `mv a.txt b.txt` |
 | `rm 文件` | 删除（**小心**，不进回收站） | `rm old.txt` |
-| `rm -r 文件夹` | 删文件夹及内容 | `rm -r temp` |
+| `Remove-Item -Recurse 文件夹` | 删文件夹及内容，不进回收站 | `Remove-Item -Recurse temp` |
 | `explorer .` | 在资源管理器打开当前 | `explorer .` |
 | `cls` | 清屏 | `cls` |
 | `notepad 文件` | 用记事本打开 | `notepad todo.md` |
@@ -36,18 +36,18 @@
 | `End` | 光标跳行尾 |
 | `Ctrl+C` | 中断 |
 | `Ctrl+L` 或 `cls` | 清屏 |
-| `Ctrl+T` | 新标签页（Windows Terminal） |
-| `Ctrl+Shift+N` | 新窗口 |
+| `Ctrl+Shift+T` | 新标签页（Windows Terminal 默认设置） |
+| `Ctrl+Shift+N` | 新窗口（Windows Terminal 默认设置） |
 | `Ctrl+加号 / 减号` | 字号 |
 
 ## 提示符符号速读
 
 - `>`（如 `PS C:\Users\你>`）：PowerShell 等你打字
 - `PS` = PowerShell
-- 路径用**反斜杠 `\`**（和 Mac 的 `/` 不一样）
+- Windows 原生路径通常用 **反斜杠 `\`**；PowerShell 的文件路径也常接受 `/`，但外部程序参数要另查
 
 <!-- diagram: FIG-032 -->
-![PowerShell 的输入位置](../../assets/illustrations/FIG-032/revisions/r01/zh-CN.png)
+![PowerShell 的输入位置](../../assets/illustrations/FIG-032/revisions/r02/zh-CN.png)
 
 *图：在 PowerShell 先看当前位置，再输入命令*
 <!-- /diagram: FIG-032 -->
@@ -56,18 +56,18 @@
 
 | 看到 | 意思 | 怎么办 |
 |-----|-----|-------|
-| `The term 'xxx' is not recognized` | 没装或没在 PATH 里 | 先装；重开终端 |
+| `The term 'xxx' is not recognized` | 拼写、安装状态或 PATH 等不符 | 确认命令环境与 `Get-Command xxx` 的结果，再按官方安装说明处理 |
 | `Cannot find path 'xxx' because it does not exist` | 路径错 | `pwd` 和 `ls` 核查 |
-| `Access to the path 'xxx' is denied` | 权限不够 | **以管理员身份**运行 PowerShell |
-| `... is currently disabled on this system` | 脚本执行政策限制 | 管理员 PowerShell 跑 `Set-ExecutionPolicy RemoteSigned`（理解后再做） |
+| `Access to the path 'xxx' is denied` | 目标访问被拒绝 | 先核对路径、账户权限与文件占用，不把管理员模式当通用修复 |
+| `... is currently disabled on this system` | 脚本执行政策限制 | 先用 `Get-ExecutionPolicy -List` 查看各作用域，核对脚本来源与组织策略；不直接修改全机策略 |
 | `... cannot be loaded because running scripts is disabled` | 同上 | 同上 |
 
 ## Windows 特别要注意的路径差异
 
-- **反斜杠** `\`（不是 `/`）
+- 原生路径通常用 **反斜杠** `\`；PowerShell 文件路径也常接受 `/`
 - 盘符 `C:\` `D:\`——Mac/Linux 没有
 - **空格路径用引号**：`cd "Program Files"`
-- **用户文件夹**：`C:\Users\你的名字`（不是 `/Users/...`）
+- **用户文件夹**：通常为 `C:\Users\你的名字`；桌面可能由 OneDrive 重定向，用 `Set-Location ([Environment]::GetFolderPath('Desktop'))` 进入实际桌面
 
 ## PowerShell 的"别名"
 
@@ -81,14 +81,16 @@
 | `Move-Item` | `mv`（也支持 `move`） |
 | `Remove-Item` | `rm`（也支持 `del`） |
 
-**本书统一用 Unix 风格别名**——和 Mac 版速查表对应一致。
+本表保留常见别名帮助认读；**别名相同不代表参数与 Unix 命令相同**。需要参数时优先看对应 PowerShell 原生命令说明，不照搬 `rm -rf`、`ls -la`。
 
 ## 一些"我希望早点知道"
 
 - **拖文件进终端** → 自动填路径（和 Mac 一样）
-- **以管理员身份运行**：右键 PowerShell 图标 → "以管理员身份运行"——某些系统命令需要
+- **管理员权限**只用于已经确认需要且有权执行的管理任务；日常练习用普通窗口
 - **`dir`** 也能用（老 CMD 风格，PowerShell 兼容）
 - **`clip`** 命令 → `echo "hello" | clip` 把输出复制到剪贴板
+
+来源：[Windows Terminal 按键](https://learn.microsoft.com/en-us/windows/terminal/customize-settings/actions)、[PowerShell 执行策略](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)。快捷键可被用户重设。
 
 <!-- studio:nav -->
 ← [附录 A：Mac 终端速查](A-Mac%E7%BB%88%E7%AB%AF%E9%80%9F%E6%9F%A5.md) · [目录](../../README.md) · [附录 C：常用 Slash 命令速查](C-Slash%E5%91%BD%E4%BB%A4%E5%85%A8%E8%A1%A8.md) →

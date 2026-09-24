@@ -1,0 +1,125 @@
+{
+  "fingerprint": "0959480c7d1ce1c57f288f0c8feceb9e292418c47bfb2aabbbe92d1626efde3e",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-042",
+    "unit": "ch-04",
+    "source_path": "manuscript/part1-从零起步/04-Claude-Code到底是什么.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "本地工具与远端模型怎样配合",
+      "reader_question": "如何理解“本地工具与远端模型怎样配合”？",
+      "takeaway": "模型服务决定下一步，本地工具按权限执行，把结果回传供继续判断。",
+      "source_sections": [
+        "🌿 支线 4.A：Claude Code 底层是怎么运作的（通俗版）"
+      ],
+      "placement": "🌿 支线 4.A：Claude Code 底层是怎么运作的（通俗版）",
+      "composition": "电脑上的本地工具与远端服务两端循环：请求材料送出，动作建议返回，本地按授权执行，再回传结果。",
+      "content_guard": "不要把模型画成本地运行；不得暗示整个硬盘必上传或每个动作必弹窗。\nShow two large sides, local computer and remote service. Four directed arrows form an unambiguous loop: selected 请求材料 from local to remote; 动作建议 from remote to local; local 按授权执行; 执行结果 from local back to remote. Never show the remote model directly moving local files.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "模型服务决定下一步，本地工具按权限执行，把结果回传供继续判断。",
+      "source_ids": [],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "本地工具",
+      "远端模型",
+      "请求材料",
+      "动作建议",
+      "按授权执行",
+      "执行结果"
+    ],
+    "sources": [
+      {
+        "heading": "🌿 支线 4.A：Claude Code 底层是怎么运作的（通俗版）",
+        "text": "## 🌿 支线 4.A：Claude Code 底层是怎么运作的（通俗版）\n\n> **这段讲什么**：你在终端里打字，到 Claude 改了文件，中间到底发生了什么。\n> **什么时候回头读**：用了一段时间，好奇\"为什么会是这样\"。\n\n下面用手绘循环说明请求、操作与结果的关系：\n\n**关键点**：\n- \"大脑\"由当前连接的模型服务提供；直连、云平台和网关的数据路径需分别核对\n- \"手脚\"在你电脑（Claude Code 本地程序）\n- **两边通过加密通道通信**\n- 操作按当前权限模式和规则执行；是否逐次询问需要查看实际设置，完成后仍应核对改动\n\n这个架构叫 **agentic coding**（智能体编码）。下一条支线讲。\n\n---"
+      }
+    ],
+    "facts": [
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "data-usage",
+        "claim": "消费者改进模型设置与商业/API默认政策不同；留存、反馈、云同步及第三方路径不能统一承诺30天删除或不训练。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/data-usage",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/claude-directory#application-data",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "desktop",
+        "claim": "桌面 Code 自带引擎；终端/Desktop/Web 功能与配置存在差异；/desktop 可接续至桌面，/teleport 为云会话转终端。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/desktop",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "effc49ed666fbea5e4ee12cf5f1880ddb615ae56174993673e5e8bb460d15500"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:52.455991+00:00"
+}

@@ -1,0 +1,151 @@
+{
+  "fingerprint": "6f7975fe9691db47a31aa5708cb7354b27298e6919352eefe6ad0f8bec5616d1",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-005",
+    "unit": "ch-03",
+    "source_path": "manuscript/part1-从零起步/03-你的第一次对话.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "认识对话界面",
+      "reader_question": "如何理解“认识对话界面”？",
+      "takeaway": "先看消息，再从输入区说出下一步。",
+      "source_sections": [
+        "3.3 认识 Claude Code 的界面"
+      ],
+      "placement": "3.3 认识 Claude Code 的界面",
+      "composition": "一张手绘终端窗口，两根箭头分别指消息区和输入区；与本轮样图同一方向。",
+      "content_guard": "不把欢迎横幅、状态栏或弹窗画成永远必有。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "先看消息，再从输入区说出下一步。",
+      "source_ids": [
+        "MM-10"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "Claude Code",
+      "你：请概括这份笔记。",
+      "Claude：这是一份待办清单。",
+      "> 接着输入你的问题",
+      "① 消息区",
+      "② 输入区",
+      "看回复，再说下一步"
+    ],
+    "sources": [
+      {
+        "heading": "3.3 认识 Claude Code 的界面",
+        "text": "## 3.3 认识 Claude Code 的界面\n\n先认清两个常用区域：消息区显示对话与结果，输入区用来继续提问。下面是手绘示意，实际主题与布局可能不同。欢迎信息和状态提示再按各自版本理解。\n\n### 欢迎信息\n\n启动时可能出现欢迎信息、版本或快捷提示，具体内容随版本和主题变化；开始对话后可能被后续消息滚出可见区域。\n\n### ① 消息区\n\n所有的对话（你说的话、Claude 的回复、权限提示、工具调用提示）都在这里按时间顺序往下堆。\n\n### 状态提示（可能显示在输入区附近）\n\n状态栏可以自定义，不一定默认显示模型、上下文和费用。更可靠的查看方法是：`/model` 看模型选择，`/context` 看当前上下文，`/usage` 看用量信息。这三个概念在第 12、15 章细讲，此时先记住它们各有入口。\n\n### ② 输入区\n\n最下面那个 `>`，后面闪光标的地方——**这是你打字的地方**。\n- 打字 + 回车 = 发送\n- **`/exit`** = 退出普通前台会话；Ctrl+C 的效果取决于是否有任务或草稿\n- **Shift+回车** 可在支持的终端中换行；不生效时看第 19 章的终端设置。不要反复按回车把半句话发出去。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "9a295c003b1ca2cf86723c866e71c7edadcd62520690f3e2a9ab7457d46fd062"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:38.268926+00:00"
+}

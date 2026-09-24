@@ -427,7 +427,7 @@ def export_pdf(root, source_ref, version, export_id):
         font = pdf_config.get("font", "PingFang SC")
         fonts = tool_run(["typst", "fonts"])
         if font.lower() not in fonts.lower(): raise StudioError("缺少声明的中文字体：" + font)
-        parts = ["九月修订稿 · 供阅读与审校。真实账号与完整平台操作、另一引擎审校尚待完成。", "来源提交：" + TICK + commit + TICK]
+        parts = ["九月修订稿 · 供阅读与审校。真实账号与完整平台操作尚待完成；跨引擎审核由作者手动选用。", "来源提交：" + TICK + commit + TICK]
         diagram_count = 0
         diagram_pages = []
         for unit in book["units"]:

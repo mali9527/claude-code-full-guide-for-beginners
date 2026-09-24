@@ -117,6 +117,7 @@ units:
   features: &id007
   - permission-modes
   - model-context
+  - input-behavior
   facts: *id007
   derived_from: null
 - id: ch-06
@@ -208,6 +209,7 @@ units:
   - model-context
   - sessions
   - command-current
+  - input-behavior
   facts: *id014
   derived_from: null
 - id: ch-13

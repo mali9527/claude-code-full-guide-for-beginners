@@ -1,0 +1,14 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-09-25",
+  "image_sha256": "d8d3db84ca7cfe6ce152edeef82ef2276028828da0c403b54da8599e261ef289",
+  "input_fingerprint": "6f7975fe9691db47a31aa5708cb7354b27298e6919352eefe6ad0f8bec5616d1",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass",
+  "scope": "Existing image visually inspected in the 42-image contact-sheet review; matched labels/arrows to corrected source and brief; Markdown placement and caption checked. Byte-identical reuse, not a new image generation.",
+  "limitations": "No final PDF proof, Traditional Chinese image localization, Windows UI validation or human reader trial. Cross-engine review was not requested."
+}

@@ -1,0 +1,117 @@
+{
+  "fingerprint": "187f8672858c004bc47cab414e48c173efed87c4fb3d2111fc6a340b04aef8da",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-030",
+    "unit": "ch-27",
+    "source_path": "manuscript/part6-融入日常/27-下一步路线.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "四周练习路线",
+      "reader_question": "如何理解“四周练习路线”？",
+      "takeaway": "把练习从小任务逐步带入真实工作，每阶段都检查结果。",
+      "source_sections": [
+        "27.2 30 天挑战清单"
+      ],
+      "placement": "27.2 30 天挑战清单",
+      "composition": "四周里程牌从日常练习走向资料管理、扩展和真实工作，小脚印连起来。",
+      "content_guard": "The four weeks are practice milestones only. Print exactly the four supplied labels and title. No footer, guarantee, disclaimer or other sentence. The remainder of the canvas is empty graph paper.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "把练习从小任务逐步带入真实工作，每阶段都检查结果。",
+      "source_ids": [
+        "MM-34"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "第 1 周：日常",
+      "第 2 周：资料",
+      "第 3 周：扩展",
+      "第 4 周：实战"
+    ],
+    "sources": [
+      {
+        "heading": "27.2 30 天挑战清单",
+        "text": "## 27.2 30 天挑战清单\n\n**目标**：30 天后达到 L3（高阶级）。\n\n### 第 1 周：稳固日常（L1 → L2 过渡）\n\n每天 20-40 分钟，连续 7 天：\n\n- [ ] **Day 1**：按第 21 章建立 `/my-daily` 技能后，列今日任务\n- [ ] **Day 2**：让 Claude 整理至少 5 个文件（重命名 / 归档）\n- [ ] **Day 3**：让 Claude 写一份会议纪要\n- [ ] **Day 4**：改一个真实文档（日报 / 邮件 / 博客）\n- [ ] **Day 5**：用 `/plan` 做一个稍大的任务\n- [ ] **Day 6**：在练习副本中用 `/rewind` 检查恢复范围，判断什么时候适合恢复\n- [ ] **Day 7**：**回顾一周——哪件事最省时？哪件事最卡？**\n\n### 第 2 周：管理好上下文和记忆\n\n- [ ] **Day 8**：写你的第一版 CLAUDE.md（< 40 行）\n- [ ] **Day 9**：用了 `@` Tab 自动补全至少 5 次\n- [ ] **Day 10**：查看 `/context`；确有整理需要时用 `/compact`，检查关键条件是否保留\n- [ ] **Day 11**：每次完成任务就 `/clear`，养成习惯\n- [ ] **Day 12**：截图给 Claude 解读一次\n- [ ] **Day 13**：分别用 `/status` 查配置、`/usage` 查用量，再到付款账户核对实际费用\n- [ ] **Day 14**：**回顾——CLAUDE.md 有没有改进空间？**\n\n### 第 3 周：用上扩展\n\n- [ ] **Day 15**：装一个现成 Skill（本书 20.3 的 meeting-notes 或你找的别的）\n- [ ] **Day 16**：写一个你自己的 Custom Command\n- [ ] **Day 17**：写你的第二个 Command（已经找到规律了）\n- [ ] **Day 18**：建一个最简 Subagent（按 Ch 22.2—22.3）\n- [ ] **Day 19**：按 Ch 23.2—23.3 的配套说明验证一个只读 Hook\n- [ ] **Day 20**：按 Ch 24 评估一个有实际需求的 MCP；无需外部服务时可以跳过安装\n- [ ] **Day 21**：**回顾——这周哪个扩展最值？哪个没用上？**\n\n### 第 4 周：融入工作流\n\n- [ ] **Day 22**：把本周至少 3 个重复任务做成模板（prompt 或 Command）\n- [ ] **Day 23**：用 Claude Code 做一件\"平常不会用 AI 做\"的事\n- [ ] **Day 24**：教一个朋友 / 同事启动 Claude Code\n- [ ] **Day 25**：在团队群或朋友圈分享一次你的使用经验\n- [ ] **Day 26**：写一篇自己的\"Claude Code 使用心得\"（200 字也行）\n- [ ] **Day 27**：整理你的 CLAUDE.md、Skills、Commands——**砍掉不用的**\n- [ ] **Day 28**：**大回顾——30 天用了多少次？节省了多少时间？**\n- [ ] **Day 29**：设定下 30 天的**一个主目标**（进一步精通某领域 / 推广给团队 / 做特定工具）\n- [ ] **Day 30**：**休息 + 准备下一阶段**\n\n### 回顾的三个关键问题\n\n1. **这 30 天，Claude Code 帮我做成了哪件之前做不好 / 做不了的事？**\n2. **还有哪类任务我没让 AI 碰？为什么？**（判断是合理 vs 是惯性）\n3. **下 30 天我要在哪个方向进一步？**"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-effort",
+        "claim": "Opus 5.5 默认 medium，Fable 5.1 默认 high；effort 与模型、权限模式分开设置。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/build-with-claude/effort",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "memory",
+        "claim": "自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "skills",
+        "claim": "自定义命令已合入 Skills，旧commands文件兼容；技能可自动或手动调用，加载内容仍占上下文。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/skills",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "13e71abce9fe75405d1c1e18d2ff968ed755faf260cadfd2deb78d17d3979f8e"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:48.920143+00:00"
+}

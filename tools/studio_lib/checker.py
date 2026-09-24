@@ -438,8 +438,11 @@ class _Checker:
             self.issue("missing_diagram", "book.yaml", "登记图示未在正文找到：" + did)
 
         from .illustrations import audit
-        if any(isinstance(d, dict) and d.get("type") == "illustration" for d in registry):
+        try:
             result = audit(self.root, publication=self.publication, scope=self.scope)
+        except (StudioError, OSError, ValueError, TypeError, KeyError) as exc:
+            self.issue("illustration_policy", "book.yaml", str(exc))
+        else:
             for issue in result["issues"]:
                 self.issue(issue["code"], issue["path"], issue["message"], issue["level"])
 
@@ -665,11 +668,9 @@ class _Checker:
                     reason = "检查结果为 " + state
                 elif state == "pass" and kind == "editorial":
                     engine, author = r.get("engine"), r.get("author_engine")
-                    if engine == "human":
-                        if not r.get("reason"):
-                            state, reason = "unknown", "人工替代交叉审校需说明接受理由"
-                    elif engine not in ("claude", "codex") or author not in ("claude", "codex", "human") or engine == author:
-                        state, reason = "unknown", "编辑审校须记录不同的起草与审校引擎"
+                    # Cross-engine review is an author-triggered option, not a publication gate.
+                    if engine not in ("claude", "codex", "human") or author not in ("claude", "codex", "human"):
+                        state, reason = "unknown", "编辑复核须如实记录起草与审校引擎（claude、codex 或 human）"
                 elif state == "pass" and kind == "trial" and r.get("engine") != "human":
                     state, reason = "unknown", "真实试读需明确为 human；AI 模拟不能算目标读者试读"
                 elif state == "pass" and kind == "operations":

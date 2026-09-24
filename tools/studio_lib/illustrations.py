@@ -16,6 +16,62 @@ from functools import lru_cache
 from .common import StudioError, atomic_write, load_yaml, dump_yaml, safe_path, git_commit
 
 MANAGED = re.compile(r'<!-- diagram: (FIG-\d+) -->[\s\S]*?<!-- /diagram: \1 -->')
+STYLE_ID = 'notebook-pen-v1'
+POLICY_PATH = 'assets/illustrations/policy.json'
+VISUAL_FILES = ('prefix.txt', 'paper.png', 'reference.png')
+
+def style_policy(root, book=None):
+    """Validate the adopted, standalone series snapshot, even before the first figure."""
+    root = Path(root).resolve()
+    book = load_yaml(root / 'book.yaml') if book is None else book
+    path = root / POLICY_PATH
+    # Legacy fictional fixtures exercise the old reader; they are not production books.
+    if not path.exists() and book.get('is_test') is True:
+        return None
+    if not path.is_file():
+        raise StudioError('缺少系列插图策略：' + POLICY_PATH)
+    policy = read_json(path)
+    if (not isinstance(policy, dict) or policy.get('schema_version') != 1 or
+            policy.get('style') != STYLE_ID or set(policy.get('files', {})) != set(VISUAL_FILES)):
+        raise StudioError('系列插图策略格式无效，必须采用 notebook-pen-v1')
+    style = local(root, 'assets/illustrations/styles/' + STYLE_ID)
+    for name in (*VISUAL_FILES, 'style.md', 'approval.json'):
+        candidate = local(root, str((style / name).relative_to(root)))
+        if not candidate.is_file() or not candidate.stat().st_size:
+            raise StudioError('系列风格包不完整：' + name)
+        if name in VISUAL_FILES and digest(candidate.read_bytes()) != policy['files'][name]:
+            raise StudioError('系列风格资源与采用策略不一致：' + name)
+    return policy
+
+def unmanaged_artwork(root, book):
+    """Check manuscript entry points; code examples and historical files stay untouched."""
+    from .checker import _without_code
+    issues = []
+    for unit in book.get('units', []):
+        path = unit.get('path')
+        body = local(root, path).read_text(encoding='utf-8')
+        registered = {d.get('id') for d in book.get('diagrams', [])
+                      if isinstance(d, dict) and d.get('unit') == unit.get('id') and d.get('type') == 'illustration'}
+        body = MANAGED.sub(lambda m: '' if m.group(1) in registered else m.group(0), body)
+        visible = re.sub(r'<!--.*?-->', '', _without_code(body), flags=re.S)
+        if re.search(r'(?<!\\)!\[|<(?:img|svg|picture)\b', visible, re.I):
+            issues.append({'level': 'error', 'code': 'illustration_unmanaged', 'path': path,
+                           'message': '正文图片必须登记为 illustration 并通过统一纸底、黑白与视觉检查'})
+        fence, mermaid = None, False
+        for line in re.sub(r'<!--.*?-->', '', body, flags=re.S).splitlines():
+            marker = re.match(r'^\s{0,3}(\x60{3,}|~{3,})(.*)$', line)
+            if not marker: continue
+            token, info = marker.groups()
+            if fence is None:
+                fence = token
+                mermaid |= info.strip() == 'mermaid'
+            elif token[0] == fence[0] and len(token) >= len(fence) and not info.strip():
+                fence = None
+        if mermaid:
+            issues.append({'level': 'error', 'code': 'illustration_legacy_render', 'path': path,
+                           'message': '正文不能混用原生 Mermaid 图，请改为统一手绘插图'})
+    return issues
+
 
 def digest(value):
     if not isinstance(value, bytes):
@@ -119,6 +175,8 @@ def pixel_metrics(pixels, width, height, color):
 def figures(root):
     root = Path(root).resolve()
     book = load_yaml(root / 'book.yaml')
+    if not isinstance(book, dict) or not isinstance(book.get('diagrams', []), list):
+        raise StudioError('book.yaml 必须是映射，diagrams 必须是列表')
     return book, [d for d in book.get('diagrams', []) if isinstance(d, dict) and d.get('type') == 'illustration']
 
 def resolve(root, figure_id):
@@ -151,6 +209,9 @@ def section(text, heading):
 def inputs(root, figure_id):
     root = Path(root).resolve()
     book, record, brief, folder, unit = resolve(root, figure_id)
+    policy = style_policy(root, book)
+    if policy and brief['style'] != policy['style']:
+        raise StudioError('插图必须采用系列统一风格：' + policy['style'])
     style = local(root, 'assets/illustrations/styles/' + brief['style'])
     style_files = ('style.md', 'prefix.txt', 'reference.png', 'paper.png', 'approval.json')
     hashes = {name: digest((style / name).read_bytes()) for name in style_files}
@@ -276,12 +337,23 @@ def select(root, figure_id, revision, review_path):
         atomic_write(source, old_text)
         raise
     return {'ok': True, 'outputs': [str(source), str(selection)], 'status': 'placed',
-            'pending': ['入稿阅读检查与实际跨引擎审校另行记录']}
+            'pending': ['入稿阅读检查另行记录；跨引擎审核仅由作者手动触发，未触发不阻断']}
 
 def audit(root, publication=False, scope=None):
     root = Path(root).resolve()
     book, records = figures(root)
     issues, rows = [], []
+    policy = None
+    try:
+        policy = style_policy(root, book)
+        if policy:
+            issues.extend(unmanaged_artwork(root, book))
+            for record in book.get('diagrams', []):
+                if isinstance(record, dict) and record.get('type') != 'illustration':
+                    issues.append({'level': 'error', 'code': 'illustration_legacy', 'path': 'book.yaml',
+                                   'message': str(record.get('id')) + ': 活动图示必须采用系列手绘机制；旧图仅保留在历史版本'})
+    except (StudioError, OSError, ValueError, KeyError, TypeError) as exc:
+        issues.append({'level': 'error', 'code': 'illustration_policy', 'path': POLICY_PATH, 'message': str(exc)})
     for record in records:
         fid = record.get('id')
         row = {'id': fid, 'unit': record.get('unit'), 'stage': 'planned', 'source': 'unknown'}
@@ -327,6 +399,7 @@ def audit(root, publication=False, scope=None):
             issue('illustration_invalid', str(exc))
         rows.append(row)
     return {'ok': not any(i['level'] == 'error' for i in issues), 'figures': rows, 'issues': issues,
+            'policy': policy,
             'legacy_remaining': sum(d.get('type') in ('mindmap', 'flowchart') for d in book.get('diagrams', [])),
             'network': '未访问', 'generation': '未执行'}
 

@@ -1,0 +1,148 @@
+{
+  "fingerprint": "f6b53c89ec580106c27b8993decdbb3c04ae4fa1f57d090e047c1dcca9ee0218",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-014",
+    "unit": "ch-12",
+    "source_path": "manuscript/part3-深度概念/12-Claude为什么会变糊涂.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "上下文像当前工作桌",
+      "reader_question": "如何理解“上下文像当前工作桌”？",
+      "takeaway": "当前任务只摊开相关材料；整理会话不等于删除磁盘文件。",
+      "source_sections": [
+        "12.1 比喻先行：一个熬夜的人"
+      ],
+      "placement": "12.1 比喻先行：一个熬夜的人",
+      "composition": "同一张工作桌的左右对照：左半桌堆满材料，标“材料堆满”；右半桌只摊当前任务，标“聚焦当前任务”。桌子之外的画面最右另放一个独立资料柜，标“磁盘资料仍在”。“工作桌”标签只以细引线指向桌面本身，绝不在桌子和资料柜下方画共同括号或统括线。图上不画任何括号。",
+      "content_guard": "不暗示清理会话删除磁盘文件；不用固定容量或占用百分比。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "当前任务只摊开相关材料；整理会话不等于删除磁盘文件。",
+      "source_ids": [
+        "MM-19"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "材料堆满",
+      "聚焦当前任务",
+      "工作桌",
+      "磁盘资料仍在"
+    ],
+    "sources": [
+      {
+        "heading": "12.1 比喻先行：一个熬夜的人",
+        "text": "## 12.1 比喻先行：一个熬夜的人\n\n想象你身边有一个很聪明的实习生，叫 Claude。他**脑容量有限**（就像人的短期记忆），当前能处理的材料有容量限制；这个比喻帮助理解“当前工作材料”，不能用一本小册子的大小推算模型容量。\n\n一天开始时（对话刚开启），他头脑清晰，读什么都记得。\n\n你不停和他对话、让他读文件、让他跑命令——这些内容一条一条**堆进他脑子里**。小册子越写越满。\n\n材料过多、目标混杂或关键条件没被保留时，可能出现：\n- **想不清楚**：前面讲过的细节想不起来\n- **答非所问**：问 A 回答 B，因为\"B\"刚好在记忆里更靠前\n- **重复犯错**：你前面纠正过的事，他又犯一遍\n- **任务漂移**：原本让他做 X，结果他做着做着变成做 Y\n\n这些表现可能与上下文冗长、压缩丢失细节有关，也可能是需求模糊、工具报错或资料本身不完整。不要一见它出错，就认定“窗口满了”。先查实际占用和出错原因。\n\n学会管理这个容量，你就解锁了 Claude Code 的大半。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "input-behavior",
+        "claim": "! 命令通常在沙箱外执行（严格沙箱例外），默认可触发模型回应；@文件引用可注入全文，@目录提供目录列表，不等于读入全部文件；追加行数说明不能保证只读局部。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "CLI；按终端、模式和版本说明"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/interactive-mode",
+            "checked_on": "2026-09-25"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/common-workflows",
+            "checked_on": "2026-09-25"
+          }
+        ],
+        "checked_on": "2026-09-25",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "2b32e9d5dc3eb7e06df555c963f2775ee5a5aa951919254daacf8ecb0a269be1"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:43.545910+00:00"
+}

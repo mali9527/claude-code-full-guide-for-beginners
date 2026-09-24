@@ -30,8 +30,9 @@
 git clone https://github.com/<你的用户名>/claude-code-full-guide-for-beginners.git
 cd claude-code-full-guide-for-beginners
 
-# 3. 从 main 建一个新分支
-git checkout -b fix/typo-ch07
+# 3. 九月稿修订从对应分支起步（PR 也以它为目标）
+git switch codex/claude-code-2026-09
+git switch -c fix/typo-ch07
 
 # 4. 改好后提交
 git add <你改的文件>
@@ -54,7 +55,7 @@ git push origin fix/typo-ch07
 | [`术语翻译表.md`](./术语翻译表.md) | 英文→生活化中文翻译的**唯一真源** | 只要写到任何技术词，都先查这里 |
 | [`CLAUDE.md`](./CLAUDE.md) | 给 Claude Code 协作会话看的硬规则 | 用 Claude Code 辅助写作时必读 |
 | [`templates/章节模板.md`](./templates/章节模板.md) | 新章节起始骨架 | 新建章节时 copy 这份 |
-| [`assets/diagrams/README.md`](./assets/diagrams/README.md) | 插图管理清单 | 加 mindmap / 改图前必读 |
+| [`tools/standards/illustrations.md`](./tools/standards/illustrations.md) | 插图规范与登记流程 | 修改或新增插图前必读 |
 
 ### 两条铁律（来自需求文档 §6.0，不可违反）
 
@@ -69,9 +70,7 @@ git push origin fix/typo-ch07
 
 ### 插图
 
-- **只用 Mermaid mindmap**，不新增其他类型（ASCII / flowchart 等存量保留但不新增）
-- 统一 `forest-v1` 风格（见 [`assets/diagrams/_style.md`](./assets/diagrams/_style.md)）
-- 每张图必须带 `<!-- diagram: MM-XX -->` 定位注释，在 [`assets/diagrams/README.md`](./assets/diagrams/README.md) 清单里登记后才算生效
+当前采用 42 张 `notebook-pen-v1` 黑色中性笔方格纸插图。图的编号和章节归属登记在 `book.yaml`，说明、输入和采用记录保存在 `assets/illustrations/`。修改前读 [插图规范](tools/standards/illustrations.md)，按 `illustrations pack/import/select` 流程保留可追溯记录；不要覆盖旧修订字节。命令与配置继续用可复制文本展示。
 
 ---
 
@@ -80,10 +79,10 @@ git push origin fix/typo-ch07
 改了正文内容后：
 
 - [ ] 用 [`术语翻译表.md`](./术语翻译表.md) 扫一遍术语一致性
-- [ ] 涉及插图：在 [`assets/diagrams/README.md`](./assets/diagrams/README.md) 登记 / 更新
+- [ ] 涉及插图：检查登记、来源新鲜度、图中文字与实际位置
 - [ ] 在 [`修订日志.md`](./修订日志.md) 加一条变更记录
-- [ ] 如果改了单章，确认 [`全书.md`](./全书.md) 也要同步（重跑 `/tmp/build_book.py`）
-- [ ] 本地 Markdown preview 确认渲染正常（尤其是 mermaid 图）
+- [ ] 如果改了单章，确认 [`全书.md`](./全书.md) 也要同步（使用仓内 `python tools/studio.py --root . build`，不手改生成稿）
+- [ ] 运行结构与派生文件检查，查看图片和阅读链接；构建步骤见 [维护说明](docs/维护构建.md)
 
 ## 你不能用 AI 写全章然后丢过来吗？
 

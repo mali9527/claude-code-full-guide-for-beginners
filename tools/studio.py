@@ -162,6 +162,40 @@ def install_toolkit(destination, source_tools):
     atomic_write(target / "toolkit-manifest.json", json.dumps({"version": VERSION, "files": manifest}, indent=2)+"\n")
 
 
+def install_illustration_style(destination, root):
+    from studio_lib.illustrations import style_policy, POLICY_PATH, STYLE_ID
+    style_policy(root, {})
+    relative = Path('assets/illustrations/styles') / STYLE_ID
+    shutil.copytree(root / relative, destination / relative, dirs_exist_ok=True)
+    shutil.copy2(root / POLICY_PATH, destination / POLICY_PATH)
+    style_policy(destination, {})
+
+
+def illustration_status(root, workspace, target=None):
+    from studio_lib.illustrations import audit, style_policy
+    if workspace is None or target:
+        return audit(work_path(root, works(root, workspace, target)[0]))
+    canonical = style_policy(root, {})
+    reports = []
+    for work in works(root, workspace):
+        report = audit(work_path(root, work))
+        if not work.get('is_test') and report.get('policy') != canonical:
+            report['ok'] = False
+            report['issues'].append({'level': 'error', 'code': 'illustration_series_drift',
+                                    'path': work['path'], 'message': '本书插图策略与项目统一基准不一致'})
+        reports.append({'target': work['id'], 'is_test': work.get('is_test', False), **report})
+    templates = []
+    for kind in ('book', 'tutorial'):
+        try:
+            adopted = style_policy(root / 'templates' / kind, {})
+            if adopted != canonical: raise StudioError('模板插图策略与项目统一基准不一致')
+            templates.append({'template': kind, 'ok': True})
+        except (StudioError, OSError, ValueError, KeyError, TypeError) as exc:
+            templates.append({'template': kind, 'ok': False, 'error': str(exc)})
+    return {'ok': all(r['ok'] for r in reports + templates), 'policy': canonical,
+            'results': reports, 'templates': templates, 'network': '未访问', 'generation': '未执行'}
+
+
 def new_book(root, workspace, args):
     if workspace is None: raise StudioError("new-book 只能在私有总控内使用")
     if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", args.id): raise StudioError("作品 ID 使用小写字母、数字和连字符")
@@ -193,6 +227,7 @@ def new_book(root, workspace, args):
         if book.get("product") == "__WORK_ID__": book["product"] = args.id
         book.setdefault("repository", {})["name"] = args.repo
         dump_yaml(stage / "book.yaml", book)
+        install_illustration_style(stage, root)
         install_toolkit(stage, root / "tools")
         if (root / "standards").is_dir():
             shutil.copytree(root / "standards", stage / "tools" / "standards", dirs_exist_ok=True)
@@ -490,6 +525,11 @@ def human_result(command, result):
             lines.append("{} · {} · 来源 {}".format(report.get("target"),report["mode"],report.get("source_commit","当前源稿")))
             for path in report.get("changed",report.get("outputs",[])): lines.append("  " + str(path))
             if report.get("mode")=="check" and report.get("ok"): lines.append("  生成物一致，源仓未写入。")
+        elif "figures" in report:
+            lines.append('{}：手绘 {} 张；旧图 {} 张；{}。'.format(
+                report.get('target', '当前作品'), len(report['figures']), report['legacy_remaining'],
+                '通过' if report['ok'] else '需处理'))
+            for issue in report['issues']: lines.append('  ' + issue['message'])
         else:
             for key,label in (("target","作品"),("repository","仓库"),("tag","标签"),("commit","来源提交"),
                               ("status","状态"),("promotion","推荐入口"),("plan_path","清单"),("receipt_path","回执"),
@@ -501,6 +541,8 @@ def human_result(command, result):
             for path in report.get("outputs",[]): lines.append("产物："+str(path))
         for item in report.get("pending",[]): lines.append("下一步："+str(item))
     if result.get("roadmap"): lines.append("已更新登记概览："+result["roadmap"])
+    for template in result.get('templates', []):
+        lines.append('模板 {}：{}'.format(template['template'], '通过' if template['ok'] else template['error']))
     return "\n".join(lines)
 
 
@@ -513,10 +555,13 @@ def main(argv=None):
             if args.write_roadmap:
                 result["roadmap"] = update_roadmap(root, workspace)
         elif args.command == "illustrations":
-            selected = works(root, workspace, args.work)
-            if len(selected) != 1: raise StudioError("插图操作必须指定一本书")
-            from studio_lib.illustrations import command
-            result = command(work_path(root, selected[0]), args)
+            if args.action == 'status':
+                result = illustration_status(root, workspace, args.work)
+            else:
+                selected = works(root, workspace, args.work)
+                if len(selected) != 1: raise StudioError("插图操作必须指定一本书")
+                from studio_lib.illustrations import command
+                result = command(work_path(root, selected[0]), args)
         elif args.command == "new-book": result = new_book(root, workspace, args)
         elif args.command == "commons": result = commons_diff(root, workspace)
         elif args.command == "release": result = release_command(root, workspace, args)

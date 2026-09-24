@@ -1,0 +1,121 @@
+{
+  "fingerprint": "081cdf804316af543ff3225d128d621c697410ad93947644defa76ae8e2807ae",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-020",
+    "unit": "ch-17",
+    "source_path": "manuscript/part4-避坑与判断力/17-什么时候该停下来.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "卡住时换一条路",
+      "reader_question": "如何理解“卡住时换一条路”？",
+      "takeaway": "连续受阻时先停下来整理证据，再选择下一条路径。",
+      "source_sections": [
+        "17.1 核心原则：5 分钟原则"
+      ],
+      "placement": "17.1 核心原则：5 分钟原则",
+      "composition": "两条失败脚印停在岔路前，路标指向拆小、换方法、自己完成。",
+      "content_guard": "No numeric time limit, no minute count, no clock numerals, no footnote. Draw only the four supplied labels and title. The picture teaches reassessment, not an automatic time threshold.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "连续受阻时先停下来整理证据，再选择下一条路径。",
+      "source_ids": [
+        "MM-24"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "失败后先评估",
+      "拆小任务",
+      "换个方法",
+      "自己完成"
+    ],
+    "sources": [
+      {
+        "heading": "17.1 核心原则：5 分钟原则",
+        "text": "## 17.1 核心原则：5 分钟原则\n\n这是从老手社区里总结出来的一条铁律：\n\n> 🔑 **一个任务原以为 AI 能搞定，结果花了 30 分钟还没对——比你手动做慢**。\n\n具体规则：\n\n### 5 分钟原则\n\n- **第 1 次尝试**不成功 → 调整提示词，再来 1 次\n- **第 2 次**还不成功 → **停下来**：问自己\"手动做要多久？\"\n- 手动 < 5 分钟 → **关掉 Claude 自己做**\n- 手动 > 20 分钟 → 继续用 AI 但**换方向**（换模型 / `/clear` / `/plan` / 拆小）\n\n### 为什么是 5 分钟\n\n- 手动做 5 分钟以内的事，若你熟悉做法，直接操作可能更省时；手动操作同样需要核对和保留恢复途径\n- **机会成本**：再和 Claude 磨 10 分钟 = 你已经手动做了 2 次\n\n### 一个教学示例\n\n```\n（任务：把 20 张截图按时间重命名）\n\n第 1 次：你：给 ~/Desktop/截图/ 的文件按修改时间排序重命名为 01-20\n        Claude：（生成一个脚本，跑错，部分文件名乱了）\n        你：回退\n\n第 2 次：你：@截图/ 列出来，然后按顺序重命名\n        Claude：（这次命名对了，但漏了 3 个隐藏文件）\n        你：…… 还是不对\n\n【5 分钟原则触发】\n手动做要多久？我自己用 Finder 点一下排序、右键批量重命名，2 分钟。\n\n→ 关掉 Claude，自己做，2 分钟搞定。\n```"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-effort",
+        "claim": "Opus 5.5 默认 medium，Fable 5.1 默认 high；effort 与模型、权限模式分开设置。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/build-with-claude/effort",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "fedcb41b8a047fb8ad17d133be0a76aa39cf547ff9bff9fae09383802e5dc1af"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:45.336397+00:00"
+}

@@ -16,7 +16,7 @@ facts.yaml 保存主张、适用产品/界面/版本/套餐/地区、来源、�
 
 完整报告位于私有 private/<work-id>/reviews/；公开 checks/ 仅留 FORMAT 允许的摘要。源稿先保存提交 C，再在另一文件写 source_commit=C 和 paths。正文不写 verified_commit/verified_on。受审提交必须可取回；重写提交后重新确认引用与内容。
 
-editorial、facts、operations、trial 分开记录。公开 engine 如实填 claude、codex 或 human；author_engine 记录起草引擎。作者接受人工替代时 reason 写依据，不把同引擎换会话写成跨引擎。私有姓名、聊天、截图个人信息、私有报告路径不进公开摘要。
+editorial、facts、operations、trial 分开记录。公开 engine 如实填 claude、codex 或 human；author_engine 记录起草引擎。编辑复核允许同引擎或人工完成，不要求换引擎或填写替代审批理由。交叉审核仅由作者手动触发；未触发不生成失败或 unknown 的 editorial 记录，不把同引擎换会话写成跨引擎。reason 仍用于说明不适用等具体依据。私有姓名、聊天、截图个人信息、私有报告路径不进公开摘要。
 
 有效性结合 Git 差异、事实状态、前置、适用范围及日期。正文实质改变重新审校；明确的生成导航区除外。只写 checks 不使正文自我失效。脚本可以核对版本和字段，不能证明私有报告存在或实验发生，维护者合入前检查真实性。
 

@@ -1,0 +1,124 @@
+{
+  "fingerprint": "907fa2ed99151768b5bd8b5d1a2ef010a2cfc33d219ad0f13424e51f825dabd4",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-007",
+    "unit": "ch-05",
+    "source_path": "manuscript/part2-日常使用/05-让它读文件.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "把正确的材料交给它",
+      "reader_question": "如何理解“把正确的材料交给它”？",
+      "takeaway": "先选择相关材料，再交代要解决的具体问题。",
+      "source_sections": [
+        "5.2 `@` 引用的具体用法"
+      ],
+      "placement": "5.2 `@` 引用的具体用法",
+      "composition": "手从文件夹中挑出一张笔记交到工作台，标出 @ 的指向，再以一个短提问示意。",
+      "content_guard": "不画“整个硬盘自动可见”；选择文件与自动读取能力须分清。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "先选择相关材料，再交代要解决的具体问题。",
+      "source_ids": [
+        "MM-12"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "挑出相关文件",
+      "@笔记.txt",
+      "交代具体任务"
+    ],
+    "sources": [
+      {
+        "heading": "5.2 `@` 引用的具体用法",
+        "text": "## 5.2 `@` 引用的具体用法\n\n`@` 是 Claude Code 的\"**精确指路**\"符号。在输入框里打 `@`，会弹出一个**自动补全菜单**列出当前文件夹里的文件，用方向键选或者继续打字过滤。\n\n### 单文件\n\n```\n@笔记.txt 总结一下这份内容\n```\n\nClaude 会先读 `笔记.txt`，再按你要求总结。\n\n### 子文件夹里的文件\n\n```\n@Documents/周报.md 帮我改一下这份周报的语气\n```\n\n路径可以带子目录。\n\n### 一个文件夹（先给出文件列表）\n\n```\n@会议纪要/ 里面每份笔记分别抓一个关键点\n```\n\n`@文件夹名/` 提供目录列表，不会仅凭这次引用就自动加载所有文件正文。Claude 后续会按任务读取相关文件，范围应写清楚。[官方引用说明](https://code.claude.com/docs/en/common-workflows#reference-files-and-directories)\n\n> ⚠️ **大文件夹慎用**：如果任务让它逐个读取几十上百个文件，**会增加上下文占用**（第 12 章详讲）。精准到具体文件比\"扫一个文件夹\"更好。\n\n### 多个文件一起引\n\n```\n@第一章.md @第二章.md 把这两章合并成一份摘要\n```\n\n连续打几个 `@` 没问题。\n\n### 图片（Mac 和 Windows 都行）\n\n```\n@设计稿.png 看这张图，帮我把布局描述成文字\n```\n\nClaude 能\"看\"截图、设计稿、流程图。这是个**很被低估**的能力。\n\n💡 **让它看当前文件夹结构而不读具体内容** → 见 🌿 支线 5.A。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "input-behavior",
+        "claim": "! 命令通常在沙箱外执行（严格沙箱例外），默认可触发模型回应；@文件引用可注入全文，@目录提供目录列表，不等于读入全部文件；追加行数说明不能保证只读局部。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "CLI；按终端、模式和版本说明"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/interactive-mode",
+            "checked_on": "2026-09-25"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/common-workflows",
+            "checked_on": "2026-09-25"
+          }
+        ],
+        "checked_on": "2026-09-25",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "aa0fcaef34c4cce6285839cc0c87ca5034681da5e42852631b7f8f48f6b0fa4e"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:40.008836+00:00"
+}

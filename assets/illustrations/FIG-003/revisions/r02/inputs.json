@@ -1,0 +1,79 @@
+{
+  "fingerprint": "8c7092485ef6408f0e991faeff7950c6572785adf038aa200feb7f3e51ea78c8",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-003",
+    "unit": "ch-01",
+    "source_path": "manuscript/part1-从零起步/01-先把电脑准备好.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "先认位置，再输命令",
+      "reader_question": "如何理解“先认位置，再输命令”？",
+      "takeaway": "先认清当前目录和输入位置，再输入命令；平台提示符可能不同。",
+      "source_sections": [
+        "1.3 第一次使用：看懂提示符，输入 `pwd`"
+      ],
+      "placement": "1.3 第一次使用：看懂提示符，输入 `pwd`",
+      "composition": "左右并排两幅手绘终端局部。左标题 Mac，一行提示符精确写 ~/练习 %，其右画输入光标；右标题 Windows，一行提示符精确写 PS C:\\练习>，其右画输入光标。两边“在这里输入”的箭头只指光标，“当前位置”的箭头只指各自提示符中的目录部分 ~/练习 或 C:\\练习，绝不能指用户名或电脑名。底部单独一个 pwd 卡片，旁写“查看当前位置”。不要写其他命令，不加用户名前缀。",
+      "content_guard": "两平台分开标注；去掉旧图“只能住终端”的绝对表述。\n Simplify the interface to the described regions only. No invented commands or outputs.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "先认清当前目录和输入位置，再输入命令；平台提示符可能不同。",
+      "source_ids": [
+        "MM-07"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "Mac",
+      "Windows",
+      "~/练习 %",
+      "PS C:\\练习>",
+      "在这里输入",
+      "当前位置",
+      "pwd",
+      "查看当前位置"
+    ],
+    "sources": [
+      {
+        "heading": "1.3 第一次使用：看懂提示符，输入 `pwd`",
+        "text": "## 1.3 第一次使用：看懂提示符，输入 `pwd`\n\n### 认识提示符\n\n打开终端后，每一行末尾都有一段类似这样的文字——**提示符**（prompt）：\n\n- **Mac（新系统）**：`你的名字@你的电脑 ~ %`\n- **Mac（老系统）**：`你的名字@你的电脑 ~ $`\n- **Windows PowerShell**：`PS C:\\Users\\你的名字>`\n\n提示符告诉你\"**轮到你打字了**\"。\n\n📌 **关键就一条**：**末尾那个符号**（`%` 或 `$` 或 `>`）**后面的光标位置，就是你该打字的地方**。不要打到前面的文字里去，也不要动前面已经显示的内容。\n\n💡 **想知道提示符每一段分别是什么意思**？见 🌿 支线 1.C。\n\n### 输入你的第一个命令：`pwd`\n\n**步骤 1**：确认光标在提示符后面闪。\n**步骤 2**：一个字一个字打 `pwd`（全小写）。\n**步骤 3**：按**回车键**。\n\n**你会看到**：\n\n- Mac 显示：`/Users/你的名字`\n- Windows 显示：`C:\\Users\\你的名字`\n\n### 这是什么意思\n\n`pwd` 是 \"**print working directory**\" 的缩写，意思是 **\"打印当前所在文件夹\"**。\n\n终端刚打开时默认把你放在 **家目录**（home directory）里——也就是 `/Users/你的名字`（Mac）或 `C:\\Users\\你的名字`（Windows）。桌面和文档可能被 OneDrive 或组织设置重定向；刚打开终端也可能沿用上次目录，以 `pwd` 的结果为准。\n\n> 💡 **为什么一上来就要知道\"我在哪\"**：使用相对路径的命令，会以**当前位置**为起点；绝对路径则直接指定位置。\"列出这里的文件\"的\"这里\"就是 `pwd` 返回的那个地方。每次做事前打一下 `pwd` 确认位置，是个好习惯。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "native-install",
+        "claim": "官方推荐原生安装；该路线不要求 Node.js；npm 包现要求 Node.js 22+；官方不建议 sudo npm install。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "install",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "304e5d6970ead69c9a29d9ee895a7bf0ab88694556b39585cb494e16694ecb20"
+  },
+  "base_commit": "ebd9c2d06366f208bb2ebb0977fe24833083fb31",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:03:36.584780+00:00"
+}
