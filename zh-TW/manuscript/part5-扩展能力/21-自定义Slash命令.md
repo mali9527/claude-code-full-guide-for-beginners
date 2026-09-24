@@ -33,7 +33,7 @@
 **Slash 就是斜槓 `/`**。第 18 章的 `/clear` 是內建命令；上一章的 `/meeting-notes` 是你安裝的技能入口。二者看起來都以斜槓開始，但前者由產品提供，後者承載你自己的任務要求。
 
 <!-- diagram: FIG-024 -->
-![斜槓是開啟手冊的入口](../../../assets/illustrations/FIG-024/revisions/r01/zh-CN.png)
+![斜槓是開啟手冊的入口](../../../assets/illustrations/FIG-024/revisions/r02/zh-CN.png)
 
 *圖：自定義命令提供入口，技能說明承載具體工作方法。*
 <!-- /diagram: FIG-024 -->

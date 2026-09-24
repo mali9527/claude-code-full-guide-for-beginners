@@ -33,7 +33,7 @@
 **Hook（鉤子）**可以理解為“事件發生時，自動執行預先配置的動作”。例如 Claude 用編輯工具成功改完檔案，這個事件發生後，執行一個檢查標題是否存在的小程式。觸發時機是固定的，不需要你每次再輸入“請檢查”。
 
 <!-- diagram: FIG-026 -->
-![事件觸發一次小檢查](../../../assets/illustrations/FIG-026/revisions/r01/zh-CN.png)
+![事件觸發一次小檢查](../../../assets/illustrations/FIG-026/revisions/r02/zh-CN.png)
 
 *圖：Hook 圍繞特定事件執行檢查，結果如何使用取決於配置。*
 <!-- /diagram: FIG-026 -->

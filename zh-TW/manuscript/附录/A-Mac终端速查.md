@@ -21,7 +21,7 @@
 | `cd ~` | 回自己的使用者資料夾（家） | `cd ~` |
 | `cd -` | 回上次那個資料夾 | `cd -` |
 | `mkdir 名字` | 建一個新資料夾 | `mkdir notes` |
-| `touch 名字` | 建一個空檔案 | `touch todo.md` |
+| `touch 名字` | 檔案不存在時新建；存在時更新時間戳 | `touch todo.md` |
 | `cp 源 目标` | 複製 | `cp a.txt b.txt` |
 | `mv 源 目标` | 移動 / 重新命名 | `mv a.txt b.txt` |
 | `rm 文件` | 刪除（**小心**，不進回收站） | `rm old.txt` |
@@ -39,11 +39,11 @@
 | `Ctrl+A` | 游標跳到行首 |
 | `Ctrl+E` | 游標跳到行尾 |
 | `Ctrl+C` | 中斷當前執行的命令 |
-| `Ctrl+D` | 退出當前 shell |
+| `Ctrl+D` | 空輸入時向 shell 傳送結束訊號，通常退出；程式內行為另看 |
 | `Ctrl+L` | 清屏（等同 `clear`） |
 | `Cmd+T` | 新標籤頁 |
 | `Cmd+N` | 新視窗 |
-| `Cmd+K` | 清屏並清歷史（徹底清） |
+| `Cmd+K` | 清除終端顯示與回滾緩衝；不刪除 shell 命令歷史檔案 |
 | `Cmd+加号 / 减号` | 字號變大 / 變小 |
 
 <a id="提示符符号速读"></a>
@@ -54,7 +54,7 @@
 - 看到 `~` = 你在自己的使用者資料夾
 
 <!-- diagram: FIG-031 -->
-![Mac 終端的輸入位置](../../../assets/illustrations/FIG-031/revisions/r01/zh-CN.png)
+![Mac 終端的輸入位置](../../../assets/illustrations/FIG-031/revisions/r02/zh-CN.png)
 
 *圖：在 Mac 終端先看當前目錄，再輸入命令*
 <!-- /diagram: FIG-031 -->
@@ -64,11 +64,11 @@
 
 | 看到 | 意思 | 怎麼辦 |
 |-----|-----|-------|
-| `command not found: xxx` | 沒裝 xxx 這個程式 | 先裝（比如 `brew install xxx`） |
+| `command not found: xxx` | 當前 shell 找不到命令 | 先查拼寫、安裝狀態與 PATH，再按該程式官方說明處理 |
 | `No such file or directory` | 找不到這個檔案 / 資料夾 | `pwd` 看你在哪、`ls` 看有沒有 |
 | `Permission denied` | 許可權不夠 | 先核對路徑、檔案歸屬與任務範圍；不要預設提權 |
 | `zsh: parse error` | 命令打錯了（缺引號 / 括號） | 仔細看命令，重新敲 |
-| `Operation not permitted` | Mac 的 SIP 保護攔的 | 該目錄是系統目錄，別動 |
+| `Operation not permitted` | 系統拒絕操作，可能涉及隱私授權、檔案標誌或系統保護 | 先查目標路徑與系統提示，不預設關閉 SIP 或擴大許可權 |
 
 <a id="一些我希望早点知道"></a>
 ## 一些"我希望早點知道"
@@ -78,3 +78,5 @@
 - **`!!`** → 重複上一條命令（執行前重新看清完整命令，不要用它盲目補管理員許可權）
 - **`cd`** 單獨一個 → 等同 `cd ~`
 - **`open 文件.pdf`** → 用預設程式開啟這個檔案
+
+來源：[Apple 終端快捷鍵](https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac)。

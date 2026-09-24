@@ -1,7 +1,7 @@
 <a id="附录-d决策流程图"></a>
 # 附錄 D：決策流程圖
 
-> 本附錄把書裡反覆出現的幾個"該怎麼選"彙總成流程圖。圖全部用 Mermaid 手繪風格繪製，GitHub 上直接渲染，可以直接右鍵儲存圖片或截圖列印。
+> 本附錄把書裡反覆出現的幾個“該怎麼選”彙總成四張手繪圖與兩張選擇表。插圖統一採用細方格紙上的黑色中性筆畫風，GitHub 可直接顯示；點開圖片可檢視和儲存原圖。
 
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
@@ -15,7 +15,7 @@
 **口訣**：
 
 <!-- diagram: FIG-034 -->
-![遇到操作請求先核對什麼](../../../assets/illustrations/FIG-034/revisions/r01/zh-CN.png)
+![遇到操作請求先核對什麼](../../../assets/illustrations/FIG-034/revisions/r02/zh-CN.png)
 
 *圖：授權之前先判斷動作和作用範圍，不清楚時先問明白。*
 <!-- /diagram: FIG-034 -->
@@ -57,7 +57,7 @@
 這裡的兩次嘗試與五分鐘是作者的時間管理建議，不是產品限制。若失敗涉及外部副作用，先核對現狀再決定恢復方式。
 
 <!-- diagram: FIG-035 -->
-![失敗以後怎樣選擇下一步](../../../assets/illustrations/FIG-035/revisions/r01/zh-CN.png)
+![失敗以後怎樣選擇下一步](../../../assets/illustrations/FIG-035/revisions/r02/zh-CN.png)
 
 *圖：失敗後先看證據和變化，再決定重試、調整或求助。*
 <!-- /diagram: FIG-035 -->
@@ -69,7 +69,7 @@
 專案自動記憶預設按專案儲存，不是天然的跨專案偏好庫。個人規則與團隊共享規則分開維護，任務流程放進 Skill。
 
 <!-- diagram: FIG-036 -->
-![這條資訊放在哪裡](../../../assets/illustrations/FIG-036/revisions/r01/zh-CN.png)
+![這條資訊放在哪裡](../../../assets/illustrations/FIG-036/revisions/r02/zh-CN.png)
 
 *圖：臨時材料、專案約定與長期操作說明按用途儲存。*
 <!-- /diagram: FIG-036 -->
@@ -81,7 +81,7 @@
 **口訣**：**CLAUDE.md 講背景，Skill 講流程，Slash 呼叫 Skill，Subagent 派替身，Hook 搞自動，MCP 連線外部工具和資料來源**。
 
 <!-- diagram: FIG-037 -->
-![擴充套件能力工具架](../../../assets/illustrations/FIG-037/revisions/r01/zh-CN.png)
+![擴充套件能力工具架](../../../assets/illustrations/FIG-037/revisions/r02/zh-CN.png)
 
 *圖：擴充套件機制各有作用；斜槓入口可以呼叫技能，兩者不是互斥體系。*
 <!-- /diagram: FIG-037 -->

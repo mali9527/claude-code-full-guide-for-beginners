@@ -122,7 +122,7 @@
 <a id="diff-看着对但改完发现错了"></a>
 ### diff 看著對，但改完發現錯了
 
-**原因**：你 vibe review 不夠細。
+**可能原因**：差異檢查沒覆蓋實際行為、輸入有誤，或執行環境與預期不同。
 **怎麼辦**：
 - 開啟 `/rewind` 並確認該改動可恢復，再選恢復檔案
 - 重新走，這次**細審**或 `/plan` 先
@@ -164,7 +164,7 @@
 ### Skill / Command 沒被識別
 
 **原因 A**：檔案路徑錯
-**辦法**：確認在 `~/.claude/skills/<名>/SKILL.md` 或 `.claude/commands/<名>.md`
+**辦法**：核對個人 `~/.claude/skills/<名>/SKILL.md`、專案 `.claude/skills/<名>/SKILL.md`，或相容舊格式 `.claude/commands/<名>.md`
 
 **原因 B**：frontmatter 格式錯
 **辦法**：若使用 frontmatter，檢查 `---` 開閉和 YAML 格式；舊命令也可以只有 Markdown，路徑與發現規則見第 20、21 章
@@ -215,7 +215,7 @@
 遇到任何問題按這個順序試：
 
 <!-- diagram: FIG-038 -->
-![報錯時先收集這四樣](../../../assets/illustrations/FIG-038/revisions/r01/zh-CN.png)
+![報錯時先收集這四樣](../../../assets/illustrations/FIG-038/revisions/r02/zh-CN.png)
 
 *圖：保留操作、完整報錯、環境和已嘗試步驟，才更容易定位問題。*
 <!-- /diagram: FIG-038 -->

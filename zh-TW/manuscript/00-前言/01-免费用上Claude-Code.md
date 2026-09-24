@@ -27,7 +27,7 @@
 你接下來會用到三個不同的東西。**Claude Code 是幫你讀檔案、改檔案和執行命令的工具**；**Claude 模型負責理解任務和生成回答**，例如 Opus 5.5、Fable 5.1；**賬戶決定你能訪問哪些服務，以及費用由誰承擔**。同一臺電腦裝好了工具，換一個賬戶，能選的模型和可用額度也可能不同。
 
 <!-- diagram: FIG-002 -->
-![程式、模型、賬戶是三件事](../../../assets/illustrations/FIG-002/revisions/r01/zh-CN.png)
+![程式、模型、賬戶是三件事](../../../assets/illustrations/FIG-002/revisions/r02/zh-CN.png)
 
 *圖：程式是操作入口，模型處理任務，賬戶決定可用資格。*
 <!-- /diagram: FIG-002 -->

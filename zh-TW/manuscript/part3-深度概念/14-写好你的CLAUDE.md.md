@@ -55,7 +55,7 @@
 先搞清楚這份文件到底要幹什麼：
 
 <!-- diagram: FIG-016 -->
-![專案說明是一張路標](../../../assets/illustrations/FIG-016/revisions/r01/zh-CN.png)
+![專案說明是一張路標](../../../assets/illustrations/FIG-016/revisions/r02/zh-CN.png)
 
 *圖：專案說明寫清目標、約定與驗證入口，長資料按需引用。*
 <!-- /diagram: FIG-016 -->

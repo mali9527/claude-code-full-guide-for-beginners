@@ -33,7 +33,7 @@
 **Skill（技能）是一份可重複使用的任務手冊**。例如，把會議記錄整理成紀要時，你希望分清“已決定”“還在討論”和“待辦”；沒說截止日期，就寫“待確認”。這些要求每次都一樣，值得儲存下來。
 
 <!-- diagram: FIG-023 -->
-![需要時取出任務手冊](../../../assets/illustrations/FIG-023/revisions/r01/zh-CN.png)
+![需要時取出任務手冊](../../../assets/illustrations/FIG-023/revisions/r02/zh-CN.png)
 
 *圖：先看技能簡介，相關時再讀取完整說明。*
 <!-- /diagram: FIG-023 -->

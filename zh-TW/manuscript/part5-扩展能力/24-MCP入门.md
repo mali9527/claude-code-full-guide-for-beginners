@@ -44,7 +44,7 @@ Claude Code 本來就有本地檔案與命令能力，也能透過其它方式�
 接入外部服務時，至少有三件不同的事：
 
 <!-- diagram: FIG-027 -->
-![連線、賬號、動作分三道檢查](../../../assets/illustrations/FIG-027/revisions/r01/zh-CN.png)
+![連線、賬號、動作分三道檢查](../../../assets/illustrations/FIG-027/revisions/r02/zh-CN.png)
 
 *圖：服務連線、賬戶資格與具體操作許可權是三件需要分別核對的事。*
 <!-- /diagram: FIG-027 -->

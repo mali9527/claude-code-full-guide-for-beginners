@@ -22,7 +22,7 @@
 
 
 <!-- diagram: FIG-033 -->
-![兩個地方輸入的命令](../../../assets/illustrations/FIG-033/revisions/r01/zh-CN.png)
+![兩個地方輸入的命令](../../../assets/illustrations/FIG-033/revisions/r02/zh-CN.png)
 
 *圖：系統終端中的啟動命令與對話中的斜槓命令屬於不同入口。*
 <!-- /diagram: FIG-033 -->

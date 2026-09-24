@@ -1,6 +1,6 @@
 {
   "files": {
-    "zh-TW/README.md": "c9f4c98617b91decaaeb34c56873fccb21e852725e17ff287def4cbc2bd664d4",
+    "zh-TW/README.md": "8947168a683742ebf857ecf810fd02cc995b338824f2305c6aecf7d70738909f",
     "zh-TW/manuscript/00-前言/00-本書怎麼讀.md": "841475e205c2e85fbe434289a3eecbdfe005a2ce504b08b22d1ba546be02cde5",
     "zh-TW/manuscript/00-前言/01-免費用上Claude-Code.md": "d1fcbb95c9984e04450ecd09429a08e05d3ae28329f5c3b4c9c3b7865ada8fd4",
     "zh-TW/manuscript/part1-從零起步/01-先把電腦準備好.md": "bf6fd3ac10f759eb5b1d9258ecf7e4ff3931988d2d4372e76df0ced0e6dcf174",
@@ -41,7 +41,7 @@
     "zh-TW/manuscript/附錄/I-延伸閱讀.md": "7246be7f29d5aa4c73f3dae1f8da1db71d69f31ac1a420552034206172d579e0",
     "zh-TW/manuscript/附錄/J-Opus-4.7新手指南.md": "6535f82f32f818fd356629198d052bdd6304aa4c12935728967c3f636bb0d1d5",
     "zh-TW/manuscript/附錄/K-第三方模型接入.md": "03bcc06f40c861a9b19707d706b6bd180f5f18deca2e88d73c2a8c4ae7bb5115",
-    "zh-TW/全書.md": "eb853e027734e2e251d9e3c574f9426a1556b5feb85a3a9c2c4b580816f32c55"
+    "zh-TW/全書.md": "ac7ef9438fadefdd520d782fbdd296ac8ddbb009fb68f91ccea6454dc4af2009"
   },
   "version": 1
 }
