@@ -10,41 +10,7 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-37 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 C · 常用命令速查))
-    查信息
-      help
-      status
-      usage
-      context
-    做任务
-      plan
-      diff
-      rewind
-    配置与记忆
-      model 与 effort
-      permissions
-      init 与 memory
-    衔接会话
-      rename
-      resume
-      clear
-      tasks
-    别混淆
-      doctor 和 claude doctor
-      agents 和 claude agents
-      技能可能真的开工
-```
+本章圖解：[兩個地方輸入的命令](#c1-查状态保留进度与管理上下文)。
 
 ---
 
@@ -53,6 +19,13 @@ mindmap
 
 <a id="c1-查状态保留进度与管理上下文"></a>
 ## C.1 查狀態、保留進度與管理上下文
+
+
+<!-- diagram: FIG-033 -->
+![兩個地方輸入的命令](../../../assets/illustrations/FIG-033/revisions/r01/zh-CN.png)
+
+*圖：系統終端中的啟動命令與對話中的斜槓命令屬於不同入口。*
+<!-- /diagram: FIG-033 -->
 
 | 我想做什麼 | 命令 | 讀結果時記住 |
 |---|---|---|

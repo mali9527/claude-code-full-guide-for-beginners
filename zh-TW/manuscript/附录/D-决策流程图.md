@@ -6,68 +6,19 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-38 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 D · 决策流程图))
-    图 1 权限决策
-      读取先确认材料范围
-      改文件先看 diff
-      命令先看作用与范围
-    图 2 模型选择
-      简单用 Haiku
-      日常先用 Opus 5.5
-      难题再评估 Fable
-      查实际上下文
-    图 3 Ctx 应对
-      先看任务是否清楚
-      长任务及时整理
-      换任务开新会话
-    图 4 卡住怎么办
-      5 分钟原则
-      不试第三次
-      换方向或手动
-    图 5 信息分层
-      一次性会话说
-      个人规则用用户说明
-      项目共享 CLAUDE
-      流程化 Skill
-    图 6 扩展选型
-      背景 CLAUDE.md
-      流程 Skill
-      快捷 Command
-      重活 Subagent
-      自动 Hook
-      外部工具与数据 MCP
-
-```
+本附錄按下方問題和條目查閱；相關章節入口保留在各條目中。
 
 <a id="图-1权限决策流程遇到弹窗怎么选"></a>
 ## 圖 1：許可權決策流程（遇到彈窗怎麼選）
 
-<!-- diagram: FC-legacy-01 -->
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["Claude 弹出权限窗口<br/>它要干什么?"] --> B{"操作类型"}
-  B -->|"读文件"| C["核对任务授权与内容敏感性<br/>未知先暂停"]
-  B -->|"改文件"| D{"先看 diff<br/>改的都是我想改的地方?"}
-  B -->|"跑命令"| E{"已理解路径和影响吗?<br/>删除 / 外发 / 发布等"}
-  D -->|"是"| F["Yes 接受"]
-  D -->|"否"| G["No 退回让它改"]
-  E -->|"否"| H["先让它解释，不批准"]
-  E -->|"是"| I["核对任务范围后再决定"]
-```
 
 **口訣**：
+
+<!-- diagram: FIG-034 -->
+![遇到操作請求先核對什麼](../../../assets/illustrations/FIG-034/revisions/r01/zh-CN.png)
+
+*圖：授權之前先判斷動作和作用範圍，不清楚時先問明白。*
+<!-- /diagram: FIG-034 -->
 
 - 讀檔案 → 確認屬於本次任務材料，且內容適合交給所連線的服務
 - 改檔案 → **永遠看 diff**，多改了就 No
@@ -102,65 +53,35 @@ flowchart TD
 <a id="图-4卡住了怎么办5-分钟原则"></a>
 ## 圖 4：卡住了怎麼辦（5 分鐘原則）
 
-<!-- diagram: FC-legacy-02 -->
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["第 1 次尝试失败"] --> B["调整 prompt 再试一次"]
-  B --> C{"第 2 次还是不行?"}
-  C -->|"是"| D["触发 5 分钟原则<br/>先估算手动要多久"]
-  D --> E{"手动完成大概需要?"}
-  E -->|"5 分钟以内"| F["关掉 Claude<br/>自己动手做完"]
-  E -->|"20 分钟以上"| G["继续用 AI，换方向:<br/>/rewind 重开<br/>/compact 清包袱<br/>换模型 / 拆小任务"]
-  E -->|"5 - 20 分钟"| H["任选：自己做 或 换方向"]
-```
 
 這裡的兩次嘗試與五分鐘是作者的時間管理建議，不是產品限制。若失敗涉及外部副作用，先核對現狀再決定恢復方式。
+
+<!-- diagram: FIG-035 -->
+![失敗以後怎樣選擇下一步](../../../assets/illustrations/FIG-035/revisions/r01/zh-CN.png)
+
+*圖：失敗後先看證據和變化，再決定重試、調整或求助。*
+<!-- /diagram: FIG-035 -->
 
 <a id="图-5信息分层决策该放在哪一层"></a>
 ## 圖 5：資訊分層決策（該放在哪一層）
 
-<!-- diagram: FC-legacy-03 -->
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["这条信息…"] --> B{"是什么性质?"}
-  B -->|"一次性用的"| C["会话里说就行<br/>不用存"]
-  B -->|"跨项目个人规则"| D["用户 CLAUDE.md"]
-  B -->|"项目规则 + 团队共享"| E["CLAUDE.md"]
-  B -->|"结构化任务流程（偶尔用）"| F["Skill"]
-  B -->|"外部已有长文档"| G["在 CLAUDE.md 写 Pointer<br/>（查看项目中实际存在的说明文件）"]
-```
 
 專案自動記憶預設按專案儲存，不是天然的跨專案偏好庫。個人規則與團隊共享規則分開維護，任務流程放進 Skill。
+
+<!-- diagram: FIG-036 -->
+![這條資訊放在哪裡](../../../assets/illustrations/FIG-036/revisions/r01/zh-CN.png)
+
+*圖：臨時材料、專案約定與長期操作說明按用途儲存。*
+<!-- /diagram: FIG-036 -->
 
 <a id="图-6扩展机制选型"></a>
 ## 圖 6：擴充套件機制選型
 
-<!-- diagram: MM-01 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((我想让 Claude...))
-    知道项目背景
-      CLAUDE.md
-    会做某类任务
-      Skill
-    敲 /xxx 一键触发
-      手动调用 Skill
-    派独立专员干重活
-      Subagent
-    某事件自动触发
-      Hook
-    连接外部系统
-      MCP
-```
 
 **口訣**：**CLAUDE.md 講背景，Skill 講流程，Slash 呼叫 Skill，Subagent 派替身，Hook 搞自動，MCP 連線外部工具和資料來源**。
+
+<!-- diagram: FIG-037 -->
+![擴充套件能力工具架](../../../assets/illustrations/FIG-037/revisions/r01/zh-CN.png)
+
+*圖：擴充套件機制各有作用；斜槓入口可以呼叫技能，兩者不是互斥體系。*
+<!-- /diagram: FIG-037 -->

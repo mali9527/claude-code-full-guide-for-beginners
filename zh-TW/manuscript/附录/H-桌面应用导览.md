@@ -6,37 +6,7 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-42 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 H：Claude Code 桌面应用简明导览))
-    从 Code 进入
-      自带 Claude Code 引擎
-      先选项目和运行环境
-    读改查三个动作
-      给出明确文件
-      看修改差异
-      验证并保存
-    会话和副本
-      多会话独立历史
-      worktree 分开工作目录
-      不是安全沙盒
-    接续工作
-      desktop 终端到桌面
-      teleport 云端到终端
-      远程控制仍本地执行
-    定时任务
-      本地需要开机
-      云任务使用远程资料
-```
+本章圖解：[桌面裡的一次讀、改、查](#h2-第一次只做读改查三个动作)。
 
 <a id="h1-什么时候值得使用桌面界面"></a>
 ## H.1 什麼時候值得使用桌面介面
@@ -53,6 +23,12 @@ mindmap
 ## H.2 第一次只做“讀、改、查”三個動作
 
 在練習資料夾裡放一份 `notes.md`，寫下幾句普通文字。你可以用檔案附件或可用的檔案引用功能讓 Claude 定位它，但第一次仍應明確檔名，避免依賴“那個檔案”這種含糊指代。
+
+<!-- diagram: FIG-039 -->
+![桌面裡的一次讀、改、查](../../../assets/illustrations/FIG-039/revisions/r01/zh-CN.png)
+
+*圖：用任務、變化與結果三個區域理解桌面工作*
+<!-- /diagram: FIG-039 -->
 
 **先讀。**告訴它：“只讀 notes.md，用兩句話說明內容，不修改。”核對它是否讀了指定檔案，有沒有把檔案以外的資訊說成原文。這與第 5 章是同一種練習，只是換了入口。
 

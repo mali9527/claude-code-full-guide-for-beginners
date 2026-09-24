@@ -6,48 +6,7 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-41 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 G · 报错自救手册))
-    安装阶段
-      command not found
-      EACCES 权限
-      PATH 未更新
-    登录认证
-      401 失败
-      连不上 api
-    使用阶段
-      Ctx 溢出
-      Rate limit
-      突然变笨
-      循环卡死
-    权限改文件
-      Permission denied
-      多改了
-      审得不细
-    扩展故障
-      Hook 没触发
-      Skill 不识别
-      MCP 工具缺失
-    Git 相关
-      not a repo
-      ahead by N
-      merge conflict
-    通用排查
-      重启先试
-      /status /help
-      问 Claude 自己
-
-```
+本章圖解：[報錯時先收集這四樣](#通用排查顺序)。
 
 <a id="安装阶段"></a>
 ## 安裝階段
@@ -254,6 +213,12 @@ mindmap
 ## 通用排查順序
 
 遇到任何問題按這個順序試：
+
+<!-- diagram: FIG-038 -->
+![報錯時先收集這四樣](../../../assets/illustrations/FIG-038/revisions/r01/zh-CN.png)
+
+*圖：保留操作、完整報錯、環境和已嘗試步驟，才更容易定位問題。*
+<!-- /diagram: FIG-038 -->
 
 1. **記錄錯誤、版本和觸發步驟**，儲存未完成工作
 2. **`/status` 看配置，`/context` 看上下文，`/usage` 看用量**

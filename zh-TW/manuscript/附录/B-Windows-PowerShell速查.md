@@ -6,39 +6,7 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-36 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 B · Windows PowerShell 速查))
-    常用命令
-      导航 pwd ls cd
-      文件 New-Item cp mv rm
-      辅助 explorer cls
-    快捷键
-      Tab 补全
-      Ctrl+C 中断
-      Ctrl+T 新标签
-    提示符与路径
-      PS 开头
-      反斜杠
-      盘符 C 冒号
-    错误翻译
-      not recognized
-      Access denied
-      scripts disabled
-    Unix 别名
-      ls cp mv rm
-      与 Mac 对齐
-
-```
+本章圖解：[PowerShell 的輸入位置](#提示符符号速读)。
 
 <a id="最常用-15-个命令"></a>
 ## 最常用 15 個命令
@@ -82,6 +50,12 @@ mindmap
 - `>`（如 `PS C:\Users\你>`）：PowerShell 等你打字
 - `PS` = PowerShell
 - 路徑用**反斜槓 `\`**（和 Mac 的 `/` 不一樣）
+
+<!-- diagram: FIG-032 -->
+![PowerShell 的輸入位置](../../../assets/illustrations/FIG-032/revisions/r01/zh-CN.png)
+
+*圖：在 PowerShell 先看當前位置，再輸入命令*
+<!-- /diagram: FIG-032 -->
 
 <a id="常见错误翻译"></a>
 ## 常見錯誤翻譯

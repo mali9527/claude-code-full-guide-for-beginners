@@ -17,35 +17,7 @@
 <a id="本章地图"></a>
 ### 本章地圖
 
-<!-- diagram: MM-46 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 0 章 · 账号与费用))
-    先分清
-      程序
-      模型
-      账户
-    选择路径
-      个人订阅
-      团队账号
-      API 计费
-    检查资格
-      所在地区
-      套餐与额度
-      组织要求
-    再开始
-      安装
-      确认模型
-      做小练习
-```
+本章圖解：[程式、模型、賬戶是三件事](#01-三件东西不要混成一件)。
 
 > 🎯 **【主線】—— 本章必讀核心**
 
@@ -53,6 +25,12 @@ mindmap
 ## 0.1 三件東西，不要混成一件
 
 你接下來會用到三個不同的東西。**Claude Code 是幫你讀檔案、改檔案和執行命令的工具**；**Claude 模型負責理解任務和生成回答**，例如 Opus 5.5、Fable 5.1；**賬戶決定你能訪問哪些服務，以及費用由誰承擔**。同一臺電腦裝好了工具，換一個賬戶，能選的模型和可用額度也可能不同。
+
+<!-- diagram: FIG-002 -->
+![程式、模型、賬戶是三件事](../../../assets/illustrations/FIG-002/revisions/r01/zh-CN.png)
+
+*圖：程式是操作入口，模型處理任務，賬戶決定可用資格。*
+<!-- /diagram: FIG-002 -->
 
 把它想成裝好了一個影片播放軟體：軟體存在，不等於你已經訂閱每一個付費頻道。Claude Code 的安裝程式可以取得，也不等於請求模型永久免費。官方目前明確說明，Claude 免費聊天計劃不包含 Claude Code 使用資格。[官方安裝與賬號說明](https://code.claude.com/docs/en/setup)
 

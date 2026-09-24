@@ -2,360 +2,360 @@ entries:
 - unit: preface
   language: zh-TW
   path: zh-TW/manuscript/00-前言/00-本书怎么读.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 728692a73b0f60728e51d3ebbfdd5ea25544a7699b9c153131b059de25f9c1eb
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 987f96236f3e8ae25bfd5f93eb2b1f08800d250ec62b0c824e0af40e4ba2d5fc
   converter: opencc-s2twp/0.1.7
-  output_sha256: db94268c428f52c642bf589944de7b2e31bbd7bf85c044c2317409c4ae8b2f43
+  output_sha256: 5badbf510df73ea6e86ad85a8597dbb82fde72f8f0d7357772b92b5d7680f379
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-00
   language: zh-TW
   path: zh-TW/manuscript/00-前言/01-免费用上Claude-Code.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 09d1cbc18c3c4a34cf2612aa4bc17a705ab0447b404e1e483270b19149e4da61
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: e42657359e9c22210d46c47462b5508f5d83627c557efc4aa5aff4bbc3b86c7c
   converter: opencc-s2twp/0.1.7
-  output_sha256: f4e7b716fb1de809f5597a90dcdaaa25ba11c871ee0790ad867694d2c1ed20e6
+  output_sha256: fb333f442e6fc747763229e51ff7ed526b3fd3078137bfa595443ec732c834c7
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-01
   language: zh-TW
   path: zh-TW/manuscript/part1-从零起步/01-先把电脑准备好.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 06d4aeba3e61824452f79a4f26d2a62d9aeac8227fc92d2996b9e852423543fb
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: cd1edd2a1e68bc00051b39420f36066bb3a6ef6edfa444b653acce721191dfff
   converter: opencc-s2twp/0.1.7
-  output_sha256: 8e0d17272ee573203a0f4e79f974470128ec68b846c44b46ac981af259e1a5d4
+  output_sha256: aed05e4d588457a02c21b4a98491cdf0e2a72d43b1968ef62f68126316009c83
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-02
   language: zh-TW
   path: zh-TW/manuscript/part1-从零起步/02-安装-Claude-Code.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 4dce941260a7a062fe052154307ec29d95cbad202f3c8fa6d8f543a38698a9ed
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 56bffb6386c4c38a3f57c29f958f62b27465b24ce1e0c353de321cc03291ae81
   converter: opencc-s2twp/0.1.7
-  output_sha256: 5eb076eea7b3d810a4c47dd105cb7572b3e8d29e8c5e4bbc7010e539fbb2b8ba
+  output_sha256: f8c4f2301ac57b7fdc42d85663d92bd1103388d4d560cd3e10d704248103d975
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-03
   language: zh-TW
   path: zh-TW/manuscript/part1-从零起步/03-你的第一次对话.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 6552c4732af00325461346746d7e12f75db21612458ba9a0617bc7d8d8b8c774
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 741d42e182e8a6dc7fd293ca07148a8aaf3686c1435143633283c69420087b14
   converter: opencc-s2twp/0.1.7
-  output_sha256: 76606014c94843f9ded988b2d4bc2ef881aaee838cfbab00ae588c46ccab14ec
+  output_sha256: a2631ae007f2874ed0d6b40d448da43b2c3deb88176b9bf95f2c6fe544a19b78
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-04
   language: zh-TW
   path: zh-TW/manuscript/part1-从零起步/04-Claude-Code到底是什么.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 2fc34606e044a1137f8beaf90834230de7441833123e9930bf5ad0180ca3f424
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 597d653e7fd174fab059149825f936ccc82a3a5efb047dd3f4eab1ce4cd8eeb4
   converter: opencc-s2twp/0.1.7
-  output_sha256: 38f62def42a6f82c2b5052f590e99bd799acb4de8bc5da0792ddee7214e71a37
+  output_sha256: b0ae49ed44dd52c3ab8cde9b1a2035ad86082c96fb34be395a3eb10c7ba8eabb
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-05
   language: zh-TW
   path: zh-TW/manuscript/part2-日常使用/05-让它读文件.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 4a8ca18abb52fac7306bffb0b4a53c0c6cc8e34107b4e7138dc9075bd211fbee
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 2ddd6d9cc3b1407bc3dc594145dc95af4257f7166ba59993afdc48c3084abf00
   converter: opencc-s2twp/0.1.7
-  output_sha256: 2a17fdc006dbbf9265a13df03648718cc9054e3f00f3a5625303a2a5affe3e3f
+  output_sha256: 072a089c0cc845a6dac8659e46a8a0270ced5c14787588f37ed17d68a48e4cd4
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-06
   language: zh-TW
   path: zh-TW/manuscript/part2-日常使用/06-让它改文件.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: e1560a6c6270971af72208312d452f4346c9f92ec12b922c89b049b0ae0d8e75
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 835480c0b12ccee4b75f6931280d034ce7b07709163d6878d4077fda7113e419
   converter: opencc-s2twp/0.1.7
-  output_sha256: 652b2a942f10144cf6723ea1a2fe9693855719e8a8ea63a2626eb1adc8ea9633
+  output_sha256: b7b45d894b6ab64b603820ce14255498715f7b807fb8058877dff09b1236fa3b
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-07
   language: zh-TW
   path: zh-TW/manuscript/part2-日常使用/07-让它跑命令加权限机制.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 0478125d972cbb447939b531552f0923f8a4436ceda25e4679792891c748b971
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: fa61b36bb2519cc2bbb00cb5c6961cd27be4dbfa339db56826f94d176f6f538c
   converter: opencc-s2twp/0.1.7
-  output_sha256: 0e4ee06700ee64a4976fedcbea20432b44780a2d5b87f7b8234e3590763abd8e
+  output_sha256: 0b83a91b9ac596191f11d65506d8f18d4ca734419cbfc383a5a745c0df9c2104
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-08
   language: zh-TW
   path: zh-TW/manuscript/part2-日常使用/08-交互循环七步法.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 202d9fd5436d0baea47e4dde8e8bd4ce4456bceb6d3338824fcf30bf05e99abf
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 56379d6416f01f0a6c4ac2f5b8c09aa872e11766105fed624a5df68ffcb67747
   converter: opencc-s2twp/0.1.7
-  output_sha256: 7831f872cb664624ea5736be00d4206ea6bae72aa8123b1db7c0c9fbbb6d82f5
+  output_sha256: 0f17892a536209a4bf246eb9cf826ea60af1a3cc9e624ef292c7ddae20bc0665
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-09
   language: zh-TW
   path: zh-TW/manuscript/part2-日常使用/09-计划模式与撤销.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: c22e2fd95af66dfa7bc8541f07f5f6681d993201c05be5813f36aa362a54e1c3
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 3282a16fa3e7f84eea5922cfe2c69dd55bbe8a507f12c17e83b4b107969919bb
   converter: opencc-s2twp/0.1.7
-  output_sha256: 44d9c4dd0411c30ae50b534393852672c6e989292e57946586947fa7564c12b3
+  output_sha256: 678994da12617e63134cc559b90f27558e428c9a5c7be0de7968a2e97b2061be
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-10
   language: zh-TW
   path: zh-TW/manuscript/part2-日常使用/10-信任校准.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 53549aabaeb0baeb69bddad6d3f8aa6dd51ebe8054451ef082b24b4568b5de12
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 728d22dde3ae40d2ab1971fb9f859239670f222989314c9b8074f62afc069a45
   converter: opencc-s2twp/0.1.7
-  output_sha256: f02822bb87e8c6260fe52dcec9337b1709515d1ae8da82466f1056d988b032cd
+  output_sha256: 9a735f0dfe0b5de021e7dc58ed0493311cbdbe5b42deef3d17efe131f696d449
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-11
   language: zh-TW
   path: zh-TW/manuscript/part3-深度概念/11-你的数据去哪了.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: d9f3ec7eaa1892ec99ddb0e354d23395ec42e0d230e3e3fccbd007cc76ff186c
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 2fd481663a3235011faeff4bb2e3ec5630f7479f388557d2c99db45b7e5e55d7
   converter: opencc-s2twp/0.1.7
-  output_sha256: 509f0bf7a5fc0ef4245bcf3a5cf602e7e53f9521f74a2204009adcc55fba2d2c
+  output_sha256: b44cb8a7a4a440cca45561ae1ffa82a8c5a819e54e27d0e5f124e71e9bfcd8d7
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-12
   language: zh-TW
   path: zh-TW/manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 621ac93b7708aade551ed94e1b92fa75179b3419eed91c288d9fcb8e1c779561
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 34b1f26e1637e87f2ecb4ebafa15aaf9ce716d9e9cc1283e8475665d2ffa5956
   converter: opencc-s2twp/0.1.7
-  output_sha256: 4969365fbaf00db1be73ac13c3fdc4ab4f00231503411cfd9b505a06e93ef72a
+  output_sha256: ceaa827c9ee116cd12a0a6263a592b933f1310961d95e78afd3d0fb4c5b922e6
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-13
   language: zh-TW
   path: zh-TW/manuscript/part3-深度概念/13-三层记忆.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: e4ab8f6cc39a1e562dac5cf6bfc911e719e0e7cffd167ac483c287b50275bd27
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 0e81df7edc1cba45c320c37a942dec292d61264a99a52d19799a21fe251607c9
   converter: opencc-s2twp/0.1.7
-  output_sha256: 474c1327b6e97652d27428a35bb499eab0f98b3e6072b3f8614c54663e7e92cd
+  output_sha256: 04faa80c4f99253a6c4a1ded9ddfc77b39b9c89d2973cda43061847bb87a9676
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-14
   language: zh-TW
   path: zh-TW/manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 0fc1350f00999958446b00b059a087c24a22e3e8ac05e5997631f3fa9208b598
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 9d07c3a8eb6994e6ae80d6897acac61ae021a5b9ca83bc8cfa2ef58971a3e688
   converter: opencc-s2twp/0.1.7
-  output_sha256: 5b2d24222dd46cd978b055d47d7120a43a382c1afcaadc3712ba8a8f19c2b82a
+  output_sha256: 9424ee45e3c7f4df5937c929e622d45c971a16837700b48c7df37d0f70e3c9dc
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-15
   language: zh-TW
   path: zh-TW/manuscript/part3-深度概念/15-模型与成本.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 4c012270bdd2406b7514cfb36f33841ada6a73a7a7005e19691f956385fb719e
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: a09c95463318e04bba8702843761242eba0876e09016001b9b22e5d42365ee18
   converter: opencc-s2twp/0.1.7
-  output_sha256: 94f1e378fe2f3072a34f08aec166b8f64ed1b802a92ff4c7e7dcecc5868dad16
+  output_sha256: 9e50960b5cc781e9494797c778cf58d715616f8428f04beb3cf9f3f77e50c192
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-16
   language: zh-TW
   path: zh-TW/manuscript/part4-避坑与判断力/16-新手10大错误.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: d890c2446800b48e9418cc72dda172c62559d94b51fb123d5d48b61aa2bf357f
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 3bcd58cc286959607e6e2f7f7b7aab2a61733a69d4cf909a9c1bb7d132a8609e
   converter: opencc-s2twp/0.1.7
-  output_sha256: 711745d839e6e18ef73801867521db1b2cec181f08793dcd540e92ce28c362b2
+  output_sha256: 412712b3910bac9713ff92b6d3cacd8b3d9707101bf13a0f222aaeca44d52f8e
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-17
   language: zh-TW
   path: zh-TW/manuscript/part4-避坑与判断力/17-什么时候该停下来.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 211ac8cb8e609f94c39f0faf62450f07e0dea551d8f1bead3504ae4a9dace6f4
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 5403c0ab1ad9409dad79be801d9a0aadad96ecea5de7e6e21cefb2440c361946
   converter: opencc-s2twp/0.1.7
-  output_sha256: 5327ab9e53c97808a0a5d93647588e76de364e1d65036a8e1bb62a633e06d98e
+  output_sha256: 11a51c4dae20408f15ba58e76a7d98f071fe08c613c61f04ed3781a415c6a568
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-18
   language: zh-TW
   path: zh-TW/manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 40c4427aecae25f29ea759b46998a38343baed8534008ba953025c4c09d3ec0d
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 78b3cbd497c2a3e0352903e1523e787e12a13b0fd3b4f0a5a5e89cec3c9fffa5
   converter: opencc-s2twp/0.1.7
-  output_sha256: af66e856174a669dc7142fbb048f955d6d5ff82d3ed7384bd4b2033d978b6aaa
+  output_sha256: fd92e7514cdba41880dc9f48ac653d086ecd9de71b8e497163adeffa93ef100f
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-19
   language: zh-TW
   path: zh-TW/manuscript/part4-避坑与判断力/19-输入技巧.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 0a3afbcf3fed41f0a0a1364829b98773a73dbbe6869d32d16b99b4c6514ca623
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 37b66cfa86e00ebed06323d78fbde2df68ac4f620f04548731390aeb38e35264
   converter: opencc-s2twp/0.1.7
-  output_sha256: b1afa1cc548535de547829a63a930670b7be34caceba561de670720cde0a3d7e
+  output_sha256: e05e481f7ca18f7eaaf19447b88de51e98390b6af51020a5aa94c8a843b94a8f
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-20
   language: zh-TW
   path: zh-TW/manuscript/part5-扩展能力/20-Skills入门.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: d68b52e9db8766420554d4483eee6ae6545069807cd224be8cf39e6134d2e7ac
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 068cc8926c3da1bb37935d9c0dc64a6594859d27064e088782d8c27877f965b5
   converter: opencc-s2twp/0.1.7
-  output_sha256: feace7d07f54ad41f397a02cef4aa9600c5e33ff4c01993b437baf8c1f49d9c8
+  output_sha256: 9c53a3b2e2cdc4b7eaf20c606815e417afa0d76bdf1ff6ce65ce4e228423e7b7
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-21
   language: zh-TW
   path: zh-TW/manuscript/part5-扩展能力/21-自定义Slash命令.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: cce8e6f3bdfbfad35db666abc4ebfd3793aed5351dbd9925b09f4a58a2c98f51
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 377c8fe0f1224f2a26c666dbac7575c2fb388d4ef7394513b566534652566338
   converter: opencc-s2twp/0.1.7
-  output_sha256: d3ee4053071fda00477aba89978c169b28ebc00a3af2d93456d7c47aaac6ea44
+  output_sha256: 28069e71cacb1b48b303a9dca4c65635f8dc160a7229b010d08ebcc1bbff45c0
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-22
   language: zh-TW
   path: zh-TW/manuscript/part5-扩展能力/22-Subagents入门.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 34d2d9589873119366ec332d53996fdacdce2362c06e0597e2a1a802be194bfe
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 62abcb205f37e1d8ee4762ca40a675663313cc634f75308cf98e0cda60f3c13d
   converter: opencc-s2twp/0.1.7
-  output_sha256: 82a7b29253271383b1e0fb7ec66fefa1748cffb51a27715068213a8011198446
+  output_sha256: 247984c47dfafe7a3bd36713cae868cfdc083bb9d6d8493eea7c0213f2febe9c
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-23
   language: zh-TW
   path: zh-TW/manuscript/part5-扩展能力/23-Hooks入门.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: a74ebaf5642f01849a744bffc54dc507dc2abfc559531007e170b714e8ee191b
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: eba2f25c49aa1f39a2c5ae5f992952375d8f5b30109f26deed44b8eeaafe6865
   converter: opencc-s2twp/0.1.7
-  output_sha256: a3651ef7d0d938f12f86e465ddad3d1a1cbf75b0f7deffcdd11d1ed4982fb9ae
+  output_sha256: 95a0b66360fa3ba791c96ce7d973a7b2becf6459d5a4ca2db49556f426e701c2
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-24
   language: zh-TW
   path: zh-TW/manuscript/part5-扩展能力/24-MCP入门.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: adc79761f3bbdd91a2c26bdd5931d93bf96c2da23362e6096d15736d2c1d11f2
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: bd76546e3180757ee8853c8b1b05d2364fcdb0d3e8c61c5e47defdce14269697
   converter: opencc-s2twp/0.1.7
-  output_sha256: 14ab33a2f7874f571f14c27fff718abd85e1837d0beffab86be1cd93af4601e0
+  output_sha256: 92227a420e1349d5ed266a1c980012330319600788b98691c1f272602f4f7f96
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-25
   language: zh-TW
   path: zh-TW/manuscript/part6-融入日常/25-团队协作基础.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 12745c2b1f0de375c331c31edc364cbf22d3ab35979edfabfe8f103716319917
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 0cc7c42f549dab8e48ee8f96e273fd154763c8b320feecef4136dcf2c56c44dd
   converter: opencc-s2twp/0.1.7
-  output_sha256: f9eb2546a3e116cfa5a05e3aa17ee879b0983cbc353d44b11fc930533898ccb2
+  output_sha256: eb7ae78a44ba014e2767c5a484c76c4722c87e56d23614f9db2afac0ce1d7bcb
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-26
   language: zh-TW
   path: zh-TW/manuscript/part6-融入日常/26-进阶能力速览.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 2419d553dfd88608c9b8da794f99227c99dbdf8a4570680394de92590386223f
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: e1db6378d899b2a3be23f99eee4d081bf954363fc4ce6378b49717e86ae35f37
   converter: opencc-s2twp/0.1.7
-  output_sha256: 1f54fa66b89665cec8eb463cc029ec84a61fd6df22cfa967c15d39ba6958d7ad
+  output_sha256: 87d81640ba48ccc40b76289f52997188a3a0eab18ef9ceaa7545beaa6b83230d
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: ch-27
   language: zh-TW
   path: zh-TW/manuscript/part6-融入日常/27-下一步路线.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: a449a5ef91fc9e13425f0a28e44551f42d346f26fb81e5fad00a2f6455debb99
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: d1072ece4470937adefef498edb3ddc1c034e931da50975cb60b24f375bfab9c
   converter: opencc-s2twp/0.1.7
-  output_sha256: 9b25ae0261a88411fdf70cd1a28b83522abaa5a2880861cfc315a73f38685dbf
+  output_sha256: bcb5ff8f9c1b0d91da63cfc47cc90eec136cf0e7aeb155aab670a0ff56a73450
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-a
   language: zh-TW
   path: zh-TW/manuscript/附录/A-Mac终端速查.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: b209ceabdeadb3f7076a4cb3cce8c105b202aa7d956f67343465d1daa0cbca94
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 17c28a3ba4b2bf5f731a0c436d3a8002e930c96cd62e477dd47a1761a14e8228
   converter: opencc-s2twp/0.1.7
-  output_sha256: 79801eb44df4d1ae5904f10c5e2235e11dfcda67aeef7e7f17e3010d04237a89
+  output_sha256: 12ba7e42c48258fccdc93c98fc424c80dbac07714d1ca2312e8917c92223e335
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-b
   language: zh-TW
   path: zh-TW/manuscript/附录/B-Windows-PowerShell速查.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 2f251a7c0d4dae490a01e53b01332aebb54a248fd0e93698631226618b03b4d9
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 591de7ba052ea96b2ad84177f5b9aca995dc7146697ef47faec305f00f528136
   converter: opencc-s2twp/0.1.7
-  output_sha256: 32bde97cebbc42086d151ef06549dccff76d9c0491455bc3340799d7acc2dcf9
+  output_sha256: a30da3cc44db9eeeace4a9c8123c510c75e62fcda96dec0b6b88b77bbf84c3fe
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-c
   language: zh-TW
   path: zh-TW/manuscript/附录/C-Slash命令全表.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: c7dc1133d537f5a9ef2642e0d46a29ddae12fc49fbb6aeadfb2b5fcd5de9a811
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 651711fe0703fc7830ee6ba7ca6df7545f301e3f95db62d97119b517d453208e
   converter: opencc-s2twp/0.1.7
-  output_sha256: cf4a21524eb92599de164b50a126efdb8d988db85fd691b53732937067055ed8
+  output_sha256: 3b24954e27b3495ba1000480af79b45bcd9a5f43a139854941a3011692168d40
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-d
   language: zh-TW
   path: zh-TW/manuscript/附录/D-决策流程图.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 1cc0402241e5024d11a58fb39ce0d7d4376714ad08f6adac366fc7acb6958a10
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 1e4227d2d76b23267744679bd7e8f196eee142a0d3f648eed023bc111e5f4297
   converter: opencc-s2twp/0.1.7
-  output_sha256: 465e9010bd8c7c2dba1976e721b16640a14c2fa8c45d99a9f656902c8bf2c3d9
+  output_sha256: 9b5dd49a0a92be74310ef5a52a43f347b8778e87bd4348b3ae438fbe6e3b45ae
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-e
   language: zh-TW
   path: zh-TW/manuscript/附录/E-FAQ.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 033d4370bb5364c91ed86eb99ce0656dd18d2ade87a41bd8033ce6a1db409845
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: be34a7e648bc2e1d390a500f8db79819d667081f4010035c1130e0fc5e48e3a8
   converter: opencc-s2twp/0.1.7
-  output_sha256: cf35bea77b7e69fa72bb6e0d57ed540fdc297706b025acb67814db63f6553456
+  output_sha256: 4376f34756a3798c89b2344a9e3f0299361e9b23b630babec678cfb4a465f48b
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-f
   language: zh-TW
   path: zh-TW/manuscript/附录/F-术语表.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: a4b16f1eeea09e81b86ea4f660d204b3af370a6870519850f1482a0f5dfa1354
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 55480d9c5ce8c037de650a6054c001b013c983854f0fddf3c172040ef6e9e1cd
   converter: opencc-s2twp/0.1.7
-  output_sha256: da5c1eaddcd5f5f84c7965239bd19f2f2f2ff2e5b3caa5ac78b18dc99ad920b6
+  output_sha256: 700a5e173a9e5fa58abeeb1551d650bd4c9f3e59635a6b377349ff23d522335d
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-g
   language: zh-TW
   path: zh-TW/manuscript/附录/G-报错自救手册.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 160a35c8dc7aa310f6a8454aa2519f22863aaeec8fe4661e1653c3bb9fc71438
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: e4b18a9349a660c4030a5a44fd614f3ddd684d74aeeecf656a95e6df0db93252
   converter: opencc-s2twp/0.1.7
-  output_sha256: 020c38a66bcff258e49c77f69a61c316cfbdb4bddd3b6b4ab93d15a237659936
+  output_sha256: 75c0532c4a27f184e28daaedeef4075bb15b708deee962d45e5535ec4281e6fe
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-h
   language: zh-TW
   path: zh-TW/manuscript/附录/H-桌面应用导览.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: b8ee30d62b2d96e21e02dd6dbfca77c9fc79093acb9dea5b0000a518b2175aaa
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 8721ced25a8b1d920d43c2a03b29dc9670833efc4879f1237e2594213bf6076e
   converter: opencc-s2twp/0.1.7
-  output_sha256: 75a7b3a4cedb057ca40a71f6050a8ee7b595457ea6747addd6dda99da2f88883
+  output_sha256: 11969a137af622c2613d799c3c11a0963731a104b01fda3efee6ac89019c431f
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-i
   language: zh-TW
   path: zh-TW/manuscript/附录/I-延伸阅读.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: fdb5f12b4433df3818a6c39bae93061a16db637da75ad37a097f86897dffd61e
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 856c73939da998e0bf554e2551347196555f275455158165c77cdc3d956ee665
   converter: opencc-s2twp/0.1.7
-  output_sha256: 2a34cb38f1137eeb32c1652f6f32ac641b9806bae64939c40ddcea821cac8bda
+  output_sha256: a32b325d8bd2c872e87e503aa30ea9e695e2453d1650fb8449eb19deaf3683b2
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-j
   language: zh-TW
   path: zh-TW/manuscript/附录/J-Opus-4.7新手指南.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 1190ffccfc36a1f6e051e7690c490c9b742d4818a7a253d9592ffcbfd3ad6e51
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: 360c0061c4b8e0f36672babb90602381912b60ec628ced97354ab656adb80c7f
   converter: opencc-s2twp/0.1.7
-  output_sha256: 0919974fe21d872260b7834aac30479c365bff774e89c6ac48b6c927a84d233f
+  output_sha256: 647d8fac26df35b52979995d725efa5558eeb7fc149a0b02457bf5c8be30b1f8
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending
 - unit: appendix-k
   language: zh-TW
   path: zh-TW/manuscript/附录/K-第三方模型接入.md
-  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
-  source_sha256: 24ea52f40a4bdcfb90b3e97228c40f6885a027743181303baa5137986667d0a9
+  source_commit: 38f4d9582f2e21222c066e677e7323c96bda0ec7
+  source_sha256: f1f44e83a2c82f995ca4792e5853d1fd68941e3db5637af20ee89353a13ab26c
   converter: opencc-s2twp/0.1.7
-  output_sha256: 1a614942ce9ba9e6101cc9dc635e953422f7530a6d5b9878e1e0f2c8b30c287b
+  output_sha256: d833f8eade21269c3cfa677dfec39890c2f70964258428ad2cb65a7b86d6df9a
   policy_sha256: bf5bc53502e5002f7770554870c27c86a4cf39152b9ff597d5ac438a6f07f462
   review: pending

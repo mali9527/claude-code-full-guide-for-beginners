@@ -21,46 +21,7 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-21 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 14 章 · 写好你的 CLAUDE.md))
-    起草和核对
-      init 可以起草
-      补上不能推断的约定
-      手写也可以
-    三个核心作用
-      理解项目本质
-      传达硬规则
-      指路而非复制
-    保持精简
-      小项目先写几十行
-      长内容按需拆分
-      没有通用指令条数保证
-    五大反模式
-      风格指南大全
-      数据库 schema 全文
-      代码片段供参考
-      命令堆砌
-      模糊废话
-    正面模板
-      WHAT 项目是什么
-      WHY 关键决策背景
-      HOW 硬规则
-      指向扩展文档
-    渐进披露
-      第 1 天最小版
-      发现错再补
-      每月定期整理
-```
+本章圖解：[專案說明是一張路標](#142-claudemd-的三个核心作用)。
 
 ---
 
@@ -92,6 +53,12 @@ mindmap
 ## 14.2 CLAUDE.md 的三個核心作用
 
 先搞清楚這份文件到底要幹什麼：
+
+<!-- diagram: FIG-016 -->
+![專案說明是一張路標](../../../assets/illustrations/FIG-016/revisions/r01/zh-CN.png)
+
+*圖：專案說明寫清目標、約定與驗證入口，長資料按需引用。*
+<!-- /diagram: FIG-016 -->
 
 <a id="作用-1让-claude-理解项目本质what--why"></a>
 ### 作用 1：讓 Claude 理解專案本質（WHAT + WHY）

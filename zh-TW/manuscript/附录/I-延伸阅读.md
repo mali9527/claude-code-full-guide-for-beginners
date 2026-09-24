@@ -6,35 +6,7 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-43 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 I · 延伸阅读))
-    先查官方
-      Claude Code 文档
-      产品更新日志
-      模型与账户说明
-    本书参考来源
-      Ultimate Guide
-      HumanLayer 文章
-      保留署名与链接
-    按问题深入
-      技能与外部工具
-      桌面与定时任务
-      Agent SDK
-    学习节奏
-      先解决眼前问题
-      用练习验证经验
-      保留适用日期
-```
+本附錄按下方問題和條目查閱；相關章節入口保留在各條目中。
 
 <a id="一最先收藏的官方入口"></a>
 ## 一、最先收藏的官方入口

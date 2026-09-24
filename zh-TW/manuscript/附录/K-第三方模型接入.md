@@ -6,40 +6,18 @@
 <a id="本章地图"></a>
 ### 本章地圖
 
-<!-- diagram: MM-45 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((附录 K · 第三方接入))
-    分清路线
-      云平台提供 Claude
-      网关转发 Claude
-      兼容接口提供其他模型
-    核对条件
-      提供方支持
-      真实模型
-      费用与数据
-    配置前
-      保留原设置
-      确认作用范围
-      不公开凭据
-    验证
-      控制台查请求
-      小文件测工具
-      检查账单
-```
+本章圖解：[第三方接入的三條路線](#k1-第三方至少有三种意思)。
 
 <a id="k1-第三方至少有三种意思"></a>
 ## K.1 “第三方”至少有三種意思
 
 **第一種是雲平臺提供 Claude。** Amazon Bedrock、Google Cloud 的 Agent Platform、Microsoft Foundry 等有各自的接入與模型開放條件。模型仍可能是 Claude，但賬戶、結算、地區和功能支援要按對應部署說明核對，不能直接照搬個人 Pro 訂閱的待遇。
+
+<!-- diagram: FIG-041 -->
+![第三方接入的三條路線](../../../assets/illustrations/FIG-041/revisions/r01/zh-CN.png)
+
+*圖：第三方接入先分清直連、閘道器和本地服務，再核對各自條件。*
+<!-- /diagram: FIG-041 -->
 
 **第二種是閘道器轉發 Claude 請求。** 閘道器是夾在客戶端與模型服務之間的一層服務，組織可能用它管理認證、用量和預算。地址雖然換了，實際提供的也可能仍是 Claude。你需要知道憑據屬於誰、賬單記到哪裡，以及閘道器是否轉發所需功能。
 

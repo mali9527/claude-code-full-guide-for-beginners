@@ -21,31 +21,7 @@
 <a id="本章地图一眼看全貌"></a>
 ### 本章地圖（一眼看全貌）
 
-<!-- diagram: MM-30 -->
-```mermaid
----
-config:
-  theme: forest
-  themeVariables:
-    fontFamily: "-apple-system, 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif"
-    fontSize: "17px"
-    lineColor: "#D9D9D9"
----
-mindmap
-  root((第 23 章 · Hooks 入门))
-    事件和动作
-      事前与事后不同
-      自动触发脚本
-    本章练习
-      只读检查 Markdown
-      从输入读取文件路径
-    两层验证
-      手工输入测试脚本
-      真实会话测试事件
-    正确理解失败
-      不隐藏错误
-      不把反馈当撤销
-```
+本章圖解：[事件觸發一次小檢查](#231-先决定在哪个时刻做什么)。
 
 ---
 
@@ -55,6 +31,12 @@ mindmap
 ## 23.1 先決定在哪個時刻做什麼
 
 **Hook（鉤子）**可以理解為“事件發生時，自動執行預先配置的動作”。例如 Claude 用編輯工具成功改完檔案，這個事件發生後，執行一個檢查標題是否存在的小程式。觸發時機是固定的，不需要你每次再輸入“請檢查”。
+
+<!-- diagram: FIG-026 -->
+![事件觸發一次小檢查](../../../assets/illustrations/FIG-026/revisions/r01/zh-CN.png)
+
+*圖：Hook 圍繞特定事件執行檢查，結果如何使用取決於配置。*
+<!-- /diagram: FIG-026 -->
 
 本章只討論執行本地指令碼的 command Hook。指令碼是電腦按既定規則執行的小程式；它不像技能那樣主要依靠模型理解一段說明。Hook 本身也不是萬能保護罩：動作是否正確，取決於指令碼檢查了什麼、是否匹配了本次事件。
 
