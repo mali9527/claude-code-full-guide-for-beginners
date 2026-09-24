@@ -1,0 +1,450 @@
+- id: access-account
+  claim: 免费 Claude 聊天计划不包含 Claude Code；订阅与 Console/API 是不同访问和计费路径。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/setup
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/authentication
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: account
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: native-install
+  claim: 官方推荐原生安装；该路线不要求 Node.js；npm 包现要求 Node.js 22+；官方不建议 sudo npm install。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/setup
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: install
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: windows-shell
+  claim: 原生 Windows 可不安装 Git for Windows，未安装时使用 PowerShell 工具；安装和 WSL 环境需区分。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/setup
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: install
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: updates
+  claim: 原生安装通常自动更新；Homebrew 与 WinGet 默认手动更新，具体命令取决于安装来源。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/setup
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: install
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-opus
+  claim: Opus 5.5 于 2026-09-22 发布，模型 ID 为 claude-opus-5-5。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://platform.claude.com/docs/en/models/opus-5-5/overview
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-fable
+  claim: Fable 5.1 于 2026-09-01 发布，模型 ID 为 claude-fable-5-1。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://platform.claude.com/docs/en/models/fable-5-1/overview
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-minimum
+  claim: 本书新模型共同 CLI 基线选用 2.1.280+；账户和接入仍影响模型开放。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/model-config
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-pricing
+  claim: 标准 API 输入/输出美元每百万 token：Opus 5.5 4/20，Fable 5.1 10/50，Sonnet 5 2/10，Haiku
+    4.5 1/5；不含其他计价项目。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://platform.claude.com/docs/en/about-claude/pricing
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: price
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-effort
+  claim: Opus 5.5 默认 medium，Fable 5.1 默认 high；effort 与模型、权限模式分开设置。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://platform.claude.com/docs/en/build-with-claude/effort
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/model-config
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: quota
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-fast
+  claim: Opus 5.5 fast 标准输入/输出为 8/40 美元每百万 token；订阅通过 usage credits 支付，非免费加速。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/fast-mode
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: price
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-plan
+  claim: Pro 月付20美元/年付200美元；Max网页月费100/200美元；Fable包含额度依席位而异，Pro从开始需要额外用量，Max最多使用现有周额度50%。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://claude.com/pricing
+    checked_on: '2026-09-24'
+  - url: https://support.claude.com/en/articles/11049741-what-is-the-max-plan
+    checked_on: '2026-09-24'
+  - url: https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: price
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-context
+  claim: Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/model-config
+    checked_on: '2026-09-24'
+  - url: https://platform.claude.com/docs/en/models/overview
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: quota
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-select
+  claim: 交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/model-config
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-fallback
+  claim: Opus 5.5 特定请求可能按服务规则转其他模型，并显示提示；不能把最初选项等同全部回答模型。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://support.claude.com/en/articles/16049681-why-claude-switched-models-in-your-conversation-with-opus-5-or-opus-5-5
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: command-current
+  claim: /status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude
+    doctor 为只读诊断。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/setup
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: permission-modes
+  claim: Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/permissions
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/permission-modes
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: permission-auto
+  claim: 当前 Pro/Max/Team 的适用会话可从 auto 模式启动；需看版本、设置、接入与组织条件。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/permission-modes
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: plan-mode
+  claim: Plan 用于先研究方案，可有读取、探索命令和计划文件；不是操作系统隔离保证。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/permission-modes
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: checkpoint
+  claim: 空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/checkpointing
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: undo
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: data-usage
+  claim: 消费者改进模型设置与商业/API默认政策不同；留存、反馈、云同步及第三方路径不能统一承诺30天删除或不训练。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/data-usage
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/claude-directory#application-data
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: account
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: sessions
+  claim: 本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/sessions
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: undo
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: memory
+  claim: 自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/memory
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: instructions
+  claim: 现行版本支持按条件加载 AGENTS.md；CLAUDE.md 优先规则与版本有关；@AGENTS.md 可作兼容导入。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/memory
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: skills
+  claim: 自定义命令已合入 Skills，旧commands文件兼容；技能可自动或手动调用，加载内容仍占上下文。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/skills
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: agents
+  claim: 子代理拥有独立上下文和可配置工具/规则；现行 /agents 不再打开旧创建向导。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/sub-agents
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: hooks
+  claim: Hook 接收事件的结构化标准输入，匹配与退出码按事件解释；配置不是提示词，程序可能产生真实副作用。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/hooks
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/hooks-guide
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: mcp
+  claim: MCP 使用受支持的CLI和配置作用域；项目共享配置 .mcp.json，连接鉴权与工具许可分别确认。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/mcp
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: desktop
+  claim: 桌面 Code 自带引擎；终端/Desktop/Web 功能与配置存在差异；/desktop 可接续至桌面，/teleport 为云会话转终端。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/desktop
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: scheduling
+  claim: CLI /loop 依赖会话，桌面本地计划依赖应用/唤醒状态，云 Routines 不依赖本地开机且受账户开放限制。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/scheduled-tasks
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/desktop-scheduled-tasks
+    checked_on: '2026-09-24'
+  - url: https://code.claude.com/docs/en/routines
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: remote-control
+  claim: Remote Control 保留本机执行位置，不把项目自动搬到云端。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/remote-control
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: gateway
+  claim: Anthropic不支持通过网关路由到非Claude模型；第三方兼容文档不等于Anthropic官方支持。
+  scope:
+    product: claude-code
+    plan: 按正文说明区分个人订阅、商业/API和第三方部署
+  sources:
+  - url: https://code.claude.com/docs/en/llm-gateway
+    checked_on: '2026-09-24'
+  - url: https://docs.z.ai/devpack/tool/claude
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: account
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: input-behavior
+  claim: '! 命令通常在沙箱外执行（严格沙箱例外），默认可触发模型回应；@引用可注入全文，不以追加行数说明保证只读局部。'
+  scope:
+    product: claude-code
+    plan: CLI；按终端、模式和版本说明
+  sources:
+  - url: https://code.claude.com/docs/en/interactive-mode
+    checked_on: '2026-09-24'
+  checked_on: '2026-09-24'
+  category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true

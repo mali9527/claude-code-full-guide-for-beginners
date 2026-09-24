@@ -58,7 +58,7 @@ mindmap
 | **agent** | 有特定岗位的 Claude 实习生 | Ch 4, 22 |
 | **agentic coding** | AI 主动执行任务的编程方式 | Ch 4 支线 |
 | **API** | 应用程序接口——程序之间说话的约定 | Ch 24, 26 |
-| **CLI** | 命令行工具——只能打字（不能点）的工具 | Ch 1 |
+| **CLI** | 命令行界面——主要通过文字命令操作的界面 | Ch 1 |
 | **CLAUDE.md** | 项目说明书——Claude 每次启动先读 | Ch 13, 14 |
 | **command** | 命令——给电脑或 Claude 下的一条指令 | Ch 18, 21 |
 | **context** | 短期工作记忆——这次对话能记住的总量 | Ch 12 |
@@ -71,7 +71,7 @@ mindmap
 | **install** | 安装 | Ch 2 |
 | **JSON** | 一种结构化文本格式 | Ch 23, 24 |
 | **MCP** | 外接工具插座——连外部系统的协议 | Ch 24 |
-| **MEMORY.md** | 自动记忆文件——Claude 自己记的你的偏好 | Ch 13 |
+| **MEMORY.md** | 项目自动记忆的入口文件——默认按项目保存经验 | Ch 13 |
 | **model** | 大模型——Claude 背后的大脑 | Ch 15 |
 | **OAuth** | 一种第三方登录授权协议 | Ch 24 |
 | **pane** | 分屏区域 | Ch 2 |
@@ -124,7 +124,7 @@ mindmap
 | `|` | 竖线 / 管道符 | 命令输出接给下一个 |
 | `Ctrl+C` | — | 中断运行 |
 | `Cmd+C` | — | Mac 复制（= Windows Ctrl+C） |
-| `Esc Esc` | — | Claude Code 快速撤销 |
+| `Esc Esc` | — | 空输入时打开检查点菜单 |
 
 ## 缩写速查
 
@@ -148,9 +148,6 @@ mindmap
 | **SSO** | Single Sign-On | 单点登录 |
 | **VPC** | Virtual Private Cloud | 虚拟私有云 |
 
-
----
-
-<!-- chapter-nav -->
-
-📖  [← 附录 E · FAQ 10 问](E-FAQ.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 G · 报错自救手册 →](G-报错自救手册.md)
+<!-- studio:nav -->
+← [附录 E：FAQ（常见问题 10 问）](E-FAQ.md) · [目录](../../README.md) · [附录 G：常见报错与自救手册](G-%E6%8A%A5%E9%94%99%E8%87%AA%E6%95%91%E6%89%8B%E5%86%8C.md) →
+<!-- /studio:nav -->

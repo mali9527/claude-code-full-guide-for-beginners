@@ -116,9 +116,6 @@ mindmap
 - **`dir`** 也能用（老 CMD 风格，PowerShell 兼容）
 - **`clip`** 命令 → `echo "hello" | clip` 把输出复制到剪贴板
 
-
----
-
-<!-- chapter-nav -->
-
-📖  [← 附录 A · Mac 终端速查](A-Mac终端速查.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 C · Slash 命令全表 →](C-Slash命令全表.md)
+<!-- studio:nav -->
+← [附录 A：Mac 终端速查](A-Mac%E7%BB%88%E7%AB%AF%E9%80%9F%E6%9F%A5.md) · [目录](../../README.md) · [附录 C：常用 Slash 命令速查](C-Slash%E5%91%BD%E4%BB%A4%E5%85%A8%E8%A1%A8.md) →
+<!-- /studio:nav -->

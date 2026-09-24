@@ -86,7 +86,7 @@ mindmap
 |-----|-----|-------|
 | `command not found: xxx` | 没装 xxx 这个程序 | 先装（比如 `brew install xxx`） |
 | `No such file or directory` | 找不到这个文件 / 文件夹 | `pwd` 看你在哪、`ls` 看有没有 |
-| `Permission denied` | 权限不够 | 加 `sudo`（**慎用**）；或 `chmod +x 文件` |
+| `Permission denied` | 权限不够 | 先核对路径、文件归属与任务范围；不要默认提权 |
 | `zsh: parse error` | 命令打错了（缺引号 / 括号） | 仔细看命令，重新敲 |
 | `Operation not permitted` | Mac 的 SIP 保护拦的 | 该目录是系统目录，别动 |
 
@@ -94,13 +94,10 @@ mindmap
 
 - **拖文件进终端** → 自动填入完整路径（省去手打）
 - **`ls | less`**（带竖线）→ 列表太长时分页看，按 `q` 退出
-- **`!!`** → 重复上一条命令（装完 `sudo` 忘了加，敲 `sudo !!` 直接补）
+- **`!!`** → 重复上一条命令（执行前重新看清完整命令，不要用它盲目补管理员权限）
 - **`cd`** 单独一个 → 等同 `cd ~`
 - **`open 文件.pdf`** → 用默认程序打开这个文件
 
-
----
-
-<!-- chapter-nav -->
-
-📖  [← 第 27 章 · 下一步路线](../part6-融入日常/27-下一步路线.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 B · Windows PowerShell 速查 →](B-Windows-PowerShell速查.md)
+<!-- studio:nav -->
+← [第 27 章：下一步路线——读完书只是起点](../part6-%E8%9E%8D%E5%85%A5%E6%97%A5%E5%B8%B8/27-%E4%B8%8B%E4%B8%80%E6%AD%A5%E8%B7%AF%E7%BA%BF.md) · [目录](../../README.md) · [附录 B：Windows PowerShell 速查](B-Windows-PowerShell%E9%80%9F%E6%9F%A5.md) →
+<!-- /studio:nav -->

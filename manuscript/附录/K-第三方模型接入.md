@@ -1,8 +1,8 @@
-# 附录 K：接入第三方模型（GLM / 通义 / Kimi / MiniMax）
+# 附录 K：第三方接入，先确认支持范围
 
-> Claude Code 是 Anthropic 的官方客户端，但它**不是只能连 Claude 模型**。因为它接入方式是标准的 Anthropic Messages API，任何提供这个协议的服务商都能当后端——国内主流的 **GLM / 通义千问 / Kimi / MiniMax** 都已经官方兼容。这意味着：你可以把 Claude Code 的顺手体验，配上国产模型的价格。这一篇讲**怎么接入、怎么切换**——实用为主，不挖太深。
+> 本附录供已经用过 Claude Code、需要判断其他接入方案的人阅读。初次学习先走第 0、2 章。旧版的免费额度、价格排行与“一换地址就全兼容”的说法已撤下。
 
-### 本章地图（一眼看全貌）
+### 本章地图
 
 <!-- diagram: MM-45 -->
 ```mermaid
@@ -15,204 +15,85 @@ config:
     lineColor: "#D9D9D9"
 ---
 mindmap
-  root((附录 K · 第三方模型))
-    为什么接
-      官方贵
-      想省钱
-      想试手感
-    原理一句话
-      BASE_URL 指向别家
-      AUTH_TOKEN 换成对方 key
-      Claude Code 原生支持
-    四家对比
-      GLM 智谱
-      Qwen 通义
-      Kimi 月之暗面
-      MiniMax
-    动手示例
-      以 GLM 为例
-      改 settings.json
-      测一句话确认
-    方便切换
-      方案 A shell 别名
-      方案 B cc-switch GUI
-      方案 C ccr 路由
-    三个坑
-      配额差异
-      工具兼容差
-      切回官方要清环境
-    回官方
-      合规
-      最强推理
-      最新特性
+  root((附录 K · 第三方接入))
+    分清路线
+      云平台提供 Claude
+      网关转发 Claude
+      兼容接口提供其他模型
+    核对条件
+      提供方支持
+      真实模型
+      费用与数据
+    配置前
+      保留原设置
+      确认作用范围
+      不公开凭据
+    验证
+      控制台查请求
+      小文件测工具
+      检查账单
 ```
 
----
+## K.1 “第三方”至少有三种意思
 
-## K.1 为什么你可能会想接
+**第一种是云平台提供 Claude。** Amazon Bedrock、Google Cloud 的 Agent Platform、Microsoft Foundry 等有各自的接入与模型开放条件。模型仍可能是 Claude，但账户、结算、地区和功能支持要按对应部署说明核对，不能直接照搬个人 Pro 订阅的待遇。
 
-**一句话**：Claude 贵，国产便宜一大截，体验几乎一样。
+**第二种是网关转发 Claude 请求。** 网关是夹在客户端与模型服务之间的一层服务，组织可能用它管理认证、用量和预算。地址虽然换了，实际提供的也可能仍是 Claude。你需要知道凭据属于谁、账单记到哪里，以及网关是否转发所需功能。
 
-具体对比（2026 年 4 月的公开报价，仅供参考）：
+**第三种是其他模型供应商提供兼容接口。** 有些供应商发布了在 Claude Code 中使用其模型的文档。但“供应商给出兼容方案”不等于“Anthropic 官方支持所有非 Claude 模型”。Anthropic 当前[网关文档](https://code.claude.com/docs/en/llm-gateway)明确区分了这件事，并说明不支持通过网关把 Claude Code 路由到非 Claude 模型。
 
-| 模型 | 输入 ¥/M token | 输出 ¥/M token | 备注 |
-|---|---|---|---|
-| Claude Sonnet 4.6 | ≈ $3 | ≈ $15 | 官方基准 |
-| GLM-4.7 | 包月套餐 ≈ $3 起 | 同 | "GLM Coding Plan"订阅制 |
-| Qwen3-Coder | 按量，远低于 Claude | 同 | 阿里云百炼平台 |
-| Kimi K2.6 | $0.60 | $2.50 | 月之暗面，比 Sonnet 便宜 5-6× |
-| MiniMax M2.7 | $0.30 | $1.20 | 比 Sonnet 便宜 ~90% |
+所以，如果你采用第三种路线，应把它视为供应商维护的兼容方案，检查其当前支持范围。遇到新版本不兼容，不能保证按照本书主线排错就能解决。没有确定需求时，不必为了便宜的宣传数字先改掉已经正常工作的环境。
 
-常见三种触发场景：
-- 官方配额用完了，月底前想接着干活
-- 日常任务（改个注释、生成测试、翻译）其实用国产就够了，想省着点
-- 想亲自感受一下"国产模型在 coding 场景上到底怎么样"
+## K.2 一次接入前，需要确认五项
 
----
+| 要确认的内容 | 为什么要看 |
+|---|---|
+| 官方接入文档和适用客户端版本 | 第三方安装说明也可能落后；Claude Code 自身安装以第 2 章和 Anthropic 文档为准 |
+| 服务端点与密钥类型 | 国内、国际、按量 API、Coding Plan 可能不是同一地址或同一种密钥 |
+| 实际模型与别名映射 | 菜单里的 `opus` 可能被映射到另一款模型，不代表 Opus 5.5 |
+| 计费与额度 | 赠送是否到期、可用模型范围、请求速率和付费设置都可能不同 |
+| 数据与工具兼容 | 请求会送到哪里，是否支持图片、工具调用、缓存和长任务 |
 
-## K.2 原理：一行 URL 的事
+截至本版核对时，[Z.AI 的 Claude Code 接入文档](https://docs.z.ai/devpack/tool/claude)与 [MiniMax 的接入文档](https://platform.minimax.io/docs/token-plan/claude-code)仍可访问。旧的 Kimi 链接已跳转至[新平台文档入口](https://platform.kimi.ai/docs/overview)。这些是查阅入口，不是价格或稳定性的排名。本次没有替任何一家执行注册、付费或真实模型测试。
 
-Claude Code 原生就认两个环境变量：
+尤其要区分供应商文档里的两个部分：如何安装 Claude Code，以及如何接它自己的服务。前者可能仍写着过时的 Node.js 前提；后者才是该供应商的配置依据。遇到冲突时，按各自负责的产品核对，不把一篇兼容教程当成全套最新说明。
 
-- `ANTHROPIC_BASE_URL`——把"默认指向 Anthropic"换成"指向别家"
-- `ANTHROPIC_AUTH_TOKEN`——把 Anthropic API Key 换成对方的
+## K.3 看懂一份配置，不要直接覆盖整份设置
 
-**就这两行**。Claude Code 不会问你"到底连的是谁"，它只管按 Anthropic Messages API 发请求，对方按协议回就行。
-
-> 为什么国产能接？因为 GLM / 通义 / Kimi / MiniMax 四家**都官方提供了 Anthropic 兼容端点**。这不是社区 hack，是厂商主动做的——他们知道 Claude Code 的入口价值。
-
----
-
-## K.3 四家主力一张表
-
-| 服务商 | `ANTHROPIC_BASE_URL` | 推荐模型（2026-04） | 拿 API Key |
-|---|---|---|---|
-| **智谱 GLM** | `https://api.z.ai/api/anthropic` | `glm-4.7` | [z.ai/model-api](https://z.ai/model-api) |
-| **通义千问** | `https://dashscope-intl.aliyuncs.com/api/v2/apps/claude-code-proxy` | `qwen3-coder-plus` | [阿里云百炼](https://bailian.console.aliyun.com) |
-| **Kimi（月之暗面）** | `https://api.moonshot.ai/anthropic` | `kimi-k2-turbo-preview` | [platform.moonshot.ai](https://platform.moonshot.ai) |
-| **MiniMax（国际）** | `https://api.minimax.io/anthropic` | `MiniMax-M2` | [platform.minimax.io](https://platform.minimax.io) |
-| **MiniMax（国内）** | `https://api.minimaxi.com/anthropic` | `MiniMax-M2` | [platform.minimaxi.com](https://platform.minimaxi.com) |
-
-> "推荐模型"是各家当下 coding 场景的主力。各家都在快速迭代，具体以官方文档为准。
-
----
-
-## K.4 动手接一下（以 GLM 为例）
-
-以 **GLM** 为例走一遍，其他三家是同样流程、只换 URL + Key。
-
-**第 1 步**：去 [z.ai/model-api](https://z.ai/model-api) 注册账号，进"API Keys"页，创建一个 Key，复制下来（形如 `<YOUR_ZAI_KEY>`）。
-
-**第 2 步**：打开你的 Claude Code 全局配置 `~/.claude/settings.json`（没有就新建），加一段 `env`：
+下面用 Z.AI 文档中仍列出的接口地址说明配置含义。它是**结构示例**，不是包含可用密钥的文件，也没有替你验证套餐是否开放对应模型。执行前先重新查看该供应商的当前说明。
 
 ```json
 {
   "env": {
     "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
-    "ANTHROPIC_AUTH_TOKEN": "<粘贴你的 GLM Key>",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-4.7",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-4.7",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-4.5-air"
+    "ANTHROPIC_AUTH_TOKEN": "<YOUR_PROVIDER_TOKEN>",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "<MODEL_FROM_PROVIDER_DOCS>",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "<MODEL_FROM_PROVIDER_DOCS>",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "<MODEL_FROM_PROVIDER_DOCS>"
   }
 }
 ```
 
-> 最后三行是把 Claude 内部的 Haiku/Sonnet/Opus 三个 tier，分别映射到 GLM 的哪个模型。**不改也行**——厂商都有默认映射——但显式写出来更放心。
+`ANTHROPIC_BASE_URL` 是服务地址；`ANTHROPIC_AUTH_TOKEN` 是服务要求的凭据；三个模型变量是别名映射。尖括号里的内容是占位符，不能原样运行。不要仅因为书里介绍了 Fable，就自行推断第三方也存在同样的 Fable 映射或调用资格。
 
-**第 3 步**：重启 Claude Code（退出再进）。随便问一句：
+Mac 的用户级设置通常在 `~/.claude/settings.json`；Windows PowerShell 对应 `$env:USERPROFILE\.claude\settings.json`。先用编辑器打开并留一份私有备份，确认是否已有 `env`、权限或其他设置；把所需字段合并进去，**不要用上面的整段覆盖原文件**。含密钥的文件不进入公开 Git 仓库。企业统一管理的环境先遵照管理员方案，不自行切换服务。
 
-```
-你现在连的是哪个后端？回我一句就行。
-```
+环境变量还可能来自终端或系统设置，编辑这一份文件不一定能改变最终生效值。切换时先保存工作并退出原会话，再按供应商的官方步骤启动一个新会话。不要用复制整份配置的别名在多个并行任务间来回覆盖公共设置，这可能让不同任务使用了你没预期的账户。
 
-**预期**：回复会显示"我是 GLM-4.7"或类似提示——说明接上了。
+## K.4 怎样判断真的接对了，怎样退回原来的路线
 
-**第 4 步**（可选）：验证能正常读文件、跑命令。让它读 README 前 10 行并总结，测一下工具调用是否正常。
+验证分三层。第一，查看客户端当前配置和提供方控制台的请求记录，确认端点、实际模型与计费账户。**不要把模型自称“我是某某”当成证据**，那只是它生成的一句话。
 
----
+第二，在不含私人资料的练习目录里测试：读一个短文本、提出一次小修改、检查真实文件结果。如果你的任务需要图片或特定外部工具，再分别验证。普通聊天成功，不代表所有工具都兼容。
 
-## K.5 其他三家的配置
+第三，回控制台查看这次请求是否产生用量，以及用量落在哪个套餐或余额下。只有这三层对得上，才适合逐步用于实际工作；费用比较也应以完成同类任务的真实记录来做，不能由每百万 token 的单价直接推断能省多少。
 
-通义、Kimi、MiniMax 三家，配法和上面完全一样——**只换 `ANTHROPIC_BASE_URL`、`ANTHROPIC_AUTH_TOKEN`、三个模型名**（参考 K.3 的表）。
+要恢复原路线，先保存现有工作与设置，再撤回这次新增的端点、凭据和模型映射，检查终端、系统与用户设置是否还有残留。打开新终端并重新启动 `claude` 会话后，核对 `/status`、`/model` 和账户用量。不要为了“清干净”删除整个 `.claude` 目录，那里面还可能有会话、规则和其他有用配置。
 
----
+## 本章小结
 
-## K.6 怎么"方便地切换"
+云平台、网关与非 Claude 兼容方案不是同一回事。先查提供方支持范围，再查实际模型和账单；保留原设置，逐步测试小任务。若你的目的只是使用官方 Opus 5.5 或 Fable 5.1，先按第 15 章确认正式访问路径，不必先增加一层兼容配置。
 
-一个 `settings.json` 只能配一家。但你大概率要在"Claude 官方 / 国产便宜档"之间来回切。三种方案，按懒的程度排：
-
-### 方案 A：shell 别名 + 多份配置（最朴素）
-
-把 settings.json 复制三份：`settings.claude.json`、`settings.glm.json`、`settings.kimi.json`，放在 `~/.claude/` 下。
-
-在 `~/.zshrc` 或 `~/.bashrc` 里加：
-
-```bash
-alias cc-claude='cp ~/.claude/settings.claude.json ~/.claude/settings.json'
-alias cc-glm='cp ~/.claude/settings.glm.json ~/.claude/settings.json'
-alias cc-kimi='cp ~/.claude/settings.kimi.json ~/.claude/settings.json'
-```
-
-用之前敲一下对应别名，再启动 `claude`。**零依赖、永远不会坏**。
-
-### 方案 B：cc-switch（图形界面）
-
-[cc-switch](https://github.com/farion1231/cc-switch)——开源桌面工具，菜单栏里挂着，点一下换配置。适合不喜欢命令行配来配去的人。
-
-装好后添加每家的配置（BASE_URL + Key + 默认模型），下次要换后端直接在菜单栏点一下。
-
-### 方案 C：claude-code-router（按场景自动路由）
-
-[claude-code-router](https://github.com/musistudio/claude-code-router)（简称 `ccr`）——一个本地代理。用它你可以定规则：**默认 Claude Sonnet；代码生成用 GLM；长对话用 Kimi**——按 prompt 特征自动挑模型。
-
-适合：**一天内密集用几家、想省事也想省钱**的进阶用户。新手建议先用方案 A 熟悉原理。
-
----
-
-## K.7 三个真·新手坑
-
-**坑 1：请求配额（RPM / TPM）差异大**
-
-Claude 官方的 rate limit 对日常用是松的。国产有些平台免费 tier 限制比较严——比如每分钟 2 次请求、每分钟 20k token。遇到 429 报错去服务商控制台看当前档。
-
-**坑 2：工具调用 / 提示缓存兼容度参差**
-
-所有四家都"兼容 Anthropic 协议"，但协议里的**细枝末节**（比如 `anthropic-beta` header、prompt caching、并发 tool_use、超长 thinking）——兼容程度不一样。
-
-你在 Claude 上跑得很顺的复杂任务，切到国产有时会报 tool_use 异常 / 上下文截断。**碰到就切回官方看是不是后端问题**，别怪自己 prompt 写错了。
-
-**坑 3：切回 Claude 官方，记得清环境**
-
-设过 `ANTHROPIC_BASE_URL` 后，如果你只是**删掉 settings.json 的 env 段**，有些情况下还有残留（shell 环境变量优先级更高）。如果回官方还连不上：
-
-```bash
-unset ANTHROPIC_BASE_URL
-unset ANTHROPIC_AUTH_TOKEN
-echo $ANTHROPIC_BASE_URL  # 确认是空的
-claude  # 再启动
-```
-
----
-
-## K.8 什么时候该回 Claude 官方
-
-国产便宜，但**不是所有场景都适合**。下面三种情况建议回官方：
-
-- **需要最新能力**——比如本书附录 J 讲的 Opus 4.7、effort 档位、1M 上下文、adaptive thinking。国产目前还没有等价产品。
-- **极长 / 极复杂任务链**——几十次连续工具调用、跨文件深度重构、多 subagent 协作。Claude 在长工具链稳定性上依然领先。
-- **企业合规 / 数据策略有要求**——有些公司只允许走 Anthropic / Bedrock / Vertex 合规通道。这种场景别自作主张切后端。
-
----
-
-## 小结：三条最实用的结论
-
-1. **Claude Code 连什么模型**只是一个 `ANTHROPIC_BASE_URL` 的事，不是魔法
-2. **日常任务先用国产**能省 80%+ 成本，复杂任务再回 Claude——一台机器跑两档，最划算
-3. **切换方案按你懒的程度挑**：方案 A shell 别名够 90% 的人用；图形党用 cc-switch；想搞"一天多家自动路由"再折腾 ccr
-
-
----
-
-<!-- chapter-nav -->
-
-📖  [← 附录 J · Claude Opus 4.7 新手指南](J-Opus-4.7新手指南.md)  ·  [📑 返回目录](../../README.md)  ·  （全书完）
+<!-- studio:nav -->
+← [附录 J：Fable 5.1 与 Opus 5.5 新手指南](J-Opus-4.7%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97.md) · [目录](../../README.md)
+<!-- /studio:nav -->

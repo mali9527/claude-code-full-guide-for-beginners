@@ -17,25 +17,25 @@ config:
 mindmap
   root((附录 D · 决策流程图))
     图 1 权限决策
-      读文件一般 Yes
+      读取先确认材料范围
       改文件先看 diff
-      跑命令高危必退
+      命令先看作用与范围
     图 2 模型选择
       简单用 Haiku
-      日常用 Sonnet
-      难题切 Opus
-      超长切 Opus 1M
+      日常先用 Opus 5.5
+      难题再评估 Fable
+      查实际上下文
     图 3 Ctx 应对
-      50% 以下放心
-      75% 就动手
-      90% 断崖
+      先看任务是否清楚
+      长任务及时整理
+      换任务开新会话
     图 4 卡住怎么办
       5 分钟原则
       不试第三次
       换方向或手动
     图 5 信息分层
       一次性会话说
-      跨项目 MEMORY
+      个人规则用用户说明
       项目共享 CLAUDE
       流程化 Skill
     图 6 扩展选型
@@ -44,63 +44,59 @@ mindmap
       快捷 Command
       重活 Subagent
       自动 Hook
-      外网 MCP
+      外部工具与数据 MCP
 
 ```
 
 ## 图 1：权限决策流程（遇到弹窗怎么选）
 
+<!-- diagram: FC-legacy-01 -->
 ```mermaid
 %%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["Claude 弹出权限窗口<br/>它要干什么?"] --> B{"操作类型"}
-  B -->|"读文件"| C["通常 Yes<br/>除非是 .env、密钥文件"]
+  B -->|"读文件"| C["核对任务授权与内容敏感性<br/>未知先暂停"]
   B -->|"改文件"| D{"先看 diff<br/>改的都是我想改的地方?"}
-  B -->|"跑命令"| E{"是高危命令吗?<br/>rm / force push / 删表…"}
+  B -->|"跑命令"| E{"已理解路径和影响吗?<br/>删除 / 外发 / 发布等"}
   D -->|"是"| F["Yes 接受"]
   D -->|"否"| G["No 退回让它改"]
-  E -->|"否"| H["Yes 接受"]
-  E -->|"是"| I["详细审一次再决定"]
+  E -->|"否"| H["先让它解释，不批准"]
+  E -->|"是"| I["核对任务范围后再决定"]
 ```
 
 **口诀**：
 
-- 读文件 → 一般 Yes（除非是 `.env`、密钥文件）
+- 读文件 → 确认属于本次任务材料，且内容适合交给所连接的服务
 - 改文件 → **永远看 diff**，多改了就 No
-- 跑命令 → **高危必退**（详见附录 G）
+- 跑命令 → 先理解路径、作用范围与外部影响，不因“没在黑名单”就批准
+- 这张图用于出现询问时；预先允许或自动执行的结果也要检查
 
-## 图 2：模型选择流程（任务来了用哪个）
+## 图 2：模型选择，先看任务结果与预算
 
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["新任务来了"] --> B{"需要深度推理吗?"}
-  B -->|"否：简单查询 / 翻译 / 重命名"| C["Haiku"]
-  B -->|"是"| D{"上下文会超 200K 吗?<br/>整本书 / 几百个文件"}
-  D -->|"是"| E["Opus 1M"]
-  D -->|"否"| F{"日常活还是硬核活?"}
-  F -->|"日常（80% 场景）"| G["Sonnet（默认）"]
-  F -->|"复杂推理 / 卡住了"| H["Opus"]
-```
+| 现在遇到什么 | 下一步 |
+|---|---|
+| 刚开始一个日常任务 | 从账户提供的 Opus 5.5 等日常模型开始 |
+| 结果不对 | 先检查材料、目标、验证标准，必要时调整 effort |
+| 已说明清楚，任务仍很复杂 | 核对 Fable 5.1 的访问资格和费用，再比较实际效果 |
+| 更在意响应速度或成本 | 在可用模型中比较 Sonnet / Haiku，不假定低价必然够用 |
+| 材料很长 | 用 `/context` 看实际使用情况，整理材料；不要只根据宣传窗口大小做决定 |
 
-**新手一句话**：**默认 Sonnet，卡住切 Opus，简单事用 Haiku**。
+详细定价和切换行为见第 15 章。`/fast` 是单独的速度与费用选项，不等于换成小模型。
 
-## 图 3：Ctx% 使用率应对流程
+## 图 3：上下文管理，先问“还在做同一件事吗”
 
-```mermaid
-%%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
-flowchart TD
-  A["瞥一眼状态栏<br/>看 Ctx 百分比"] --> B{"落在哪个区间?"}
-  B -->|"0 - 50%"| C["继续写，无需操心"]
-  B -->|"50 - 75%"| D["准备整理<br/>快完就收尾<br/>还长就 /compact"]
-  B -->|"75 - 90%"| E["立刻 /compact 或 /clear"]
-  B -->|"超过 90%"| F["断崖区<br/>马上 /clear 或退出重启"]
-```
+| 当前情况 | 处理方式 |
+|---|---|
+| 任务清楚、材料够用、结果正确 | 继续，不必为了某个百分比打断工作 |
+| 同一长任务需要减轻上下文 | 先保存目标、进展和待办，再用 `/compact` 整理 |
+| 要开始不相关的新任务 | 保存成果后用 `/clear` 开新对话 |
+| 已出现遗漏或自相矛盾 | 先核对来源和关键条件，必要时重新提供任务摘要 |
 
-**口诀**：**看到 75% 就动手，别等 90%**。
+没有“90% 一定变笨”的统一规则。自动压缩时点也会受模型与配置影响；第 12 章解释这些差别。
 
 ## 图 4：卡住了怎么办（5 分钟原则）
 
+<!-- diagram: FC-legacy-02 -->
 ```mermaid
 %%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
@@ -113,22 +109,23 @@ flowchart TD
   E -->|"5 - 20 分钟"| H["任选：自己做 或 换方向"]
 ```
 
-**口诀**：**同一个 prompt 不要试第三次**。
+这里的两次尝试与五分钟是作者的时间管理建议，不是产品限制。若失败涉及外部副作用，先核对现状再决定恢复方式。
 
 ## 图 5：信息分层决策（该放在哪一层）
 
+<!-- diagram: FC-legacy-03 -->
 ```mermaid
 %%{init: {"look": "handDrawn", "theme": "neutral", "themeVariables": {"fontFamily": "'Chalkboard SE','Comic Sans MS','Segoe Print','Kaiti SC','STKaiti','KaiTi','Bradley Hand',cursive", "fontSize": "15px"}}}%%
 flowchart TD
   A["这条信息…"] --> B{"是什么性质?"}
   B -->|"一次性用的"| C["会话里说就行<br/>不用存"]
-  B -->|"跨项目 + 关于我的"| D["MEMORY.md"]
+  B -->|"跨项目个人规则"| D["用户 CLAUDE.md"]
   B -->|"项目规则 + 团队共享"| E["CLAUDE.md"]
   B -->|"结构化任务流程（偶尔用）"| F["Skill"]
-  B -->|"外部已有长文档"| G["在 CLAUDE.md 写 Pointer<br/>（详见 XXX）"]
+  B -->|"外部已有长文档"| G["在 CLAUDE.md 写 Pointer<br/>（查看项目中实际存在的说明文件）"]
 ```
 
-**口诀**：**越私人越往 MEMORY，越团队越往 CLAUDE，越流程化越往 Skill**。
+项目自动记忆默认按项目保存，不是天然的跨项目偏好库。个人规则与团队共享规则分开维护，任务流程放进 Skill。
 
 ## 图 6：扩展机制选型
 
@@ -149,7 +146,7 @@ mindmap
     会做某类任务
       Skill
     敲 /xxx 一键触发
-      Custom Command
+      手动调用 Skill
     派独立专员干重活
       Subagent
     某事件自动触发
@@ -158,11 +155,8 @@ mindmap
       MCP
 ```
 
-**口诀**：**CLAUDE.md 讲背景，Skill 讲流程，Command 给快捷键，Subagent 派替身，Hook 搞自动，MCP 接外网**。
+**口诀**：**CLAUDE.md 讲背景，Skill 讲流程，Slash 调用 Skill，Subagent 派替身，Hook 搞自动，MCP 连接外部工具和数据源**。
 
-
----
-
-<!-- chapter-nav -->
-
-📖  [← 附录 C · Slash 命令全表](C-Slash命令全表.md)  ·  [📑 返回目录](../../README.md)  ·  [附录 E · FAQ 10 问 →](E-FAQ.md)
+<!-- studio:nav -->
+← [附录 C：常用 Slash 命令速查](C-Slash%E5%91%BD%E4%BB%A4%E5%85%A8%E8%A1%A8.md) · [目录](../../README.md) · [附录 E：FAQ（常见问题 10 问）](E-FAQ.md) →
+<!-- /studio:nav -->

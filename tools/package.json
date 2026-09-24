@@ -1,0 +1,7 @@
+{
+  "name": "ai-tutorial-studio-diagrams",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional pinned Mermaid renderer for requested PDF exports",
+  "dependencies": {"@mermaid-js/mermaid-cli": "11.12.0"}
+}

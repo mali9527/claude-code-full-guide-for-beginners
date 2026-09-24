@@ -1,3 +1,5 @@
+> **历史构建目录**：对应四月 PDF。该流程未接入九月的新清单，不用于导出当前版；历史 PDF 的确切源提交未知。当前维护方式见 [构建说明](../docs/维护构建.md)。
+
 # pdf-build
 
 用 **Typst + Pandoc** 把 `manuscript/` 下的 markdown 编译成 A5 印刷级 PDF。

@@ -1,2 +1,12 @@
 .DS_Store
 .claude/settings.local.json
+
+# 社交平台短文模块（内部 / 不公开 / 不进公开仓库）
+social-posts/
+
+# 生产工具的本地依赖与中间文件
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+build/

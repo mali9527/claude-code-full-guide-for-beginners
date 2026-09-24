@@ -10,7 +10,7 @@
 
 发现错字、错误命令、失效链接、图片不显示……
 
-→ 直接 [提一个 Issue](../../issues/new/choose) 选"📝 内容错误 / 错字"。写清楚哪一页哪一段就行。
+→ 直接 [提一个 Issue](https://github.com/mali9527/claude-code-full-guide-for-beginners/issues/new/choose) 选"📝 内容错误 / 错字"。写清楚哪一页哪一段就行。
 
 ### 2️⃣ 提建议 / 提问题
 

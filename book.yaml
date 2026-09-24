@@ -1,0 +1,766 @@
+id: claude-code
+title: Claude Code 零基础入门指南
+type: book
+language: zh-CN
+product: claude-code
+audience: 不会编程、没用过终端的普通人
+baseline:
+  product_version: Claude Code >=2.1.280; Opus 5.5; Fable 5.1
+  checked_on: '2026-09-24'
+repository:
+  name: mali9527/claude-code-full-guide-for-beginners
+  default_branch: main
+is_test: false
+watershed: ch-04
+platforms:
+- mac
+- windows
+required_checks:
+- editorial
+- facts
+- operations
+units:
+- id: preface
+  title: 前言：本书怎么读
+  path: manuscript/00-前言/00-本书怎么读.md
+  section: popular
+  depth: 0
+  prerequisites: []
+  features: &id001
+  - access-account
+  - model-opus
+  - model-fable
+  facts: *id001
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: ch-00
+  title: 第 0 章：先选好账号与费用路径
+  path: manuscript/00-前言/01-免费用上Claude-Code.md
+  section: popular
+  depth: 0
+  prerequisites: []
+  features: &id002
+  - access-account
+  - model-plan
+  - gateway
+  facts: *id002
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: ch-01
+  title: 第 1 章：先把电脑准备好
+  path: manuscript/part1-从零起步/01-先把电脑准备好.md
+  section: popular
+  depth: 0
+  prerequisites: []
+  features: &id003
+  - native-install
+  facts: *id003
+  derived_from: null
+- id: ch-02
+  title: 第 2 章：安装 Claude Code
+  path: manuscript/part1-从零起步/02-安装-Claude-Code.md
+  section: popular
+  depth: 0
+  prerequisites:
+  - ch-01
+  features: &id004
+  - access-account
+  - native-install
+  - windows-shell
+  - updates
+  - model-minimum
+  - permission-auto
+  - command-current
+  facts: *id004
+  derived_from: null
+- id: ch-03
+  title: 第 3 章：你的第一次对话
+  path: manuscript/part1-从零起步/03-你的第一次对话.md
+  section: popular
+  depth: 0
+  prerequisites:
+  - ch-02
+  features: &id005
+  - sessions
+  - permission-modes
+  - command-current
+  - model-select
+  facts: *id005
+  derived_from: null
+- id: ch-04
+  title: 第 4 章：Claude Code 到底是什么
+  path: manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  section: watershed
+  depth: 0
+  prerequisites:
+  - ch-03
+  features: &id006
+  - desktop
+  - permission-modes
+  - data-usage
+  facts: *id006
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: ch-05
+  title: 第 5 章：让它读文件
+  path: manuscript/part2-日常使用/05-让它读文件.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id007
+  - permission-modes
+  - model-context
+  facts: *id007
+  derived_from: null
+- id: ch-06
+  title: 第 6 章：让它改文件
+  path: manuscript/part2-日常使用/06-让它改文件.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id008
+  - permission-modes
+  - checkpoint
+  facts: *id008
+  derived_from: null
+- id: ch-07
+  title: 第 7 章：让它跑命令 + 权限机制
+  path: manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id009
+  - permission-modes
+  - permission-auto
+  - plan-mode
+  facts: *id009
+  derived_from: null
+- id: ch-08
+  title: 第 8 章：交互循环七步法
+  path: manuscript/part2-日常使用/08-交互循环七步法.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id010
+  - checkpoint
+  - sessions
+  facts: *id010
+  derived_from: null
+- id: ch-09
+  title: 第 9 章：计划模式与撤销——先规划，再正确回退
+  path: manuscript/part2-日常使用/09-计划模式与撤销.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id011
+  - plan-mode
+  - checkpoint
+  - sessions
+  facts: *id011
+  derived_from: null
+- id: ch-10
+  title: 第 10 章：信任校准——什么时候信，什么时候核对
+  path: manuscript/part2-日常使用/10-信任校准.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id012
+  - permission-modes
+  - model-context
+  facts: *id012
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: ch-11
+  title: 第 11 章：你的数据去哪了——隐私与数据流
+  path: manuscript/part3-深度概念/11-你的数据去哪了.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id013
+  - data-usage
+  - gateway
+  - sessions
+  facts: *id013
+  derived_from: null
+- id: ch-12
+  title: 第 12 章：Claude 为什么会变糊涂——上下文原理
+  path: manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id014
+  - model-context
+  - sessions
+  - command-current
+  facts: *id014
+  derived_from: null
+- id: ch-13
+  title: 第 13 章：三层记忆——会话 / 自动记忆 / CLAUDE.md
+  path: manuscript/part3-深度概念/13-三层记忆.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id015
+  - memory
+  - sessions
+  - instructions
+  facts: *id015
+  derived_from: null
+- id: ch-14
+  title: 第 14 章：写好你的 CLAUDE.md——全书最高杠杆的一章
+  path: manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id016
+  - instructions
+  - memory
+  - skills
+  facts: *id016
+  derived_from: null
+- id: ch-15
+  title: 第 15 章：模型与成本——怎么选、怎么算、怎么省
+  path: manuscript/part3-深度概念/15-模型与成本.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id017
+  - model-opus
+  - model-fable
+  - model-pricing
+  - model-effort
+  - model-fast
+  - model-plan
+  - model-context
+  - model-select
+  - command-current
+  facts: *id017
+  derived_from: null
+- id: ch-16
+  title: 第 16 章：新手 10 大错误——看完能避开的坑
+  path: manuscript/part4-避坑与判断力/16-新手10大错误.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id018
+  - permission-modes
+  - data-usage
+  - sessions
+  - memory
+  facts: *id018
+  derived_from: null
+- id: ch-17
+  title: 第 17 章：什么时候该停下来——不要和 AI 对抗
+  path: manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id019
+  - model-context
+  - checkpoint
+  - model-effort
+  facts: *id019
+  derived_from: null
+- id: ch-18
+  title: 第 18 章：常用快捷命令全览——按场景找到入口
+  path: manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id020
+  - command-current
+  - model-select
+  - sessions
+  - permission-modes
+  - checkpoint
+  - agents
+  facts: *id020
+  derived_from: null
+- id: ch-19
+  title: 第 19 章：输入技巧——把效率榨干
+  path: manuscript/part4-避坑与判断力/19-输入技巧.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id021
+  - command-current
+  - sessions
+  - checkpoint
+  - input-behavior
+  facts: *id021
+  derived_from: null
+- id: ch-20
+  title: 第 20 章：Skills 入门——把常用流程写成任务手册
+  path: manuscript/part5-扩展能力/20-Skills入门.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id022
+  - skills
+  - memory
+  facts: *id022
+  derived_from: null
+- id: ch-21
+  title: 第 21 章：自定义 Slash 命令——主动启动一份技能
+  path: manuscript/part5-扩展能力/21-自定义Slash命令.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id023
+  - skills
+  facts: *id023
+  derived_from: null
+- id: ch-22
+  title: 第 22 章：Subagents 入门——把专项工作交给独立助手
+  path: manuscript/part5-扩展能力/22-Subagents入门.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id024
+  - agents
+  - permission-modes
+  facts: *id024
+  derived_from: null
+- id: ch-23
+  title: 第 23 章：Hooks 入门——事件发生时，自动做一个小检查
+  path: manuscript/part5-扩展能力/23-Hooks入门.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - ch-07
+  - ch-14
+  - ch-20
+  features: &id025
+  - hooks
+  facts: *id025
+  derived_from: null
+- id: ch-24
+  title: 第 24 章：MCP 入门——连接一个确实需要的外部服务
+  path: manuscript/part5-扩展能力/24-MCP入门.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - ch-07
+  - ch-14
+  - ch-20
+  features: &id026
+  - mcp
+  - permission-modes
+  facts: *id026
+  derived_from: null
+- id: ch-25
+  title: 第 25 章：团队协作基础——和同事一起用 Claude Code
+  path: manuscript/part6-融入日常/25-团队协作基础.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id027
+  - mcp
+  - instructions
+  - permission-modes
+  facts: *id027
+  derived_from: null
+- id: ch-26
+  title: 第 26 章：进阶能力速览——按工作需要选路线
+  path: manuscript/part6-融入日常/26-进阶能力速览.md
+  section: deep
+  depth: 2
+  prerequisites:
+  - ch-07
+  - ch-14
+  - ch-20
+  features: &id028
+  - desktop
+  - scheduling
+  - remote-control
+  - agents
+  facts: *id028
+  derived_from: null
+- id: ch-27
+  title: 第 27 章：下一步路线——读完书只是起点
+  path: manuscript/part6-融入日常/27-下一步路线.md
+  section: deep
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id029
+  - skills
+  - memory
+  - model-effort
+  facts: *id029
+  derived_from: null
+- id: appendix-a
+  title: 附录 A：Mac 终端速查
+  path: manuscript/附录/A-Mac终端速查.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id030
+  - native-install
+  facts: *id030
+  derived_from: null
+- id: appendix-b
+  title: 附录 B：Windows PowerShell 速查
+  path: manuscript/附录/B-Windows-PowerShell速查.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id031
+  - windows-shell
+  facts: *id031
+  derived_from: null
+- id: appendix-c
+  title: 附录 C：常用 Slash 命令速查
+  path: manuscript/附录/C-Slash命令全表.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id032
+  - command-current
+  - model-select
+  - skills
+  - agents
+  - scheduling
+  facts: *id032
+  derived_from: null
+- id: appendix-d
+  title: 附录 D：决策流程图
+  path: manuscript/附录/D-决策流程图.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id033
+  - permission-modes
+  - model-context
+  - model-select
+  - memory
+  - checkpoint
+  facts: *id033
+  derived_from: null
+- id: appendix-e
+  title: 附录 E：FAQ（常见问题 10 问）
+  path: manuscript/附录/E-FAQ.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id034
+  - data-usage
+  - sessions
+  - model-pricing
+  - skills
+  facts: *id034
+  derived_from: null
+- id: appendix-f
+  title: 附录 F：术语表
+  path: manuscript/附录/F-术语表.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id035
+  - memory
+  - checkpoint
+  - skills
+  facts: *id035
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: appendix-g
+  title: 附录 G：常见报错与自救手册
+  path: manuscript/附录/G-报错自救手册.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id036
+  - native-install
+  - updates
+  - command-current
+  - mcp
+  - checkpoint
+  facts: *id036
+  derived_from: null
+- id: appendix-h
+  title: 附录 H：Claude Code 桌面应用简明导览
+  path: manuscript/附录/H-桌面应用导览.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id037
+  - desktop
+  - scheduling
+  - remote-control
+  facts: *id037
+  derived_from: null
+- id: appendix-i
+  title: 附录 I：延伸阅读与来源致谢
+  path: manuscript/附录/I-延伸阅读.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id038
+  - model-opus
+  - model-fable
+  - scheduling
+  facts: *id038
+  derived_from: null
+  required_checks:
+  - editorial
+  - facts
+- id: appendix-j
+  title: 附录 J：Fable 5.1 与 Opus 5.5 新手指南
+  path: manuscript/附录/J-Opus-4.7新手指南.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id039
+  - model-opus
+  - model-fable
+  - model-minimum
+  - model-pricing
+  - model-effort
+  - model-fast
+  - model-plan
+  - model-fallback
+  - model-select
+  - model-context
+  facts: *id039
+  derived_from: null
+- id: appendix-k
+  title: 附录 K：第三方接入，先确认支持范围
+  path: manuscript/附录/K-第三方模型接入.md
+  section: appendix
+  depth: 1
+  prerequisites:
+  - ch-04
+  features: &id040
+  - gateway
+  - access-account
+  facts: *id040
+  derived_from: null
+outputs:
+  combined: 全书.md
+  readme: README.md
+  pdf:
+    enabled: false
+    font: PingFang SC
+    paper: a5
+  translations:
+    zh-TW:
+      enabled: true
+      directory: zh-TW
+diagrams:
+- id: MM-08
+  unit: preface
+  type: mindmap
+- id: MM-46
+  unit: ch-00
+  type: mindmap
+- id: MM-07
+  unit: ch-01
+  type: mindmap
+- id: MM-09
+  unit: ch-02
+  type: mindmap
+- id: MM-10
+  unit: ch-03
+  type: mindmap
+- id: MM-11
+  unit: ch-04
+  type: mindmap
+- id: MM-12
+  unit: ch-05
+  type: mindmap
+- id: MM-13
+  unit: ch-06
+  type: mindmap
+- id: MM-14
+  unit: ch-07
+  type: mindmap
+- id: MM-03
+  unit: ch-07
+  type: mindmap
+- id: MM-15
+  unit: ch-08
+  type: mindmap
+- id: MM-16
+  unit: ch-09
+  type: mindmap
+- id: MM-17
+  unit: ch-10
+  type: mindmap
+- id: MM-18
+  unit: ch-11
+  type: mindmap
+- id: MM-19
+  unit: ch-12
+  type: mindmap
+- id: MM-20
+  unit: ch-13
+  type: mindmap
+- id: MM-02
+  unit: ch-13
+  type: mindmap
+- id: MM-21
+  unit: ch-14
+  type: mindmap
+- id: MM-22
+  unit: ch-15
+  type: mindmap
+- id: MM-04
+  unit: ch-15
+  type: mindmap
+- id: MM-23
+  unit: ch-16
+  type: mindmap
+- id: MM-05
+  unit: ch-16
+  type: mindmap
+- id: MM-24
+  unit: ch-17
+  type: mindmap
+- id: MM-25
+  unit: ch-18
+  type: mindmap
+- id: MM-06
+  unit: ch-18
+  type: mindmap
+- id: MM-26
+  unit: ch-19
+  type: mindmap
+- id: MM-27
+  unit: ch-20
+  type: mindmap
+- id: MM-28
+  unit: ch-21
+  type: mindmap
+- id: MM-29
+  unit: ch-22
+  type: mindmap
+- id: MM-30
+  unit: ch-23
+  type: mindmap
+- id: MM-31
+  unit: ch-24
+  type: mindmap
+- id: MM-32
+  unit: ch-25
+  type: mindmap
+- id: MM-33
+  unit: ch-26
+  type: mindmap
+- id: MM-34
+  unit: ch-27
+  type: mindmap
+- id: MM-35
+  unit: appendix-a
+  type: mindmap
+- id: MM-36
+  unit: appendix-b
+  type: mindmap
+- id: MM-37
+  unit: appendix-c
+  type: mindmap
+- id: MM-38
+  unit: appendix-d
+  type: mindmap
+- id: FC-legacy-01
+  unit: appendix-d
+  type: flowchart
+- id: FC-legacy-02
+  unit: appendix-d
+  type: flowchart
+- id: FC-legacy-03
+  unit: appendix-d
+  type: flowchart
+- id: MM-01
+  unit: appendix-d
+  type: mindmap
+- id: MM-39
+  unit: appendix-e
+  type: mindmap
+- id: MM-40
+  unit: appendix-f
+  type: mindmap
+- id: MM-41
+  unit: appendix-g
+  type: mindmap
+- id: MM-42
+  unit: appendix-h
+  type: mindmap
+- id: MM-43
+  unit: appendix-i
+  type: mindmap
+- id: MM-44
+  unit: appendix-j
+  type: mindmap
+- id: MM-45
+  unit: appendix-k
+  type: mindmap
+protected_terms:
+- Claude Code
+- Claude
+- Opus 5.5
+- Fable 5.1
+- Sonnet 5
+- Haiku 4.5
+- MCP
+- GitHub
+- PowerShell
+- Manual
+- Auto
+- CLAUDE.md
+- AGENTS.md
+- MEMORY.md
+- SKILL.md
+- API
+- JSON
+- YAML
+- token
+- diff
+- Hook
+- Skill
+- Subagent
+- Remote Control
+- Routines
+- usage credits
+toolkit: 0.1.0
+published:
+  version: null
+  pdf: null
