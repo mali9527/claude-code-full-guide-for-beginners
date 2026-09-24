@@ -578,7 +578,7 @@ outputs:
   combined: 全书.md
   readme: README.md
   pdf:
-    enabled: false
+    enabled: true
     font: PingFang SC
     paper: a5
   translations:

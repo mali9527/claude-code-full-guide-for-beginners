@@ -105,7 +105,7 @@ def headings(text):
     return result
 
 
-def rewritten_body(root, unit, text, out_parent, units, pdf_mode=False):
+def rewritten_body(root, unit, text, out_parent, units, pdf_mode=False, source_commit=None):
     path_to_unit = {safe_path(root, u["path"]).resolve(): u for u in units}
     heading_ids = {u["id"]: headings(safe_path(root, u["path"]).read_text(encoding="utf-8")) for u in units}
     counters = {}
@@ -124,6 +124,10 @@ def rewritten_body(root, unit, text, out_parent, units, pdf_mode=False):
                 try: target.relative_to(root.resolve())
                 except ValueError: raise StudioError("{}: 链接越界 {}".format(unit["path"], dest))
                 new = relative_url(target, out_parent) + (mark + fragment if mark else "")
+                if pdf_mode and source_commit and not m.group(1).startswith("!"):
+                    repo = (load_yaml(root / "book.yaml").get("repository") or {}).get("name")
+                    if repo:
+                        new = "https://github.com/" + repo + "/blob/" + source_commit + "/" + quote(target.relative_to(root.resolve()).as_posix(), safe="/") + (mark + fragment if mark else "")
             return m.group(1) + "(" + new + ")"
         return re.sub(r"(!?\[[^\]\n]*\])\(([^)\s]+)\)", link, s)
     def line(s):
@@ -423,10 +427,10 @@ def export_pdf(root, source_ref, version, export_id):
         font = pdf_config.get("font", "PingFang SC")
         fonts = tool_run(["typst", "fonts"])
         if font.lower() not in fonts.lower(): raise StudioError("缺少声明的中文字体：" + font)
-        parts = ["来源提交：" + TICK + commit + TICK]
+        parts = ["九月修订稿 · 供阅读与审校。真实账号与完整平台操作、另一引擎审校尚待完成。", "来源提交：" + TICK + commit + TICK]
         diagram_count = 0
         for unit in book["units"]:
-            body = rewritten_body(source, unit, bodies[unit["id"]], source, book["units"], pdf_mode=True)
+            body = rewritten_body(source, unit, bodies[unit["id"]], source, book["units"], pdf_mode=True, source_commit=commit)
             pattern = r"<!--\s*diagram:\s*([A-Za-z0-9_-]+)\s*-->\s*" + TICK + r"{3}mermaid\s*\n([\s\S]*?)" + TICK + r"{3}"
             def diagram(match):
                 nonlocal diagram_count
@@ -452,7 +456,7 @@ def export_pdf(root, source_ref, version, export_id):
                     args += ["-p", str(p)]
                 tool_run(args, source)
                 if not out.is_file() or out.stat().st_size < 20: raise StudioError("图渲染未产生有效文件：" + did)
-                return "![{}]({}){{width=75%}}".format(did, out.name)
+                return "![{}]({}){{width=100%}}".format(did, out.name)
             body = re.sub(pattern, diagram, body)
             if re.search(TICK+r"{3}mermaid", body): raise StudioError(unit["path"] + ": 存在无登记标记的 Mermaid 图")
             if re.search(r"!\[[^\]]*\]\(https?://", body): raise StudioError("PDF 必须使用已保存的本地图片，不能构建时下载")
@@ -461,7 +465,9 @@ def export_pdf(root, source_ref, version, export_id):
             parts.append(body)
         markdown = source / "export.md"; markdown.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
         result_pdf = source / (book["id"] + "-" + version + "-" + export_id + ".pdf")
-        tool_run(["pandoc", str(markdown), "--from=markdown+raw_html+raw_attribute", "--pdf-engine=typst", "--toc",
+        tool_run(["pandoc", str(markdown), "--from=markdown+raw_html+raw_attribute", "--pdf-engine=typst", "--toc", "--toc-depth=2",
+                  "--include-in-header="+str(source / "tools/pdf-layout.typ"),
+                  "-V", "page-numbering=1", "-V", "codefont=Sarasa Mono SC",
                   "-V", "mainfont="+font, "-V", "papersize="+pdf_config.get("paper", "a5"),
                   "-V", "fontsize=10pt", "--variable-json=margin:"+json.dumps({"top":"18mm","right":"18mm","bottom":"18mm","left":"18mm"}),
                   "--metadata=title:"+book["title"], "--metadata=subtitle:正文 "+version+" · 导出 "+export_id,
@@ -472,6 +478,7 @@ def export_pdf(root, source_ref, version, export_id):
         receipt = {"source_commit": commit, "version": version, "export_id": export_id, "sha256": sha(result_pdf.read_bytes()),
                    "file": result_pdf.name, "font": font, "diagrams": diagram_count,
                    "toolkit_version": book.get("toolkit"), "builder_sha256": sha(Path(__file__).read_bytes()),
+                   "layout_sha256": sha((source / "tools/pdf-layout.typ").read_bytes()),
                    "tools": {t: tool_run([t, "--version"]).splitlines()[0] for t in ("pandoc", "typst")}, "visual_review": "pending"}
         if output_dir.exists():
             raise StudioError("{}: 导出编号已存在，保留已审阅文件；使用新编号".format(output_dir))
