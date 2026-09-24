@@ -1,0 +1,3 @@
+/* Some font stacks paint wider than Mermaid foreignObject measurements.
+   Keep full labels visible inside their padded nodes. */
+foreignObject { overflow: visible !important; }

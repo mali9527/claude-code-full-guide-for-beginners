@@ -449,7 +449,7 @@ def export_pdf(root, source_ref, version, export_id):
                 if not code.lstrip().startswith("---"):
                     code = "---\nconfig:\n  theme: forest\n  themeVariables:\n    fontFamily: PingFang SC\n    fontSize: 17px\n    lineColor: '#D9D9D9'\n---\n" + code
                 inp.write_text(code, encoding="utf-8")
-                args = [mmdc, "-i", str(inp), "-o", str(out), "-b", "white", "-s", "2"]
+                args = [mmdc, "-i", str(inp), "-o", str(out), "-b", "white", "-s", "2", "-C", str(source / "tools/pdf-mermaid.css")]
                 chrome = os.environ.get("STUDIO_CHROME")
                 if chrome:
                     p = source / "puppeteer.json"
@@ -495,6 +495,7 @@ def export_pdf(root, source_ref, version, export_id):
                    "file": result_pdf.name, "font": font, "diagrams": diagram_count,
                    "toolkit_version": book.get("toolkit"), "builder_sha256": sha(Path(__file__).read_bytes()),
                    "layout_sha256": sha((source / "tools/pdf-layout.typ").read_bytes()),
+                   "diagram_css_sha256": sha((source / "tools/pdf-mermaid.css").read_bytes()),
                    "tools": {t: tool_run([t, "--version"]).splitlines()[0] for t in ("pandoc", "typst")}, "visual_review": "pending"}
         if output_dir.exists():
             raise StudioError("{}: 导出编号已存在，保留已审阅文件；使用新编号".format(output_dir))
