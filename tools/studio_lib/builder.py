@@ -429,6 +429,7 @@ def export_pdf(root, source_ref, version, export_id):
         if font.lower() not in fonts.lower(): raise StudioError("缺少声明的中文字体：" + font)
         parts = ["九月修订稿 · 供阅读与审校。真实账号与完整平台操作、另一引擎审校尚待完成。", "来源提交：" + TICK + commit + TICK]
         diagram_count = 0
+        diagram_pages = []
         for unit in book["units"]:
             body = rewritten_body(source, unit, bodies[unit["id"]], source, book["units"], pdf_mode=True, source_commit=commit)
             pattern = r"<!--\s*diagram:\s*([A-Za-z0-9_-]+)\s*-->\s*" + TICK + r"{3}mermaid\s*\n([\s\S]*?)" + TICK + r"{3}"
@@ -456,13 +457,23 @@ def export_pdf(root, source_ref, version, export_id):
                     args += ["-p", str(p)]
                 tool_run(args, source)
                 if not out.is_file() or out.stat().st_size < 20: raise StudioError("图渲染未产生有效文件：" + did)
-                return "![{}]({}){{width=100%}}".format(did, out.name)
+                diagram_pages.append((did, out.name, unit["id"], unit["title"]))
+                return "![{}]({}){{width=100%}}\n\n[查看独立大图页](#pdf-diagram-{})".format(did, out.name, did)
             body = re.sub(pattern, diagram, body)
             if re.search(TICK+r"{3}mermaid", body): raise StudioError(unit["path"] + ": 存在无登记标记的 Mermaid 图")
             if re.search(r"!\[[^\]]*\]\(https?://", body): raise StudioError("PDF 必须使用已保存的本地图片，不能构建时下载")
             if book.get("type") == "book":
                 parts.append(TICK*3 + "{=typst}\n#pagebreak(weak: true)\n" + TICK*3)
             parts.append(body)
+        # Wider diagram pages keep the A5 reading text while making dense maps legible.
+        if diagram_pages:
+            parts.append(TICK*3 + '{=typst}\n#pagebreak(weak: true)\n#set page(paper: "a4", flipped: true, margin: 18mm)\n' + TICK*3)
+            for did, filename, uid, title in diagram_pages:
+                gallery = '#pagebreak(weak: true)\n'
+                gallery += '#text(size: 14pt, weight: "bold", '+json.dumps("图解 "+did+" · "+title, ensure_ascii=False)+') <pdf-diagram-'+did+'>\n'
+                gallery += '#v(4mm)\n#block(width: 100%, height: 135mm)[#align(center + horizon)[#image('+json.dumps(filename)+', width: 100%, height: 100%, fit: "contain")]]\n'
+                gallery += '#v(3mm)\n#link(<'+uid+'>)[返回本章]\n'
+                parts.append(TICK*3 + '{=typst}\n'+gallery+TICK*3)
         markdown = source / "export.md"; markdown.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
         # Retain reproducible layout inputs for visual QA without rerendering diagrams.
         diagnostics = safe_path(root, "build/pdf-work/{}/{}".format(version, export_id))
@@ -475,7 +486,7 @@ def export_pdf(root, source_ref, version, export_id):
                   "-V", "page-numbering=1", "-V", "codefont=Sarasa Mono SC",
                   "-V", "mainfont="+font, "-V", "papersize="+pdf_config.get("paper", "a5"),
                   "-V", "fontsize=10pt", "--variable-json=margin:"+json.dumps({"top":"18mm","right":"18mm","bottom":"18mm","left":"18mm"}),
-                  "--metadata=title:"+book["title"], "--metadata=subtitle:正文 "+version+" · 导出 "+export_id,
+                  "--metadata=title:"+book["title"], "--metadata=author:马力", "--metadata=subtitle:正文 "+version+" · 导出 "+export_id,
                   "--metadata=date:"+str(datetime.date.today()), "--metadata=lang:zh", "--metadata=region:CN",
                   "-o", str(result_pdf)], source)
         if not result_pdf.is_file() or result_pdf.read_bytes()[:5] != b"%PDF-": raise StudioError("未产生有效 PDF")
