@@ -12,7 +12,7 @@
 **口诀**：
 
 <!-- diagram: FIG-034 -->
-![遇到操作请求先核对什么](../../assets/illustrations/FIG-034/revisions/r01/zh-CN.png)
+![遇到操作请求先核对什么](../../assets/illustrations/FIG-034/revisions/r02/zh-CN.png)
 
 *图：授权之前先判断动作和作用范围，不清楚时先问明白。*
 <!-- /diagram: FIG-034 -->
@@ -51,7 +51,7 @@
 这里的两次尝试与五分钟是作者的时间管理建议，不是产品限制。若失败涉及外部副作用，先核对现状再决定恢复方式。
 
 <!-- diagram: FIG-035 -->
-![失败以后怎样选择下一步](../../assets/illustrations/FIG-035/revisions/r01/zh-CN.png)
+![失败以后怎样选择下一步](../../assets/illustrations/FIG-035/revisions/r02/zh-CN.png)
 
 *图：失败后先看证据和变化，再决定重试、调整或求助。*
 <!-- /diagram: FIG-035 -->
@@ -62,7 +62,7 @@
 项目自动记忆默认按项目保存，不是天然的跨项目偏好库。个人规则与团队共享规则分开维护，任务流程放进 Skill。
 
 <!-- diagram: FIG-036 -->
-![这条信息放在哪里](../../assets/illustrations/FIG-036/revisions/r01/zh-CN.png)
+![这条信息放在哪里](../../assets/illustrations/FIG-036/revisions/r02/zh-CN.png)
 
 *图：临时材料、项目约定与长期操作说明按用途保存。*
 <!-- /diagram: FIG-036 -->
@@ -73,7 +73,7 @@
 **口诀**：**CLAUDE.md 讲背景，Skill 讲流程，Slash 调用 Skill，Subagent 派替身，Hook 搞自动，MCP 连接外部工具和数据源**。
 
 <!-- diagram: FIG-037 -->
-![扩展能力工具架](../../assets/illustrations/FIG-037/revisions/r01/zh-CN.png)
+![扩展能力工具架](../../assets/illustrations/FIG-037/revisions/r02/zh-CN.png)
 
 *图：扩展机制各有作用；斜杠入口可以调用技能，两者不是互斥体系。*
 <!-- /diagram: FIG-037 -->

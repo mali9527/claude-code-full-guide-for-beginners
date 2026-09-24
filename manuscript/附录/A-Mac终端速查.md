@@ -49,7 +49,7 @@
 - 看到 `~` = 你在自己的用户文件夹
 
 <!-- diagram: FIG-031 -->
-![Mac 终端的输入位置](../../assets/illustrations/FIG-031/revisions/r01/zh-CN.png)
+![Mac 终端的输入位置](../../assets/illustrations/FIG-031/revisions/r02/zh-CN.png)
 
 *图：在 Mac 终端先看当前目录，再输入命令*
 <!-- /diagram: FIG-031 -->

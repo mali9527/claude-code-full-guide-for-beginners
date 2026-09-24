@@ -1,0 +1,14 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-09-25",
+  "image_sha256": "70056a4ba66c764cb3d1ac5e068dcb7564a5ccfb1e36d73eb9f9e7fd17bd1704",
+  "input_fingerprint": "ca7aa42d202e1d12af6133a3b7f0b878c2ad9cb8e91d255eb140f9e0449f00c2",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass",
+  "scope": "Viewed original image and local Chrome rendering of adopted image with adjacent source text/caption. Loading, labels, arrow relations and Markdown placement checked. Byte-identical reuse for new reading review; no new generation.",
+  "limitations": "Reading context cards, not final GitHub CSS or PDF proof. Traditional Chinese image localization, actual product UI validation and human reader trial remain unverified."
+}

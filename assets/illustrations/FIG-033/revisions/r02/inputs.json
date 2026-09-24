@@ -1,0 +1,172 @@
+{
+  "fingerprint": "99e421aa0c38a8245cb561cf089a6e7f2193f871e5a0da1048f26abdb513ba17",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-033",
+    "unit": "appendix-c",
+    "source_path": "manuscript/附录/C-Slash命令全表.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "两个地方输入的命令",
+      "reader_question": "如何理解“两个地方输入的命令”？",
+      "takeaway": "系统终端中的启动命令与对话中的斜杠命令属于不同入口。",
+      "source_sections": [
+        "C.1 查状态、保留进度与管理上下文"
+      ],
+      "placement": "C.1 查状态、保留进度与管理上下文",
+      "composition": "上下两个手绘纸面窗口。上方窗口标“系统终端”，窗口内只有一行 $ claude，不能有第二行提示符、输出或其他命令。下方窗口标“会话内部”，输入框内只有 /help，不能有其他文字。底部只写“先分清输入位置”。不要额外人物、图标或命令表。",
+      "content_guard": "Only one command per panel. Upper: $ claude. Lower: /help. No second shell prompt after claude, no outputs. Only title and supplied labels. No footer except the required label 先分清输入位置.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "系统终端中的启动命令与对话中的斜杠命令属于不同入口。",
+      "source_ids": [
+        "MM-37"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "系统终端",
+      "claude",
+      "会话内部",
+      "/help",
+      "先分清输入位置"
+    ],
+    "sources": [
+      {
+        "heading": "C.1 查状态、保留进度与管理上下文",
+        "text": "## C.1 查状态、保留进度与管理上下文\n\n| 我想做什么 | 命令 | 读结果时记住 |\n|---|---|---|\n| 查帮助 | `/help` | 结合当前 `/` 菜单找入口，不保证列出全部隐藏命令 |\n| 确认版本、模型和账户 | `/status` | 看环境配置，不是看最终账单 |\n| 看当前消耗和套餐用量 | `/usage` | 会话费用是估算，实际账单到付款账户核对 |\n| 旧教程让查 cost | `/cost` | 当前是 `/usage` 的别名 |\n| 看统计页 | `/stats` | 同属用量界面，打开统计页 |\n| 看上下文空间 | `/context` | 空间占用与套餐剩余额度不同 |\n| 总结长对话再继续 | `/compact` | 可附上要保留的重点，不保证保留每个细节 |\n| 开始无关的新任务 | `/clear` | 开新会话，不撤销文件，也不退还已发生用量 |\n| 给这场工作起名字 | `/rename 名称` | 例如“活动安排核对”，方便以后寻找 |\n| 找回一场会话 | `/resume` | 选择会话；不是把所有文件恢复到旧状态 |\n\n“名称”表示你要自己填写的文字，使用时不要连“名称”两字照抄。如果想留下长任务的重要决定，应该同时写进项目文件；命令能帮你找回会话，不能代替对文件本身的保存与核对。上下文操作见[第 12 章](../part3-深度概念/12-Claude为什么会变糊涂.md)，用量见[第 15 章](../part3-深度概念/15-模型与成本.md)。[官方命令参考](https://code.claude.com/docs/en/commands)、[用量说明](https://code.claude.com/docs/en/costs)"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "skills",
+        "claim": "自定义命令已合入 Skills，旧commands文件兼容；技能可自动或手动调用，加载内容仍占上下文。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/skills",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "agents",
+        "claim": "子代理拥有独立上下文和可配置工具/规则；现行 /agents 不再打开旧创建向导。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sub-agents",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "scheduling",
+        "claim": "CLI /loop 依赖会话，桌面本地计划依赖应用/唤醒状态，云 Routines 不依赖本地开机且受账户开放限制。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/scheduled-tasks",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/routines",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "c208768cef3b5e6cabc0289cab5cf98173f7bc2aea34bffaf934f78f9e2c1a5e"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:18.500567+00:00"
+}

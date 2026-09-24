@@ -1,0 +1,197 @@
+{
+  "fingerprint": "4c12766c16445fff65f3d1afbb81713edc989097624aca5ba6adf889f53d2bc6",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-004",
+    "unit": "ch-02",
+    "source_path": "manuscript/part1-从零起步/02-安装-Claude-Code.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "安装到第一次成功的四站",
+      "reader_question": "如何理解“安装到第一次成功的四站”？",
+      "takeaway": "先核对准备条件，再按平台安装、检查结果并进入练习目录。",
+      "source_sections": [
+        "2.1 安装前，先确认你准备好了什么"
+      ],
+      "placement": "2.1 安装前，先确认你准备好了什么",
+      "composition": "只画四个路标与四个小图标，按从左到右的细箭头连接：准备条件（空心电脑图标）、对应平台安装（空心下载箭头）、检查结果（黑色打勾）、进入练习目录（空心文件夹）。四个步骤的名称就是图中全部正文。不要画终端窗口、代码、命令、Python、安装包名、平台徽标、清单、欢迎人物或其他小字。",
+      "content_guard": "ONLY the title and exactly these four labels may appear anywhere. No terminal, code, commands, package names, pip, conda, Python, operating-system logo, extra checklist or additional text. The image is the Claude Code preparation route, never a programming-library tutorial.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "先核对准备条件，再按平台安装、检查结果并进入练习目录。",
+      "source_ids": [
+        "MM-09"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "准备条件",
+      "对应平台安装",
+      "检查结果",
+      "进入练习目录"
+    ],
+    "sources": [
+      {
+        "heading": "2.1 安装前，先确认你准备好了什么",
+        "text": "## 2.1 安装前，先确认你准备好了什么\n\n本书采用官方现在推荐的**原生安装**：直接把 Claude Code 程序装到电脑上。这里的“原生”只是安装方式的名字。你不必先学习编程，也不必先装 Node.js——旧版教程把它列为必需品的步骤，已经不适用于这条路线。\n\n先做三件事。第一，检查系统版本：Mac 在左上角苹果菜单里打开“关于本机”；Windows 在“设置 → 系统 → 关于”看 Windows 规格。官方当前要求 macOS 13 或更新版本，Windows 10 1809 或更新版本，并至少有 4 GB 内存。系统太旧时先处理系统兼容性，反复执行安装命令解决不了这个问题。\n\n第二，浏览器打开[官方安装说明](https://code.claude.com/docs/en/setup)，确认能访问官方服务。安装包能下载，与账号在所在地区可使用服务，是两件事。地区限制以 [Anthropic 支持地区](https://www.anthropic.com/supported-countries)为准；公司电脑还要遵守公司的软件和数据规定。\n\n第三，确认第 0 章选好的账号路径。Claude 的免费聊天账号不包含 Claude Code；个人订阅与 Console 的 API 计费也不共用余额。先看清自己的访问资格与计费设置，再开始发送消息。如果你只有免费聊天账号，可以先读本书、准备练习文件，别把登录受限当成安装坏了。\n\n如果电脑以前装过，先在**普通终端**里输入 `claude --version`。能看到版本就不急着重装，去本章末尾看升级方式。想跟着本书使用 Opus 5.5 和 Fable 5.1，统一以 **Claude Code 2.1.280 或更高版本**为起点；这不是“最新版永远是 2.1.280”的意思。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "access-account",
+        "claim": "免费 Claude 聊天计划不包含 Claude Code；订阅与 Console/API 是不同访问和计费路径。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/authentication",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "native-install",
+        "claim": "官方推荐原生安装；该路线不要求 Node.js；npm 包现要求 Node.js 22+；官方不建议 sudo npm install。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "install",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "windows-shell",
+        "claim": "原生 Windows 可不安装 Git for Windows，未安装时使用 PowerShell 工具；安装和 WSL 环境需区分。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "install",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "updates",
+        "claim": "原生安装通常自动更新；Homebrew 与 WinGet 默认手动更新，具体命令取决于安装来源。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "install",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-minimum",
+        "claim": "本书新模型共同 CLI 基线选用 2.1.280+；账户和接入仍影响模型开放。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-auto",
+        "claim": "当前 Pro/Max/Team 的适用会话可从 auto 模式启动；需看版本、设置、接入与组织条件。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "cf128e8163ca6c02386630d6309baf70036bba26cb1e8400fddc51b9f21e8cef"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:14:40.591336+00:00"
+}

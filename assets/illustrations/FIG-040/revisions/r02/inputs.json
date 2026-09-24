@@ -1,0 +1,266 @@
+{
+  "fingerprint": "b07ef7860f63718daa1ca84be775dfcff6b3db26625e7bd0607867e9d7d4a49f",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-040",
+    "unit": "appendix-j",
+    "source_path": "manuscript/附录/J-Opus-4.7新手指南.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "升级后怎样确认自己在用什么",
+      "reader_question": "如何理解“升级后怎样确认自己在用什么”？",
+      "takeaway": "先核对当前版本、可用模型与账户资格，再决定使用方式。",
+      "source_sections": [
+        "J.2 升级软件以后，再确认完整模型名"
+      ],
+      "placement": "J.2 升级软件以后，再确认完整模型名",
+      "composition": "软件版本、实际模型名、账户条件三张检查卡，依次核对。",
+      "content_guard": "不把发布日期和默认参数烙进图；跟随正文确认。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "先核对当前版本、可用模型与账户资格，再决定使用方式。",
+      "source_ids": [
+        "MM-44"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "软件版本",
+      "实际模型名",
+      "账户条件",
+      "逐项确认"
+    ],
+    "sources": [
+      {
+        "heading": "J.2 升级软件以后，再确认完整模型名",
+        "text": "## J.2 升级软件以后，再确认完整模型名\n\n先退出正在输入的 Claude Code 对话，回到普通终端。Mac 的终端和 Windows 的 PowerShell 都可以输入：\n\n```sh\nclaude --version\n```\n\n`--version` 表示显示版本号。如果低于 **2.1.280**，先按[第 2 章的安装与更新方法](../part1-从零起步/02-安装-Claude-Code.md)升级。原生安装通常用 `claude update`；通过软件包管理器安装的，按原来的安装方式更新。本篇统一用 2.1.280 作为最低操作基线，是为了同时覆盖两款新模型。\n\n回到工作文件夹后，可以在普通终端启动一场明确指定模型的会话：\n\n```sh\nclaude --model claude-opus-5-5\n```\n\n这条命令中的 `--model` 表示“本次启动使用后面的模型”。如果已进入会话，就用 `/model` 打开选择器；希望长期改用这个版本，可以输入 `/model claude-opus-5-5`。不要把普通终端命令与会话里的斜杠命令输反。[命令行参数参考](https://code.claude.com/docs/en/cli-reference)\n\n下面是**用于读懂选项的文字示意，不是实测截图，实际排序和可选项以你的界面为准**：\n\n```text\n当前模型：看完整名称和版本\n需要试用：在 /model 中选中模型，按 s，仅用于本次会话\n准备长期使用：按 Enter 保存，或输入 /model 完整模型名\n出现 Requires usage credits：先确认额外用量，再决定是否继续\n```\n\n在当前官方直连环境中，`opus` 通常指 Opus 5.5，`fable` 指 Fable 5.1；公司的网关——统一转发模型请求的服务——可能另有映射。已保存的模型、恢复的旧会话及组织设置，也可能影响启动结果。**升级程序后看一眼实际模型名**，比只凭一个“Opus”简写放心。确切选择、会话与默认设置的关系见[模型配置说明](https://code.claude.com/docs/en/model-config)。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-opus",
+        "claim": "Opus 5.5 于 2026-09-22 发布，模型 ID 为 claude-opus-5-5。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fable",
+        "claim": "Fable 5.1 于 2026-09-01 发布，模型 ID 为 claude-fable-5-1。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-minimum",
+        "claim": "本书新模型共同 CLI 基线选用 2.1.280+；账户和接入仍影响模型开放。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-pricing",
+        "claim": "标准 API 输入/输出美元每百万 token：Opus 5.5 4/20，Fable 5.1 10/50，Sonnet 5 2/10，Haiku 4.5 1/5；不含其他计价项目。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-effort",
+        "claim": "Opus 5.5 默认 medium，Fable 5.1 默认 high；effort 与模型、权限模式分开设置。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/build-with-claude/effort",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fast",
+        "claim": "Opus 5.5 fast 标准输入/输出为 8/40 美元每百万 token；订阅通过 usage credits 支付，非免费加速。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/fast-mode",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-plan",
+        "claim": "Pro 月付20美元/年付200美元；Max网页月费100/200美元；Fable包含额度依席位而异，Pro从开始需要额外用量，Max最多使用现有周额度50%。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://claude.com/pricing",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fallback",
+        "claim": "Opus 5.5 特定请求可能按服务规则转其他模型，并显示提示；不能把最初选项等同全部回答模型。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://support.claude.com/en/articles/16049681-why-claude-switched-models-in-your-conversation-with-opus-5-or-opus-5-5",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "297d80417ed7b90aa660ab79a05a61b1593953fb31b41d00b82dda0c4735354f"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:31.043409+00:00"
+}

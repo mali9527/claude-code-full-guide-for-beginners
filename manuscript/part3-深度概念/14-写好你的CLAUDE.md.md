@@ -49,7 +49,7 @@
 先搞清楚这份文档到底要干什么：
 
 <!-- diagram: FIG-016 -->
-![项目说明是一张路标](../../assets/illustrations/FIG-016/revisions/r01/zh-CN.png)
+![项目说明是一张路标](../../assets/illustrations/FIG-016/revisions/r02/zh-CN.png)
 
 *图：项目说明写清目标、约定与验证入口，长资料按需引用。*
 <!-- /diagram: FIG-016 -->

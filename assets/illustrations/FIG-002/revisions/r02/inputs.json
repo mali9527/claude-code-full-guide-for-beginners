@@ -1,0 +1,131 @@
+{
+  "fingerprint": "4a11c4179d7b48a13f5d69467114490de19c248c46e9a8a9334f1959b1ccab3c",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-002",
+    "unit": "ch-00",
+    "source_path": "manuscript/00-前言/01-免费用上Claude-Code.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "程序、模型、账户是三件事",
+      "reader_question": "如何理解“程序、模型、账户是三件事”？",
+      "takeaway": "程序是操作入口，模型处理任务，账户决定可用资格。",
+      "source_sections": [
+        "0.1 三件东西，不要混成一件"
+      ],
+      "placement": "0.1 三件东西，不要混成一件",
+      "composition": "电脑上的程序、提供能力的模型服务、代表使用资格的账户卡并排，各一条短说明。",
+      "content_guard": "不暗示一张账户卡包含所有模型或免费额度。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "程序是操作入口，模型处理任务，账户决定可用资格。",
+      "source_ids": [
+        "MM-46"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "程序",
+      "模型",
+      "账户",
+      "在哪里操作",
+      "谁来处理",
+      "用什么资格"
+    ],
+    "sources": [
+      {
+        "heading": "0.1 三件东西，不要混成一件",
+        "text": "## 0.1 三件东西，不要混成一件\n\n你接下来会用到三个不同的东西。**Claude Code 是帮你读文件、改文件和运行命令的工具**；**Claude 模型负责理解任务和生成回答**，例如 Opus 5.5、Fable 5.1；**账户决定你能访问哪些服务，以及费用由谁承担**。同一台电脑装好了工具，换一个账户，能选的模型和可用额度也可能不同。\n\n把它想成装好了一个视频播放软件：软件存在，不等于你已经订阅每一个付费频道。Claude Code 的安装程序可以取得，也不等于请求模型永久免费。官方目前明确说明，Claude 免费聊天计划不包含 Claude Code 使用资格。[官方安装与账号说明](https://code.claude.com/docs/en/setup)\n\n另外，本书可以在 GitHub 阅读，与使用云端模型的费用是两件事。你完全可以先读、先准备练习资料，再决定是否购买适合自己的服务。本章不要求你下单，也不会让你先把支付方式交给不明来源的中转站。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "access-account",
+        "claim": "免费 Claude 聊天计划不包含 Claude Code；订阅与 Console/API 是不同访问和计费路径。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/authentication",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-plan",
+        "claim": "Pro 月付20美元/年付200美元；Max网页月费100/200美元；Fable包含额度依席位而异，Pro从开始需要额外用量，Max最多使用现有周额度50%。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://claude.com/pricing",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "gateway",
+        "claim": "Anthropic不支持通过网关路由到非Claude模型；第三方兼容文档不等于Anthropic官方支持。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/llm-gateway",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://docs.z.ai/devpack/tool/claude",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "c4d8a93e6d3abb371fc056f49d48faf4d1e32bb934176565d6a5b8f95a63c6b1"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:14:38.789287+00:00"
+}

@@ -23,7 +23,7 @@
 你接下来会用到三个不同的东西。**Claude Code 是帮你读文件、改文件和运行命令的工具**；**Claude 模型负责理解任务和生成回答**，例如 Opus 5.5、Fable 5.1；**账户决定你能访问哪些服务，以及费用由谁承担**。同一台电脑装好了工具，换一个账户，能选的模型和可用额度也可能不同。
 
 <!-- diagram: FIG-002 -->
-![程序、模型、账户是三件事](../../assets/illustrations/FIG-002/revisions/r01/zh-CN.png)
+![程序、模型、账户是三件事](../../assets/illustrations/FIG-002/revisions/r02/zh-CN.png)
 
 *图：程序是操作入口，模型处理任务，账户决定可用资格。*
 <!-- /diagram: FIG-002 -->

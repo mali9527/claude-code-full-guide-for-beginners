@@ -1,0 +1,75 @@
+{
+  "fingerprint": "2f717cf44cb547b81872d34c6462a8c47e2a6e4c610b1279dfc7758255f2ad00",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-024",
+    "unit": "ch-21",
+    "source_path": "manuscript/part5-扩展能力/21-自定义Slash命令.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "斜杠是打开手册的入口",
+      "reader_question": "如何理解“斜杠是打开手册的入口”？",
+      "takeaway": "自定义命令提供入口，技能说明承载具体工作方法。",
+      "source_sections": [
+        "21.1 斜杠是入口，不是另一种智能"
+      ],
+      "placement": "21.1 斜杠是入口，不是另一种智能",
+      "composition": "手绘输入区里一个 /my-daily，箭头连到同名任务手册和带材料的任务卡。",
+      "content_guard": "不把 Slash 当成另一套独立智能或自动获权。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "自定义命令提供入口，技能说明承载具体工作方法。",
+      "source_ids": [
+        "MM-28"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "/my-daily",
+      "同名任务手册",
+      "本次材料",
+      "斜杠是入口"
+    ],
+    "sources": [
+      {
+        "heading": "21.1 斜杠是入口，不是另一种智能",
+        "text": "## 21.1 斜杠是入口，不是另一种智能\n\n**Slash 就是斜杠 `/`**。第 18 章的 `/clear` 是内置命令；上一章的 `/meeting-notes` 是你安装的技能入口。二者看起来都以斜杠开始，但前者由产品提供，后者承载你自己的任务要求。\n\n新版 Claude Code 已把自定义命令和技能放到同一套机制里。旧的 `.claude/commands/daily.md` 仍可使用；新建流程优先采用 `.claude/skills/my-daily/SKILL.md`，方便把模板和示例放在一起。**不能再用“技能只能自动触发、命令只能手动触发”来区分它们。**[官方说明](https://code.claude.com/docs/en/skills#where-skills-live)\n\n想让一个技能只在你明确启动时运行，可以在文件开头的说明标签中加入 `disable-model-invocation: true`。它的含义是阻止 Claude 自行调用这份技能。名字很长，首次使用只要记住“这份流程由我来启动”。这项设置并不会自动给后续操作开权限，更不是“输入命令就同意发布、付款或删除”。\n\n本章做 `/my-daily`：你给出今天的事项，它帮你列计划。名称加上 `my-`，是为了少和现有内置命令或别人安装的技能撞名。不要把自定义流程叫 `/focus`、`/review` 之后，又以为它会改变产品本身的对应功能。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "skills",
+        "claim": "自定义命令已合入 Skills，旧commands文件兼容；技能可自动或手动调用，加载内容仍占上下文。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/skills",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "36f09a757c6fddee29841c63fb9fff608d9e780da696e55a9a8773ac32ebe0d6"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:05.917867+00:00"
+}

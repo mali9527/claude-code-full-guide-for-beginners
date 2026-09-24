@@ -1,0 +1,252 @@
+{
+  "fingerprint": "3f2ea3897729ab70dbc4564b259c922e2e3dbceeacd8b8b9e41ca3ed6dca9fbc",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-017",
+    "unit": "ch-15",
+    "source_path": "manuscript/part3-深度概念/15-模型与成本.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "模型、投入和费用分开看",
+      "reader_question": "如何理解“模型、投入和费用分开看”？",
+      "takeaway": "模型选择、思考投入和用量路径分别判断，不把名称当作固定价格或能力排名。",
+      "source_sections": [
+        "15.3 学会选模型，别把三个开关混成一个"
+      ],
+      "placement": "15.3 学会选模型，别把三个开关混成一个",
+      "composition": "笔记本上三只简单旋钮/卡片：“选模型”“思考投入”“费用路径”，下方放结果核对单。",
+      "content_guard": "不画成真实设置页；不固化价格、默认值或模型排名。\nThese are conceptual knobs/cards drawn on paper, NOT a software settings screen. No default value or numeric price.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "模型选择、思考投入和用量路径分别判断，不把名称当作固定价格或能力排名。",
+      "source_ids": [
+        "MM-22",
+        "MM-04"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "选模型",
+      "思考投入",
+      "费用路径",
+      "核对实际结果"
+    ],
+    "sources": [
+      {
+        "heading": "15.3 学会选模型，别把三个开关混成一个",
+        "text": "## 15.3 学会选模型，别把三个开关混成一个\n\n本章里的斜杠命令都输入在 **Claude Code 的对话框**，不是退出后那个普通终端提示符后面。先输入 `/model`，打开模型选择器，看清当前版本和是否有额外收费提示。\n\n如果你直接使用 Anthropic 服务，并希望确定选中本章介绍的版本，可以输入：\n\n```text\n/model claude-opus-5-5\n```\n\n需要 Fable 且已经确认付款方式时，再输入 `/model claude-fable-5-1`。这种完整名称比只记 `opus` 或 `fable` 更适合复现一次练习；简写会随着软件版本或服务提供方变化。升级和不同服务的差别见[附录 J](../附录/J-Opus-4.7新手指南.md)。\n\n在当前版本里，直接用 `/model 名称` 切换会保存为以后会话的默认选择。只想试一次，就打开 `/model`，用上下方向键移到模型那一行，按字母 **s**，表示仅用于这次会话。按 Enter（回车键）则会保存选择。[模型配置说明](https://code.claude.com/docs/en/model-config)\n\n第二个开关是 **effort（思考投入档位）**。用 `/effort` 可以查看和调整。Opus 5.5 默认是 `medium`，Fable 5.1 默认是 `high`；这不代表前者“只有中等智力”。档位表示同一模型如何安排思考投入，不是跨模型的分数。先保留默认值，发现任务确实需要更深入的判断时再比较其他档位。[effort 说明](https://platform.claude.com/docs/en/build-with-claude/effort)\n\n第三个是 `/fast`，即快速模式。它改变响应速度和计费，不是更换成“小模型”。**Opus 5.5 的 fast 输入/输出价格为每百万 token 8/40 美元；订阅用户通过额外用量付费。** 初次练习不需要开启它。[快速模式说明](https://code.claude.com/docs/en/fast-mode)"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-opus",
+        "claim": "Opus 5.5 于 2026-09-22 发布，模型 ID 为 claude-opus-5-5。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fable",
+        "claim": "Fable 5.1 于 2026-09-01 发布，模型 ID 为 claude-fable-5-1。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-pricing",
+        "claim": "标准 API 输入/输出美元每百万 token：Opus 5.5 4/20，Fable 5.1 10/50，Sonnet 5 2/10，Haiku 4.5 1/5；不含其他计价项目。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-effort",
+        "claim": "Opus 5.5 默认 medium，Fable 5.1 默认 high；effort 与模型、权限模式分开设置。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/build-with-claude/effort",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fast",
+        "claim": "Opus 5.5 fast 标准输入/输出为 8/40 美元每百万 token；订阅通过 usage credits 支付，非免费加速。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/fast-mode",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-plan",
+        "claim": "Pro 月付20美元/年付200美元；Max网页月费100/200美元；Fable包含额度依席位而异，Pro从开始需要额外用量，Max最多使用现有周额度50%。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://claude.com/pricing",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "1800adf0286dc1d606a52d55615a5fd9a03c9a71e2fc0ebcf0dd1a5a53613601"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:14:56.847276+00:00"
+}

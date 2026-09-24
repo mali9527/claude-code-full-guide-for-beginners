@@ -1,0 +1,146 @@
+{
+  "fingerprint": "9669e10000dd9fb712cdef132881fcad4fe2c024c59e41ae803ec9e8d43250a7",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-019",
+    "unit": "ch-16",
+    "source_path": "manuscript/part4-避坑与判断力/16-新手10大错误.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "五个合作时的提醒",
+      "reader_question": "如何理解“五个合作时的提醒”？",
+      "takeaway": "执行后仍要验证、保存和回看，别跳过结果检查。",
+      "source_sections": [
+        "16.6 错误 6：让 Claude 干完全不懂的活然后全盘信"
+      ],
+      "placement": "16.6 错误 6：让 Claude 干完全不懂的活然后全盘信",
+      "composition": "五个小手绘场景对应陌生领域、模糊任务、配置费用、情绪反复、规则措辞。",
+      "content_guard": "与上一张分开，保持手机单格可读；不要堆十条小字。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "执行后仍要验证、保存和回看，别跳过结果检查。",
+      "source_ids": [
+        "MM-23",
+        "MM-05"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "陌生领域要核验",
+      "把任务说具体",
+      "查配置和费用",
+      "反复失败先停",
+      "规则写清楚"
+    ],
+    "sources": [
+      {
+        "heading": "16.6 错误 6：让 Claude 干完全不懂的活然后全盘信",
+        "text": "## 16.6 错误 6：让 Claude 干完全不懂的活然后全盘信\n\n**场景**：你是 Python 开发者，让 Claude 写一段 Bash / SQL / 正则——从没学过，看它写完就直接拿去用。\n\n**翻车**：\n- Claude 写这些领域**容易翻车**（尤其正则和 SQL）\n- **你不懂 = 你检查不了** —— 出错了你都看不出\n- 搞坏数据库 / 删错文件，事后才发现\n\n**正确做法**（详见 Ch 10）：\n- 跨自己不熟的领域 → **强制 L4 审核**\n- 让 Claude **附带测试 / 样例验证**（正则给 3 个能匹配 + 3 个不能匹配的字符串）\n- 或找一个懂的人 review\n- **不要在\"不熟 + 不可逆\"的交集上让 Claude 出手**（例：直接改生产库）"
+      }
+    ],
+    "facts": [
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "data-usage",
+        "claim": "消费者改进模型设置与商业/API默认政策不同；留存、反馈、云同步及第三方路径不能统一承诺30天删除或不训练。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/data-usage",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/claude-directory#application-data",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "memory",
+        "claim": "自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "4278e82f5affa0f3a910397b94b342b71dfc6dcec02644bff1ec97b57ec830dd"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:00.446143+00:00"
+}

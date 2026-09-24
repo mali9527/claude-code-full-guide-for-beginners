@@ -1,0 +1,156 @@
+{
+  "fingerprint": "2d3285d5ccb1c17a715416db548791f68160ec5040a339a530cbef643a1466bd",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-038",
+    "unit": "appendix-g",
+    "source_path": "manuscript/附录/G-报错自救手册.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "报错时先收集这四样",
+      "reader_question": "如何理解“报错时先收集这四样”？",
+      "takeaway": "保留操作、完整报错、环境和已尝试步骤，才更容易定位问题。",
+      "source_sections": [
+        "通用排查顺序"
+      ],
+      "placement": "通用排查顺序",
+      "composition": "横排四件黑笔线稿物件：一张带感叹号的纸、一位操作电脑的人、一张带齿轮的卡、一张带回转箭头的记录纸。四件物件上方依次写“错误原文”“正在做什么”“当前环境”“最近改了什么”。纸和卡片内部只画无字横线。四条短引线汇到下方“带着线索排查”。",
+      "content_guard": "Exactly the five supplied labels and title. Paper interiors contain abstract black lines ONLY, no legible small writing. Do not invent error messages, code, Python, package names, software versions, operating-system versions, credentials or environment values. No other text or footnote.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "保留操作、完整报错、环境和已尝试步骤，才更容易定位问题。",
+      "source_ids": [
+        "MM-41"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "错误原文",
+      "正在做什么",
+      "当前环境",
+      "最近改了什么",
+      "带着线索排查"
+    ],
+    "sources": [
+      {
+        "heading": "通用排查顺序",
+        "text": "## 通用排查顺序\n\n遇到任何问题按这个顺序试：\n\n1. **记录错误、版本和触发步骤**，保存未完成工作\n2. **`/status` 看配置，`/context` 看上下文，`/usage` 看用量**\n3. **`/help` 看命令说明**\n4. **看启动时的日志输出**（有错误提示吗？）\n5. **搜关键词**（GitHub issues / Reddit）\n6. **问 Claude Code 自己**：\"我遇到 XXX 错误，怎么办？\"（把建议当排查线索，执行前仍核对官方说明）\n\n---"
+      }
+    ],
+    "facts": [
+      {
+        "id": "native-install",
+        "claim": "官方推荐原生安装；该路线不要求 Node.js；npm 包现要求 Node.js 22+；官方不建议 sudo npm install。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "install",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "updates",
+        "claim": "原生安装通常自动更新；Homebrew 与 WinGet 默认手动更新，具体命令取决于安装来源。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "install",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "/status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude doctor 为只读诊断。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "mcp",
+        "claim": "MCP 使用受支持的CLI和配置作用域；项目共享配置 .mcp.json，连接鉴权与工具许可分别确认。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/mcp",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "9af09020d3c79a6dc7b351eb8ea165c11bd8409879012da1ba77f22ecb5c903b"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:27.457931+00:00"
+}

@@ -29,7 +29,7 @@
 **Hook（钩子）**可以理解为“事件发生时，自动执行预先配置的动作”。例如 Claude 用编辑工具成功改完文件，这个事件发生后，执行一个检查标题是否存在的小程序。触发时机是固定的，不需要你每次再输入“请检查”。
 
 <!-- diagram: FIG-026 -->
-![事件触发一次小检查](../../assets/illustrations/FIG-026/revisions/r01/zh-CN.png)
+![事件触发一次小检查](../../assets/illustrations/FIG-026/revisions/r02/zh-CN.png)
 
 *图：Hook 围绕特定事件运行检查，结果如何使用取决于配置。*
 <!-- /diagram: FIG-026 -->

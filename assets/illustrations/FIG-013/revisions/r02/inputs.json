@@ -1,0 +1,125 @@
+{
+  "fingerprint": "ca6e8ec442a231acd02e57c7e5590edee7d7d4512c23f3b2923610ea0461c2e9",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-013",
+    "unit": "ch-11",
+    "source_path": "manuscript/part3-深度概念/11-你的数据去哪了.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "一次请求的数据去哪",
+      "reader_question": "如何理解“一次请求的数据去哪”？",
+      "takeaway": "发送的是本次请求所需材料；具体处理与保存条件按所用服务核对。",
+      "source_sections": [
+        "11.1 先看一张图：一次对话的数据去了哪"
+      ],
+      "placement": "11.1 先看一张图：一次对话的数据去了哪",
+      "composition": "画面严格左右两区：左侧标“本地”，含本地文件柜、挑出的少量“本次请求材料”以及一个显示“返回结果”的窗口；右侧标“远端”，只有“所连接服务商”服务器。上方出站箭头必须从左侧请求材料指向右侧服务器；下方返回箭头必须从右侧服务器指回左侧的返回结果窗口。返回结果窗口和文字绝不能归在远端一侧。不要将整个文件柜画入传输箭头。",
+      "content_guard": "不画整盘必上传；保存、训练和传输三个概念分开。\nOnly a selected SMALL subset of file sheets enters the outgoing request, never the entire file cabinet. Neutral arrows no padlock guarantees.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "发送的是本次请求所需材料；具体处理与保存条件按所用服务核对。",
+      "source_ids": [
+        "MM-18"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "本地文件",
+      "本次请求材料",
+      "所连接服务商",
+      "返回结果"
+    ],
+    "sources": [
+      {
+        "heading": "11.1 先看一张图：一次对话的数据去了哪",
+        "text": "## 11.1 先看一张图：一次对话的数据去了哪\n\n先沿着最常见的本地终端路径看一遍。这里的“本地”是指程序在你的电脑上操作文件，**不表示模型在你的电脑里运算**。\n\n本地程序把输入、所需文件内容和工具输出组织为请求，经 HTTPS 发给实际连接的模型服务；服务返回回复或下一步操作指令。\n\n还有两个容易漏掉的方向：会话可能保存在你电脑上，以便下次继续；如果启用云端会话、远程控制、外部连接器或主动发送反馈，还可能发生相应的数据同步。\n\n### 别把“文件没上传”理解成“内容没离开”\n\n你给 Claude 一个文件路径，它先在本地找到并读取内容，然后把完成任务所需的信息提供给模型。文件的名字和位置没有变化，不代表其中的文字只待在本地。\n\n命令输出也是一样。即使你没直接粘贴密钥，只要命令把它显示出来，输出就可能进入会话。**检查要交出去的内容，比纠结是复制文字还是引用文件更有用。**\n\n如果你按附录 K 接入第三方模型，请把图里的服务商换成实际那一家。它的数据政策、所经网关与保存方式需要另查，不能套用 Anthropic 的承诺。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "data-usage",
+        "claim": "消费者改进模型设置与商业/API默认政策不同；留存、反馈、云同步及第三方路径不能统一承诺30天删除或不训练。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/data-usage",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/claude-directory#application-data",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "gateway",
+        "claim": "Anthropic不支持通过网关路由到非Claude模型；第三方兼容文档不等于Anthropic官方支持。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/llm-gateway",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://docs.z.ai/devpack/tool/claude",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "007fb0cdc3c962c4f48b4d26e7e4ae2fbeff744610d80edb7deb8e6d7505964b"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:14:51.311750+00:00"
+}

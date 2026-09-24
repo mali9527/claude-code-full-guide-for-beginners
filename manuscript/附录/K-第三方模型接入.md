@@ -11,7 +11,7 @@
 **第一种是云平台提供 Claude。** Amazon Bedrock、Google Cloud 的 Agent Platform、Microsoft Foundry 等有各自的接入与模型开放条件。模型仍可能是 Claude，但账户、结算、地区和功能支持要按对应部署说明核对，不能直接照搬个人 Pro 订阅的待遇。
 
 <!-- diagram: FIG-041 -->
-![第三方接入的三条路线](../../assets/illustrations/FIG-041/revisions/r01/zh-CN.png)
+![第三方接入的三条路线](../../assets/illustrations/FIG-041/revisions/r02/zh-CN.png)
 
 *图：第三方接入先分清直连、网关和本地服务，再核对各自条件。*
 <!-- /diagram: FIG-041 -->

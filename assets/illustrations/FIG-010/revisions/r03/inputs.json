@@ -1,0 +1,103 @@
+{
+  "fingerprint": "5db3a3024f5d2a0c261f58ec6946633026c739a0b0aad2b590809d9ae06c7b88",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-010",
+    "unit": "ch-08",
+    "source_path": "manuscript/part2-日常使用/08-交互循环七步法.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "人和助手的一次协作循环",
+      "reader_question": "如何理解“人和助手的一次协作循环”？",
+      "takeaway": "七步法是一种工作习惯；实际界面不保证每轮出现七次确认。",
+      "source_sections": [
+        "8.2 七步走一遍完整流程"
+      ],
+      "placement": "8.2 七步走一遍完整流程",
+      "composition": "严格两条横向泳道。上排标“你”，由左至右四个节点：描述、审核、决定、验证。下排标“助手”，由左至右三个节点：分析、提案、执行。描述与分析在左侧上下相对；审核与提案在中间上下相对；决定与执行在偏右上下相对；验证在最右上排。只画下面七条有方向的连接，形成一条连续的跨泳道循环：描述↓分析，分析→提案，提案↑审核，审核→决定，决定↓执行，执行↑验证，验证沿最上方长弧线返回描述。",
+      "content_guard": "EXACT directed edges: 描述 -> 分析 -> 提案 -> 审核 -> 决定 -> 执行 -> 验证 -> 描述. The human lane contains 描述,审核,决定,验证; the assistant lane contains 分析,提案,执行. No edge from 描述 directly to 审核, no edge from 提案 directly to 执行. 验证 MUST be in the human lane. These constraints are NOT text to print. Only title and required labels. No footer, note or disclaimer.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "七步法是一种工作习惯；实际界面不保证每轮出现七次确认。",
+      "source_ids": [
+        "MM-15"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "你",
+      "助手",
+      "描述",
+      "分析",
+      "提案",
+      "审核",
+      "决定",
+      "执行",
+      "验证"
+    ],
+    "sources": [
+      {
+        "heading": "8.2 七步走一遍完整流程",
+        "text": "## 8.2 七步走一遍完整流程\n\n先看一次完整的流程图：\n\n下图按人和助手的分工串起七步。它是教学流程，实际操作按任务和权限设置调整。\n\n展开讲，每一步名字和发生的事：\n\n| 步骤 | 名字 | 谁在做 | 做什么 |\n|------|------|-------|-------|\n| **1** | Describe 描述 | **你** | 告诉 Claude 你要什么（用 WHAT/WHERE/HOW/VERIFY 模板更好） |\n| **2** | Analyze 分析 | Claude | 读相关文件、理解上下文、思考方案 |\n| **3** | Propose 提案 | Claude | 给出 diff（要改的文件）或命令（要跑的事） |\n| **4** | Review 审核 | **你** | 看 diff / 看命令，判断合不合理 |\n| **5** | Decide 决定 | **你** | 接受、拒绝并反馈，或调整方案 |\n| **6** | Execute 执行 | Claude | 按决定真正改文件 / 跑命令 |\n| **7** | Verify 验证 | **你** | 看结果对不对（打开文件看、跑测试、检查效果） |\n\n**重点**：7 步里**你占 4 步**（描述、审核、决定、验证）。Claude 只占 3 步（分析、提案、执行）。\n\n> 💡 **这就是\"你永远在开车\"的意思**——方向盘（决定权）始终在你手上。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "sessions",
+        "claim": "本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sessions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "6e81752289a41142706426a514f657c80e244220d151361986a6c330d988a61d"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:14:47.709635+00:00"
+}

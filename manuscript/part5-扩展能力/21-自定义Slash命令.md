@@ -29,7 +29,7 @@
 **Slash 就是斜杠 `/`**。第 18 章的 `/clear` 是内置命令；上一章的 `/meeting-notes` 是你安装的技能入口。二者看起来都以斜杠开始，但前者由产品提供，后者承载你自己的任务要求。
 
 <!-- diagram: FIG-024 -->
-![斜杠是打开手册的入口](../../assets/illustrations/FIG-024/revisions/r01/zh-CN.png)
+![斜杠是打开手册的入口](../../assets/illustrations/FIG-024/revisions/r02/zh-CN.png)
 
 *图：自定义命令提供入口，技能说明承载具体工作方法。*
 <!-- /diagram: FIG-024 -->

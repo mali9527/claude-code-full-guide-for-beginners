@@ -1,0 +1,102 @@
+{
+  "fingerprint": "3d80c9a78a565ca60a853d6dec9608c13ade77a7977cff3e99836dae5f7cb716",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-025",
+    "unit": "ch-22",
+    "source_path": "manuscript/part5-扩展能力/22-Subagents入门.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "独立工作台，共享文件柜",
+      "reader_question": "如何理解“独立工作台，共享文件柜”？",
+      "takeaway": "分开任务与上下文，仍需协调共享文件的写入。",
+      "source_sections": [
+        "22.1 独立的是工作记忆，不是整台电脑"
+      ],
+      "placement": "22.1 独立的是工作记忆，不是整台电脑",
+      "composition": "主助手与专项助手分别坐在两张桌边，各有自己的材料，背后共用文件柜。",
+      "content_guard": "清楚显示独立上下文不等于文件隔离；不画无条件并行写入。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "分开任务与上下文，仍需协调共享文件的写入。",
+      "source_ids": [
+        "MM-29"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "主助手",
+      "专项助手",
+      "各自工作材料",
+      "共用文件柜"
+    ],
+    "sources": [
+      {
+        "heading": "22.1 独立的是工作记忆，不是整台电脑",
+        "text": "## 22.1 独立的是工作记忆，不是整台电脑\n\n**Subagent（子智能体）**是主 Claude 委派出去的专项助手。它在自己的上下文里读取材料，完成后把结果交回来。假设你只想知道“这份小程序有没有漏掉空输入”，子智能体可以检查相关文件，再返回几条有位置、有理由的问题；主对话不必持续摆着它看过的全部材料。\n\n这个分工像请同事做一次专项审查，但不代表换了一个不会犯错的人。子智能体也会漏读、误解和过度推断。你的验收对象仍然是报告中的证据，而不是“它叫代码审查专家”这个头衔。\n\n**独立上下文也不等于独立文件夹。**默认情况下，子智能体仍在项目环境里工作；如果给了编辑能力，它可能修改你正在看的同一批文件。需要文件副本隔离，是另一个配置问题。对于本章第一次练习，我们只提供读和搜索工具，让任务范围保持清楚。[子智能体官方文档](https://code.claude.com/docs/en/sub-agents)\n\n技能与子智能体可以配合：技能提供步骤，子智能体提供独立执行位置。有的技能也能配置成在子智能体里运行。因此你真正要决定的是“这件事是否需要独立阅读大量材料”，而不是看到任务复杂就堆更多角色。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "agents",
+        "claim": "子代理拥有独立上下文和可配置工具/规则；现行 /agents 不再打开旧创建向导。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sub-agents",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "ebe9b683ff10d7a5acd06426b3cd95961f74918ee6b2cb44f5171f2a66a5e7bb"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:07.730244+00:00"
+}

@@ -19,7 +19,7 @@
 
 
 <!-- diagram: FIG-033 -->
-![两个地方输入的命令](../../assets/illustrations/FIG-033/revisions/r01/zh-CN.png)
+![两个地方输入的命令](../../assets/illustrations/FIG-033/revisions/r02/zh-CN.png)
 
 *图：系统终端中的启动命令与对话中的斜杠命令属于不同入口。*
 <!-- /diagram: FIG-033 -->

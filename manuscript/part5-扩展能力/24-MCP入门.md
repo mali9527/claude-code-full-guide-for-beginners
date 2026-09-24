@@ -39,7 +39,7 @@ Claude Code 本来就有本地文件与命令能力，也能通过其它方式�
 接入外部服务时，至少有三件不同的事：
 
 <!-- diagram: FIG-027 -->
-![连接、账号、动作分三道检查](../../assets/illustrations/FIG-027/revisions/r01/zh-CN.png)
+![连接、账号、动作分三道检查](../../assets/illustrations/FIG-027/revisions/r02/zh-CN.png)
 
 *图：服务连接、账户资格与具体操作权限是三件需要分别核对的事。*
 <!-- /diagram: FIG-027 -->

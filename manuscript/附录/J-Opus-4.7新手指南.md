@@ -40,7 +40,7 @@ Fable 并不意味着“小任务也必须交给它”。它的标准 API 输入
 先退出正在输入的 Claude Code 对话，回到普通终端。Mac 的终端和 Windows 的 PowerShell 都可以输入：
 
 <!-- diagram: FIG-040 -->
-![升级后怎样确认自己在用什么](../../assets/illustrations/FIG-040/revisions/r01/zh-CN.png)
+![升级后怎样确认自己在用什么](../../assets/illustrations/FIG-040/revisions/r02/zh-CN.png)
 
 *图：先核对当前版本、可用模型与账户资格，再决定使用方式。*
 <!-- /diagram: FIG-040 -->

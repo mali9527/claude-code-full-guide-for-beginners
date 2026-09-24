@@ -1,0 +1,168 @@
+{
+  "fingerprint": "603643878979378e31b8acdabe1b1b0a3d50a04cd4b5f9d50e5b137ff4a2a66a",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-036",
+    "unit": "appendix-d",
+    "source_path": "manuscript/附录/D-决策流程图.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "这条信息放在哪里",
+      "reader_question": "如何理解“这条信息放在哪里”？",
+      "takeaway": "临时材料、项目约定与长期操作说明按用途保存。",
+      "source_sections": [
+        "图 5：信息分层决策（该放在哪一层）"
+      ],
+      "placement": "图 5：信息分层决策（该放在哪一层）",
+      "composition": "信息卡经过几个短问题，分到会话、个人说明、项目说明和技能手册。",
+      "content_guard": "不要把一次性信息画成永远不需要保存；流程与调用频率分开。\nThis is a hand-drawn sorting scene: incoming information card sorted into four physical trays, each with a paired category/destination label. It is not a radial mindmap. Show exactly four category pairs, no hierarchy claim.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "临时材料、项目约定与长期操作说明按用途保存。",
+      "source_ids": [
+        "FC-legacy-03"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "这是什么信息？",
+      "本次任务",
+      "会话与任务笔记",
+      "个人约定",
+      "个人说明",
+      "团队规则",
+      "项目说明",
+      "任务流程",
+      "技能手册"
+    ],
+    "sources": [
+      {
+        "heading": "图 5：信息分层决策（该放在哪一层）",
+        "text": "## 图 5：信息分层决策（该放在哪一层）\n\n项目自动记忆默认按项目保存，不是天然的跨项目偏好库。个人规则与团队共享规则分开维护，任务流程放进 Skill。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "memory",
+        "claim": "自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "6b508e25fd451511005e92595963476e5120220c32191aa976cc2d8da2852863"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:23.873954+00:00"
+}

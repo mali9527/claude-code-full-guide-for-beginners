@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "figure": "FIG-039",
+  "input_fingerprint": "43f5e00e47b9b865cd58fc30a3e8297148942c75a091853f833bcddcc410752c",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 14,
+    "chroma_noise_fraction": 1.27e-06,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 1692893,
+    "sha256": "4c11b4fbfa4d6830ec2c1471389c357b0d0cb275ba7b45ce2390ae845d4d95c9"
+  },
+  "tool": "byte-identical reuse for completed Markdown reading review; original generation retained in assets/illustrations/FIG-039/revisions/r01/provenance.json",
+  "model": "unknown",
+  "cost": "unknown",
+  "reference_image_actually_passed": false,
+  "created_at": "2026-09-24T16:15:30.878368+00:00",
+  "reuse": {
+    "from": "assets/illustrations/FIG-039/revisions/r01",
+    "original_image_sha256": "4c11b4fbfa4d6830ec2c1471389c357b0d0cb275ba7b45ce2390ae845d4d95c9",
+    "generation_performed": false,
+    "reason": "Completed review of actual image together with adjacent source paragraph and caption rendered in local Chrome. No image pixels changed."
+  }
+}

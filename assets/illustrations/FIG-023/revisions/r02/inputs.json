@@ -1,0 +1,94 @@
+{
+  "fingerprint": "5b904c1c2cb3070427143e49f60aa96a2450ae591bc60f8e9053de51ee3123e1",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-023",
+    "unit": "ch-20",
+    "source_path": "manuscript/part5-扩展能力/20-Skills入门.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "需要时取出任务手册",
+      "reader_question": "如何理解“需要时取出任务手册”？",
+      "takeaway": "先看技能简介，相关时再读取完整说明。",
+      "source_sections": [
+        "20.1 技能负责一类任务，项目规则负责共同约定"
+      ],
+      "placement": "20.1 技能负责一类任务，项目规则负责共同约定",
+      "composition": "柜门上只有简短目录，选中的手册打开到桌面，展示描述与完整流程的分工。",
+      "content_guard": "不暗示描述不占空间或任务结束后内容立即消失。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "先看技能简介，相关时再读取完整说明。",
+      "source_ids": [
+        "MM-27"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "先看简介",
+      "需要时取用",
+      "展开完整流程",
+      "当前工作台"
+    ],
+    "sources": [
+      {
+        "heading": "20.1 技能负责一类任务，项目规则负责共同约定",
+        "text": "## 20.1 技能负责一类任务，项目规则负责共同约定\n\n**Skill（技能）是一份可重复使用的任务手册**。例如，把会议记录整理成纪要时，你希望分清“已决定”“还在讨论”和“待办”；没说截止日期，就写“待确认”。这些要求每次都一样，值得保存下来。\n\n第 14 章的 `CLAUDE.md` 用来说明项目共同约定，例如“文稿用中文”“引用数据注明出处”。技能则回答“这类任务具体怎么做”。两者可以同时存在。一个项目每天写周报，也可以把周报流程做成技能；判断依据是内容的用途，而不只是使用频率。\n\n技能默认既可以由你输入 `/技能名` 主动调用，也可以由 Claude 根据任务选择。可供选择的描述会占用一部分上下文，正文在调用后才加入；已经加入的内容会随对话保留，**不会在任务结束时立即自动消失**。所以按需加载能减少无关内容，却不等于技能完全不占空间。[技能官方说明](https://code.claude.com/docs/en/skills)\n\n本章先把一个小流程做好。不要从几十个技能包开始：你需要能解释它读什么、产出什么、怎样判错，之后才谈更多功能。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "memory",
+        "claim": "自动记忆默认按项目存放；个人规则、共享说明、会话上下文和自动记忆分别管理。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/memory",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "skills",
+        "claim": "自定义命令已合入 Skills，旧commands文件兼容；技能可自动或手动调用，加载内容仍占上下文。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/skills",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "53e0171fcebe3c2387969ea7270418b9a0791e586fb0a840f83c56532df8c599"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:04.085449+00:00"
+}

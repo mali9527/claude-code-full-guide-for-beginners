@@ -186,7 +186,7 @@
 遇到任何问题按这个顺序试：
 
 <!-- diagram: FIG-038 -->
-![报错时先收集这四样](../../assets/illustrations/FIG-038/revisions/r01/zh-CN.png)
+![报错时先收集这四样](../../assets/illustrations/FIG-038/revisions/r02/zh-CN.png)
 
 *图：保留操作、完整报错、环境和已尝试步骤，才更容易定位问题。*
 <!-- /diagram: FIG-038 -->

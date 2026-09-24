@@ -1,0 +1,119 @@
+{
+  "fingerprint": "3bc7bedb8ccd1e3284ea04cc03addb4be9813940bc6c16ba3df19e8b619044e1",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-001",
+    "unit": "preface",
+    "source_path": "manuscript/00-前言/00-本书怎么读.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "六站阅读路线",
+      "reader_question": "如何理解“六站阅读路线”？",
+      "takeaway": "按六个阶段逐步深入；具体章节和附录仍可按需查阅。",
+      "source_sections": [
+        "0.4 章节地图"
+      ],
+      "placement": "0.4 章节地图",
+      "composition": "一条笔记本上的旅行路线，六个站点只写阶段目标；附录画成旁边的小工具袋。",
+      "content_guard": "不把四十个章节塞回一张图；精确目录仍由正文提供。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "按六个阶段逐步深入；具体章节和附录仍可按需查阅。",
+      "source_ids": [
+        "MM-08"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "从零起步",
+      "日常使用",
+      "理解原理",
+      "避坑判断",
+      "扩展能力",
+      "融入工作"
+    ],
+    "sources": [
+      {
+        "heading": "0.4 章节地图",
+        "text": "## 0.4 章节地图\n\n全书 27 章 + 第 0 章 + 11 个附录，分 6 个部分（前言之后还有一章特别的\"第 0 章\"——讲账号与费用准备）：\n\n| 部分 | 章节 | 讲什么 |\n|------|-----|-------|\n| **前言** | 本书怎么读 + 第 0 章 | 怎么读这本书；**账号、访问资格与费用路径** |\n| **一、从零起步** | Ch 1-4 | 电脑怎么准备、怎么装、第一次对话、Claude Code 是什么 |\n| **二、日常使用** | Ch 5-10 | 读文件、改文件、跑命令、权限机制、审核、信任校准 |\n| **三、深度概念** | Ch 11-15 | 隐私与数据、上下文原理、三层记忆、CLAUDE.md、模型与成本 |\n| **四、避坑与判断力** | Ch 16-19 | 10 大错误、何时停下、常用命令、输入技巧 |\n| **五、扩展能力** | Ch 20-24 | Skills、自定义命令、Subagents、Hooks、MCP |\n| **六、融入日常** | Ch 25-27 | 团队协作、进阶速览、下一步 |\n\n📌 **强烈建议按顺序读**——后面的章节都假设你已经掌握前面的内容。**每章的\"主线\"读完就行，支线可以最后再回来翻**。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "access-account",
+        "claim": "免费 Claude 聊天计划不包含 Claude Code；订阅与 Console/API 是不同访问和计费路径。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/authentication",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-opus",
+        "claim": "Opus 5.5 于 2026-09-22 发布，模型 ID 为 claude-opus-5-5。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fable",
+        "claim": "Fable 5.1 于 2026-09-01 发布，模型 ID 为 claude-fable-5-1。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "f6cf3a969712e0faa864e5ad5b8d908968615e4a2bcf1766210851c282c2be9e"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:14:36.901825+00:00"
+}

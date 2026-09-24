@@ -29,7 +29,7 @@
 **Subagent（子智能体）**是主 Claude 委派出去的专项助手。它在自己的上下文里读取材料，完成后把结果交回来。假设你只想知道“这份小程序有没有漏掉空输入”，子智能体可以检查相关文件，再返回几条有位置、有理由的问题；主对话不必持续摆着它看过的全部材料。
 
 <!-- diagram: FIG-025 -->
-![独立工作台，共享文件柜](../../assets/illustrations/FIG-025/revisions/r01/zh-CN.png)
+![独立工作台，共享文件柜](../../assets/illustrations/FIG-025/revisions/r02/zh-CN.png)
 
 *图：分开任务与上下文，仍需协调共享文件的写入。*
 <!-- /diagram: FIG-025 -->

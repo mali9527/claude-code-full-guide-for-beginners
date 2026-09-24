@@ -21,7 +21,7 @@
 在练习文件夹里放一份 `notes.md`，写下几句普通文字。你可以用文件附件或可用的文件引用功能让 Claude 定位它，但第一次仍应明确文件名，避免依赖“那个文件”这种含糊指代。
 
 <!-- diagram: FIG-039 -->
-![桌面里的一次读、改、查](../../assets/illustrations/FIG-039/revisions/r01/zh-CN.png)
+![桌面里的一次读、改、查](../../assets/illustrations/FIG-039/revisions/r02/zh-CN.png)
 
 *图：用任务、变化与结果三个区域理解桌面工作*
 <!-- /diagram: FIG-039 -->

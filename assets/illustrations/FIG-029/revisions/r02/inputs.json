@@ -1,0 +1,148 @@
+{
+  "fingerprint": "bb528469b8a9eaf4f91b2fb6d3ab5528b1bb5b1ae5c199acb68829eaf59efa1c",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-029",
+    "unit": "ch-26",
+    "source_path": "manuscript/part6-融入日常/26-进阶能力速览.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "界面在哪，任务在哪运行",
+      "reader_question": "如何理解“界面在哪，任务在哪运行”？",
+      "takeaway": "区分代码所在位置、任务执行位置与远程控制入口。",
+      "source_sections": [
+        "26.2 想换个界面，还是想换台机器执行"
+      ],
+      "placement": "26.2 想换个界面，还是想换台机器执行",
+      "composition": "电脑、远端机器和控制窗口分别画成三张情境小卡，用执行标记说明位置。",
+      "content_guard": "具体产品支持范围回到已核验正文，不仅看界面推断运行地点。\nDraw three independent mini-scenes. In 本地操作 a small action mark appears on the local machine. In 远端执行 the action mark appears on a distant server. In 远程控制 the remote viewing device points to a local machine where the action mark appears. Do not equate remote control with cloud execution.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "区分代码所在位置、任务执行位置与远程控制入口。",
+      "source_ids": [
+        "MM-33"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "本地操作",
+      "远端执行",
+      "远程控制",
+      "核对执行地点"
+    ],
+    "sources": [
+      {
+        "heading": "26.2 想换个界面，还是想换台机器执行",
+        "text": "## 26.2 想换个界面，还是想换台机器执行\n\n**Desktop 是图形界面**，适合在一个窗口里看会话、文件和修改差异；具体入门看[附录 H](../附录/H-桌面应用导览.md)。打开桌面应用后也应看清当前会话的执行环境，不能把“在桌面窗口里看到它”理解为“一定在本机运行”。\n\n**Remote Control（远程控制）**让你从手机或浏览器继续本地会话。实际读写仍发生在原来的电脑，相关进程需要继续运行；手机是另一扇控制窗口，不是替电脑接手运行任务的机器。比如你离开书桌想看本地测试结果，可以从当前会话的 `/remote-control` 入口了解是否可用。登录方式、组织策略和接入服务会影响可用性。[远程控制说明](https://code.claude.com/docs/en/remote-control)\n\n**Cloud（云端会话）**则在远端环境执行。它需要取得对应仓库和运行依赖，不会自动拥有你电脑上尚未保存或尚未上传的文件。准备交给云端前，先问“它拿到的是哪份资料”，再问“能运行多久”。只有把输入交代清楚，换运行地点才有意义。[云端工作说明](https://code.claude.com/docs/en/claude-code-on-the-web)\n\n这三者都可以帮你接续工作，但改变的是不同层面。先确定要解决的是“看起来方便”“离开电脑仍能操作”，还是“本机不在线也要执行”，就不容易选错入口。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "agents",
+        "claim": "子代理拥有独立上下文和可配置工具/规则；现行 /agents 不再打开旧创建向导。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/sub-agents",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "desktop",
+        "claim": "桌面 Code 自带引擎；终端/Desktop/Web 功能与配置存在差异；/desktop 可接续至桌面，/teleport 为云会话转终端。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/desktop",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "scheduling",
+        "claim": "CLI /loop 依赖会话，桌面本地计划依赖应用/唤醒状态，云 Routines 不依赖本地开机且受账户开放限制。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/scheduled-tasks",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/routines",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "remote-control",
+        "claim": "Remote Control 保留本机执行位置，不把项目自动搬到云端。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/remote-control",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "09e96fbeb1dc82b0a2296e93f024af27abb5d2508ff9e9497b7fc2a332ceb6b9"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:14.946193+00:00"
+}

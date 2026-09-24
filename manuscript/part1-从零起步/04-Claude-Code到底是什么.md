@@ -31,7 +31,7 @@
 你已经让 Claude Code 读过一份文件，也审核过一次改动。现在可以把这个体验连起来：**它会理解目标，选择工具，查看执行结果，再决定下一步**。工具可能是读取文件、编辑文件、运行命令，也可能是经过你配置的外部服务。
 
 <!-- diagram: FIG-006 -->
-![你定方向，助手动手](../../assets/illustrations/FIG-006/revisions/r01/zh-CN.png)
+![你定方向，助手动手](../../assets/illustrations/FIG-006/revisions/r02/zh-CN.png)
 
 *图：你给出目标和边界，助手执行，结果仍由你核对。*
 <!-- /diagram: FIG-006 -->

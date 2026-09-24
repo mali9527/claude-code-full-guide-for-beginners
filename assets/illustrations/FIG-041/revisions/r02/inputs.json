@@ -1,0 +1,102 @@
+{
+  "fingerprint": "c6e510ae7fc4355e08a184cdd6473479f00753c73148af068aae90151e51596d",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-041",
+    "unit": "appendix-k",
+    "source_path": "manuscript/附录/K-第三方模型接入.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "第三方接入的三条路线",
+      "reader_question": "如何理解“第三方接入的三条路线”？",
+      "takeaway": "第三方接入先分清直连、网关和本地服务，再核对各自条件。",
+      "source_sections": [
+        "K.1 “第三方”至少有三种意思"
+      ],
+      "placement": "K.1 “第三方”至少有三种意思",
+      "composition": "三条手绘连接路线分别到云平台、转发网关、兼容接口；节点名称短且明确。",
+      "content_guard": "兼容接口不自动意味着相同模型、价格和数据处理。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "第三方接入先分清直连、网关和本地服务，再核对各自条件。",
+      "source_ids": [
+        "MM-45"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "云平台",
+      "转发网关",
+      "兼容接口",
+      "核对真实模型"
+    ],
+    "sources": [
+      {
+        "heading": "K.1 “第三方”至少有三种意思",
+        "text": "## K.1 “第三方”至少有三种意思\n\n**第一种是云平台提供 Claude。** Amazon Bedrock、Google Cloud 的 Agent Platform、Microsoft Foundry 等有各自的接入与模型开放条件。模型仍可能是 Claude，但账户、结算、地区和功能支持要按对应部署说明核对，不能直接照搬个人 Pro 订阅的待遇。\n\n**第二种是网关转发 Claude 请求。** 网关是夹在客户端与模型服务之间的一层服务，组织可能用它管理认证、用量和预算。地址虽然换了，实际提供的也可能仍是 Claude。你需要知道凭据属于谁、账单记到哪里，以及网关是否转发所需功能。\n\n**第三种是其他模型供应商提供兼容接口。** 有些供应商发布了在 Claude Code 中使用其模型的文档。但“供应商给出兼容方案”不等于“Anthropic 官方支持所有非 Claude 模型”。Anthropic 当前[网关文档](https://code.claude.com/docs/en/llm-gateway)明确区分了这件事，并说明不支持通过网关把 Claude Code 路由到非 Claude 模型。\n\n所以，如果你采用第三种路线，应把它视为供应商维护的兼容方案，检查其当前支持范围。遇到新版本不兼容，不能保证按照本书主线排错就能解决。没有确定需求时，不必为了便宜的宣传数字先改掉已经正常工作的环境。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "access-account",
+        "claim": "免费 Claude 聊天计划不包含 Claude Code；订阅与 Console/API 是不同访问和计费路径。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/authentication",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "gateway",
+        "claim": "Anthropic不支持通过网关路由到非Claude模型；第三方兼容文档不等于Anthropic官方支持。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/llm-gateway",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://docs.z.ai/devpack/tool/claude",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "account",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "dd7e922a8fd1601acd72b8e769e21569ecb95a38d4906454578feacb7a432a7f"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:32.816814+00:00"
+}

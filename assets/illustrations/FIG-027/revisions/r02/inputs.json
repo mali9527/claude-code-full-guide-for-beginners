@@ -1,0 +1,98 @@
+{
+  "fingerprint": "2402dc0a5687a2879e2d24b7dfd047e53fef156b959083debc8890afb1db2630",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-027",
+    "unit": "ch-24",
+    "source_path": "manuscript/part5-扩展能力/24-MCP入门.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "连接、账号、动作分三道检查",
+      "reader_question": "如何理解“连接、账号、动作分三道检查”？",
+      "takeaway": "服务连接、账户资格与具体操作权限是三件需要分别核对的事。",
+      "source_sections": [
+        "24.2 先把三层权限分开"
+      ],
+      "placement": "24.2 先把三层权限分开",
+      "composition": "扩展坞连接外部资料柜，沿途三个检查卡：地址、账户、动作许可。",
+      "content_guard": "连通不等于资源全可见，也不等于可修改。",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "服务连接、账户资格与具体操作权限是三件需要分别核对的事。",
+      "source_ids": [
+        "MM-31"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "连接地址",
+      "账户范围",
+      "动作许可",
+      "外部服务"
+    ],
+    "sources": [
+      {
+        "heading": "24.2 先把三层权限分开",
+        "text": "## 24.2 先把三层权限分开\n\n接入外部服务时，至少有三件不同的事：\n\n| 层次 | 解决的问题 | 你应该检查什么 |\n|---|---|---|\n| 连接配置 | 去哪里找这个 MCP 服务 | 地址是否来自服务商官方说明 |\n| 账户授权 | 外部系统允许访问哪些资源 | 登录的账户、工作区、允许范围 |\n| 工具许可 | Claude 这次可否执行某个动作 | 调用的是读取、修改还是发送 |\n\n例如连接地址写对了，但账户没授权，就可能显示需要登录；登录成功了，但页面不属于这个账户，又可能找不到；页面能读，也不代表你已经同意向其中发布新内容。遇到错误时按这三层排查，比一看到“权限不足”就扩大所有权限有效。\n\n`OAuth` 是一种通过浏览器登录并确认访问范围的授权方式。你不必把密码复制给 Claude。若某个服务只支持令牌，那是一段代表访问权的秘密字符串，要按服务商说明保管，不能放进公开仓库，也不要作为聊天材料发给模型。[官方 MCP 鉴权说明](https://code.claude.com/docs/en/mcp#authenticate-with-remote-mcp-servers)\n\n最后纠正一个旧说法：`acceptEdits` 主要处理本地文件编辑和相应文件操作，**不是给所有 MCP 工具免确认的总开关**。实际调用还受工具规则、所选模式和组织策略影响。也不能承诺每次外部写入必然弹框；如果曾经授予广泛许可，需要重新查看权限配置。[权限模式](https://code.claude.com/docs/en/permissions#permission-modes)"
+      }
+    ],
+    "facts": [
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "mcp",
+        "claim": "MCP 使用受支持的CLI和配置作用域；项目共享配置 .mcp.json，连接鉴权与工具许可分别确认。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/mcp",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "d3dc1632f104db93ae41b9c4ffa17b6f87c2e489cb6a23104b9214c332f7396c"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:15:11.302181+00:00"
+}

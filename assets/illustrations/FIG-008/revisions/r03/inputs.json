@@ -1,0 +1,99 @@
+{
+  "fingerprint": "f43637177fd30c521e3f559ca2f47da093de6ffde9f6b60dfa667b051654604e",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-008",
+    "unit": "ch-06",
+    "source_path": "manuscript/part2-日常使用/06-让它改文件.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "一眼认出修改前后",
+      "reader_question": "如何理解“一眼认出修改前后”？",
+      "takeaway": "减号与加号区分旧内容和新内容，逐行核对",
+      "source_sections": [
+        "6.1 什么是 diff（修改对比图）"
+      ],
+      "placement": "6.1 什么是 diff（修改对比图）",
+      "composition": "只画两个并排的小纸框，左框标题“修改前”，内部只有一行“- 旧内容”；右框标题“修改后”，内部只有一行“+ 新内容”。左行用单横线轻划，右行用手绘椭圆圈起。两框下方只写“逐行核对”。不要任何其他行、行号、示例文章或命令。",
+      "content_guard": "Only five supplied labels and the title. No extra words, lines of example prose, line numbers, code, footnote or disclaimer.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "减号与加号区分旧内容和新内容，逐行核对",
+      "source_ids": [
+        "MM-13"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "修改前",
+      "修改后",
+      "- 旧内容",
+      "+ 新内容",
+      "逐行核对"
+    ],
+    "sources": [
+      {
+        "heading": "6.1 什么是 diff（修改对比图）",
+        "text": "## 6.1 什么是 diff（修改对比图）\n\n**diff** = difference 的缩写，意思是\"**修改前后的对比**\"。在 Manual 模式且没有预先允许该编辑时，Claude 通常会给你看 diff 并请求确认；其他模式和已保存规则可能允许直接修改。无论是否弹出提示，都应查看最终差异。\n\n### 一个简单 diff 长什么样\n\n假设原文件 `笔记.txt` 内容是：\n\n```\n买菜\n写周报\n给妈打电话\n```\n\n你让 Claude \"每行前加编号\"。它生成的 diff 是：\n\n```\nEdit: 笔记.txt\n\n-  买菜\n-  写周报\n-  给妈打电话\n+  1. 买菜\n+  2. 写周报\n+  3. 给妈打电话\n```\n\n### 怎么读\n\n- **红色 `-` 开头**的行：这行被**删除**或**替换**（旧内容）\n- **绿色 `+` 开头**的行：这行是**新增**或**替换后**（新内容）\n- 没 `-/+` 的行：没变，不用看\n\n> 💡 **一句话记法**：减号是旧的、加号是新的。**你看到的是\"文件即将变成的样子\"**——绿色留下、红色消失。\n\n### 复杂 diff 多一个上下文\n\n文件很大时，Claude 只会显示改动附近的几行（叫\"上下文行\"），省屏幕：\n\n```\nEdit: config.txt\n   ...\n   port: 8080\n-  debug: false\n+  debug: true\n   timeout: 30\n   ...\n```\n\n中间的 `port` 和 `timeout` 行没动（没 `-/+`），显示是为了让你看到改动**在文件的什么位置**。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "permission-modes",
+        "claim": "Manual/default、auto、acceptEdits、plan、dontAsk 等模式与允许/询问/拒绝规则共同影响行为；不能保证每次均询问。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/permissions",
+            "checked_on": "2026-09-24"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/permission-modes",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "checkpoint",
+        "claim": "空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/checkpointing",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "undo",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "6d89b3081c36c8e9db9db4cc97dafb5437d663943795b1037ab777319f302706"
+  },
+  "base_commit": "d71a52f584ab9ecfa50d39b0cbd0f905a736d01b",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-09-24T16:14:44.167690+00:00"
+}

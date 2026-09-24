@@ -23,7 +23,7 @@
 本书采用官方现在推荐的**原生安装**：直接把 Claude Code 程序装到电脑上。这里的“原生”只是安装方式的名字。你不必先学习编程，也不必先装 Node.js——旧版教程把它列为必需品的步骤，已经不适用于这条路线。
 
 <!-- diagram: FIG-004 -->
-![安装到第一次成功的四站](../../assets/illustrations/FIG-004/revisions/r02/zh-CN.png)
+![安装到第一次成功的四站](../../assets/illustrations/FIG-004/revisions/r03/zh-CN.png)
 
 *图：先核对准备条件，再按平台安装、检查结果并进入练习目录。*
 <!-- /diagram: FIG-004 -->
