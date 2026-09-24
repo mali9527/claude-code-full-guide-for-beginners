@@ -464,8 +464,13 @@ def export_pdf(root, source_ref, version, export_id):
                 parts.append(TICK*3 + "{=typst}\n#pagebreak(weak: true)\n" + TICK*3)
             parts.append(body)
         markdown = source / "export.md"; markdown.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
+        # Retain reproducible layout inputs for visual QA without rerendering diagrams.
+        diagnostics = safe_path(root, "build/pdf-work/{}/{}".format(version, export_id))
+        diagnostics.mkdir(parents=True, exist_ok=True)
+        for item in [markdown, source / "tools/pdf-layout.typ"] + list(source.glob("diagram-*.png")):
+            shutil.copy2(item, diagnostics / item.name)
         result_pdf = source / (book["id"] + "-" + version + "-" + export_id + ".pdf")
-        tool_run(["pandoc", str(markdown), "--from=markdown+raw_html+raw_attribute", "--pdf-engine=typst", "--toc", "--toc-depth=2",
+        tool_run(["pandoc", str(markdown), "--from=markdown+raw_html+raw_attribute-citations", "--pdf-engine=typst", "--toc", "--toc-depth=2",
                   "--include-in-header="+str(source / "tools/pdf-layout.typ"),
                   "-V", "page-numbering=1", "-V", "codefont=Sarasa Mono SC",
                   "-V", "mainfont="+font, "-V", "papersize="+pdf_config.get("paper", "a5"),
