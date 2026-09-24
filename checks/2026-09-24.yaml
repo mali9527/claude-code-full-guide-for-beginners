@@ -1,0 +1,1369 @@
+- unit: preface
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: preface
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-00
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/00-前言/01-免费用上Claude-Code.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-00
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/00-前言/01-免费用上Claude-Code.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-01
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-01
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-01
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-02
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-02
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-02
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-03
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-03
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-03
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-04
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-04
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-05
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-05
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-05
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-06
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-06
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-06
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-07
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-07
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-07
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-08
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-08
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-08
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-09
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-09
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-09
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-10
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-10
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-11
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-11
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-11
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-12
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-12
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-12
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-13
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-13
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-13
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-14
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-14
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-14
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-15
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-15
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-15
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-16
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-16
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-16
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-17
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-17
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-17
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-18
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-18
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-18
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-19
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-19
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-19
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-20
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-20
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-20
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-21
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-21
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-21
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-22
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-22
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-22
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-23
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-23
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-23
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。 配套 Hook
+    脚本已通过 15 项本地测试，但未在真实 Claude 会话和 Windows 触发。
+  reason: ''
+- unit: ch-24
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-24
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-24
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-25
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-25
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-25
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-26
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-26
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-26
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: ch-27
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: ch-27
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: ch-27
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-a
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-a
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-a
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-b
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-b
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-b
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-c
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-c
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-c
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-d
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-d
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-d
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-e
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-e
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-e
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-f
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/F-术语表.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-f
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/F-术语表.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-g
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-g
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-g
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-h
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-h
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-h
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-i
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-i
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-j
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-j
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-j
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
+- unit: appendix-k
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: editorial
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 已进行 Codex 修订与同引擎复核；尚缺另一实际引擎审校，未登记为通过。
+  reason: ''
+- unit: appendix-k
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 核对本单元引用的官方资料与 facts.yaml；文档核对不代表真实账号操作或界面实测。
+  reason: ''
+- unit: appendix-k
+  source_commit: 7cbf9c1dfa245f744c2b77f590372c9405d30efe
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-24'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 尚未完成 Mac 与 Windows 的真实账号完整操作路径。维护机版本与帮助检查不能替代安装、登录和模型请求验收。
+  reason: ''
