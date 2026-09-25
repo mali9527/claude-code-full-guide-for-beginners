@@ -1,0 +1,52 @@
+- unit: preface
+  source_commit: 1cdb338b333deba4f3dcf1596bc61473fa049bff
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-26'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按当前任务复核前言用途、模型关系、教学场景、费用边界和阅读分流；未新增实测结果。 同引擎复核，不代表真实账号实测、模型对比测试或真人试读；见
+    docs/2026-09-26阅读入口复核.md。
+  reason: ''
+- unit: preface
+  source_commit: 1cdb338b333deba4f3dcf1596bc61473fa049bff
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-26'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按当前任务复核前言用途、模型关系、教学场景、费用边界和阅读分流；未新增实测结果。 同引擎复核，不代表真实账号实测、模型对比测试或真人试读；见
+    docs/2026-09-26阅读入口复核.md。
+  reason: ''
+- unit: appendix-j
+  source_commit: 1cdb338b333deba4f3dcf1596bc61473fa049bff
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-26'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核附录 J 开场与适用读者的变更；操作、价格、图示和事实登记未变，其余内容沿用既有官方文档核验。 同引擎复核，不代表真实账号实测、模型对比测试或真人试读；见
+    docs/2026-09-26阅读入口复核.md。
+  reason: ''
+- unit: appendix-j
+  source_commit: 1cdb338b333deba4f3dcf1596bc61473fa049bff
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-26'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核附录 J 开场与适用读者的变更；操作、价格、图示和事实登记未变，其余内容沿用既有官方文档核验。 同引擎复核，不代表真实账号实测、模型对比测试或真人试读；见
+    docs/2026-09-26阅读入口复核.md。
+  reason: ''
