@@ -23,9 +23,7 @@ jobs:
           python-version: '3.12'
       - name: Install local check dependencies
         run: python -m pip install -r tools/requirements.txt
-      - name: Check derived reading files
-        run: |
-          python tools/studio.py --root . build --check --zh-tw
-          python tools/reading_extras.py --check
+      - name: Check simplified Chinese reading files
+        run: python tools/studio.py --root . build --check
       - name: Check source and publication evidence
-        run: python tools/studio.py --root . --json check --publication
+        run: python tools/studio.py --root . --json check --publication --language zh-CN

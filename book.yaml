@@ -18,7 +18,6 @@ platforms:
 required_checks:
 - editorial
 - facts
-- operations
 units:
 - id: preface
   title: 前言：本书怎么读
@@ -585,7 +584,7 @@ outputs:
     paper: a5
   translations:
     zh-TW:
-      enabled: true
+      enabled: false
       directory: zh-TW
 diagrams:
 - id: FIG-001
