@@ -1,0 +1,1414 @@
+- unit: preface
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: preface
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-00
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/00-前言/01-免费用上Claude-Code.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-00
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/00-前言/01-免费用上Claude-Code.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-01
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-01
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-01
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-02
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-02
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-02
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-03
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-03
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-03
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-04
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-04
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-05
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-05
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-05
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-06
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-06
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-06
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-07
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-07
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-07
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-08
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-08
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-08
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-09
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-09
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-09
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-10
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-10
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-11
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-11
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-11
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-12
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-12
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-12
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-13
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-13
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-13
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-14
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-14
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-14
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-15
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-15
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-15
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-16
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-16
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-16
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-17
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-17
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-17
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-18
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-18
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-18
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-19
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-19
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-19
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-20
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-20
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-20
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-21
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-21
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-21
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-22
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-22
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-22
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-23
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  - templates/hooks/README.md
+  - templates/hooks/check_markdown.py
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-23
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  - templates/hooks/README.md
+  - templates/hooks/check_markdown.py
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-23
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  - templates/hooks/README.md
+  - templates/hooks/check_markdown.py
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-24
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-24
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-24
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-25
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-25
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-25
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-26
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-26
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-26
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: ch-27
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: ch-27
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: ch-27
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-a
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-a
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-a
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-b
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-b
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-b
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-c
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-c
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-c
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-d
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-d
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-d
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-e
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-e
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-e
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-f
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/F-术语表.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-f
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/F-术语表.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-g
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-g
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-g
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-h
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-h
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-h
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-i
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-i
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-j
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-j
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-j
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
+- unit: appendix-k
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核已纠正源稿、章节与插图关系、简体入口和本轮发行范围；同引擎编辑检查，非跨引擎审校、真人试读或新版 PDF 版面验收。
+  reason: ''
+- unit: appendix-k
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: facts
+  result: pass
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按作者本轮简体发行标准复核当前官方文档、操作说明及适用范围；详见 docs/2026-09-25简体发行复核.md 与同日发布前复核。文档核对通过不等于真实账户或
+    Mac/Windows 操作实测。
+  reason: ''
+- unit: appendix-k
+  source_commit: e963d114771518b777fb2c337db37af772c0070b
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: operations
+  result: unknown
+  checked_on: '2026-09-25'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮按作者明确决定不做 Mac/Windows 真实电脑和登录后会话验收；操作说明改以官方文档复核作为发行依据。本项仍为未测 unknown，不代表实测通过。
+  reason: ''
