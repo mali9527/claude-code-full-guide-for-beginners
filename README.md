@@ -74,7 +74,7 @@
 <!-- studio:release -->
 当前维护稿以本仓库为准。
 
-尚未登记已公开的里程碑版本。
+已公开正文：[v2026.09.1](https://github.com/mali9527/claude-code-full-guide-for-beginners/releases/tag/v2026.09.1)。
 <!-- /studio:release -->
 
 ## 来源、反馈与许可
