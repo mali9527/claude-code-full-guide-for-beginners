@@ -1,0 +1,414 @@
+- unit: preface
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核模型与工作入口关系、任务示例及导读；模型选择建议回读官方总览。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: preface
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核模型与工作入口关系、任务示例及导读；模型选择建议回读官方总览。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-02
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 仅复核新增 Sonnet 5.5 最低版本提示与原 Opus 5.5 基线的衔接；其余安装说明沿用九月复核。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-02
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 仅复核新增 Sonnet 5.5 最低版本提示与原 Opus 5.5 基线的衔接；其余安装说明沿用九月复核。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-03
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 前置安装章只增型号版本提示；本文 /model 入口及旧默认警示与当前配置文档一致，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-03
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 前置安装章只增型号版本提示；本文 /model 入口及旧默认警示与当前配置文档一致，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-05
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 上下文事实日期更新未改变容量与材料范围的关系；回看文件读取相关段落，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-05
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 上下文事实日期更新未改变容量与材料范围的关系；回看文件读取相关段落，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-10
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看长文档遗忘与结果核对段落，新增模型信息未使原信任边界失效；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-10
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看长文档遗忘与结果核对段落，新增模型信息未使原信任边界失效；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-12
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看1M窗口、压缩及实际容量解释；模型窗口事实回读确认，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-12
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看1M窗口、压缩及实际容量解释；模型窗口事实回读确认，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-15
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核四模型比较、版本门槛、effort保存范围、fast上下文费用及三组算术；套餐等未变事实保留原日期。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-15
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核四模型比较、版本门槛、effort保存范围、fast上下文费用及三组算术；套餐等未变事实保留原日期。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-17
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看先查材料再调effort和更换模型的停止判断；与本次模型事实一致，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-17
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看先查材料再调effort和更换模型的停止判断；与本次模型事实一致，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-18
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看/model正常确认保存默认与s仅本次，产品语义仍一致；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-18
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看/model正常确认保存默认与s仅本次，产品语义仍一致；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-27
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看学习路线中模型、effort及付款路径区分；新事实不改变该学习目标，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-27
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看学习路线中模型、effort及付款路径区分；新事实不改变该学习目标，正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-c
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看/model、/effort、/fast命令速查与保存范围，没有新增冲突；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-c
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看/model、/effort、/fast命令速查与保存范围，没有新增冲突；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-d
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看模型决策表、速度成本与上下文分流，无具体旧Sonnet型号需改；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-d
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回看模型决策表、速度成本与上下文分流，无具体旧Sonnet型号需改；正文未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-e
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 将选型条目的Sonnet 5更新为5.5，回看标准API费率与订阅区分；旧价格核对日期保留。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-e
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 将选型条目的Sonnet 5更新为5.5，回看标准API费率与订阅区分；旧价格核对日期保留。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-i
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 模型事实回读未改变官方资料入口的适用性，正文与链接未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-i
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 模型事实回读未改变官方资料入口的适用性，正文与链接未变。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-j
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核Opus定位、费用比较基准、CLI最低版本、思考档位、长任务示例和回退行为；示例非实测。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: appendix-j
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 复核Opus定位、费用比较基准、CLI最低版本、思考档位、长任务示例和回退行为；示例非实测。 本次为差异及影响复核，未变化内容沿用既有有效复核；不表示全章事实重新查证、新规则全书复审、真实账号操作、模型性能比较或真人试读。见
+    docs/2026-10-04模型更新.md。 关联插图仅更换复用修订路径，图片字节、图注及相对位置不变；不代表新增浏览器排版验收。
+  reason: ''
+- unit: ch-04
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回读第4章及第3章差异；前置第3章仅将FIG-005的修订路径从r02改为r03，像素、图注、放置位置和教学内容均未改变，不影响第4章体验回顾与能力/权限区分。第4章正文和事实台账未变，延续原有效复核；本轮只评估前置变化的影响，不代表重新核验全部产品事实或按新读者规则全面复审。
+  reason: ''
+- unit: ch-04
+  source_commit: 6f470bc523f81089dc0e3f739499b5775e5d21d0
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 回读第4章及第3章差异；前置第3章仅将FIG-005的修订路径从r02改为r03，像素、图注、放置位置和教学内容均未改变，不影响第4章体验回顾与能力/权限区分。第4章正文和事实台账未变，延续原有效复核；本轮只评估前置变化的影响，不代表重新核验全部产品事实或按新读者规则全面复审。
+  reason: ''
