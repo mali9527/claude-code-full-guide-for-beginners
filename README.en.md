@@ -1,8 +1,10 @@
 # Claude Code: A Beginner's Guide
 
+**Updated October 2026 · Opus 5.5 · Fable 5.1 · Sonnet 5.5**
+
 **An English overview of a complete Chinese guide.**
 
-Learn to compare source files, edit documents within clear limits, and review what the AI changed. For people with no programming or terminal experience, starting with opening a terminal. Mac and Windows instructions are separate.
+The [opening explains how to choose among these current models](全书.md#preface). Then learn to compare source files, edit documents within clear limits, and review what the AI changed, starting with opening a terminal. No programming or terminal experience is assumed. Mac and Windows instructions are separate; [chapter 15](全书.md#ch-15) and [appendix J](全书.md#appendix-j) cover model selection, thinking effort and costs. Chapter links lead to Chinese text.
 
 **Free to read · 28 chapters, preface and 11 appendices · 42 illustrations**
 

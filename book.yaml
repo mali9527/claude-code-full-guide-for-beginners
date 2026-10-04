@@ -29,6 +29,7 @@ units:
   - access-account
   - model-opus
   - model-fable
+  - model-sonnet
   facts: *id001
   derived_from: null
   required_checks:
