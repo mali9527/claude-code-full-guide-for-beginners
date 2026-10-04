@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "figure": "FIG-017",
+  "input_fingerprint": "ab876dc8ae8f25ea55386d5291a4111850368beeb4323d2524d518e9b9a2511b",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 17,
+    "chroma_noise_fraction": 1.081e-05,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 1700471,
+    "sha256": "f5a3efa197f2af70287f05b7e767f8c9968804aaadc2145c295474419d57a61f"
+  },
+  "tool": "byte-identical reuse after Opus 5.5 source review; no image generation",
+  "model": "unknown",
+  "cost": "unknown",
+  "reference_image_actually_passed": false,
+  "created_at": "2026-10-04T14:37:34.780462+00:00",
+  "reuse": {
+    "from": "assets/illustrations/FIG-017/revisions/r02",
+    "original_image_sha256": "f5a3efa197f2af70287f05b7e767f8c9968804aaadc2145c295474419d57a61f",
+    "generation_performed": false,
+    "reason": "Current image visually inspected with updated source sections. No model version or price inside these diagrams changed. Image bytes retained; dated fact/source evidence renewed."
+  }
+}

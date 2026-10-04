@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-10-04",
+  "image_sha256": "a03ea563269172a1850b47370e07b4913c5f27ee8b9042977fe0b53808023590",
+  "input_fingerprint": "4382888f8d53c0563406e7c85c2ba13b8d1b3b7be46253d219385850b26219f2",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass",
+  "scope": "Actually viewed the image, reread updated source section and caption, and verified unchanged relative placement. Byte-identical reuse; no image generation. Prior rendered placement review retained because only the revision path changes in the diagram block.",
+  "placement_basis": "assets/illustrations/FIG-004/revisions/r03/review.json",
+  "limitations": "Fresh local-browser preview was blocked by browser URL policy; no new browser rendering, GitHub CSS or PDF proof claimed. Actual product UI and account operation tests remain unverified."
+}

@@ -31,7 +31,7 @@
 想象你身边有一个很聪明的实习生，叫 Claude。他**脑容量有限**（就像人的短期记忆），当前能处理的材料有容量限制；这个比喻帮助理解“当前工作材料”，不能用一本小册子的大小推算模型容量。
 
 <!-- diagram: FIG-014 -->
-![上下文像当前工作桌](../../assets/illustrations/FIG-014/revisions/r02/zh-CN.png)
+![上下文像当前工作桌](../../assets/illustrations/FIG-014/revisions/r03/zh-CN.png)
 
 *图：当前任务只摊开相关材料；整理会话不等于删除磁盘文件。*
 <!-- /diagram: FIG-014 -->
