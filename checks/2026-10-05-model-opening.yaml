@@ -1,0 +1,24 @@
+- unit: preface
+  source_commit: 889b173d918edb1c8055f5f49c2b34f69ce3d0b5
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-05'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 仅复核前言开篇新增三模型用途、既有例子的衔接及README中英入口。模型定位回读官方overview，Sonnet沿用已登记事实；不新增价格或实测断言。前言其余内容沿用有效历史复核，未声称全书按新规则重新审校。FIG-001已实际查看并原字节复用，图注、位置和章节地图未改；未新增浏览器排版验收。
+  reason: ''
+- unit: preface
+  source_commit: 889b173d918edb1c8055f5f49c2b34f69ce3d0b5
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-10-05'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 仅复核前言开篇新增三模型用途、既有例子的衔接及README中英入口。模型定位回读官方overview，Sonnet沿用已登记事实；不新增价格或实测断言。前言其余内容沿用有效历史复核，未声称全书按新规则重新审校。FIG-001已实际查看并原字节复用，图注、位置和章节地图未改；未新增浏览器排版验收。
+  reason: ''
