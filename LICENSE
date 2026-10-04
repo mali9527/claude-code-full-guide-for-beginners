@@ -2,76 +2,93 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 
 Copyright (c) 2026 马力 (Ma Li) · GitHub: @mali9527
 
-This work — including all Markdown manuscript, illustrations (Mermaid
-source + PNG renders), and ancillary documentation in this repository —
-is licensed under the Creative Commons
-Attribution-NonCommercial-ShareAlike 4.0 International License
-("CC BY-NC-SA 4.0").
+本书采用知识共享署名—非商业性使用—相同方式共享 4.0 国际许可协议
+（CC BY-NC-SA 4.0）。以下说明界定本项目的适用范围并帮助阅读，
+不替代或修改官方许可法律文本。
 
-=======================================================================
-SUMMARY (for humans — the binding terms are in the full legal code)
-=======================================================================
+SCOPE / 适用范围
 
-You are free to:
+在许可人有权授权的范围内，本许可适用于本仓库的原创图书正文、案例、
+教学插图及其源文件、配套文档，以及既有许可已覆盖的原创配套 Python
+脚本（例如构建脚本）。其他代码沿用已有许可，未单独许可者不因本说明
+获得新增软件授权。
+另有许可声明的第三方材料、软件和依赖继续适用各自原有许可。
 
-  * SHARE — copy and redistribute the material in any medium or format
-  * ADAPT — remix, transform, and build upon the material
+To the extent the licensor controls the relevant rights, the original book
+text, examples, teaching illustrations and their source files, accompanying
+documentation, and first-party ancillary Python scripts already covered by
+the existing license (such as build scripts) in this repository are licensed
+under CC BY-NC-SA 4.0. Other code retains its existing license; this notice
+grants no new software permissions for code without a separate license.
+Third-party materials, software and dependencies with separate notices
+retain their own licenses.
 
-Under the following terms:
+SHARING AND ADAPTATION / 分享与改编
 
-  * ATTRIBUTION — You must give appropriate credit to the original
-    author, provide a link to this repository and to the license, and
-    indicate if changes were made. You may do so in any reasonable
-    manner, but not in any way that suggests the licensor endorses you
-    or your use.
+你可以依本许可分享、翻译和改编上述材料，但须适当署名、提供许可链接、
+标明修改，并且仅用于非商业目的。分享改编作品时，须按本许可的
+相同方式共享条款办理，不得施加限制他人行使许可权利的额外法律或技术限制。
 
-  * NONCOMMERCIAL — You may not use the material for commercial
-    purposes. This includes (but is not limited to) selling the book,
-    bundling it as paid training material, or packaging it into a paid
-    course without explicit written permission from the author.
+本许可不授权商业利用本书正文、教学图或其他受许可材料，包括出售书稿、
+将其作为收费培训资料或打包进付费课程。本声明不授予额外商用许可；
+超出许可范围且无法定例外适用的使用，须另行取得相应权利人的授权。
 
-  * SHAREALIKE — If you remix, transform, or build upon the material,
-    you must distribute your contributions under the same license
-    (CC BY-NC-SA 4.0) as the original.
+You may share, translate and adapt the covered material for noncommercial
+purposes, with appropriate attribution, a license link and an indication of
+changes. When sharing adaptations, follow the license's ShareAlike terms.
+Do not impose additional legal or technological restrictions on the rights
+the license grants.
 
-  * NO ADDITIONAL RESTRICTIONS — You may not apply legal terms or
-    technological measures that legally restrict others from doing
-    anything the license permits.
+This license does not authorize commercial exploitation of the book text,
+teaching illustrations or other covered material, including selling the
+book or incorporating it into paid training materials or courses. This
+notice grants no additional commercial permission. Uses outside the
+license that are not covered by a legal exception require separate
+permission from the relevant rights holder.
 
-=======================================================================
-NOTES SPECIFIC TO THIS PROJECT
-=======================================================================
+LEARNING AND LEGAL EXCEPTIONS / 学习方法与法定例外
 
-* Ancillary Python scripts in this repository (e.g. build scripts) are
-  a minor non-substantive part of the work and also fall under
-  CC BY-NC-SA 4.0 for simplicity. If you need them under a
-  permissive code license for reuse, open an Issue to request.
+阅读本书、学习其中的方法并将所学用于自己的工作，不等于复制或商业利用
+本书的表达内容。若复制、分发或改编本书文字、图片或代码，仍须按相关
+许可及适用法律判断。许可不限制不受版权保护的思想、方法或事实，
+也不排除适用法律规定的合理使用、合理处理等例外与限制。
+是否适用这些例外取决于具体情况，不能仅凭引用长短作出保证。
 
-* Translation into other languages is explicitly welcomed and falls
-  under "Adapt" above. The translated work must remain under
-  CC BY-NC-SA 4.0 and credit this repository.
+Reading the book and applying what you learn to your own work is not, by
+itself, reproduction or commercial exploitation of the book's expression.
+Copying, distributing or adapting its text, images or code remains subject
+to the applicable license and law. The license does not restrict ideas,
+methods or facts that are not protected by copyright, or displace legal
+exceptions and limitations such as fair use or fair dealing. Their
+application depends on the circumstances, not merely the length quoted.
 
-* Quoting short excerpts (a paragraph or two) for reviews, blog posts,
-  or educational discussion is always permitted under fair use / fair
-  dealing and requires only normal attribution.
+BRANDING AND THIRD-PARTY RIGHTS / 品牌与第三方权利
 
-* Commercial licensing is available. If you want to use this material
-  in a paid product, contact the author 马力 (Ma Li) via GitHub —
-  open an Issue at
-  https://github.com/mali9527/claude-code-full-guide-for-beginners/issues
-  or DM @mali9527 on GitHub.
+作者姓名、头像和品牌标识的展示，不代表作者为使用者、产品或服务背书。
+本版权许可不授予独立的商标、肖像、隐私或其他人格权许可，也不授予将
+作者头像或品牌作为商业背书使用的权利。依许可进行正常署名不因此受限。
 
-=======================================================================
-FULL LEGAL CODE
-=======================================================================
+引用、链接或致谢不改变第三方材料的权利归属和许可。第三方材料须保留
+适用的来源与许可说明，不能仅因收入本仓库就改用本项目许可。
+以上范围说明不撤回或缩减此前已有效授予的许可权利。
 
-The full legal text of CC BY-NC-SA 4.0 is authoritative and lives at:
+Displaying the author's name, portrait or branding does not imply
+endorsement of a person, product or service. This copyright license grants
+no separate trademark, publicity, privacy or other personality rights,
+and no right to use the author's portrait or branding as a commercial
+endorsement. Attribution permitted by the license remains permitted.
 
-  https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+Citation, linking and acknowledgement do not change third-party rights or
+licenses. Preserve applicable source and license notices; inclusion in
+this repository does not relicense third-party material. These scope
+clarifications do not revoke or narrow rights validly granted previously.
 
-A human-readable summary (informative, not binding) lives at:
+AUTHORITATIVE LICENSE / 官方许可文本
 
-  https://creativecommons.org/licenses/by-nc-sa/4.0/
+The official legal code governs if this explanatory notice conflicts with it.
+本说明与官方许可法律文本冲突时，以官方法律文本为准。
 
-If any conflict arises between this summary and the full legal code at
-the URL above, the full legal code governs.
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+Human-readable summary / 许可摘要：
+https://creativecommons.org/licenses/by-nc-sa/4.0/

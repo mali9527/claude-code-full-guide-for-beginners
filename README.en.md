@@ -54,4 +54,6 @@ Choose **Watch → Custom → Releases** for version notifications. [Report a co
 
 For a desktop-app introduction to another tool, see [Codex for Complete Beginners](https://github.com/mali9527/codex-full-guide-for-beginners), also with a complete Chinese book and an English overview.
 
-[Releases](https://github.com/mali9527/claude-code-full-guide-for-beginners/releases) preserve fixed editions. Only Simplified Chinese is fully published; the Traditional Chinese preview has not completed language review. © 2026 Ma Li. Licensed under [CC BY-NC-SA 4.0](LICENSE): attribution, noncommercial use and share-alike conditions apply.
+[Releases](https://github.com/mali9527/claude-code-full-guide-for-beginners/releases) preserve fixed editions. Only Simplified Chinese is fully published; the Traditional Chinese preview has not completed language review.
+
+© 2026 Ma Li. Original book text and teaching illustrations are licensed under [CC BY-NC-SA 4.0](LICENSE): attribution, noncommercial use and ShareAlike conditions apply. This does not authorize selling the book or packaging it into paid courses. Applying what you learn to your own work is not, by itself, commercial exploitation of the book. See the license for companion code, branding, third-party materials and legal exceptions.
