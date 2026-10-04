@@ -1,0 +1,26 @@
+- unit: appendix-i
+  source_commit: 576085aad786a8d1ead8d2a9e76fe432cf08fe54
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  - LICENSE
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮完整回读附录I，复核其引用LICENSE的许可范围及第三方来源声明；正文未改，原有资料核验日期保留。本项仅覆盖许可附件变化，不代表全章资料更新、跨引擎审核、真人试读或操作实测。
+  reason: ''
+- unit: appendix-i
+  source_commit: 576085aad786a8d1ead8d2a9e76fe432cf08fe54
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  - LICENSE
+  kind: facts
+  result: pass
+  checked_on: '2026-10-04'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按CC BY-NC-SA 4.0官方条款与作者决定核对本书非商业许可；回读附录I，确认本书许可与第三方原有许可区分一致。未重新核验产品资料、上游版本号或文章发布日期，这些事实沿用既有记录与日期；不代表全书事实更新或真实操作实测。
+  reason: ''
