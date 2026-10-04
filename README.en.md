@@ -40,7 +40,7 @@ All chapter links lead to Chinese text. The [complete chapter list](README.md#�
 
 The book is free to read; account access and model usage may incur separate costs. Start with [account options](全书.md#ch-00).
 
-The September 2026 edition covers Opus 5.5 and Fable 5.1. Full-book documentation checks ran through September 25, with selected introductions reviewed on September 26. Full real-account walkthroughs on Mac and Windows have not been completed. See [verification scope (Chinese)](docs/版本与核验说明.md) and [sources (Chinese)](全书.md#appendix-i).
+The October 4 model update expands Opus 5.5 guidance on effort, long tasks, and fast-mode costs, and adds a Sonnet 5.5 comparison. The full-book documentation baseline remains September 25; see the [scope of this update (Chinese)](docs/2026-10-04模型更新.md). Full real-account walkthroughs on Mac and Windows have not been completed. See [verification scope (Chinese)](docs/版本与核验说明.md) and [sources (Chinese)](全书.md#appendix-i).
 
 ## Share or improve it
 

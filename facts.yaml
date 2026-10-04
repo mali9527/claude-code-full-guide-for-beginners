@@ -59,8 +59,8 @@
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://platform.claude.com/docs/en/models/opus-5-5/overview
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: startup
   ttl_days: 90
   status: confirmed
@@ -79,56 +79,55 @@
   status: confirmed
   critical: true
 - id: model-minimum
-  claim: 本书新模型共同 CLI 基线选用 2.1.280+；账户和接入仍影响模型开放。
+  claim: Opus 5.5 的 CLI 最低版本为 2.1.280；Sonnet 5.5 为 2.1.284；Fable 5.1 为 2.1.257。账户、组织和提供方仍影响开放。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/model-config
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: model-pricing
-  claim: 标准 API 输入/输出美元每百万 token：Opus 5.5 4/20，Fable 5.1 10/50，Sonnet 5 2/10，Haiku
-    4.5 1/5；不含其他计价项目。
+  claim: 标准 API 输入/输出/缓存读取美元每百万 token：Opus 5.5 为 4/20/0.20，Fable 5.1 为 10/50/0.25，Sonnet 5.5 为 2/10/0.20，Haiku 4.5 为 1/5/0.10；不含缓存写入等其他项目。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://platform.claude.com/docs/en/about-claude/pricing
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: price
   ttl_days: 90
   status: confirmed
   critical: true
 - id: model-effort
-  claim: Opus 5.5 默认 medium，Fable 5.1 默认 high；effort 与模型、权限模式分开设置。
+  claim: Opus 5.5 默认 medium，Fable 5.1 默认 high；实际档位受显式选择和配置影响。Claude Code 交互式 /effort medium 保存该模型默认，选择器 s 仅本次，max 通常仅本次；组织可限制上限。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
-  - url: https://platform.claude.com/docs/en/build-with-claude/effort
-    checked_on: '2026-09-24'
   - url: https://code.claude.com/docs/en/model-config
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: quota
   ttl_days: 90
   status: confirmed
   critical: true
 - id: model-fast
-  claim: Opus 5.5 fast 标准输入/输出为 8/40 美元每百万 token；订阅通过 usage credits 支付，非免费加速。
+  claim: Opus 5.5 fast 标准输入/输出为 8/40 美元每百万 token；订阅通过 usage credits 支付。同一会话首次开启按快速模式未缓存输入价处理完整上下文，后续开关不重复该次成本。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/fast-mode
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: price
   ttl_days: 90
   status: confirmed
@@ -157,10 +156,10 @@
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/model-config
-    checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
   - url: https://platform.claude.com/docs/en/models/overview
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: quota
   ttl_days: 90
   status: confirmed
@@ -172,23 +171,21 @@
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/model-config
-    checked_on: '2026-09-24'
-  - url: https://code.claude.com/docs/en/commands
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: model-fallback
-  claim: Opus 5.5 特定请求可能按服务规则转其他模型，并显示提示；不能把最初选项等同全部回答模型。
+  claim: Opus 5.5 特定请求可能按服务规则转其他模型并显示提示；回退后选择可能停留在回退模型。检查可涉及随请求带入的资料，不能把最初选项等同全部回答模型。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://support.claude.com/en/articles/16049681-why-claude-switched-models-in-your-conversation-with-opus-5-or-opus-5-5
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
   category: startup
   ttl_days: 90
   status: confirmed
@@ -447,6 +444,47 @@
     checked_on: '2026-09-25'
   checked_on: '2026-09-25'
   category: permission
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-sonnet
+  claim: Sonnet 5.5 于 2026-09-28 发布，Claude API ID 为 claude-sonnet-5-5；官方定位为边界明确的日常任务、速度与成本选择。
+  scope:
+    product: claude-code
+    plan: 官方文档范围；API费率、Claude Code设置与订阅分开
+  sources:
+  - url: https://www.anthropic.com/claude-sonnet-5-5
+    checked_on: '2026-10-04'
+  - url: https://platform.claude.com/docs/en/models/overview
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-opus-guidance
+  claim: 官方建议 Opus 5.5 从 medium 评估任务；长任务的进度汇报不能证明完成，跨应用工作可明确材料查找范围。这些为文档建议，不是本书实测。
+  scope:
+    product: claude-code
+    plan: 官方文档范围；API费率、Claude Code设置与订阅分开
+  sources:
+  - url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-opus-cost-comparison
+  claim: Opus 5.5 普通输入/输出单价较 Opus 5 低20%；官方典型任务约低40%是费率和消耗合并的估计，不保证每次任务或订阅月费同比下降。
+  scope:
+    product: claude-code
+    plan: 官方文档范围；API费率、Claude Code设置与订阅分开
+  sources:
+  - url: https://www.anthropic.com/claude-opus-5-5
+    checked_on: '2026-10-04'
+  checked_on: '2026-10-04'
+  category: price
   ttl_days: 90
   status: confirmed
   critical: true

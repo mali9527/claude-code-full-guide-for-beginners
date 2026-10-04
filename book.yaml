@@ -254,6 +254,8 @@ units:
   - model-context
   - model-select
   - command-current
+  - model-minimum
+  - model-sonnet
   facts: *id017
   derived_from: null
 - id: ch-16
@@ -481,6 +483,7 @@ units:
   - sessions
   - model-pricing
   - skills
+  - model-sonnet
   facts: *id034
   derived_from: null
 - id: appendix-f
@@ -561,6 +564,8 @@ units:
   - model-fallback
   - model-select
   - model-context
+  - model-opus-guidance
+  - model-opus-cost-comparison
   facts: *id039
   derived_from: null
 - id: appendix-k
