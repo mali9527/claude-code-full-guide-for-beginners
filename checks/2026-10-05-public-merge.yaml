@@ -1,0 +1,26 @@
+- unit: appendix-i
+  source_commit: 407199da415e6dcb474b353811b5e8abc8e08f6d
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  - LICENSE
+  kind: editorial
+  result: pass
+  checked_on: '2026-10-05'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮回读附录I，合并已公开的许可说明与本轮模型事实更新；两边已完成的复核在本合并提交上同时成立。正文未改；LICENSE与公开main的4a94db8保持相同字节，第三方来源与本书许可仍明确区分；模型资料入口与已更新facts一致。仅为合并影响复核，未重新检索整章外部资料、重做法律审查、实际操作或真人试读。
+  reason: ''
+- unit: appendix-i
+  source_commit: 407199da415e6dcb474b353811b5e8abc8e08f6d
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  - LICENSE
+  kind: facts
+  result: pass
+  checked_on: '2026-10-05'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 本轮回读附录I，合并已公开的许可说明与本轮模型事实更新；两边已完成的复核在本合并提交上同时成立。正文未改；LICENSE与公开main的4a94db8保持相同字节，第三方来源与本书许可仍明确区分；模型资料入口与已更新facts一致。仅为合并影响复核，未重新检索整章外部资料、重做法律审查、实际操作或真人试读。
+  reason: ''
