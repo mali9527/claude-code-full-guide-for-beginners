@@ -1,0 +1,2 @@
+# Publishing tools support the book; exclude them from repository language statistics.
+/tools/** linguist-vendored

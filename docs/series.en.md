@@ -7,6 +7,7 @@ Practical guides for people who want to use AI in everyday work. Each title has 
 | Guide | Read | Language availability |
 |---|---|---|
 | Claude Code: A Beginner's Guide | [English overview](../README.en.md) · [Chinese guide](../README.md) | Full guide in Simplified Chinese; English overview only |
+| Codex for Complete Beginners | [English overview](https://github.com/mali9527/codex-full-guide-for-beginners/blob/main/README.en.md) · [Chinese book](https://github.com/mali9527/codex-full-guide-for-beginners/blob/main/%E5%85%A8%E4%B9%A6.md) | Full guide in Simplified Chinese; English overview only |
 
 Only published reading entries appear here. Future titles and complete translations will be added when they are available.
 
