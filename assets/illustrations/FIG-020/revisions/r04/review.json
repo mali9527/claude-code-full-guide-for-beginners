@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "0d522af0bcfbf81a9682f8447169046c8433c334b7c0a43266d13a0b0ce044cb",
+  "input_fingerprint": "cfee6019377d7d754c63ef9ad3533a6bff83db7493a5b2951810f93a2bb2df3e",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。连续受阻时先停下来整理证据，再选择下一条路径。",
+  "placement_basis": "assets/illustrations/FIG-020/revisions/r03/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

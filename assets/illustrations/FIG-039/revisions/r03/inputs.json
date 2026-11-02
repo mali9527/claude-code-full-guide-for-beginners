@@ -1,0 +1,131 @@
+{
+  "fingerprint": "e8744853d09289764bc8e069ab083ba3195eee7d06f42eb81e12297be7a8f53b",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-039",
+    "unit": "appendix-h",
+    "source_path": "manuscript/附录/H-桌面应用导览.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "桌面里的一次读、改、查",
+      "reader_question": "如何理解“桌面里的一次读、改、查”？",
+      "takeaway": "用任务、变化与结果三个区域理解桌面工作",
+      "source_sections": [
+        "H.2 第一次只做“读、改、查”三个动作"
+      ],
+      "placement": "H.2 第一次只做“读、改、查”三个动作",
+      "composition": "手绘桌面示意只画项目、对话和结果三个任务区域，配三个短动作。",
+      "content_guard": "具体位置需真实来源；来源不足时保持概念示意，不猜按钮。\n Simplify the interface to the described regions only. No invented commands or outputs.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "用任务、变化与结果三个区域理解桌面工作",
+      "source_ids": [
+        "MM-42"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "项目材料",
+      "对话任务",
+      "结果核对",
+      "读",
+      "改",
+      "查"
+    ],
+    "sources": [
+      {
+        "heading": "H.2 第一次只做“读、改、查”三个动作",
+        "text": "## H.2 第一次只做“读、改、查”三个动作\n\n在练习文件夹里放一份 `notes.md`，写下几句普通文字。你可以用文件附件或可用的文件引用功能让 Claude 定位它，但第一次仍应明确文件名，避免依赖“那个文件”这种含糊指代。\n\n**先读。**告诉它：“只读 notes.md，用两句话说明内容，不修改。”核对它是否读了指定文件，有没有把文件以外的信息说成原文。这与第 5 章是同一种练习，只是换了入口。\n\n**再改。**提出小范围要求：“把第二段改成三条列表，保持意思，不新增事实。”观察权限提示和修改差异。差异视图中，新增与删除通常有不同标识；逐段检查变化，再决定是否接受或继续修订。不要把“模型说改好了”代替对实际文件的查看。\n\n**最后查。**打开改完的文件，确认段落和列表符合要求；如果它修改了不该改的部分，让它只撤销那部分。保存版本或保留修改前副本，后续试验才有比较基础。\n\n桌面应用提供侧栏会话、差异检查、终端与文件编辑等工作区域，但布局会变化，本附录不把某个像素位置写成固定步骤。功能找不到时，查 [Desktop 官方参考](https://code.claude.com/docs/en/desktop)，并先核对你当前的环境是否支持。这里描述的是文档核验后的操作路线，不冒充每个平台都已完成真人点击测试。\n\n**想看见文件变成什么样，可以再做一个网页练习。** 在桌面的 Local 会话里说：“把这三条笔记排成一页，另存为 notes.html，保留 notes.md。”点开回复里的 HTML 文件路径，核对页面有三条、顺序一致，再打开原文件看它是否保留。只输出三行预览文字，还不能证明文件已经生成。SSH 会话没有同样的 Browser 工具。[本地预览的入口和条件](https://code.claude.com/docs/en/desktop#preview-your-app)"
+      }
+    ],
+    "facts": [
+      {
+        "id": "desktop",
+        "claim": "桌面 Code 自带引擎，选环境可区分本机或云端。统一对话与 Code 的账户入口仍需辨认。本地 Code 会话中可打开 HTML 路径预览；SSH 会话的 Browser 工具受限。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/desktop",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/desktop-quickstart",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://claude.com/resources/articles/cowork-is-now-claude",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "scheduling",
+        "claim": "CLI /loop 与会话有关。桌面本地计划依赖应用，恢复时只补最近七天内符合条件的最近一次。云端计划任务旧称 Routines，可由 /schedule 管理，不要求原机开机。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/routines",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/scheduled-tasks",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "remote-control",
+        "claim": "Remote Control 由原机执行，需要符合条件的订阅登录，单独 API Key 不适用。Team 或 Enterprise 需要管理设置开放。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/remote-control",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "permission",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "67063a9b94f660514cdfd19c946c0fde62392808f9df22c74a492be9a06f054b"
+  },
+  "base_commit": "35ed1c243aaebdcc389fa60cf4049ee460e63ef4",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-11-02T11:33:39.817706+00:00"
+}

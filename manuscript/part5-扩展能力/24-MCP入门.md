@@ -6,7 +6,7 @@
 >
 > **学完能做什么**：分清连接配置、账户授权和工具许可，用官方说明接入一个服务，并知道怎样移除。
 >
-> **核验日期**：2026-09-24。示例选用 Notion 官方远程 MCP；有该服务账户时再操作。
+> 基础资料核对于 2026-09-24，本轮变化复核于 2026-11-02。示例选用 Notion 官方远程 MCP；有该服务账户时再操作。
 
 ---
 
@@ -39,7 +39,7 @@ Claude Code 本来就有本地文件与命令能力，也能通过其它方式�
 接入外部服务时，至少有三件不同的事：
 
 <!-- diagram: FIG-027 -->
-![连接、账号、动作分三道检查](../../assets/illustrations/FIG-027/revisions/r02/zh-CN.png)
+![连接、账号、动作分三道检查](../../assets/illustrations/FIG-027/revisions/r03/zh-CN.png)
 
 *图：服务连接、账户资格与具体操作权限是三件需要分别核对的事。*
 <!-- /diagram: FIG-027 -->
@@ -91,6 +91,8 @@ Claude Code 会根据安装时的 `scope`，也就是**配置范围**，把信�
 不要再按旧版示例创建 `~/.claude/mcp_servers.json`，那不是这里的配置入口。也不要把 MCP 的 local 范围，与一般本地设置文件 `.claude/settings.local.json` 混为一谈。[配置范围说明](https://code.claude.com/docs/en/mcp#choose-the-right-scope)
 
 项目的 `.mcp.json` 可以用于共享**不含秘密的连接定义**，每个人仍需完成自己账户的授权。并不是所有 MCP 配置都禁止提交，也不是只要叫项目配置就能放心公开。分享前打开文件检查：如果里面直接写了令牌、密码或个人内部地址，先处理这些内容。
+
+还要区分**读取连接定义**、**获得服务账户授权**和**批准具体工具调用**。普通交互会话使用项目 `.mcp.json` 前会请求批准；`claude -p`、Agent SDK 等没有这一批准界面时，会加载项目服务定义。团队若把同一仓库交给脚本运行，应在运行前查看文件里会连接哪些服务、启动哪些程序。[项目范围与批准](https://code.claude.com/docs/en/mcp#choose-the-right-scope)
 
 平时优先通过命令管理，不必手改用户配置大文件。可以在系统终端运行 `claude mcp get book-notion` 查看定义；练习结束要移除本次 local 连接，运行：
 

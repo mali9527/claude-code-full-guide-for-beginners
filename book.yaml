@@ -5,8 +5,8 @@ language: zh-CN
 product: claude-code
 audience: 不会编程、没用过终端的普通人
 baseline:
-  product_version: Claude Code >=2.1.280; Opus 5.5; Fable 5.1
-  checked_on: '2026-09-24'
+  product_version: Claude Code 2.1.316（本轮差异核对）
+  checked_on: '2026-11-02'
 repository:
   name: mali9527/claude-code-full-guide-for-beginners
   default_branch: main
@@ -30,6 +30,7 @@ units:
   - model-opus
   - model-fable
   - model-sonnet
+  - model-haiku
   facts: *id001
   derived_from: null
   required_checks:
@@ -45,6 +46,7 @@ units:
   - access-account
   - model-plan
   - gateway
+  - api-credit
   facts: *id002
   derived_from: null
   required_checks:
@@ -89,6 +91,7 @@ units:
   - permission-modes
   - command-current
   - model-select
+  - permission-auto
   facts: *id005
   derived_from: null
 - id: ch-04
@@ -257,6 +260,8 @@ units:
   - command-current
   - model-minimum
   - model-sonnet
+  - model-haiku
+  - api-credit
   facts: *id017
   derived_from: null
 - id: ch-16
@@ -389,6 +394,7 @@ units:
   - mcp
   - instructions
   - permission-modes
+  - local-review
   facts: *id027
   derived_from: null
 - id: ch-26
@@ -405,6 +411,8 @@ units:
   - scheduling
   - remote-control
   - agents
+  - goal
+  - mcp
   facts: *id028
   derived_from: null
 - id: ch-27
@@ -455,6 +463,7 @@ units:
   - skills
   - agents
   - scheduling
+  - goal
   facts: *id032
   derived_from: null
 - id: appendix-d
@@ -485,6 +494,7 @@ units:
   - model-pricing
   - skills
   - model-sonnet
+  - api-credit
   facts: *id034
   derived_from: null
 - id: appendix-f
@@ -567,6 +577,7 @@ units:
   - model-context
   - model-opus-guidance
   - model-opus-cost-comparison
+  - model-haiku
   facts: *id039
   derived_from: null
 - id: appendix-k

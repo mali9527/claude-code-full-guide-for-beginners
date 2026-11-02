@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "4c11b4fbfa4d6830ec2c1471389c357b0d0cb275ba7b45ce2390ae845d4d95c9",
+  "input_fingerprint": "e8744853d09289764bc8e069ab083ba3195eee7d06f42eb81e12297be7a8f53b",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。用任务、变化与结果三个区域理解桌面工作",
+  "placement_basis": "assets/illustrations/FIG-039/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

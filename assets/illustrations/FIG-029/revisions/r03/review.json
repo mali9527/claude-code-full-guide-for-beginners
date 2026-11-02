@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "ce3cbea97f3afd344cc12bcd19ddb8a23d7c0af135ae26064e999c65958bb341",
+  "input_fingerprint": "bb83fce4f3bfc2938aa78a1b345fb4739534e00a5b0f6a9ad1ea2de61f47a976",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。区分代码所在位置、任务执行位置与远程控制入口。",
+  "placement_basis": "assets/illustrations/FIG-029/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

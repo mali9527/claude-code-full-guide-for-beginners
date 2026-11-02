@@ -39,10 +39,7 @@
 
 ### `Authentication failed` / 401
 
-**原因**：token 过期 / 输错 / 没权限。
-**怎么办**：
-- `/logout` 然后 `/login` 重新登录
-- 订阅用户确认计划有效；API 或网关用户核对实际提供方、凭据状态与模型权限，不用购买聊天订阅解决 API 鉴权问题
+先用 `/status` 确认实际生效的凭据和服务域名，保留脱敏的完整错误文字。若是 Claude 订阅登录被拒，核对账号与组织，必要时重新登录。若显示已生效的 API Key 或网关凭据，去拥有这把 Key 的服务方核对状态和权限。网关给出的 401 要从网关处理；反复 `/login` 不会换掉那把凭据。[官方 401 错误参考](https://code.claude.com/docs/en/errors#api-error-401-invalid-authentication-credentials)
 
 ### `Unable to connect to api.anthropic.com`
 
@@ -76,8 +73,7 @@
 **可能原因 A**：任务材料过多、目标混杂或关键条件未被保留；没有通用的 80% 失效线
 **办法**：先保存关键状态，再整理材料；同一任务可 `/compact`，不相关新任务才 `/clear`
 
-**可能原因 B**：模型换错了（你上次切到 Haiku 忘了切回）
-**办法**：`/status` 看当前模型，`/model` 切回合适的
+**可能原因 B**：当前模型或接入路径与预期不同。用 `/status` 看配置，核对服务方的实际模型或用量记录，再用一条有标准答案的问题检查。
 
 **可能原因 C**：prompt 太模糊
 **办法**：按 Ch 5 的 WHAT-WHERE-HOW-VERIFY 重构提示
@@ -146,8 +142,7 @@
 **原因 B**：frontmatter 格式错
 **办法**：若使用 frontmatter，检查 `---` 开闭和 YAML 格式；旧命令也可以只有 Markdown，路径与发现规则见第 20、21 章
 
-**原因 C**：需要重启
-**办法**：退出 Claude Code 重开
+**原因 C**：会话还没有发现新目录。先用 `/reload-skills` 刷新新建的技能目录；第一次新建的是 `agents` 目录时，重新启动会话。
 
 ### MCP 装了但 Claude 说没有这个工具
 
@@ -186,7 +181,7 @@
 遇到任何问题按这个顺序试：
 
 <!-- diagram: FIG-038 -->
-![报错时先收集这四样](../../assets/illustrations/FIG-038/revisions/r02/zh-CN.png)
+![报错时先收集这四样](../../assets/illustrations/FIG-038/revisions/r03/zh-CN.png)
 
 *图：保留操作、完整报错、环境和已尝试步骤，才更容易定位问题。*
 <!-- /diagram: FIG-038 -->

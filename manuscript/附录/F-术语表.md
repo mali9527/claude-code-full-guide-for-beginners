@@ -35,7 +35,7 @@
 | **PowerShell** | Windows 自带的命令行 | Ch 1, 附录 B |
 | **prompt** | 提示词——你说给 AI 的话 | Ch 5, 19 |
 | **prompt engineering** | 提示词工程——怎么写好提示词 | Ch 26 |
-| **Pro / Max（Claude）** | 订阅级别 | Ch 15 |
+| **Pro / Max / Ultra** | 个人订阅档位，按实际付款账户查看额度 | Ch 0、15 |
 | **rewind** | 回退——回到之前某个状态 | Ch 9 |
 | **session** | 会话——一段有记录的工作对话，可退出后恢复 | Ch 3 |
 | **shell** | 命令解释器——解析并执行命令的程序 | Ch 1 |
@@ -77,7 +77,7 @@
 | `$` `%` | 美元 / 百分号 | Mac 终端提示符 |
 | `>` | 大于号 | Windows PowerShell 提示符 |
 | `|` | 竖线 / 管道符 | 命令输出接给下一个 |
-| `Ctrl+C` | — | 中断运行 |
+| `Ctrl+C` | — | 系统终端常用于中断；Claude 后台会话里还可能断开连接 |
 | `Cmd+C` | — | Mac 复制（= Windows Ctrl+C） |
 | `Esc Esc` | — | 空输入时打开检查点菜单 |
 
@@ -89,7 +89,7 @@
 | **API** | Application Programming Interface | 应用程序接口 |
 | **CI/CD** | Continuous Integration / Continuous Deployment | 持续集成 / 持续部署 |
 | **CLI** | Command Line Interface | 命令行界面 |
-| **Ctx** | Context | 上下文（Claude Code 状态栏缩写） |
+| **Ctx** | Context | 上下文；部分自定义状态栏使用这个缩写，查询可用 `/context` |
 | **DAU** | Daily Active Users | 日活用户 |
 | **GUI** | Graphical User Interface | 图形界面 |
 | **IDE** | Integrated Development Environment | 集成开发环境 |

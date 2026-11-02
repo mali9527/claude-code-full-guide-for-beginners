@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "figure": "FIG-004",
+  "input_fingerprint": "2522ed14679f9abb5b42136ea2f4659ddbf30b3cd8d2955f10a64b2a3ed4f5c9",
+  "image": {
+    "format": "PNG",
+    "opaque": true,
+    "monochrome": true,
+    "max_channel_delta": 11,
+    "chroma_noise_fraction": 0.0,
+    "color_check": "neutral-gray-v1",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 1562243,
+    "sha256": "a03ea563269172a1850b47370e07b4913c5f27ee8b9042977fe0b53808023590"
+  },
+  "tool": "Byte-identical reuse of previously selected drawing, no generation",
+  "model": "unknown",
+  "cost": "unknown",
+  "reference_image_actually_passed": false,
+  "created_at": "2026-11-02T11:32:44.408124+00:00",
+  "reuse": {
+    "from": "assets/illustrations/FIG-004/revisions/r04",
+    "original_image_sha256": "a03ea563269172a1850b47370e07b4913c5f27ee8b9042977fe0b53808023590",
+    "generation_performed": false
+  }
+}

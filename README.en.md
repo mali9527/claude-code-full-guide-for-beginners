@@ -1,32 +1,20 @@
 # Claude Code: A Beginner's Guide
 
-**Updated October 2026 · Opus 5.5 · Fable 5.1 · Sonnet 5.5**
+**November 2026 update · Reviewed changes through Claude Code 2.1.316 · Haiku 5.5, Sonnet 5.5, Opus 5.5 and Fable 5.1**
 
-**An English overview of a complete Chinese guide.**
+[Read the complete book in Chinese](全书.md#preface) · [简体中文](README.md). This English overview introduces a free Chinese guide for people new to Claude Code, with separate Mac and Windows instructions.
 
-The [opening explains how to choose among these current models](全书.md#preface). Then learn to compare source files, edit documents within clear limits, and review what the AI changed, starting with opening a terminal. No programming or terminal experience is assumed. Mac and Windows instructions are separate; [chapter 15](全书.md#ch-15) and [appendix J](全书.md#appendix-j) cover model selection, thinking effort and costs. Chapter links lead to Chinese text.
+**One hard question in VS Code?** Version 2.1.316 brought the terminal’s one-turn `ultrathink` effort increase to VS Code. On supported models and configurations, it can raise that turn to `xhigh` while keeping your ordinary effort setting for later turns. [Model choices and costs (Chinese)](全书.md#ch-15) · [Release notes](https://github.com/anthropics/claude-code/releases/tag/v2.1.316)
 
-**Free to read · 28 chapters, preface and 11 appendices · 42 illustrations**
+## Undo the second edit and keep the first
 
-## [Read the full Chinese book →](全书.md#preface)
+Suppose Claude fixed the install instructions in your README, then changed its title in a separate turn. You want the install fix and the old title. Open `/rewind`, select **the request that changed the title**, then choose **Restore code**. A checkpoint records the state before that turn. Open the README and check both details. This example uses Claude’s file editing tools on a practice copy. [Planning and recovery (Chinese)](manuscript/part2-日常使用/09-计划模式与撤销.md#undo-one-turn) · [Checkpoint documentation](https://code.claude.com/docs/en/checkpointing)
 
-Start at the preface and scroll through the book. Follow the main explanations first; return to side topics and reference tables when needed. No download or Git installation is required for reading. Use the [contents](全书.md#目录) to return to a chapter.
+28 chapters, a preface, 11 appendices and 42 illustrations. Star the repository if you want to find the model tables, recovery example or troubleshooting guide again.
 
-Planning to read it over several sittings? Star the repository to keep it handy.
+![Cover of the Chinese guide and its English overview](assets/social/cover-bilingual-20260925.png)
 
-[简体中文](README.md) · [Reading route](#find-what-you-need)
-
-![Claude Code: A Beginner's Guide / 零基础入门指南. Chinese chapters with an English overview.](assets/social/cover-bilingual-20260925.png)
-
-<p><img src="assets/branding/mali-avatar-v1.svg" width="48" height="48" alt="Author Ma Li" align="absmiddle"> <strong>Ma Li · 马力</strong></p>
-
-## A sample of how the book teaches
-
-Three event plans disagree on dates and costs, and some tasks have no owner. The [preface](全书.md#preface) introduces a request to compare them, cite the source of each conflict, leave missing information unresolved and show an execution plan before editing the originals.
-
-Then check the answer: Were conflicts missed? Can each number be found in a source? Did the AI invent an owner? Later chapters explain how to provide files, request changes, review permissions and recover correctly.
-
-The sequence is practical: complete a task, learn to judge the result, then preserve useful methods in project instructions and reusable workflows. Chapters include illustrations, summaries, hands-on tasks and troubleshooting.
+<p><img src="assets/branding/mali-avatar-v1.svg" width="48" height="48" alt="Ma Li" align="absmiddle"> <strong>马力 · Ma Li</strong></p>
 
 ## Find what you need
 
@@ -34,6 +22,7 @@ For a first read, follow the book in order. For reference, revisit:
 
 - [Models and costs](全书.md#ch-15) and the [Opus 5.5 / Fable 5.1 guide](全书.md#appendix-j).
 - [Reading files](全书.md#ch-05), [permissions](全书.md#ch-07), and [planning and recovery](全书.md#ch-09).
+- [Review a boundary condition before committing (Chinese)](manuscript/part6-融入日常/25-团队协作基础.md#review-before-commit).
 - [Project instructions](全书.md#ch-14), [Skills](全书.md#ch-20) and [troubleshooting](全书.md#appendix-g).
 
 All chapter links lead to Chinese text. The [complete chapter list](README.md#全书阅读路线), [illustration index](assets/illustrations/读图索引.md) and [Hooks example](templates/hooks/README.md) are also available.
@@ -42,7 +31,7 @@ All chapter links lead to Chinese text. The [complete chapter list](README.md#�
 
 The book is free to read; account access and model usage may incur separate costs. Start with [account options](全书.md#ch-00).
 
-The October 4 model update expands Opus 5.5 guidance on effort, long tasks, and fast-mode costs, and adds a Sonnet 5.5 comparison. The full-book documentation baseline remains September 25; see the [scope of this update (Chinese)](docs/2026-10-04模型更新.md). Full real-account walkthroughs on Mac and Windows have not been completed. See [verification scope (Chinese)](docs/版本与核验说明.md) and [sources (Chinese)](全书.md#appendix-i).
+The [November update (Chinese)](docs/2026-11-02更新.md) covers model prices, permission defaults, checkpoints and a local code review example. Feature availability depends on the client, account and provider. The book distinguishes documentation checks from hands-on runs.
 
 ## Share or improve it
 

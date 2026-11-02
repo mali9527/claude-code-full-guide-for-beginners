@@ -6,7 +6,7 @@
 >
 > **学完能做什么（主线）**：学会写一份**精准有效的 CLAUDE.md**——不堆砌资料，也不把 `/init` 生成的草稿当成定稿。会挑内容、懂取舍、懂维护节奏。写出来的 CLAUDE.md 能让 Claude 在你的项目里**真的越用越准**。
 
-> **核验日期：2026-09-24。** 本章对话和界面文字均为教学示意；请以你的版本、账号和实际界面为准。
+> **基础资料核对于 2026-09-24，本轮变化复核于 2026-11-02。** 本章对话和界面文字均为教学示意；请以你的版本、账号和实际界面为准。
 
 ---
 
@@ -49,7 +49,7 @@
 先搞清楚这份文档到底要干什么：
 
 <!-- diagram: FIG-016 -->
-![项目说明是一张路标](../../assets/illustrations/FIG-016/revisions/r02/zh-CN.png)
+![项目说明是一张路标](../../assets/illustrations/FIG-016/revisions/r03/zh-CN.png)
 
 *图：项目说明写清目标、约定与验证入口，长资料按需引用。*
 <!-- /diagram: FIG-016 -->
@@ -368,6 +368,10 @@ def create_user(email, name):
 - 原因：要么条目太模糊 Claude 用不上，要么写的东西本来它就知道（读代码就懂）。
 - 解决：先用 `/context` 检查是否加载，再挑一条明确规则做小任务验证。若多个说明文件相互矛盾，先消除冲突，不必机械地删一半。
 
+<a id="audit-rules"></a>
+
+练习目录有自己的项目说明时，也可运行 `/doctor prompt-audit .`，让它检查这一目录下的说明。比如 README 已改叫 `入门.md`，规则却仍要求先读旧文件。再看另一对容易漏掉的规则：项目说明写着“保留原始文件”，练习目录的说明却写着“整理完直接覆盖原稿”。把两句原文和路径找出来，问清哪份应当交付，再把约定写到一个地方。先确认它指出的路径和冲突原句，再决定采用哪项修改。省略路径时审查范围还可能包含个人配置。[规则审计](https://code.claude.com/docs/en/memory#run-a-prompt-audit)
+
 ---
 
 主线结束。下面支线讲"团队场景的 CLAUDE.md"和"项目 CLAUDE.md 版本管理"。
@@ -441,7 +445,7 @@ CLAUDE.md 里写：
 
 ### 现在能不能直接读 AGENTS.md
 
-从 Claude Code **v2.1.277** 起，默认在当前目录及上级没有 CLAUDE.md 一类说明时，可以读取 AGENTS.md；两者同时存在时，不要假设都会加载。部分旧版会话还有支持差异，可升级并检查 `/config` 的 Project instructions 设置。
+从 2.1.277 起，Claude Code 可以直接发现 `AGENTS.md`。默认选择取决于启动目录、上级目录和已有的 Claude 说明文件。例如，你给团队项目加了个人的 `CLAUDE.local.md`，可能改变原有 `AGENTS.md` 的默认加载。要两份都读，可核对 `/config` 的 Project instructions 选项。[加载规则](https://code.claude.com/docs/en/memory#agentsmd)
 
 需要兼容不同版本时，可以在 CLAUDE.md 中用 `@AGENTS.md` 导入共同说明，再补 Claude 专用内容。用 `/context` 核对实际加载情况，而不是因为文件“已经放在目录里”就认定生效。[AGENTS.md 官方说明](https://code.claude.com/docs/en/memory#agentsmd)
 

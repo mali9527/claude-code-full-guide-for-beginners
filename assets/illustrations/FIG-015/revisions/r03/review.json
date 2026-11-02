@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "70056a4ba66c764cb3d1ac5e068dcb7564a5ccfb1e36d73eb9f9e7fd17bd1704",
+  "input_fingerprint": "bae8a886fa53eb3093ef67333356b4cdec958cf3b34d05883bfe374889378036",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。桌面、笔记本、岗位卡和手册柜表示不同用途，不是产品固定的四层大脑。",
+  "placement_basis": "assets/illustrations/FIG-015/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

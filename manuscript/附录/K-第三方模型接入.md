@@ -32,7 +32,7 @@
 | 计费与额度 | 赠送是否到期、可用模型范围、请求速率和付费设置都可能不同 |
 | 数据与工具兼容 | 请求会送到哪里，是否支持图片、工具调用、缓存和长任务 |
 
-截至本版核对时，[Z.AI 的 Claude Code 接入文档](https://docs.z.ai/devpack/tool/claude)与 [MiniMax 的接入文档](https://platform.minimax.io/docs/token-plan/claude-code)仍可访问。旧的 Kimi 链接已跳转至[新平台文档入口](https://platform.kimi.ai/docs/overview)。这些是查阅入口，不是价格或稳定性的排名。本次没有替任何一家执行注册、付费或真实模型测试。
+例如[智谱 GLM](https://docs.bigmodel.cn/cn/coding-plan/tool/claude)、[MiniMax](https://platform.minimax.cn/docs/m-plan/claude-code)和 [Kimi Code](https://www.kimi.com/code/docs/third-party-tools/claude-code.html)分别提供接入说明。以自己开户的站点和套餐查端点、Key 与模型映射。同一家公司的个人编程套餐、团队套餐和标准 API 也可能分别管理凭据；请按实际产品核对。
 
 尤其要区分供应商文档里的两个部分：如何安装 Claude Code，以及如何接它自己的服务。前者可能仍写着过时的 Node.js 前提；后者才是该供应商的配置依据。遇到冲突时，按各自负责的产品核对，不把一篇兼容教程当成全套最新说明。
 
@@ -56,7 +56,7 @@
 
 Mac 的用户级设置通常在 `~/.claude/settings.json`；Windows PowerShell 对应 `$env:USERPROFILE\.claude\settings.json`。先用编辑器打开并留一份私有备份，确认是否已有 `env`、权限或其他设置；把所需字段合并进去，**不要用上面的整段覆盖原文件**。含密钥的文件不进入公开 Git 仓库。企业统一管理的环境先遵照管理员方案，不自行切换服务。
 
-环境变量还可能来自终端或系统设置，编辑这一份文件不一定能改变最终生效值。切换时先保存工作并退出原会话，再按供应商的官方步骤启动一个新会话。不要用复制整份配置的别名在多个并行任务间来回覆盖公共设置，这可能让不同任务使用了你没预期的账户。
+如果换了 Key 却仍看到旧渠道，不要把完整凭据打印出来。先看 `/status` 中实际服务域名，检查用户、项目或组织设置里的 `env`。多数会话会用设置文件的同名值覆盖从终端继承的值，部分环境与专用变量有例外。只修正相应条目，重新启动后到付款方控制台核对一笔无敏感信息的小请求。[变量优先级](https://code.claude.com/docs/en/env-vars#precedence)
 
 ## K.4 怎样判断真的接对了，怎样退回原来的路线
 

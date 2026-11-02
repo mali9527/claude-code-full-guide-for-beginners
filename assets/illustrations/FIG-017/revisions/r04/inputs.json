@@ -1,0 +1,348 @@
+{
+  "fingerprint": "13d214cfcbc2ecf8745b7aee6f7e2adf077a3a0668d454d11a856812a66c50b7",
+  "inputs": {
+    "schema_version": 1,
+    "figure": "FIG-017",
+    "unit": "ch-15",
+    "source_path": "manuscript/part3-深度概念/15-模型与成本.md",
+    "brief": {
+      "schema_version": 1,
+      "title": "模型、投入和费用分开看",
+      "reader_question": "如何理解“模型、投入和费用分开看”？",
+      "takeaway": "模型选择、思考投入和用量路径分别判断，不把名称当作固定价格或能力排名。",
+      "source_sections": [
+        "15.3 学会选模型，别把三个开关混成一个"
+      ],
+      "placement": "15.3 学会选模型，别把三个开关混成一个",
+      "composition": "笔记本上三只简单旋钮/卡片：“选模型”“思考投入”“费用路径”，下方放结果核对单。",
+      "content_guard": "不画成真实设置页；不固化价格、默认值或模型排名。\nThese are conceptual knobs/cards drawn on paper, NOT a software settings screen. No default value or numeric price.",
+      "style": "notebook-pen-v1",
+      "labels": "labels.zh-CN.yaml",
+      "caption": "模型选择、思考投入和用量路径分别判断，不把名称当作固定价格或能力排名。",
+      "source_ids": [
+        "MM-22",
+        "MM-04"
+      ],
+      "language_variants": {
+        "zh-CN": "planned",
+        "zh-TW": "pending_localization"
+      }
+    },
+    "labels": [
+      "选模型",
+      "思考投入",
+      "费用路径",
+      "核对实际结果"
+    ],
+    "sources": [
+      {
+        "heading": "15.3 学会选模型，别把三个开关混成一个",
+        "text": "## 15.3 学会选模型，别把三个开关混成一个\n\n本章里的斜杠命令都输入在 **Claude Code 的对话框**，不是退出后那个普通终端提示符后面。先输入 `/model`，打开模型选择器，看清当前版本和是否有额外收费提示。\n\n如果你直接使用 Anthropic 服务，并希望确定选中本章介绍的版本，可以输入：\n\n```text\n/model claude-opus-5-5\n```\n\n需要 Fable 且已经确认付款方式时，再输入 `/model claude-fable-5-1`。这种完整名称比只记 `opus` 或 `fable` 更适合复现一次练习；简写会随着软件版本或服务提供方变化。升级和不同服务的差别见[附录 J](../附录/J-Opus-4.7新手指南.md)。\n\n在当前版本里，直接用 `/model 名称` 切换会保存为以后会话的默认选择。只想试一次，就打开 `/model`，用上下方向键移到模型那一行，按字母 **s**，表示仅用于这次会话。按 Enter（回车键）则会保存选择。[模型配置说明](https://code.claude.com/docs/en/model-config)\n\n第二个开关是 **effort（思考投入档位）**。用 `/effort` 可以查看和调整。Opus 5.5 默认是 `medium`，Fable 5.1 默认是 `high`；这不代表前者“只有中等智力”。档位表示同一模型如何安排思考投入，不是跨模型的分数。先保留默认值，发现任务确实需要更深入的判断时再比较其他档位。[effort 说明](https://platform.claude.com/docs/en/build-with-claude/effort)\n\n“模型默认”也不等于“你现在正在用”。升级后用 `/effort status` 查看生效档位；已有的模型设置、启动参数或组织配置可能改变它。想按本章起点比较，可以明确输入 `/effort medium`。这会保存该模型的选择；只试一次时，在 `/effort` 选择器里选中档位后按 **s**。[Claude Code 的档位设置](https://code.claude.com/docs/en/model-config#adjust-effort-level)\n\n如果只是眼前一题特别难，可以在这一轮提示里加 `ultrathink`。在支持的官方模型与设置下，这一轮可升到 `xhigh`，下一轮按原来的设置执行。交互终端从 2.1.311 起支持这项升档，VS Code 的对应行为在 2.1.316 更新。若没有生效，先看模型和组织上限，再决定是否调整长期档位。[模型设置](https://code.claude.com/docs/en/model-config#use-ultrathink-for-one-off-deep-reasoning) · [2.1.316 发行记录](https://github.com/anthropics/claude-code/releases/tag/v2.1.316)\n\n第三个是 `/fast`，即快速模式。它改变响应速度和计费，不是更换成“小模型”。**Opus 5.5 的 fast 输入/输出价格为每百万 token 8/40 美元；订阅用户通过额外用量付费。** 初次练习不需要开启它。[快速模式说明](https://code.claude.com/docs/en/fast-mode)\n\n还有一笔容易漏算：**同一对话首次打开 fast，会按快速模式的未缓存输入价处理整段上下文。** 已聊很久才临时加速，可能比你想的贵；同一对话之后再反复开关，不会重复这笔首次成本。例如上下文恰好为 10 万 token，仅这部分输入的算术费用就是 `0.1 × 8 = 0.80` 美元，尚未计入后续输出等项目。这是计费示例，不是实测账单。是否加速应看等待是否值得，而不是把它当免费开关。[fast 的成本说明](https://code.claude.com/docs/en/fast-mode#understand-the-cost-tradeoff)"
+      }
+    ],
+    "facts": [
+      {
+        "id": "model-opus",
+        "claim": "Opus 5.5 于 2026-09-22 发布，模型 ID 为 claude-opus-5-5。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+            "checked_on": "2026-10-04"
+          }
+        ],
+        "checked_on": "2026-10-04",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fable",
+        "claim": "Fable 5.1 于 2026-09-01 发布，模型 ID 为 claude-fable-5-1。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+            "checked_on": "2026-09-24"
+          }
+        ],
+        "checked_on": "2026-09-24",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-minimum",
+        "claim": "Fable 5.1、Opus 5.5、Sonnet 5.5、Haiku 5.5 的 CLI 最低版本依次为 2.1.257、2.1.280、2.1.284、2.1.293。账号和提供方决定可选项。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-pricing",
+        "claim": "标准 API 每百万 token 的普通输入、输出、缓存读取美元单价依次为：Opus 5.5 为 4/20/0.20，Fable 5.1 为 10/50/0.25，Sonnet 5.5 为 2/10/0.10。Haiku 5.5 提示不超过 100k 时为 0.10/0.50/0.01，超过时为 0.50/2.50/0.05，按整次请求所在档计。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-effort",
+        "claim": "Opus 5.5 默认 medium，Fable 5.1 默认 high。长期选择与单轮投入分别设置。支持的直连模型和配置下，ultrathink 在终端 2.1.311、VS Code 2.1.316 起可将单轮提升到 xhigh。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/changelog",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-fast",
+        "claim": "Opus 5.5 fast 标准输入/输出为 8/40 美元每百万 token；订阅通过 usage credits 支付。同一会话首次开启按快速模式未缓存输入价处理完整上下文，后续开关不重复该次成本。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/fast-mode",
+            "checked_on": "2026-10-04"
+          }
+        ],
+        "checked_on": "2026-10-04",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-plan",
+        "claim": "美国网页价 Pro 月付20美元或年付200美元，Max 月费100，Ultra 月费200。原 Max 20x 转 Ultra。经验证的 Ultra 账户无五小时限额，周用量为 Pro 的十倍。Fable 的包含额度按席位，Pro 另计，Max/Ultra 至多使用现有周额度的一半。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://claude.com/pricing",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-context",
+        "claim": "Fable 5.1 与 Opus 5.5 的模型窗口为 1M、最大输出128K；实际上下文与压缩窗口受部署和配置影响。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-10-04"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-10-04"
+          }
+        ],
+        "checked_on": "2026-10-04",
+        "category": "quota",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-select",
+        "claim": "交互式 /model 保存后续默认；选择器 s 仅本次；--model 指定启动。别名映射依提供方而变。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-10-04"
+          }
+        ],
+        "checked_on": "2026-10-04",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "command-current",
+        "claim": "用 /status 查配置、/context 查空间、/usage 查用量。终端 claude doctor 为只读诊断，会话中的 /doctor 可以提议修改。/cd 切换当前目录，/add-dir 扩大可访问范围。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "按正文说明区分个人订阅、商业/API和第三方部署"
+        },
+        "sources": [
+          {
+            "url": "https://code.claude.com/docs/en/commands",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/setup",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/cli-reference",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-sonnet",
+        "claim": "Sonnet 5.5 于 2026-09-28 发布，Claude API ID 为 claude-sonnet-5-5；官方定位为边界明确的日常任务、速度与成本选择。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "官方文档范围；API费率、Claude Code设置与订阅分开"
+        },
+        "sources": [
+          {
+            "url": "https://www.anthropic.com/claude-sonnet-5-5",
+            "checked_on": "2026-10-04"
+          },
+          {
+            "url": "https://platform.claude.com/docs/en/models/overview",
+            "checked_on": "2026-10-04"
+          }
+        ],
+        "checked_on": "2026-10-04",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "model-haiku",
+        "claim": "Haiku 5.5 可用于分类和字段提取。比较效果要核对遗漏和误填；使用 Claude Code 时应确认实际模型和提供方。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "依官方账户、入口和部署条件"
+        },
+        "sources": [
+          {
+            "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "url": "https://code.claude.com/docs/en/model-config",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "startup",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      },
+      {
+        "id": "api-credit",
+        "claim": "符合条件并关联 Console 组织后，Max/Ultra 的月度 API 赠额各为100/200美元，Team 合并每月上限500美元。赠额不结转，仅对符合条件的程序请求生效，交互式会话用量另算。",
+        "scope": {
+          "product": "claude-code",
+          "plan": "依官方账户、入口和部署条件"
+        },
+        "sources": [
+          {
+            "url": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "checked_on": "2026-11-02",
+        "category": "price",
+        "ttl_days": 90,
+        "status": "confirmed",
+        "critical": true
+      }
+    ],
+    "style_files": {
+      "style.md": "ca62e847ac1cb3074cce9e7783acd13858a50f19e669d7f4d0cc9c7c87a66997",
+      "prefix.txt": "0d976be7a54d00a75ce94986f8c304de54ac306d4070c1d953ababb746a88e5e",
+      "reference.png": "e393eebfe128f646e0700ba95b874aab12b764ea3e5ac5b85e98dc57bd03ee13",
+      "paper.png": "9280e4573358d22f4835fba2d8d9bb24d284aa7f4d8dcfb80a9c43d105e9ae61",
+      "approval.json": "887c80885847e82cde5e28c8dbb0a95505344c147c1dc1a1c449e09880102cfe"
+    },
+    "prompt_sha256": "1800adf0286dc1d606a52d55615a5fd9a03c9a71e2fc0ebcf0dd1a5a53613601"
+  },
+  "base_commit": "35ed1c243aaebdcc389fa60cf4049ee460e63ef4",
+  "input_kind": "working-tree-snapshot",
+  "created_at": "2026-11-02T11:33:02.851885+00:00"
+}

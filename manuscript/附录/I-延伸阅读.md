@@ -1,6 +1,6 @@
 # 附录 I：延伸阅读与来源致谢
 
-> **核验日期：2026-09-24。**遇到版本、命令、模型或费用差异，先看官方当期说明，再结合自己账户与安装版本验证。社区教程用于学习和查漏。
+> **基础资料核对于 2026-09-24，本轮变化复核于 2026-11-02。**遇到版本、命令、模型或费用差异，先看官方当期说明，再结合自己账户与安装版本验证。社区教程用于学习和查漏。
 
 ### 本章地图（一眼看全貌）
 
@@ -15,7 +15,7 @@
 | 产品问题与已知故障 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | 查看相关问题；不要把单条 Issue 当成所有用户都必现 |
 | 新模型正式发布及能力说明 | [Anthropic 产品消息](https://www.anthropic.com/news) | 模型名称、发布日期与接入资格分别核对 |
 | Skills 怎样写与怎样加载 | [技能文档](https://code.claude.com/docs/en/skills)、[官方示例仓库](https://github.com/anthropics/skills) | 看当前格式，先在练习项目试一个 |
-| 桌面、远程、定时任务 | [Desktop](https://code.claude.com/docs/en/desktop)、[Remote Control](https://code.claude.com/docs/en/remote-control)、[云端 Routines](https://code.claude.com/docs/en/routines) | 先确认任务在哪里运行，再看条件与权限 |
+| 桌面、远程、定时任务 | [Desktop](https://code.claude.com/docs/en/desktop)、[Remote Control](https://code.claude.com/docs/en/remote-control)、[云端计划任务（原称 Routines）](https://code.claude.com/docs/en/routines) | 先确认任务在哪里运行，再看条件与权限 |
 
 本书仍以零基础操作和理解为主，官方文档是按功能查询的资料库。你不用从头把它读完：遇到“界面里为什么没有这个选项”，先看相关页面的适用条件，往往比重复安装更有用。
 

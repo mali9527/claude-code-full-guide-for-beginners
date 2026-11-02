@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "afcb18a3f05e63dbff9b848b34ea5b036ef1338e3cf0d02a7fb95fa88687bcc2",
+  "input_fingerprint": "d1e9ed4a6a0eebcc71ef84d626a8d77f92a10e574ee427395b773b236a2dcf17",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。保留操作、完整报错、环境和已尝试步骤，才更容易定位问题。",
+  "placement_basis": "assets/illustrations/FIG-038/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "a699f9db5a6fb95a5697d2b6f8ea7ea303ee20210170efce26f1cc726540d95f",
+  "input_fingerprint": "e55df8309d26397f2ae075c24b6cf5abf8b919a86ee67bb244ca10ece924793e",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。扩展机制各有作用；斜杠入口可以调用技能，两者不是互斥体系。",
+  "placement_basis": "assets/illustrations/FIG-037/revisions/r03/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

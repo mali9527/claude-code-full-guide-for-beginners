@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "a03ea563269172a1850b47370e07b4913c5f27ee8b9042977fe0b53808023590",
+  "input_fingerprint": "2522ed14679f9abb5b42136ea2f4659ddbf30b3cd8d2955f10a64b2a3ed4f5c9",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。先核对准备条件，再按平台安装、检查结果并进入练习目录。",
+  "placement_basis": "assets/illustrations/FIG-004/revisions/r04/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

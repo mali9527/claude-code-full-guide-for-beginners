@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "3a39688576f8fb83e2ec0cd982661d650ff2254753f0e136e1d66e8390518bf4",
+  "input_fingerprint": "c6b0e075dd2f9e606325bd40e8af4b74d428734ef606992cbd3897cfbf861549",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。模型服务决定下一步，本地工具按权限执行，把结果回传供继续判断。",
+  "placement_basis": "assets/illustrations/FIG-042/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "05dfc705ccec66f182a5b66c5e423ef247b23cd1c2d31f1a433f7c62a36b59a4",
+  "input_fingerprint": "75104b99504d3571356cd418bd96556744ebf24c3bae0a41cd63308b1cf945ad",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。分开任务与上下文，仍需协调共享文件的写入。",
+  "placement_basis": "assets/illustrations/FIG-025/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

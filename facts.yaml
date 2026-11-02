@@ -79,42 +79,46 @@
   status: confirmed
   critical: true
 - id: model-minimum
-  claim: Opus 5.5 的 CLI 最低版本为 2.1.280；Sonnet 5.5 为 2.1.284；Fable 5.1 为 2.1.257。账户、组织和提供方仍影响开放。
+  claim: Fable 5.1、Opus 5.5、Sonnet 5.5、Haiku 5.5 的 CLI 最低版本依次为 2.1.257、2.1.280、2.1.284、2.1.293。账号和提供方决定可选项。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/model-config
-    checked_on: '2026-10-04'
-  checked_on: '2026-10-04'
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: model-pricing
-  claim: 标准 API 输入/输出/缓存读取美元每百万 token：Opus 5.5 为 4/20/0.20，Fable 5.1 为 10/50/0.25，Sonnet 5.5 为 2/10/0.20，Haiku 4.5 为 1/5/0.10；不含缓存写入等其他项目。
+  claim: 标准 API 每百万 token 的普通输入、输出、缓存读取美元单价依次为：Opus 5.5 为 4/20/0.20，Fable 5.1 为 10/50/0.25，Sonnet 5.5 为 2/10/0.10。Haiku 5.5 提示不超过 100k 时为 0.10/0.50/0.01，超过时为 0.50/2.50/0.05，按整次请求所在档计。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://platform.claude.com/docs/en/about-claude/pricing
-    checked_on: '2026-10-04'
-  checked_on: '2026-10-04'
+    checked_on: '2026-11-02'
+  - url: https://platform.claude.com/docs/en/models/haiku-5-5/overview
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: price
   ttl_days: 90
   status: confirmed
   critical: true
 - id: model-effort
-  claim: Opus 5.5 默认 medium，Fable 5.1 默认 high；实际档位受显式选择和配置影响。Claude Code 交互式 /effort medium 保存该模型默认，选择器 s 仅本次，max 通常仅本次；组织可限制上限。
+  claim: Opus 5.5 默认 medium，Fable 5.1 默认 high。长期选择与单轮投入分别设置。支持的直连模型和配置下，ultrathink 在终端 2.1.311、VS Code 2.1.316 起可将单轮提升到 xhigh。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/model-config
-    checked_on: '2026-10-04'
-  - url: https://code.claude.com/docs/en/commands
-    checked_on: '2026-10-04'
-  checked_on: '2026-10-04'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/changelog
+    checked_on: '2026-11-02'
+  - url: https://github.com/anthropics/claude-code/releases/tag/v2.1.316
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: quota
   ttl_days: 90
   status: confirmed
@@ -133,18 +137,20 @@
   status: confirmed
   critical: true
 - id: model-plan
-  claim: Pro 月付20美元/年付200美元；Max网页月费100/200美元；Fable包含额度依席位而异，Pro从开始需要额外用量，Max最多使用现有周额度50%。
+  claim: 美国网页价 Pro 月付20美元或年付200美元，Max 月费100，Ultra 月费200。原 Max 20x 转 Ultra。经验证的 Ultra 账户无五小时限额，周用量为 Pro 的十倍。Fable 的包含额度按席位，Pro 另计，Max/Ultra 至多使用现有周额度的一半。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://claude.com/pricing
-    checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan
+    checked_on: '2026-11-02'
   - url: https://support.claude.com/en/articles/11049741-what-is-the-max-plan
-    checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
   - url: https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: price
   ttl_days: 90
   status: confirmed
@@ -178,30 +184,33 @@
   status: confirmed
   critical: true
 - id: model-fallback
-  claim: Opus 5.5 特定请求可能按服务规则转其他模型并显示提示；回退后选择可能停留在回退模型。检查可涉及随请求带入的资料，不能把最初选项等同全部回答模型。
+  claim: 因可用性临时回退和因内容分类切换有不同的后续行为。前者原模型可用时会重试，后者当前会话可能留在替代模型。用会话通知和实际选择辨认。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
+  - url: https://code.claude.com/docs/en/model-config
+    checked_on: '2026-11-02'
   - url: https://support.claude.com/en/articles/16049681-why-claude-switched-models-in-your-conversation-with-opus-5-or-opus-5-5
-    checked_on: '2026-10-04'
-  checked_on: '2026-10-04'
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: command-current
-  claim: /status 看配置，/context 看空间，/usage 看用量；/cost 是 /usage 别名。/doctor技能可提议修改，终端 claude
-    doctor 为只读诊断。
+  claim: 用 /status 查配置、/context 查空间、/usage 查用量。终端 claude doctor 为只读诊断，会话中的 /doctor 可以提议修改。/cd 切换当前目录，/add-dir 扩大可访问范围。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/commands
-    checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
   - url: https://code.claude.com/docs/en/setup
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/cli-reference
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: startup
   ttl_days: 90
   status: confirmed
@@ -222,14 +231,16 @@
   status: confirmed
   critical: true
 - id: permission-auto
-  claim: 当前 Pro/Max/Team 的适用会话可从 auto 模式启动；需看版本、设置、接入与组织条件。
+  claim: 自 2.1.283 起符合条件的交互式 CLI 和 VS Code 默认可用 Auto，显式设置、提供方、组织与环境可能改变选择。自 2.1.302 起未显式设置权限模式的非交互 -p 与 Agent SDK 默认手动。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/permission-modes
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/changelog
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: permission
   ttl_days: 90
   status: confirmed
@@ -248,44 +259,52 @@
   status: confirmed
   critical: true
 - id: checkpoint
-  claim: 空输入时 Esc Esc 与 /rewind 打开检查点菜单；须选择恢复范围，shell与外部副作用不能通用撤销。
+  claim: 空输入时 Esc Esc 和 /rewind 打开同一菜单。回退一轮须选发起它的请求，再选恢复范围。文件工具有快照，同一受跟踪文件后续手改也可能回退，仅外部命令产生的变化通常不在其中。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/checkpointing
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/tools-reference
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/changelog
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: undo
   ttl_days: 90
   status: confirmed
   critical: true
 - id: data-usage
-  claim: 消费者改进模型设置与商业/API默认政策不同；留存、反馈、云同步及第三方路径不能统一承诺30天删除或不训练。
+  claim: 个人账户与商业/API的使用及留存政策按路径区分。自 2.1.300 起本地会话记录还可能包括系统提示、工具定义与请求参数，求助优先选取脱敏片段。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/data-usage
-    checked_on: '2026-09-24'
-  - url: https://code.claude.com/docs/en/claude-directory#application-data
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/claude-directory
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/changelog
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: account
   ttl_days: 90
   status: confirmed
   critical: true
 - id: sessions
-  claim: 本地会话可恢复；/clear 开新上下文，不删除全部历史或撤销已执行操作。
+  claim: 恢复对话、恢复文件和清空当前上下文是三件事。CLI 按会话 ID 恢复与会话内 /resume 的权限模式规则有别。查看后台会话在空闲时连续按 Ctrl+C 可断开而保留正在等待的循环。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/sessions
-    checked_on: '2026-09-24'
-  - url: https://code.claude.com/docs/en/commands
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/interactive-mode
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/changelog
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: undo
   ttl_days: 90
   status: confirmed
@@ -304,115 +323,125 @@
   status: confirmed
   critical: true
 - id: instructions
-  claim: 现行版本支持按条件加载 AGENTS.md；CLAUDE.md 优先规则与版本有关；@AGENTS.md 可作兼容导入。
+  claim: 启动目录及其上层说明与进入子目录后按需生效的说明有别。可按对应版本规则处理 CLAUDE.md 和 AGENTS.md。/doctor prompt-audit . 可限定当前目录排查项目说明问题。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/memory
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/changelog
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: skills
-  claim: 自定义命令已合入 Skills，旧commands文件兼容；技能可自动或手动调用，加载内容仍占上下文。
+  claim: 自定义命令并入 Skills，旧 commands 兼容。此前已发现的技能目录监听变更，首次新建目录后可用 /reload-skills 重新发现，首次新建 agents 目录则要重启。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/skills
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/sub-agents
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: agents
-  claim: 子代理拥有独立上下文和可配置工具/规则；现行 /agents 不再打开旧创建向导。
+  claim: 子智能体有自己的上下文与可配置工具。/agents 的旧向导已调整。/subtask 可以带着当前会话背景派出子任务，后台任务可在 /tasks 查看。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/sub-agents
-    checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
   - url: https://code.claude.com/docs/en/commands
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: permission
   ttl_days: 90
   status: confirmed
   critical: true
 - id: hooks
-  claim: Hook 接收事件的结构化标准输入，匹配与退出码按事件解释；配置不是提示词，程序可能产生真实副作用。
+  claim: Hook 的输入、退出码与时机按事件解释。支持阻断的命令或 HTTP Hook 在相应版本可配置 onFailure 为 block；写入后的检查无法回到写入前。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/hooks
-    checked_on: '2026-09-24'
-  - url: https://code.claude.com/docs/en/hooks-guide
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/changelog
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: permission
   ttl_days: 90
   status: confirmed
   critical: true
 - id: mcp
-  claim: MCP 使用受支持的CLI和配置作用域；项目共享配置 .mcp.json，连接鉴权与工具许可分别确认。
+  claim: 项目共享服务器可在 .mcp.json 声明，交互式与 -p、SDK 的配置发现和审批路径有别；定义加载、服务鉴权和工具调用许可分别检查。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/mcp
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/cli-reference
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: permission
   ttl_days: 90
   status: confirmed
   critical: true
 - id: desktop
-  claim: 桌面 Code 自带引擎；终端/Desktop/Web 功能与配置存在差异；/desktop 可接续至桌面，/teleport 为云会话转终端。
+  claim: 桌面 Code 自带引擎，选环境可区分本机或云端。统一对话与 Code 的账户入口仍需辨认。本地 Code 会话中可打开 HTML 路径预览；SSH 会话的 Browser 工具受限。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/desktop
-    checked_on: '2026-09-24'
-  - url: https://code.claude.com/docs/en/commands
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/desktop-quickstart
+    checked_on: '2026-11-02'
+  - url: https://claude.com/resources/articles/cowork-is-now-claude
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: scheduling
-  claim: CLI /loop 依赖会话，桌面本地计划依赖应用/唤醒状态，云 Routines 不依赖本地开机且受账户开放限制。
+  claim: CLI /loop 与会话有关。桌面本地计划依赖应用，恢复时只补最近七天内符合条件的最近一次。云端计划任务旧称 Routines，可由 /schedule 管理，不要求原机开机。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
-  - url: https://code.claude.com/docs/en/scheduled-tasks
-    checked_on: '2026-09-24'
-  - url: https://code.claude.com/docs/en/desktop-scheduled-tasks
-    checked_on: '2026-09-24'
   - url: https://code.claude.com/docs/en/routines
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/desktop-scheduled-tasks
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/scheduled-tasks
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: startup
   ttl_days: 90
   status: confirmed
   critical: true
 - id: remote-control
-  claim: Remote Control 保留本机执行位置，不把项目自动搬到云端。
+  claim: Remote Control 由原机执行，需要符合条件的订阅登录，单独 API Key 不适用。Team 或 Enterprise 需要管理设置开放。
   scope:
     product: claude-code
     plan: 按正文说明区分个人订阅、商业/API和第三方部署
   sources:
   - url: https://code.claude.com/docs/en/remote-control
-    checked_on: '2026-09-24'
-  checked_on: '2026-09-24'
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
   category: permission
   ttl_days: 90
   status: confirmed
@@ -485,6 +514,66 @@
     checked_on: '2026-10-04'
   checked_on: '2026-10-04'
   category: price
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: model-haiku
+  claim: Haiku 5.5 可用于分类和字段提取。比较效果要核对遗漏和误填；使用 Claude Code 时应确认实际模型和提供方。
+  scope:
+    product: claude-code
+    plan: 依官方账户、入口和部署条件
+  sources:
+  - url: https://platform.claude.com/docs/en/models/haiku-5-5/overview
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/model-config
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: api-credit
+  claim: 符合条件并关联 Console 组织后，Max/Ultra 的月度 API 赠额各为100/200美元，Team 合并每月上限500美元。赠额不结转，仅对符合条件的程序请求生效，交互式会话用量另算。
+  scope:
+    product: claude-code
+    plan: 依官方账户、入口和部署条件
+  sources:
+  - url: https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
+  category: price
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: local-review
+  claim: 在会话中以 /code-review 审查分支领先上游的提交及未提交改动，缺少上游时回退至 main 或前一提交。2.1.316 的结果卡变化限于特定桌面/网页发起的云端及远程会话。
+  scope:
+    product: claude-code
+    plan: 依官方账户、入口和部署条件
+  sources:
+  - url: https://code.claude.com/docs/en/code-review-local
+    checked_on: '2026-11-02'
+  - url: https://github.com/anthropics/claude-code/releases/tag/v2.1.316
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/commands
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
+  category: startup
+  ttl_days: 90
+  status: confirmed
+  critical: true
+- id: goal
+  claim: 会话中可用 /goal 声明有验收条件的持续目标，/goal clear 取消。计时检查使用另外的 /loop 机制。
+  scope:
+    product: claude-code
+    plan: 依官方账户、入口和部署条件
+  sources:
+  - url: https://code.claude.com/docs/en/goal
+    checked_on: '2026-11-02'
+  - url: https://code.claude.com/docs/en/scheduled-tasks
+    checked_on: '2026-11-02'
+  checked_on: '2026-11-02'
+  category: startup
   ttl_days: 90
   status: confirmed
   critical: true

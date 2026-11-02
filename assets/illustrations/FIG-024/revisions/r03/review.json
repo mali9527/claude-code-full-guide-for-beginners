@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "2e1e6dda354484866dcd83803734eac0bb62233762184112aaf33b7cfcc4b471",
+  "input_fingerprint": "f97eb7caf9a3fb3ca88fc7973b16b9e4ebb64f2734caacc9dcbc5a082df032d7",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。自定义命令提供入口，技能说明承载具体工作方法。",
+  "placement_basis": "assets/illustrations/FIG-024/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}

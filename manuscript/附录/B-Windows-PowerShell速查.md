@@ -1,6 +1,6 @@
 # 附录 B：Windows PowerShell 速查
 
-> 用法：按 `Win + X` 选 "终端"（Windows 11）或 "PowerShell"。**本书不推荐 WSL / CMD——统一用 PowerShell**。
+> 用法：按 `Win + X` 选 "终端"（Windows 11）或 "PowerShell"。本书的 Windows 练习使用原生 PowerShell。你也可能在资料中见到 CMD 或 WSL（Windows 中的 Linux 环境），它们的路径和命令写法有区别。先按其中一条路线完成练习。[官方安装说明](https://code.claude.com/docs/en/setup)
 
 ### 本章地图（一眼看全貌）
 

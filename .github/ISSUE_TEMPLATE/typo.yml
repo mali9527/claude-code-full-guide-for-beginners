@@ -1,12 +1,12 @@
-name: 📝 内容错误 / 错字
+name: 内容纠错或版本差异
 description: 书里发现错字、错误命令、失效链接、图片不显示等
-title: "[错字] "
+title: "[内容纠错] "
 labels: ["typo"]
 body:
   - type: markdown
     attributes:
       value: |
-        感谢你抓错！写清楚 **哪里错了** 和 **该改成什么** 就行，不用长篇。
+        请给出章节和你实际看到的现象。版本、入口或改法知道多少写多少，粘贴前请删掉密钥和私人路径。
 
   - type: input
     id: location
@@ -20,21 +20,27 @@ body:
   - type: textarea
     id: wrong
     attributes:
-      label: 书里原文（错误的）
-      description: 直接粘贴原文片段
+      label: 原文或实际遇到的情况
+      description: 可以贴书中一句话，或描述你实际看到的结果。
     validations:
       required: true
 
   - type: textarea
     id: correct
     attributes:
-      label: 应该改成什么
-      description: 你觉得正确的版本
+      label: 建议的改法（可选）
+      description: 如果知道，可以写出建议的文字或步骤。
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: why
     attributes:
       label: 为什么你觉得原文错了（可选）
       description: 如果是错字可以跳过。如果是事实/命令错误，附上你查到的依据
+
+  - type: input
+    id: environment
+    attributes:
+      label: 使用环境（可选）
+      placeholder: 例如，macOS、终端、Claude Code 2.1.316、订阅登录

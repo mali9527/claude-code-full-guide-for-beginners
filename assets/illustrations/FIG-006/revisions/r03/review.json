@@ -1,0 +1,15 @@
+{
+  "reviewer": "codex",
+  "checked_on": "2026-11-02",
+  "image_sha256": "76984331fafea1cc3fa6a8c8d468e7f40e5879f7da9be962825724c52bc8dea3",
+  "input_fingerprint": "3b39ba7f192bca73b4f6f82200eeda41fe68a41c681d3104bab12b2f81df4e50",
+  "scope": "本轮实看既有图像、核对图题和标签与修订主题。你给出目标和边界，助手执行，结果仍由你核对。",
+  "placement_basis": "assets/illustrations/FIG-006/revisions/r02/review.json",
+  "limitations": "图像字节、图注和相对位置沿用。未重拍产品界面，未做全书浏览器或 PDF 逐页排版复核。",
+  "content": "pass",
+  "text": "pass",
+  "visual": "pass",
+  "background": "pass",
+  "monochrome": "pass",
+  "placement": "pass"
+}
