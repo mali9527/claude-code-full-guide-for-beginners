@@ -1,0 +1,960 @@
+- unit: preface
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。模型与工具的区别、冲突数字的来源和未确定的负责人。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: preface
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/00-前言/00-本书怎么读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。模型与工具的区别、冲突数字的来源和未确定的负责人。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-00
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/00-前言/01-免费用上Claude-Code.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。按登录和付款方分流。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-00
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/00-前言/01-免费用上Claude-Code.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。按登录和付款方分流。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-01
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。目录、输入法与文件编码分别诊断。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-01
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/01-先把电脑准备好.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。目录、输入法与文件编码分别诊断。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-02
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。各模型所需最低版本及交互权限的起点。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-02
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/02-安装-Claude-Code.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。各模型所需最低版本及交互权限的起点。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-03
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。系统终端与会话的输入位置、选错目录后的处理。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-03
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/03-你的第一次对话.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。系统终端与会话的输入位置、选错目录后的处理。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-04
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。统一对话与 Code 入口，权限模式下读差异的时机。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-04
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part1-从零起步/04-Claude-Code到底是什么.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。统一对话与 Code 入口，权限模式下读差异的时机。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-05
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。指明资料来源，WebFetch 的域名、许可与读取结果。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-05
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/05-让它读文件.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。指明资料来源，WebFetch 的域名、许可与读取结果。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-06
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。回退练习按发起坏改动的消息定位。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-06
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/06-让它改文件.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。回退练习按发起坏改动的消息定位。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-07
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。Auto 的入口、非交互默认值与常见覆盖条件。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-07
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/07-让它跑命令加权限机制.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。Auto 的入口、非交互默认值与常见覆盖条件。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-08
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。七步为教学拆解，移除效率翻倍承诺。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-08
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/08-交互循环七步法.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。七步为教学拆解，移除效率翻倍承诺。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-09
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。按两轮修改核对所选消息、快照覆盖面和独立备份。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-09
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/09-计划模式与撤销.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。按两轮修改核对所选消息、快照覆盖面和独立备份。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-10
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。既有按风险核对结果的方法适用，审阅前置单元和相关图示。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-10
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part2-日常使用/10-信任校准.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。既有按风险核对结果的方法适用，审阅前置单元和相关图示。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-11
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。核对账户和本地日志的材料范围。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-11
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/11-你的数据去哪了.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。核对账户和本地日志的材料范围。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-12
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。按任务关联决定是否清空，用 /context 复核空间。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-12
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/12-Claude为什么会变糊涂.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。按任务关联决定是否清空，用 /context 复核空间。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-13
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。会话中的权限模式、按需说明及记忆索引限制。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-13
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/13-三层记忆.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。会话中的权限模式、按需说明及记忆索引限制。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-14
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。个人与项目说明作用域、失效文件路径和矛盾规则。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-14
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/14-写好你的CLAUDE.md.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。个人与项目说明作用域、失效文件路径和矛盾规则。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-15
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。按入口、模型、提示长度分清账单，复算 1、0.60 和 1.50 美元三个算例。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-15
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part3-深度概念/15-模型与成本.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。按入口、模型、提示长度分清账单，复算 1、0.60 和 1.50 美元三个算例。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-16
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。原有改文件与审核案例适用，图中“任务分开”的用法与十二章核对。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-16
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/16-新手10大错误.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。原有改文件与审核案例适用，图中“任务分开”的用法与十二章核对。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-17
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。中断后先看后台任务状态。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-17
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/17-什么时候该停下来.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。中断后先看后台任务状态。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-18
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。退出前台、断开后台及清空上下文的区别。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-18
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/18-常用快捷命令全览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。退出前台、断开后台及清空上下文的区别。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-19
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。核对后台会话的 Ctrl+C 与普通前台区别。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-19
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part4-避坑与判断力/19-输入技巧.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。核对后台会话的 Ctrl+C 与普通前台区别。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-20
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。首次新建技能目录与既有目录的刷新区别。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-20
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/20-Skills入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。首次新建技能目录与既有目录的刷新区别。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-21
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。斜杠入口以本地任务手册的发现状态为准。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-21
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/21-自定义Slash命令.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。斜杠入口以本地任务手册的发现状态为准。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-22
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。首次创建目录的条件、独立子代理和继承会话的子任务。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-22
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/22-Subagents入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。首次创建目录的条件、独立子代理和继承会话的子任务。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-23
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。区分写后检查和可阻断的写前 Hook，配套脚本另有本地测试。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-23
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/23-Hooks入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。区分写后检查和可阻断的写前 Hook，配套脚本另有本地测试。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-24
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。MCP 的服务器声明、账户和工具许可分别核对。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-24
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part5-扩展能力/24-MCP入门.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。MCP 的服务器声明、账户和工具许可分别核对。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-25
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。Git 差异、项目服务器及本地审查范围，实际运行书内三个边界输入。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-25
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part6-融入日常/25-团队协作基础.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。Git 差异、项目服务器及本地审查范围，实际运行书内三个边界输入。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-26
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。区分配额和运行位置，核对持续目标、云端定时和手机接续资格。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-26
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part6-融入日常/26-进阶能力速览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。区分配额和运行位置，核对持续目标、云端定时和手机接续资格。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-27
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。连续任务的上下文、先完成任务再选是否封装。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: ch-27
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/part6-融入日常/27-下一步路线.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。连续任务的上下文、先完成任务再选是否封装。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-a
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。终端命令与会话内入口分开，示例未因本轮产品变化失效。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-a
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/A-Mac终端速查.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。终端命令与会话内入口分开，示例未因本轮产品变化失效。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-b
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。原生 PowerShell 是本书的练习选择，与 CMD 或 WSL 区分。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-b
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/B-Windows-PowerShell速查.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。原生 PowerShell 是本书的练习选择，与 CMD 或 WSL 区分。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-c
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。回退、技能发现、定时任务的当前入口。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-c
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/C-Slash命令全表.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。回退、技能发现、定时任务的当前入口。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-d
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。确认既有流程图区分授权前与授权后，模型选择表回引第 15 章。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-d
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/D-决策流程图.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。确认既有流程图区分授权前与授权后，模型选择表回引第 15 章。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-e
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。FAQ 中的模型、计费与回退答法对照正文。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-e
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/E-FAQ.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。FAQ 中的模型、计费与回退答法对照正文。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-f
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/F-术语表.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。核对套餐、统一对话、状态栏与快捷键术语。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-f
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/F-术语表.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。核对套餐、统一对话、状态栏与快捷键术语。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-g
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。从 401 找到鉴权方，按目录与入口排查技能及输入问题。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-g
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/G-报错自救手册.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。从 401 找到鉴权方，按目录与入口排查技能及输入问题。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-h
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。桌面本地 HTML 预览、云与本机计划及补跑条件。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-h
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/H-桌面应用导览.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。桌面本地 HTML 预览、云与本机计划及补跑条件。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-i
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。定时任务来源显示名与现行名称对照。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-i
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/I-延伸阅读.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。定时任务来源显示名与现行名称对照。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-j
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。最低版本、单轮 effort 与不同模型回退条件。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-j
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/J-Opus-4.7新手指南.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。最低版本、单轮 effort 与不同模型回退条件。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-k
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: editorial
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按单元复核本轮措辞、教学路径、相关前置与图意。第三方配置来源、有效凭据和脱敏排错说明。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
+- unit: appendix-k
+  source_commit: 9eb69da623dac664689d3008ffe99524c10e0479
+  paths:
+  - manuscript/附录/K-第三方模型接入.md
+  kind: facts
+  result: pass
+  checked_on: '2026-11-02'
+  engine: codex
+  author_engine: codex
+  platforms: []
+  limitations: 按差异对照该单元关联的官方依据和通用示例。第三方配置来源、有效凭据和脱敏排错说明。 沿用未变内容的既有核验日期。本项不代表真实账户操作、双平台验收或真人试读。
+  reason: ''
