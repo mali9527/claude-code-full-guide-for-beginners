@@ -127,7 +127,7 @@
 <!-- studio:release -->
 当前维护稿以本仓库为准。
 
-已公开正文：[v2026.09.1](https://github.com/mali9527/claude-code-full-guide-for-beginners/releases/tag/v2026.09.1)。
+已公开正文：[v2026.11.1](https://github.com/mali9527/claude-code-full-guide-for-beginners/releases/tag/v2026.11.1)。
 <!-- /studio:release -->
 
 本页与全书随维护稿更新，[发行页](https://github.com/mali9527/claude-code-full-guide-for-beginners/releases)保留固定版本。英文仅导览，繁体预览尚未完成语言审读。
